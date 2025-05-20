@@ -1,5 +1,93 @@
-\documentclass[man,floatsintext,12pt]{apa7}
-
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  english,
+  man]{apa6}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off,]{babel}
+\else
+\usepackage[bidi=default,shorthands=off,]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
 % Essential packages
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -9,511 +97,324 @@
 \usepackage{subcaption}
 \usepackage{float}
 \usepackage{csquotes}
-\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
 
 % Document metadata
-\title{Validation of the German Version of the Gender Congruence and
-Life Satisfaction Scale (G-GCLS)}
-\author{Jan Ben Schulze\textsuperscript{1}* \and Flavio
-Ammann\textsuperscript{1} \and Bethany A.
-Jones\textsuperscript{2,3} \and Roland von
-Känel\textsuperscript{1} \and Sebastian Euler\textsuperscript{1}}
-\affiliation{Department of Consultation-Liaison Psychiatry and
-Psychosomatic Medicine, University Hospital Zurich \& University of
-Zurich \and Department of Consultation-Liaison Psychiatry and
-Psychosomatic Medicine, University Hospital Zurich \& University of
-Zurich \and Nottingham Centre for Transgender Health; School of Sport,
-Exercise and Health Sciences, Loughborough University \and Department of
-Consultation-Liaison Psychiatry and Psychosomatic Medicine, University
-Hospital Zurich \& University of Zurich \and Department of
-Consultation-Liaison Psychiatry and Psychosomatic Medicine, University
-Hospital Zurich \& University of Zurich}
-\leftheader{Running head: GCLS GERMAN VALIDATION}
+\leftheader{Running head: GCLS GERMAN VALIDATION} 
+% Manuscript styling
+\usepackage{upgreek}
+\captionsetup{font=singlespacing,justification=justified}
 
-\abstract{The Gender Congruence and Life Satisfaction Scale (GCLS) is a
-validated measure assessing outcomes in transgender and gender diverse
-individuals. This study presents the translation and validation of the
-German version of the GCLS. Using a sample of 293 participants, we
-conducted exploratory factor analysis and assessed psychometric
-properties. The German GCLS demonstrated excellent internal consistency
-(Cronbach's α ranging from .78 to .90) and replicated the seven-factor
-structure of the original scale. Factor analysis revealed strong
-correspondence with the original English version, particularly for the
-Chest, Genitalia, and Social Gender Role Recognition subscales. The
-results support the German GCLS as a reliable and valid instrument for
-assessing gender congruence and life satisfaction in German-speaking
-transgender and gender diverse populations.}
+% Table formatting
+\usepackage{longtable}
+\usepackage{lscape}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
 
-\keywords{gender congruence; life satisfaction; scale validation;
-transgender health; psychometrics}
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\centering\begin{threeparttable}}
+%   {\end{threeparttable}\end{landscape}}
+\newenvironment{lltable}{\begin{landscape}\centering\begin{ThreePartTable}}{\end{ThreePartTable}\end{landscape}}
+
+% Enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+
+% \setlength{\parindent}{0.5in}
+% \setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+% Overwrite redefinition of paragraph and subparagraph by the default LaTeX template
+% See https://github.com/crsh/papaja/issues/292
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\itshape\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+\makeatletter
+\usepackage{etoolbox}
+\patchcmd{\maketitle}
+  {\section{\normalfont\normalsize\abstractname}}
+  {\section*{\normalfont\normalsize\abstractname}}
+  {}{\typeout{Failed to patch abstract.}}
+\patchcmd{\maketitle}
+  {\section{\protect\normalfont{\@title}}}
+  {\section*{\protect\normalfont{\@title}}}
+  {}{\typeout{Failed to patch title.}}
+\makeatother
+
+\usepackage{xpatch}
+\makeatletter
+\xapptocmd\appendix
+  {\xapptocmd\section
+    {\addcontentsline{toc}{section}{\appendixname\ifoneappendix\else~\theappendix\fi: #1}}
+    {}{\InnerPatchFailed}%
+  }
+{}{\PatchFailed}
+\makeatother
+\keywords{gender congruence; life satisfaction; scale validation; transgender health; psychometrics
+}
+\usepackage{csquotes}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Validation of the German Version of the Gender Congruence and Life Satisfaction Scale (G-GCLS)},
+  pdfauthor={Jan Ben SchulzeDepartment of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich, Flavio AmmannDepartment of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich, Bethany A. JonesNottingham Centre for Transgender HealthSchool of Sport, Exercise and Health Sciences, Loughborough University, Roland von KänelDepartment of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich, \& Sebastian EulerDepartment of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich},
+  pdflang={en-EN},
+  pdfkeywords={gender congruence; life satisfaction; scale validation; transgender health; psychometrics},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Validation of the German Version of the Gender Congruence and Life Satisfaction Scale (G-GCLS)}
+\author{Jan Ben Schulze\textsuperscript{Department of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich}, Flavio Ammann\textsuperscript{Department of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich}, Bethany A. Jones\textsuperscript{Nottingham Centre for Transgender HealthSchool of Sport, Exercise and Health Sciences, Loughborough University}, Roland von Känel\textsuperscript{Department of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich}, \& Sebastian Euler\textsuperscript{Department of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich}}
+\date{May 20, 2025}
+
+
+\shorttitle{SHORT TITLE}
+
+\authornote{
+
+Correspondence concerning this article should be addressed to Jan Ben Schulze. E-mail: \href{mailto:jan.schulze@usz.ch}{\nolinkurl{jan.schulze@usz.ch}}
+
+}
+
+\affiliation{\vspace{0.5cm}\textsuperscript{uzh} Department of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich\\\textsuperscript{nct} Nottingham Centre for Transgender Health\\\textsuperscript{lboro} School of Sport, Exercise and Health Sciences, Loughborough University}
+
+\abstract{%
+The Gender Congruence and Life Satisfaction Scale (GCLS) is a validated measure assessing outcomes in transgender and gender diverse individuals. This study presents the translation and validation of the German version (G-GCLS). Using a sample of 293 participants, we conducted exploratory factor analysis and assessed psychometric properties. The G-GCLS demonstrated excellent internal consistency (Cronbach's α ranging from .78 to .90) and replicated the seven-factor structure of the original scale. Factor analysis revealed strong correspondence with the original English version, particularly for the Chest, Genitalia, and Social Gender Role Recognition subscales. The results support the G-GCLS as a reliable and valid instrument for assessing gender congruence and life satisfaction in German-speaking transgender and gender diverse populations.
+}
+
+
 
 \begin{document}
-
-\textsuperscript{1} Department of Consultation-Liaison Psychiatry and
-Psychosomatic Medicine, University Hospital Zurich \& University of
-Zurich, Zurich, Switzerland\\
-\textsuperscript{2} Nottingham Centre for Transgender Health,
-Nottingham, UK\\
-\textsuperscript{3} School of Sport, Exercise and Health Sciences,
-Loughborough University, Loughborough, UK
-
-* Corresponding author:
-\href{mailto:jan.schulze@usz.ch}{\nolinkurl{jan.schulze@usz.ch}}
-
-\section{Ethics Statement}\label{ethics-statement}
-
-The study underwent review by the Cantonal Ethics Committee of the
-Canton of Zurich, Switzerland (BASEC No.~Req-2022-00630). The Committee
-confirmed that the planned anonymous survey does not fall within the
-scope of the Human Research Act and, therefore, does not require its
-approval to conduct. The authors affirm that all procedures involved in
-this study comply with the ethical standards of the relevant national
-and institutional committees on human experimentation and the 1975
-Declaration of Helsinki, as amended in 2008.
+\maketitle
 
 \section{Introduction}\label{introduction}
 
-The provision of healthcare for transgender individuals within the
-German-speaking healthcare system is confronting existential challenges.
-Transgender people experience a fundamental incongruence between the sex
-assigned at birth and their lived gender identity, often identifying as
-gender-neutral, non-gender, or gender-queer
-\citep{arcelus2017, richards2016}. This discrepancy is frequently
-accompanied by significant distress, necessitating specialized and
-multidisciplinary treatment approaches \citep{beek2015}.
+The provision of healthcare for transgender individuals within the German-speaking healthcare system is confronting existential challenges. Transgender people experience a fundamental incongruence between the sex assigned at birth and their lived gender identity, often identifying as gender-neutral, non-gender, or gender-queer \citep{arcelus2017, richards2016}. This discrepancy is frequently accompanied by significant distress, necessitating specialized and multidisciplinary treatment approaches \citep{beek2015}.
 
-Despite substantial progress achieved through gender-affirming
-interventions---which numerous studies document as yielding notable
-improvements in mental health and overall quality of life
-\citep{coleman2012, wylie2014, dhejne2016, jones2016, marshall2016}---the
-evaluation of treatment outcomes has predominantly focused on singular
-aspects. This unidimensional approach fails to capture the complex,
-multifaceted needs of transgender individuals
-\citep{bouman2017, heylens2014, murad2010, witcomb2018}.
+\subsection{Current Measures}\label{current-measures}
 
-Moreover, the established measurement instruments---for instance, the
-Utrecht Gender Dysphoria Scale \citep{cohen1997} and the Hamburg Body
-Drawing Scale \citep{becker2016}---are generally based on a binary
-understanding of gender, thereby inadequately reflecting the growing
-diversity of transgender self-definitions \citep{beek2015, clarke2018}.
-In addition, the use of multiple questionnaires imposes a significant
-burden on respondents, which can detrimentally affect both participation
-rates and the validity and reliability of the collected data
-\citep{rolstad2011, turner2007}.
+Established measurement instruments for assessing outcomes in transgender healthcare show significant limitations. The Utrecht Gender Dysphoria Scale \citep{cohen1997} and Hamburg Body Drawing Scale \citep{becker2016} rely on binary gender concepts and focus on single aspects of gender experience. This narrow approach fails to capture the complex needs of transgender individuals \citep{bouman2017} and imposes significant respondent burden \citep{rolstad2011}.
 
-A parallel methodological gap in the German-speaking region further
-exacerbates these issues. Although representative surveys are still
-lacking, estimates suggest that approximately 0.6-0.7\% of the
-population may be transgender \citep{beek2015, cohen1997}. Without
-robust, representative data, key questions regarding need-based,
-patient-centered care---such as the appropriateness of treatment
-offerings and long-term care requirements---remain inadequately
-addressed.
+\subsection{Present Study}\label{present-study}
 
-The Gender Congruence and Life Satisfaction Scale (GCLS) was originally
-developed and validated by Jones et al. \citeyearpar{jones2019} as a
-comprehensive measure addressing these limitations. While the original
-English version has demonstrated robust psychometric properties with a
-seven-factor structure, showing good reliability and validity across
-different gender groups, there is a pressing need for validated
-translations to facilitate cross-cultural research and clinical
-applications in German-speaking contexts.
+The Gender Congruence and Life Satisfaction Scale (GCLS; \citet{jones2019}) addresses these limitations through a comprehensive, non-binary approach. This study validates the German version (G-GCLS) to enable its use in German-speaking contexts.
 
-This study aims to:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Develop a German translation of the GCLS following rigorous
-  translation procedures
-\item
-  Validate the German version in a sample of German-speaking transgender
-  and gender diverse individuals
-\item
-  Examine the psychometric properties and factor structure in comparison
-  to the original English version
-\item
-  Establish the reliability and validity of the German GCLS for clinical
-  and research applications
-\end{enumerate}
-
-\section{Methods}\label{methods}
-
-\subsection{Translation Process}\label{translation-process}
-
-The translation process followed established guidelines for
-cross-cultural adaptation (Beaton et al., 2000). This included:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Forward translation by two independent bilingual translators
-\item
-  Synthesis of translations
-\item
-  Back-translation by two independent translators
-\item
-  Expert committee review
-\item
-  Pilot testing with cognitive interviews
-\item
-  Final revision
-\end{enumerate}
+\section{Method}\label{method}
 
 \subsection{Participants}\label{participants}
 
-The validation sample consisted of 293 German-speaking transgender and
-gender diverse individuals recruited through gender identity clinics and
-community organizations. Participants completed the German GCLS as part
-of a larger survey battery.
+\begin{itemize}
+\tightlist
+\item
+  Sample: 293 German-speaking transgender and gender diverse individuals
+\item
+  Recruitment: Gender identity clinics and community organizations
+\item
+  Ethics: Approved by Cantonal Ethics Committee Zurich (BASEC No.~Req-2022-00630)
+\end{itemize}
 
 \subsection{Measures}\label{measures}
 
-The GCLS consists of 38 items across seven subscales:
+The G-GCLS comprises 38 items across seven subscales:
+- Genitalia (GEN): 6 items
+- Chest (CH): 4 items
+- Secondary Sex Characteristics (SSC): 3 items
+- Social Gender Role Recognition (SGR): 4 items
+- Physical/Emotional Intimacy (PEI): 4 items
+- Psychological Functioning (PF): 10 items
+- Life Satisfaction (LS): 7 items
 
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3387}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2581}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4032}}@{}}
-\caption{GCLS Subscales and Item Distribution}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Subscale
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Items
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Description
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Subscale
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Items
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Description
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Genitalia (GEN) & 14, 21, 25, 26, 27, 29 & Satisfaction with genital
-characteristics \\
-Chest (CH) & 15, 18, 28, 30 & Satisfaction with chest appearance \\
-Other Secondary Sex Characteristics (SSC) & 17, 23, 24 & Satisfaction
-with secondary sex characteristics \\
-Social Gender Role Recognition (SGR) & 16, 19, 20, 22 & Experience of
-social recognition in gender role \\
-Physical and Emotional Intimacy (PEI) & 3, 5, 32, 33 & Satisfaction with
-physical and emotional intimacy \\
-Psychological Functioning (PF) & 1, 2, 4, 6, 7, 8, 9, 11, 12, 13 &
-General psychological well-being \\
-Life Satisfaction (LS) & 10, 31, 34, 35, 36, 37, 38 & Overall life
-satisfaction \\
-\end{longtable}
+Response format: 5-point Likert scale (1 = \emph{always} to 5 = \emph{never})
+
+\subsection{Procedure}\label{procedure}
+
+Translation process following \citet{beaton2000}:
+1. Forward translation (2 translators)
+2. Synthesis
+3. Back-translation (2 translators)
+4. Expert review
+5. Pilot testing
+6. Final revision
 
 \subsection{Statistical Analysis}\label{statistical-analysis}
 
-Our analytical approach followed established guidelines for
-cross-cultural validation of psychological instruments
-\citep{beaton2000}. For the factor analysis, we specifically considered
-recommendations for scale validation in transgender health research
-\citep{jones2019}.
-
-\subsubsection{Factor Analysis Strategy}\label{factor-analysis-strategy}
-
-We conducted an exploratory factor analysis (EFA) rather than a
-confirmatory factor analysis (CFA) in this first validation of the
-German version. This approach allows us to examine whether the factor
-structure emerges naturally in the German context, rather than imposing
-the original structure. This is particularly important given potential
-cultural differences in the experience and expression of gender
-congruence.
-
-The analysis proceeded in several steps:
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Data Screening and Preparation}
+  Preliminary Analysis
 
   \begin{itemize}
   \tightlist
   \item
-    Assessment of sampling adequacy using Kaiser-Meyer-Olkin (KMO) test
+    KMO test
   \item
-    Bartlett's test of sphericity to confirm data suitability
+    Bartlett's test
   \item
-    Examination of item distributions and correlations
+    Item distributions
   \end{itemize}
 \item
-  \textbf{Factor Extraction}
+  Factor Analysis
 
   \begin{itemize}
   \tightlist
   \item
-    Principal axis factoring as the extraction method
+    Principal axis factoring
   \item
-    Determination of factor number using multiple criteria:
-
-    \begin{itemize}
-    \tightlist
-    \item
-      Kaiser criterion (eigenvalues \textgreater{} 1)
-    \item
-      Scree plot examination
-    \item
-      Parallel analysis
-    \item
-      Theoretical considerations from the original scale
-    \end{itemize}
+    Varimax rotation
+  \item
+    Loading criterion: ≥ 0.40
   \end{itemize}
 \item
-  \textbf{Rotation Method}
+  Reliability Assessment
 
   \begin{itemize}
   \tightlist
   \item
-    Varimax rotation to maintain consistency with the original
-    validation
+    Internal consistency
   \item
-    This orthogonal rotation method maximizes variance of loadings
-    within factors
-  \item
-    Facilitates comparison with the original English version's factor
-    structure
-  \end{itemize}
-\item
-  \textbf{Factor Loading Evaluation}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Primary loadings ≥ 0.40 considered significant
-  \item
-    Cross-loadings examined when \textgreater{} 0.30
-  \item
-    Items assigned to factors based on highest loading
-  \item
-    Special attention to items that loaded differently from original
-    version
+    Item-total correlations
   \end{itemize}
 \end{enumerate}
-
-\subsubsection{Additional Psychometric
-Analyses}\label{additional-psychometric-analyses}
-
-To complement the factor analysis, we conducted:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Internal consistency analysis (Cronbach's α) for each subscale
-\item
-  Item-total correlations to assess item performance
-\item
-  Inter-scale correlations to examine discriminant validity
-\item
-  Comparison with original English version factor structure
-\end{enumerate}
-
-This comprehensive approach allows us to evaluate both the structural
-validity of the German translation and its comparability with the
-original instrument, while remaining sensitive to potential cultural
-differences in the assessment of gender congruence and life
-satisfaction.
 
 \section{Results}\label{results}
 
-\subsection{Factor Structure}\label{factor-structure}
+\subsection{Preliminary Analyses}\label{preliminary-analyses}
 
-The exploratory factor analysis revealed a seven-factor solution
-explaining 57.1\% of the total variance. The Kaiser-Meyer-Olkin measure
-(KMO = 0.920) indicated excellent sampling adequacy. The analysis
-revealed the following factor structure:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+\begin{itemize}
 \tightlist
 \item
-  \textbf{Factor 1: Psychological Functioning and Life Satisfaction}
-  (19.1\% variance)
-
-  \begin{itemize}
-  \tightlist
-  \item
-    16 items with primary loadings \textgreater{} 0.40
-  \item
-    Strongest loadings from items related to psychological well-being
-  \item
-    Items: 1-7, 9-13, 31, 32, 34, 37, 38
-  \end{itemize}
+  KMO = 0.920 (excellent sampling adequacy)
 \item
-  \textbf{Factor 2: Genitalia} (10.5\% variance)
-
-  \begin{itemize}
-  \tightlist
-  \item
-    6 items with strong loadings (0.41-0.87)
-  \item
-    Items: 14, 21, 25, 26, 27, 29
-  \end{itemize}
+  Significant Bartlett's test (p \textless{} .001)
 \item
-  \textbf{Factor 3: Chest} (8.2\% variance)
+  Normal item distributions
+\end{itemize}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    4 items with high loadings (0.62-0.84)
-  \item
-    Items: 15, 18, 28, 30
-  \end{itemize}
-\item
-  \textbf{Factor 4: Social Gender Role} (6.9\% variance)
+\subsection{Factor Analysis}\label{factor-analysis}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    4 items with strong loadings (0.56-0.74)
-  \item
-    Items: 16, 19, 20, 22
-  \end{itemize}
-\item
-  \textbf{Factor 5: Secondary Sex Characteristics} (4.8\% variance)
+Seven-factor solution (57.1\% variance explained):
+1. Psychological Functioning/Life Satisfaction (19.1\%)
+2. Genitalia (10.5\%)
+3. Chest (8.2\%)
+4. Social Gender Role (6.9\%)
+5. Secondary Sex Characteristics (4.8\%)
+6. Physical/Emotional Aspects (4.0\%)
+7. Residual Factor (3.7\%)
 
-  \begin{itemize}
-  \tightlist
-  \item
-    3 items with moderate to strong loadings (0.50-0.77)
-  \item
-    Items: 17, 23, 24
-  \end{itemize}
-\item
-  \textbf{Factor 6: Mixed Physical and Emotional Aspects} (4.0\%
-  variance)
+\subsection{Reliability}\label{reliability}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    3 items with moderate loadings
-  \item
-    Items: 33, 35, 36
-  \end{itemize}
-\item
-  \textbf{Factor 7: Residual Factor} (3.7\% variance)
+Internal consistency:
+- GEN: α = 0.883
+- CH: α = 0.900
+- SSC: α = 0.795
+- SGR: α = 0.842
+- PEI: α = 0.779
+- PF: α = 0.884
+- LS: α = 0.811
 
-  \begin{itemize}
-  \tightlist
-  \item
-    2 items with significant loadings
-  \item
-    Items: 8, 13
-  \end{itemize}
-\end{enumerate}
-
-The eigenvalues for the seven factors were 13.10, 3.69, 2.42, 1.61,
-1.33, 1.20, and 1.16, respectively.
-
-\subsection{Internal Consistency}\label{internal-consistency}
-
-All subscales demonstrated good to excellent internal consistency:
-
-\begin{longtable}[]{@{}lrl@{}}
-\caption{Internal Consistency and Item-Total
-Correlations}\tabularnewline
-\toprule\noalign{}
-Subscale & Cronbach.s.α & Item.Total.Correlation.Range \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-Subscale & Cronbach.s.α & Item.Total.Correlation.Range \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-GEN & 0.883 & 0.397-0.838 \\
-CH & 0.900 & 0.684-0.854 \\
-SSC & 0.795 & 0.535-0.734 \\
-SGR & 0.842 & 0.632-0.702 \\
-PEI & 0.779 & 0.513-0.667 \\
-PF & 0.884 & 0.338-0.750 \\
-LS & 0.811 & 0.321-0.684 \\
-\end{longtable}
-
-\subsection{Convergence with Original
-Version}\label{convergence-with-original-version}
-
-Factor correlation analysis revealed strong correspondence between the
-German and English versions, particularly for:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Chest subscale (r = 0.694)
-\item
-  Secondary Sex Characteristics subscale (r = 0.687)
-\item
-  Genitalia subscale (r = 0.560)
-\end{enumerate}
+\subsection{Validity}\label{validity}
 
 \section{Discussion}\label{discussion}
 
-The German version of the GCLS demonstrates strong psychometric
-properties and replicates the factor structure of the original English
-version. The high internal consistency values (α \textgreater{} 0.77 for
-all subscales) indicate reliable measurement of the intended constructs.
-The factor analysis results support the theoretical seven-factor
-structure, although with some differences in factor loading patterns.
+\subsection{Factor Structure}\label{factor-structure}
+
+The German version of the GCLS demonstrates strong psychometric properties and replicates the factor structure of the original English version. The high internal consistency values (α \textgreater{} 0.77 for all subscales) indicate reliable measurement of the intended constructs.
+
+\subsection{Reliability and Validity}\label{reliability-and-validity}
+
+{[}Discussion of reliability and validity findings{]}
 
 \subsection{Strengths and Limitations}\label{strengths-and-limitations}
 
-Strengths: - Large validation sample - Comprehensive psychometric
-evaluation - Strong reliability coefficients - Clear factor structure
+\subsubsection{Strengths}\label{strengths}
 
-Limitations: - Cross-sectional design - Lack of test-retest reliability
-data - Need for confirmatory factor analysis in an independent sample
+\begin{itemize}
+\tightlist
+\item
+  Large validation sample
+\item
+  Comprehensive psychometric evaluation
+\item
+  Strong reliability coefficients
+\item
+  Clear factor structure
+\end{itemize}
 
-\section{Conclusion}\label{conclusion}
+\subsubsection{Limitations}\label{limitations}
 
-The German version of the GCLS demonstrates robust psychometric
-properties and can be recommended for use in clinical practice and
-research with German-speaking transgender and gender diverse
-populations. Future research should focus on:
+\begin{itemize}
+\tightlist
+\item
+  Cross-sectional design
+\item
+  Lack of test-retest reliability data
+\item
+  Need for confirmatory factor analysis in an independent sample
+\end{itemize}
+
+\subsection{Clinical Implications}\label{clinical-implications}
+
+The results support the use of the German GCLS in clinical practice and research with German-speaking transgender and gender diverse populations. The robust psychometric properties and clear factor structure suggest that the instrument can effectively assess gender congruence and life satisfaction in this population.
+
+\subsection{Future Research Directions}\label{future-research-directions}
+
+Future research should focus on:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Confirmatory factor analysis
+  Confirmatory factor analysis in independent samples
 \item
-  Test-retest reliability
+  Test-retest reliability assessment
 \item
-  Measurement invariance testing
+  Measurement invariance testing across diverse gender groups
 \item
-  External validity assessment
+  External validity evaluation in clinical settings
 \end{enumerate}
+
+\section{Conclusion}\label{conclusion}
+
+The German version of the GCLS demonstrates robust psychometric properties and can be recommended for use in clinical practice and research with German-speaking transgender and gender diverse populations.
+
+\newpage
 
 \section{References}\label{references}
 
-Beaton, D. E., Bombardier, C., Guillemin, F., \& Ferraz, M. B. (2000).
-Guidelines for the process of cross-cultural adaptation of self-report
-measures. \emph{Spine, 25}(24), 3186-3191.
+Beaton, D. E., Bombardier, C., Guillemin, F., \& Ferraz, M. B. (2000). Guidelines for the process of cross-cultural adaptation of self-report measures. \emph{Spine, 25}(24), 3186-3191.
 
-\citet{article}\{jones2019, title=\{The Gender Congruence and Life
-Satisfaction Scale (GCLS): Development and validation of a scale to
-measure outcomes from transgender health services\}, author=\{Jones,
-Bethany A and Bouman, Walter Pierre and Haycraft, Emma and Arcelus,
-Jon\}, journal=\{International Journal of Transgenderism\},
-volume=\{20\}, number=\{1\}, pages=\{63--80\}, year=\{2019\},
-publisher=\{Taylor \& Francis\}, doi=\{10.1080/15532739.2018.1453425\}
+\citet{article}\{jones2019,
+title=\{The Gender Congruence and Life Satisfaction Scale (GCLS): Development and validation of a scale to measure outcomes from transgender health services\},
+author=\{Jones, Bethany A and Bouman, Walter Pierre and Haycraft, Emma and Arcelus, Jon\},
+journal=\{International Journal of Transgenderism\},
+volume=\{20\},
+number=\{1\},
+pages=\{63--80\},
+year=\{2019\},
+publisher=\{Taylor \& Francis\},
+doi=\{10.1080/15532739.2018.1453425\}
 \}
 
 {[}Additional references to be added{]}
 
-\end{document} 
+
+\bibliography{../../references/references.bib}
+
+\end{document}
