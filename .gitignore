@@ -1,4 +1,9 @@
-# R
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# R specific
 .Rproj.user
 .Rhistory
 .RData
@@ -9,31 +14,89 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
 .Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
 venv/
+ENV/
 
-# LaTeX
+# Data and results
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Generated files
+figures/*.png
+figures/*.pdf
+manuscript/pdf/*
+manuscript/tex/*
+!manuscript/pdf/.gitkeep
+!manuscript/tex/.gitkeep
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archive
+archive/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+
+# LaTeX/RMarkdown
 *.aux
-*.bbl
-*.blg
 *.log
 *.out
 *.synctex.gz
+*.knit.md
+*.utf8.md
+*.pdf
+
+# OS
+.Spotlight-V100
+.Trashes
+
+# Sensitive/Private Data
+*.key
+*.pem
+*private*
+*confidential*
+*sensitive*
+
+# Large data files (optional, uncomment if needed)
+# *.csv
+# *.xlsx
+# *.xls
+# *.sav
+# *.sas7bdat
+
+# LaTeX
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+
+# Large data files (optional, uncomment if needed)
+# *.csv
+# *.xlsx
+# *.xls
+# *.sav
+# *.sas7bdat
+
+# LaTeX
+*.bbl
+*.blg
 *.fls
 *.fdb_latexmk
 
@@ -42,15 +105,6 @@ manuscript/pdf/*.pdf
 manuscript/tex/*.tex
 figures/*.png
 data/output/*.json
-
-# OS
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 
 # IDE
 .vscode/
