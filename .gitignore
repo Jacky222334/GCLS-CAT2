@@ -108,4 +108,4 @@ data/output/*.json
 
 # IDE
 .vscode/
-.idea/ 
+.idea/ README.html
