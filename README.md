@@ -128,12 +128,12 @@ install.packages(c("knitr", "kableExtra", "tidyverse", "psych"))
 ```
 
 2. Install LaTeX:
-   - Eine LaTeX-Distribution (z.B. TeX Live oder MiKTeX)
-   - XeLaTeX wird für Unicode-Unterstützung benötigt
+   - Install a LaTeX distribution (e.g., TeX Live or MiKTeX)
+   - XeLaTeX is required for Unicode support
 
 3. Manuscript Compilation with papaja::apa6_pdf:
 
-Die Vorlage ist in der YAML-Konfiguration des Manuskripts eingerichtet:
+The template is configured in the manuscript's YAML header:
 
 ```yaml
 output:
@@ -144,19 +144,34 @@ output:
       in_header: "../templates/apa7.tex"
 ```
 
-Das Manuskript kann auf zwei Arten kompiliert werden:
+The manuscript can be compiled in two ways:
 
 a) In RStudio:
-   - Öffne `manuscript/md/manuscript.Rmd`
-   - Klicke auf "Knit"
+   - Open `manuscript/md/manuscript.Rmd`
+   - Click "Knit"
 
-b) Via Kommandozeile:
+b) Via command line:
 ```r
 rmarkdown::render('manuscript/md/manuscript.Rmd')
 ```
 
 ### Troubleshooting
 
+- Unicode issues: Use XeLaTeX engine
+- Citation issues: Check BibTeX file for completeness
+- Formatting issues: Check apa7.tex for conflicts
+
+## Deutsche Installationshinweise (German Installation Notes)
+
+### LaTeX-Installation
+- Installieren Sie eine LaTeX-Distribution (z.B. TeX Live oder MiKTeX)
+- XeLaTeX wird für die Unicode-Unterstützung benötigt
+
+### Manuskript-Kompilierung
+- In RStudio: Öffnen Sie `manuscript/md/manuscript.Rmd` und klicken Sie auf "Knit"
+- Über Kommandozeile: Nutzen Sie `rmarkdown::render('manuscript/md/manuscript.Rmd')`
+
+### Fehlerbehebung
 - Unicode-Probleme: XeLaTeX-Engine verwenden
 - Zitationsprobleme: BibTeX-Datei auf Vollständigkeit prüfen
 - Formatierungsprobleme: apa7.tex auf Konflikte prüfen
