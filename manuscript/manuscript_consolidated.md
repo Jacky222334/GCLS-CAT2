@@ -277,15 +277,15 @@ The data-driven EFA using maximum likelihood estimation with oblique rotation yi
 
 | Factor | Gen | Soc | Chest | Life | Intim | Sec | Psych | Variance explained (%) |
 | :----- | :-- | :-- | :---- | :---- | :--- | :---- | :-- | :--------------------- |
-| Gen    | —  |     |       |       |      |       |     | 12.9                   |
-| Soc    | .30 | —  |       |       |      |       |     | 10.4                   |
-| Chest  | .46 | .23 | —    |       |      |       |     | 9.3                    |
-| Life   | .31 | .39 | .43   | —    |      |       |     | 7.6                    |
-| Intim  | .21 | .31 | .42   | .44   | —   |       |     | 5.6                    |
-| Sec    | .16 | .12 | .13   | .03   | .08  | —    |     | 2.4                    |
-| Psych  | .23 | .62 | .16   | .27   | .21  | .05   | —  | 10.4                   |
+| Gen    | —  |     |       |       |      |       |     | 9.29                   |
+| Soc    | .30 | —  |       |       |      |       |     | 12.86                  |
+| Chest  | .46 | .35 | —    |       |      |       |     | 8.65                   |
+| Life   | .31 | .39 | .43   | —    |      |       |     | 7.63                   |
+| Intim  | .21 | .31 | .42   | .44   | —   |       |     | 5.59                   |
+| Sec    | .16 | .12 | .13   | .03   | .08  | —    |     | 2.45                   |
+| Psych  | .23 | .62 | .16   | .27   | .21  | .05   | —  | 10.39                  |
 
-*Note.* N = 293. All correlations > .30 are significant at p < .001. Factor order reflects data-driven EFA results (ML1-ML7). Factor labels: Gen = Genitalia; Soc = Social gender role recognition; Chest = Chest; Life = Life satisfaction; Intim = Physical and emotional intimacy; Sec = Other secondary sex characteristics; Psych = Psychological functioning. Total variance explained = 58.6%.
+*Note.* N = 293. All correlations > .30 are significant at p < .001. Factor order reflects data-driven EFA results (ML1-ML7). Factor labels: Gen = Genitalia (ML1); Soc = Social gender role recognition (ML2); Chest = Chest (ML3); Life = Life satisfaction (ML4); Intim = Physical and emotional intimacy (ML5); Sec = Other secondary sex characteristics (ML6); Psych = Psychological functioning (ML7). Total variance explained = 56.87%.
 
 ### Advanced Structural Validation Using ESEM
 
