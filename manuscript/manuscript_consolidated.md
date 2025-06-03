@@ -269,7 +269,7 @@ The data-driven EFA using maximum likelihood estimation with oblique rotation yi
 | &nbsp;&nbsp;Item 36                      | .01  | .06  | .05   | .24   | .01   | .11   | .37 |
 | &nbsp;&nbsp;Item 37                      | -.06 | -.16 | -.02  | -.05  | -.02  | .06   | -.30 |
 
-*Note.* N = 293. Primary factor loadings > .40 are shown in bold. Factor order reflects data-driven EFA results (ML1-ML7). Factor labels: Gen = Genitalia; Soc = Social gender role recognition; Chest = Chest; Life = Life satisfaction; Intim = Physical and emotional intimacy; Sec = Other secondary sex characteristics; Psych = Psychological functioning.
+*Note.* N = 293. Primary factor loadings > .40 are shown in bold. Factors are ordered by data-driven EFA results (ML1-ML7) and labeled post-hoc based on primary loading patterns: ML1 = Genitalia; ML2 = Social Gender Role Recognition; ML3 = Chest; ML4 = Life Satisfaction; ML5 = Physical and Emotional Intimacy; ML6 = Other Secondary Sex Characteristics; ML7 = Psychological Functioning.
 
 **Table 4**
 
@@ -285,7 +285,7 @@ The data-driven EFA using maximum likelihood estimation with oblique rotation yi
 | Sec    | .16 | .12 | .13   | .03   | .08  | —    |     | 2.45                   |
 | Psych  | .23 | .62 | .16   | .27   | .21  | .05   | —  | 10.39                  |
 
-*Note.* N = 293. All correlations > .30 are significant at p < .001. Factor order reflects data-driven EFA results (ML1-ML7). Factor labels: Gen = Genitalia (ML1); Soc = Social gender role recognition (ML2); Chest = Chest (ML3); Life = Life satisfaction (ML4); Intim = Physical and emotional intimacy (ML5); Sec = Other secondary sex characteristics (ML6); Psych = Psychological functioning (ML7). Total variance explained = 56.87%.
+*Note.* N = 293. All correlations > .30 are significant at p < .001. Factors are ordered by data-driven EFA results (ML1-ML7) and labeled post-hoc based on primary loading patterns: ML1 = Genitalia; ML2 = Social Gender Role Recognition; ML3 = Chest; ML4 = Life Satisfaction; ML5 = Physical and Emotional Intimacy; ML6 = Other Secondary Sex Characteristics; ML7 = Psychological Functioning. Total variance explained = 56.87%.
 
 ### Advanced Structural Validation Using ESEM
 
