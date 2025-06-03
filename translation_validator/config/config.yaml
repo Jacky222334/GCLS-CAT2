@@ -1,0 +1,36 @@
+# Translation Validation Pipeline Configuration
+
+# Thresholds
+similarity_threshold: 0.85  # Minimum semantic similarity score
+valence_threshold: 0.3     # Maximum allowed sentiment difference
+ner_match_threshold: 0.8   # Required entity match ratio
+
+# Models
+semantic_model: "paraphrase-multilingual-mpnet-base-v2"
+ner_model: "de_core_news_lg"
+sentiment_model: "oliverguhr/german-sentiment-bert"
+
+# Logging
+log_level: "INFO"
+log_file: "logs/validation.log"
+
+# Output
+report_format: "excel"
+report_path: "reports/"
+
+# Analysis Settings
+check_semantic: true
+check_ner: true
+check_sentiment: true
+check_cause_effect: true
+
+# Custom Markers
+causal_markers:
+  - "weil"
+  - "da"
+  - "denn"
+  - "deshalb"
+  - "daher"
+  - "folglich"
+  - "somit"
+  - "aufgrund" 

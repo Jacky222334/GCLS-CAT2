@@ -1,0 +1,247 @@
+EFA Results - oblimin rotation
+================================
+
+Factor Analysis using method =  ml
+Call: fa(r = data, nfactors = n_factors, rotate = rotation, fm = "ml")
+Standardized loadings (pattern matrix) based upon correlation matrix
+        ML1   ML3   ML7   ML2   ML5   ML6   ML4   h2   u2 com
+I1     0.27  0.08  0.56 -0.04  0.08 -0.01 -0.05 0.61 0.39 1.6
+I2    -0.10 -0.07  0.60  0.09 -0.07  0.03  0.19 0.38 0.62 1.4
+I3     0.05  0.02  0.54  0.15  0.05  0.12  0.01 0.51 0.49 1.3
+I4     0.27  0.01  0.49  0.11 -0.08  0.04  0.09 0.55 0.45 1.9
+I5    -0.01  0.20  0.41 -0.09  0.11  0.25  0.00 0.45 0.55 2.5
+I6     0.16  0.03  0.49  0.12  0.02  0.06  0.00 0.46 0.54 1.4
+I7     0.16  0.01  0.54 -0.02  0.09  0.06  0.10 0.55 0.45 1.3
+I8     0.32  0.16 -0.14  0.14  0.10 -0.01  0.05 0.26 0.74 2.6
+I9     0.74  0.02  0.14  0.03  0.02  0.02 -0.02 0.74 0.26 1.1
+I10_r -0.60 -0.06 -0.24 -0.04 -0.04 -0.08 -0.03 0.74 0.26 1.4
+I11    0.10  0.00  0.32  0.05  0.09  0.40 -0.05 0.51 0.49 2.2
+I12    0.59  0.07  0.30 -0.11  0.03  0.00  0.08 0.69 0.31 1.7
+I13    0.78 -0.03 -0.17  0.12  0.03  0.04  0.07 0.63 0.37 1.2
+I14    0.00  0.75 -0.02  0.06  0.04  0.02  0.06 0.68 0.32 1.0
+I15    0.06  0.08 -0.06  0.83  0.00  0.03 -0.02 0.79 0.21 1.0
+I16_r -0.01 -0.03 -0.02  0.01  0.76  0.10  0.05 0.64 0.36 1.0
+I17   -0.03 -0.05  0.00  0.13 -0.02  0.05  0.74 0.63 0.37 1.1
+I18    0.04  0.07 -0.03  0.73  0.09 -0.10  0.09 0.71 0.29 1.1
+I19    0.13  0.13  0.00  0.05  0.50 -0.08  0.24 0.58 0.42 1.8
+I20_r -0.05  0.03 -0.01  0.04  0.81 -0.08 -0.04 0.61 0.39 1.0
+I21    0.04  0.91 -0.03  0.02 -0.03 -0.08  0.01 0.81 0.19 1.0
+I22_r  0.04 -0.02 -0.01  0.03  0.74  0.02  0.02 0.60 0.40 1.0
+I23    0.01  0.08  0.07 -0.02  0.27  0.01  0.45 0.45 0.55 1.8
+I24    0.02  0.03  0.02 -0.03  0.03 -0.02  0.88 0.79 0.21 1.0
+I25    0.08 -0.81 -0.09  0.06 -0.08  0.08  0.05 0.59 0.41 1.1
+I27    0.06  0.67 -0.02 -0.01 -0.01  0.22  0.12 0.69 0.31 1.3
+I28   -0.06  0.00  0.06  0.93  0.01  0.04  0.00 0.87 0.13 1.0
+I29    0.01  0.75 -0.03  0.18 -0.03  0.15 -0.03 0.81 0.19 1.2
+I30_r  0.08 -0.02  0.11  0.67  0.00 -0.06  0.05 0.53 0.47 1.1
+I31_r  0.17  0.02  0.33  0.09  0.15  0.20  0.02 0.47 0.53 2.9
+I32   -0.11  0.04 -0.24 -0.09 -0.20 -0.46  0.03 0.59 0.41 2.2
+I33   -0.04 -0.16  0.06  0.00  0.05 -0.68 -0.10 0.58 0.42 1.2
+I34_r  0.25  0.06  0.10 -0.01  0.01  0.50 -0.02 0.55 0.45 1.6
+I35_r  0.10 -0.01 -0.16  0.06 -0.11 -0.29 -0.06 0.14 0.86 2.4
+I36_r  0.05 -0.04  0.06  0.04  0.21  0.43  0.05 0.37 0.63 1.6
+I37_r -0.08 -0.06 -0.32 -0.03 -0.06 -0.08  0.02 0.22 0.78 1.5
+I38_r  0.55  0.11  0.06  0.04  0.09  0.22 -0.04 0.66 0.34 1.5
+
+                       ML1  ML3  ML7  ML2  ML5  ML6  ML4
+SS loadings           3.74 3.70 3.52 3.18 2.83 2.44 2.06
+Proportion Var        0.10 0.10 0.10 0.09 0.08 0.07 0.06
+Cumulative Var        0.10 0.20 0.30 0.38 0.46 0.52 0.58
+Proportion Explained  0.17 0.17 0.16 0.15 0.13 0.11 0.10
+Cumulative Proportion 0.17 0.35 0.51 0.66 0.79 0.90 1.00
+
+ With factor correlations of 
+     ML1  ML3  ML7  ML2  ML5  ML6  ML4
+ML1 1.00 0.33 0.56 0.35 0.36 0.49 0.27
+ML3 0.33 1.00 0.16 0.50 0.32 0.37 0.27
+ML7 0.56 0.16 1.00 0.13 0.28 0.42 0.21
+ML2 0.35 0.50 0.13 1.00 0.42 0.24 0.44
+ML5 0.36 0.32 0.28 0.42 1.00 0.25 0.44
+ML6 0.49 0.37 0.42 0.24 0.25 1.00 0.18
+ML4 0.27 0.27 0.21 0.44 0.44 0.18 1.00
+
+Mean item complexity =  1.5
+Test of the hypothesis that 7 factors are sufficient.
+
+df null model =  666  with the objective function =  24.62 with Chi Square =  6864.25
+df of  the model are 428  and the objective function was  2.89 
+
+The root mean square of the residuals (RMSR) is  0.03 
+The df corrected root mean square of the residuals is  0.03 
+
+The harmonic n.obs is  293 with the empirical chi square  294.73  with prob <  1 
+The total n.obs was  293  with Likelihood Chi Square =  791.78  with prob <  4.8e-24 
+
+Tucker Lewis Index of factoring reliability =  0.907
+RMSEA index =  0.054  and the 90 % confidence intervals are  0.048 0.06
+BIC =  -1639.34
+Fit based upon off diagonal values = 0.99
+Measures of factor score adequacy             
+                                                   ML1  ML3  ML7  ML2  ML5  ML6
+Correlation of (regression) scores with factors   0.95 0.96 0.92 0.97 0.93 0.89
+Multiple R square of scores with factors          0.90 0.93 0.85 0.93 0.86 0.80
+Minimum correlation of possible factor scores     0.79 0.86 0.70 0.87 0.72 0.60
+                                                   ML4
+Correlation of (regression) scores with factors   0.93
+Multiple R square of scores with factors          0.86
+Minimum correlation of possible factor scores     0.72
+
+Factor Loadings (sorted, showing loadings > 0.3):
+Factor Analysis using method =  ml
+Call: fa(r = data, nfactors = n_factors, rotate = rotation, fm = "ml")
+Standardized loadings (pattern matrix) based upon correlation matrix
+        ML1   ML3   ML7   ML2   ML5   ML6   ML4   h2   u2 com
+I13    0.78                                     0.63 0.37 1.2
+I9     0.74                                     0.74 0.26 1.1
+I10_r -0.60                                     0.74 0.26 1.4
+I12    0.59        0.30                         0.69 0.31 1.7
+I38_r  0.55                                     0.66 0.34 1.5
+I8     0.32                                     0.26 0.74 2.6
+I21          0.91                               0.81 0.19 1.0
+I25         -0.81                               0.59 0.41 1.1
+I14          0.75                               0.68 0.32 1.0
+I29          0.75                               0.81 0.19 1.2
+I27          0.67                               0.69 0.31 1.3
+I2                 0.60                         0.38 0.62 1.4
+I1                 0.56                         0.61 0.39 1.6
+I3                 0.54                         0.51 0.49 1.3
+I7                 0.54                         0.55 0.45 1.3
+I6                 0.49                         0.46 0.54 1.4
+I4                 0.49                         0.55 0.45 1.9
+I5                 0.41                         0.45 0.55 2.5
+I31_r              0.33                         0.47 0.53 2.9
+I37_r             -0.32                         0.22 0.78 1.5
+I28                      0.93                   0.87 0.13 1.0
+I15                      0.83                   0.79 0.21 1.0
+I18                      0.73                   0.71 0.29 1.1
+I30_r                    0.67                   0.53 0.47 1.1
+I20_r                          0.81             0.61 0.39 1.0
+I16_r                          0.76             0.64 0.36 1.0
+I22_r                          0.74             0.60 0.40 1.0
+I19                            0.50             0.58 0.42 1.8
+I33                                 -0.68       0.58 0.42 1.2
+I34_r                                0.50       0.55 0.45 1.6
+I32                                 -0.46       0.59 0.41 2.2
+I36_r                                0.43       0.37 0.63 1.6
+I11                0.32              0.40       0.51 0.49 2.2
+I35_r                                           0.14 0.86 2.4
+I24                                        0.88 0.79 0.21 1.0
+I17                                        0.74 0.63 0.37 1.1
+I23                                        0.45 0.45 0.55 1.8
+
+                       ML1  ML3  ML7  ML2  ML5  ML6  ML4
+SS loadings           3.74 3.70 3.52 3.18 2.83 2.44 2.06
+Proportion Var        0.10 0.10 0.10 0.09 0.08 0.07 0.06
+Cumulative Var        0.10 0.20 0.30 0.38 0.46 0.52 0.58
+Proportion Explained  0.17 0.17 0.16 0.15 0.13 0.11 0.10
+Cumulative Proportion 0.17 0.35 0.51 0.66 0.79 0.90 1.00
+
+ With factor correlations of 
+     ML1  ML3  ML7  ML2  ML5  ML6  ML4
+ML1 1.00 0.33 0.56 0.35 0.36 0.49 0.27
+ML3 0.33 1.00 0.16 0.50 0.32 0.37 0.27
+ML7 0.56 0.16 1.00 0.13 0.28 0.42 0.21
+ML2 0.35 0.50 0.13 1.00 0.42 0.24 0.44
+ML5 0.36 0.32 0.28 0.42 1.00 0.25 0.44
+ML6 0.49 0.37 0.42 0.24 0.25 1.00 0.18
+ML4 0.27 0.27 0.21 0.44 0.44 0.18 1.00
+
+Mean item complexity =  1.5
+Test of the hypothesis that 7 factors are sufficient.
+
+df null model =  666  with the objective function =  24.62 with Chi Square =  6864.25
+df of  the model are 428  and the objective function was  2.89 
+
+The root mean square of the residuals (RMSR) is  0.03 
+The df corrected root mean square of the residuals is  0.03 
+
+The harmonic n.obs is  293 with the empirical chi square  294.73  with prob <  1 
+The total n.obs was  293  with Likelihood Chi Square =  791.78  with prob <  4.8e-24 
+
+Tucker Lewis Index of factoring reliability =  0.907
+RMSEA index =  0.054  and the 90 % confidence intervals are  0.048 0.06
+BIC =  -1639.34
+Fit based upon off diagonal values = 0.99
+Measures of factor score adequacy             
+                                                   ML1  ML3  ML7  ML2  ML5  ML6
+Correlation of (regression) scores with factors   0.95 0.96 0.92 0.97 0.93 0.89
+Multiple R square of scores with factors          0.90 0.93 0.85 0.93 0.86 0.80
+Minimum correlation of possible factor scores     0.79 0.86 0.70 0.87 0.72 0.60
+                                                   ML4
+Correlation of (regression) scores with factors   0.93
+Multiple R square of scores with factors          0.86
+Minimum correlation of possible factor scores     0.72
+
+Factor Correlations:
+          ML1       ML3       ML7       ML2       ML5       ML6       ML4
+ML1 1.0000000 0.3334364 0.5592998 0.3495810 0.3613903 0.4852915 0.2669264
+ML3 0.3334364 1.0000000 0.1584425 0.4995450 0.3233117 0.3744838 0.2734798
+ML7 0.5592998 0.1584425 1.0000000 0.1346889 0.2774051 0.4198702 0.2126852
+ML2 0.3495810 0.4995450 0.1346889 1.0000000 0.4168731 0.2420651 0.4446105
+ML5 0.3613903 0.3233117 0.2774051 0.4168731 1.0000000 0.2512661 0.4360453
+ML6 0.4852915 0.3744838 0.4198702 0.2420651 0.2512661 1.0000000 0.1834119
+ML4 0.2669264 0.2734798 0.2126852 0.4446105 0.4360453 0.1834119 1.0000000
+
+Factor Interpretation:
+=====================
+
+Factor 1:
+High positive loadings (> 0.4):
+  I9: 0.745
+  I12: 0.595
+  I13: 0.781
+  I38_r: 0.548
+High negative loadings (< -0.4):
+  I10_r: -0.597
+
+Factor 2:
+High positive loadings (> 0.4):
+  I14: 0.751
+  I21: 0.913
+  I27: 0.667
+  I29: 0.747
+High negative loadings (< -0.4):
+  I25: -0.813
+
+Factor 3:
+High positive loadings (> 0.4):
+  I1: 0.565
+  I2: 0.600
+  I3: 0.542
+  I4: 0.488
+  I5: 0.409
+  I6: 0.489
+  I7: 0.540
+High negative loadings (< -0.4):
+
+Factor 4:
+High positive loadings (> 0.4):
+  I15: 0.827
+  I18: 0.728
+  I28: 0.931
+  I30_r: 0.668
+High negative loadings (< -0.4):
+
+Factor 5:
+High positive loadings (> 0.4):
+  I16_r: 0.758
+  I19: 0.501
+  I20_r: 0.805
+  I22_r: 0.741
+High negative loadings (< -0.4):
+
+Factor 6:
+High positive loadings (> 0.4):
+  I11: 0.402
+  I34_r: 0.500
+  I36_r: 0.431
+High negative loadings (< -0.4):
+  I32: -0.459
+  I33: -0.677
+
+Factor 7:
+High positive loadings (> 0.4):
+  I17: 0.743
+  I23: 0.452
+  I24: 0.876
+High negative loadings (< -0.4):

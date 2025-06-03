@@ -1,0 +1,84 @@
+
+Analyzing combinations for Non-binary (n=42)
+--------------------------------------------------
+
+Most common intervention combinations:
+Chest masculinization + Testosterone HT: 8 (19.0%)
+Testosterone HT: 4 (9.5%)
+Estrogen HT: 3 (7.1%)
+Anti-androgens + Estrogen HT + Laser epilation: 2 (4.8%)
+Estrogen HT + Laser epilation + Testosterone HT + Voice therapy: 1 (2.4%)
+
+Most common intervention pairs:
+Estrogen HT + Laser epilation: 15 (35.7%)
+Anti-androgens + Estrogen HT: 11 (26.2%)
+Chest masculinization + Testosterone HT: 11 (26.2%)
+Anti-androgens + Laser epilation: 9 (21.4%)
+Breast augmentation + Estrogen HT: 8 (19.0%)
+
+Anomaly Analysis:
+
+Case 7:
+Interventions: Estrogen HT, Testosterone HT, Voice therapy, Laser epilation
+Anomalies detected:
+- Conflicting interventions: Estrogen HT and Testosterone HT
+
+Case 23:
+Interventions: Estrogen HT, Anti-androgens, Testosterone HT, Voice therapy, Laser epilation
+Anomalies detected:
+- Conflicting interventions: Estrogen HT and Testosterone HT
+
+Case 51:
+Interventions: Estrogen HT, Testosterone HT, Voice therapy, Laser epilation, Facial feminization, Breast augmentation, Other interventions
+Anomalies detected:
+- Conflicting interventions: Estrogen HT and Testosterone HT
+
+Case 272:
+Interventions: Estrogen HT, Anti-androgens, Testosterone HT, Laser epilation, Other interventions
+Anomalies detected:
+- Conflicting interventions: Estrogen HT and Testosterone HT
+
+Total cases with anomalies: 4 (9.5%)
+
+Outcome Comparison:
+--------------------------------------------------
+
+Regret Analysis:
+Anomaly cases (n=4): 1.75
+Non-anomaly cases (n=38): 0.74
+T-test: t=0.91, p=0.367
+
+Coming Out Timeline Analysis:
+--------------------------------------------------
+
+Non-binary (n=4):
+Mean birth year: 1987
+Current mean age: 37.5
+
+Coming Out Timeline:
+Inner Coming Out: mean age 23.2 years (around year 2010)
+Outer Coming Out: mean age 27.8 years (around year 2015)
+
+Time between coming outs:
+Mean: 4.5 years
+Median: 2.5 years
+Range: 1.0 to 12.0 years
+
+Distribution of time between coming outs:
+1 year: 1 cases (25.0%)
+2 years: 1 cases (25.0%)
+2-5 years: 1 cases (25.0%)
+More than 10 years: 1 cases (25.0%)
+Same year: 0 cases (0.0%)
+5-10 years: 0 cases (0.0%)
+
+Age distribution at coming out:
+Inner Coming Out:
+Range: 15.0 to 40.0 years
+Mean: 23.2 years
+Median: 19.0 years
+
+Outer Coming Out:
+Range: 17.0 to 52.0 years
+Mean: 27.8 years
+Median: 21.0 years

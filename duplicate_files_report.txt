@@ -1,0 +1,187 @@
+=== Duplicate Files Report ===
+
+1. Content-identical files:
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/MANUAL.md
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/tables/results/transition_measures.md
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/factor_analysis/check_columns_raw.R
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/analysis/cross_validation/check_i26.R
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/analysis/cross_validation/check_data.R
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/processed/.gitkeep
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/figures/main/path_diagram_gesamtstichprobe.pdf
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/factor_analysis/path_diagram_gesamtstichprobe.pdf
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/figures/main/path_diagram_gesamtstichprobe.pdf
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/figures/main/path_diagram_amab.pdf
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/factor_analysis/path_diagram_amab.pdf
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/figures/main/path_diagram_amab.pdf
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_non-binary_without_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_non-binary_without_anomalies.png
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_men_(afab)_with_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_men_(afab)_with_anomalies.png
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_women_(amab)_without_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_women_(amab)_without_anomalies.png
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_women_(amab)_with_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_women_(amab)_with_anomalies.png
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/intervention_pattern_men_(afab).png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/intervention_pattern_men_(afab).png
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_men_(afab)_without_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_men_(afab)_without_anomalies.png
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_non-binary_with_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_non-binary_with_anomalies.png
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_group_without_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_group_without_anomalies.png
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_group_with_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_group_with_anomalies.png
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/intervention_pattern_non-binary.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/intervention_pattern_non-binary.png
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/intervention_pattern_women_(amab).png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/intervention_pattern_women_(amab).png
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/raw/dat_EFA_complete_mit_i26op.xlsx
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/raw/dat_EFA_complete_mit_i26op Kopie.xlsx
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/raw/dat_EFA_26_backup.xlsx
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/raw/dat_EFA_26.xlsx
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/raw/items_germ_cor_conv.xlsx
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/raw/items_germ_cor_conv Kopie.xlsx
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/raw/dat_EFA_complete.xlsx
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/raw/dat_EFA_complete copy.xlsx
+
+Duplicate set (identical content):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/raw/raw_transspezifische_unlabeled.xlsx
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/raw/rwa_demo_trans_transpez_backup.xlsx
+
+2. Similarly named files:
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/.DS_Store
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/.DS_Store
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/tables/.DS_Store
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/figures/.DS_Store
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/md/.DS_Store
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/.DS_Store
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/factor_analysis/.DS_Store
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/docs/.DS_Store
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/.DS_Store
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/manuscript.pdf
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/md/manuscript.pdf
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/analysis/cross_validation/check_i26.R
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/cross_validation/check_i26.R
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/analysis/cross_validation/check_data.R
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/cross_validation/check_data.R
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/factor_analysis/check_data.R
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/figures/main/path_diagram_gesamtstichprobe.pdf
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/factor_analysis/path_diagram_gesamtstichprobe.pdf
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/figures/main/path_diagram_gesamtstichprobe.pdf
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/manuscript/figures/main/path_diagram_amab.pdf
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/factor_analysis/path_diagram_amab.pdf
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/figures/main/path_diagram_amab.pdf
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/cross_validation/esem_analysis.R
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/factor_analysis/esem_analysis.R
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/cross_validation/install_packages.R
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/factor_analysis/install_packages.R
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/factor_analysis/check_columns.py
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/scripts/python/check_columns.py
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_non-binary_without_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_non-binary_without_anomalies.png
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_men_(afab)_with_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_men_(afab)_with_anomalies.png
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_women_(amab)_without_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_women_(amab)_without_anomalies.png
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_women_(amab)_with_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_women_(amab)_with_anomalies.png
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/intervention_pattern_men_(afab).png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/intervention_pattern_men_(afab).png
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_men_(afab)_without_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_men_(afab)_without_anomalies.png
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_non-binary_with_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_non-binary_with_anomalies.png
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_group_without_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_group_without_anomalies.png
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/timeline_group_with_anomalies.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/timeline_group_with_anomalies.png
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/intervention_pattern_non-binary.png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/intervention_pattern_non-binary.png
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/intervention_pattern_women_(amab).png
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/analysis/combination_patterns/visualization_results/intervention_pattern_women_(amab).png
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/R/scripts/apa_style_utils.R
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/R/functions/apa_style_utils.R
+
+Potential duplicates (similar names):
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/output/tables/comprehensive_analysis.csv
+  - /Users/janschulze/Dokumente/GCLS_german_190520125/data/processed/comprehensive_analysis.csv

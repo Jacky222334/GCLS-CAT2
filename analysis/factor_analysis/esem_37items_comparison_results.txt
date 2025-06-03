@@ -1,0 +1,7 @@
+[1] "Vergleich der ESEM Analysen mit und ohne inkonsistente Fälle"
+[1] "2025-05-24 00:48:13 CEST"
+[1] "\nAnzahl inkonsistenter Fälle:"
+[1] "AMAB mit AFAB-spezifischen Operationen: 3"
+[1] "AFAB mit AMAB-spezifischen Operationen: 2"
+[1] "Inkonsistente Hormontherapie: 14"
+[1] "Gesamtzahl inkonsistenter Fälle: 18"

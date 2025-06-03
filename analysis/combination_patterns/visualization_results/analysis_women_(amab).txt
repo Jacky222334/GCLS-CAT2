@@ -1,0 +1,92 @@
+
+Analyzing combinations for Women (AMAB) (n=153)
+--------------------------------------------------
+
+Most common intervention combinations:
+Anti-androgens + Breast augmentation + Estrogen HT + Laser epilation + Neovaginoplasty: 8 (5.2%)
+Breast augmentation + Estrogen HT + Laser epilation + Neovaginoplasty + Voice therapy: 7 (4.6%)
+Anti-androgens + Breast augmentation + Estrogen HT + Laser epilation + Neovaginoplasty + Voice therapy: 7 (4.6%)
+Anti-androgens + Estrogen HT + Laser epilation + Neovaginoplasty + Voice therapy: 6 (3.9%)
+Anti-androgens + Breast augmentation + Estrogen HT + Neovaginoplasty: 6 (3.9%)
+
+Most common intervention pairs:
+Anti-androgens + Estrogen HT: 105 (68.6%)
+Estrogen HT + Laser epilation: 99 (64.7%)
+Breast augmentation + Estrogen HT: 93 (60.8%)
+Estrogen HT + Neovaginoplasty: 88 (57.5%)
+Estrogen HT + Voice therapy: 79 (51.6%)
+
+Anomaly Analysis:
+
+Case 58:
+Interventions: Testosterone HT, Chest masculinization
+Anomalies detected:
+- Unusual for weiblich: Testosterone HT
+- Unusual for weiblich: Chest masculinization
+
+Case 122:
+Interventions: Anti-androgens, Testosterone HT, Voice therapy, Laser epilation
+Anomalies detected:
+- Unusual for weiblich: Testosterone HT
+
+Case 133:
+Interventions: Estrogen HT, Anti-androgens, Testosterone HT, Laser epilation
+Anomalies detected:
+- Conflicting interventions: Estrogen HT and Testosterone HT
+- Unusual for weiblich: Testosterone HT
+
+Case 145:
+Interventions: Estrogen HT, Anti-androgens, Testosterone HT, Voice therapy, Laser epilation, Facial feminization, Breast augmentation, Neovaginoplasty
+Anomalies detected:
+- Conflicting interventions: Estrogen HT and Testosterone HT
+- Unusual for weiblich: Testosterone HT
+
+Case 205:
+Interventions: Testosterone HT
+Anomalies detected:
+- Unusual for weiblich: Testosterone HT
+
+Total cases with anomalies: 5 (3.3%)
+
+Outcome Comparison:
+--------------------------------------------------
+
+Regret Analysis:
+Anomaly cases (n=5): 1.00
+Non-anomaly cases (n=148): 0.82
+T-test: t=0.17, p=0.862
+
+Coming Out Timeline Analysis:
+--------------------------------------------------
+
+Women (AMAB) (n=5):
+Mean birth year: 1984
+Current mean age: 40.6
+
+Coming Out Timeline:
+Inner Coming Out: mean age 19.2 years (around year 1998)
+Outer Coming Out: mean age 38.0 years (around year 2017)
+
+Time between coming outs:
+Mean: 18.8 years
+Median: 15.5 years
+Range: 0.0 to 44.0 years
+
+Distribution of time between coming outs:
+More than 10 years: 2 cases (50.0%)
+Same year: 1 cases (25.0%)
+2 years: 1 cases (25.0%)
+1 year: 0 cases (0.0%)
+2-5 years: 0 cases (0.0%)
+5-10 years: 0 cases (0.0%)
+
+Age distribution at coming out:
+Inner Coming Out:
+Range: 10.0 to 33.0 years
+Mean: 19.2 years
+Median: 17.0 years
+
+Outer Coming Out:
+Range: 20.0 to 58.0 years
+Mean: 38.0 years
+Median: 37.0 years

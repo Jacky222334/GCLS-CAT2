@@ -1,0 +1,50 @@
+Structural Validation Using Exploratory Structural Equation Modeling (ESEM)
+
+To examine the latent structure of the German version of the Gender Congruence and Life Satisfaction Scale (GCLS), we employed Exploratory Structural Equation Modeling (ESEM). This analytic approach integrates the exploratory flexibility of EFA with the model-based rigor of structural equation modeling (SEM), providing a powerful framework for evaluating multidimensional constructs, especially in specialized populations (Asparouhov & Muthén, 2009).
+
+Estimation Procedure
+
+Models were estimated using robust maximum likelihood (MLR) estimation in R (lavaan), with oblique (oblimin) rotation to allow for theoretically plausible cross-loadings. Model identification was achieved by fixing the first loading of each factor to 1. No item parceling was used. All parameters were freely estimated unless otherwise noted.
+
+Sample and Factor Structure
+
+ESEM analyses were conducted on the full sample (N = 293) and a key subgroup of AMAB women (assigned male at birth; n = 196). In both cases, a seven-factor solution emerged, accounting for 58.0% of the variance in the full sample and 57.6% in the AMAB subgroup. The extracted factors corresponded closely to the original theoretical structure of the GCLS:
+1. Psychological functioning (e.g., "I have suffered from low mood")
+2. Gender identity (e.g., "I have felt that my genitals do not match my gender identity")
+3. Life satisfaction (e.g., "I have felt satisfied with life in general")
+4. Gendered embodiment (e.g., "I have felt extremely distressed when looking at my chest")
+5. Physical and emotional intimacy (e.g., "I have not been able to be physically intimate with other people")
+6. Social gender role (e.g., "I have felt satisfied with the pronouns that others use when talking about me")
+7. Body modification beliefs (e.g., "I have felt that genital surgery will address the unhappiness I experience in relation to my gender")
+
+Factor loadings were more pronounced in the AMAB subgroup, with many primary loadings exceeding .60 and fewer cross-loadings, indicating greater factorial clarity. Interfactor correlations ranged from r = 0.13 to 0.56 in the full sample and r = 0.16 to 0.52 in the AMAB subgroup, supporting the notion that the constructs are related but distinct.
+
+Model Fit
+
+Model fit was acceptable in both groups. For the full sample, we observed:
+• χ²(571) = 1260.42, p < .001
+• RMSEA = 0.064 [90% CI: 0.059, 0.069]
+• CFI = 0.894
+• TLI = 0.883
+
+For the AMAB subgroup:
+• χ²(504) = 945.50, p < .001
+• RMSEA = 0.067 [90% CI: 0.060, 0.073]
+• CFI = 0.890
+• TLI = 0.878
+
+These indices meet commonly accepted thresholds for adequate fit in ESEM models (Hu & Bentler, 1999; Marsh et al., 2004). The RMSEA values below .08 indicate reasonable fit, while CFI and TLI values approaching .90 suggest acceptable model fit, particularly given the complexity of the model and the specialized nature of the sample. Importantly, ESEM avoids the need for post hoc residual correlations by allowing cross-loadings to account for shared variance.
+
+Interpretation and Implications
+
+Taken together, the ESEM results support the structural validity of the German GCLS. The seven-factor solution showed strong theoretical alignment and robust psychometric properties, especially in the AMAB subgroup. These findings suggest that the German GCLS captures meaningful variance in gender congruence and life satisfaction domains, and may be particularly well-calibrated for transfeminine populations.
+
+Nonetheless, given the modest subgroup sizes, we recommend cautious use of the instrument in clinical settings until further validation has been undertaken. In particular, future research should aim to cross-validate the factor structure using CFA or multigroup-ESEM in larger, more diverse samples and assess measurement invariance across gender identity groups.
+
+References
+
+Asparouhov, T., & Muthén, B. (2009). Exploratory structural equation modeling. Structural Equation Modeling: A Multidisciplinary Journal, 16(3), 397–438. https://doi.org/10.1080/10705510903008204
+
+Hu, L. T., & Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. Structural Equation Modeling, 6(1), 1–55. https://doi.org/10.1080/10705519909540118
+
+Marsh, H. W., Morin, A. J. S., Parker, P. D., & Kaur, G. (2014). Exploratory structural equation modeling: An integration of the best features of exploratory and confirmatory factor analysis. Annual Review of Clinical Psychology, 10, 85-110. https://doi.org/10.1146/annurev-clinpsy-032813-153700 

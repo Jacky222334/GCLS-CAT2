@@ -2,125 +2,43 @@
 
 This repository contains the validation study of the German version of the Gender Congruence and Life Satisfaction Scale (G-GCLS).
 
-## Language Policy
-
-- Project Communication/Chat: German
-- Code and Documentation: English
-- Analysis Outputs: English (APA Style)
-- Manuscript: English (APA Style)
-- Reference Materials: Original language (English/German)
-
 ## Project Structure
-
-```mermaid
-graph TD
-    A[GCLS German Validation] --> B[data]
-    A --> C[docs]
-    A --> D[R]
-    A --> E[manuscript]
-    A --> F[figures]
-    A --> G[references]
-    A --> H[output]
-
-    B --> B1[raw]
-    B --> B2[processed]
-    B --> B3[results]
-    B --> B4[archive]
-    B3 --> B3_1[tables]
-
-    C --> C1[literature]
-    C --> C2[methods]
-
-    D --> D1[functions]
-    D --> D2[scripts]
-    D2 --> D2_1[analysis_main.R]
-    D2 --> D2_2[data_preparation.R]
-    D2 --> D2_3[factor_analysis.R]
-    D2 --> D2_4[reliability_validity.R]
-
-    E --> E1[md]
-
-    H --> H1[tables]
-    H --> H2[reports]
-```
 
 ```
 .
 ├── data/               # Data files
-│   ├── raw/           # Original survey data (not tracked in git)
+│   ├── raw/           # Original survey data
 │   ├── processed/     # Cleaned and prepared data
-│   ├── results/       # Analysis outputs
-│   │   └── tables/    # Analysis tables (CSV, RData)
-│   └── archive/       # Archived data files
-├── docs/              # Documentation
-│   ├── literature/    # Scientific publications
-│   └── methods/       # Methodological documents
-├── figures/           # Generated visualizations (300 DPI, APA style)
-├── manuscript/        # Manuscript files
-│   └── md/           # Markdown source
-├── output/            # Final outputs for publication
-│   ├── tables/       # Publication-ready tables
-│   └── reports/      # HTML reports and visualizations
-└── R/                 # R code
-    ├── functions/     # Utility functions
-    └── scripts/       # Analysis scripts
+│   └── results/       # Analysis outputs and tables
+├── docs/              # Documentation and literature
+├── manuscript/        # Manuscript files and drafts
+├── figures/           # Visualizations (300 DPI, APA style)
+└── R/                 # R code and scripts
 ```
 
-## Directory Guidelines
+## File Guidelines
 
-### Data Directory
-- Raw data files containing personal information must not be committed to git
-- File naming format: `YYYYMMDD_description.ext`
+### Data Files
+- Keep raw data separate from processed data
+- File naming: `YYYYMMDD_description.ext`
 - All variable names in English
-- Document data cleaning steps in processing scripts
+- Document all data processing steps
 
-### Documentation Directory
-- Literature: Original research papers and publications
-- Methods: Study protocols and methodological documents
-- File naming format: `YYYY_author_description.ext`
-- Version numbers included where applicable
+### Figures
+- All text in English
+- APA 7th Edition style
+- 300 DPI minimum
+- PNG format
+- Times New Roman font
 
-### Figures Directory
-- All figure text in English
-- APA 7th Edition formatting
-- Resolution: 300 DPI minimum
-- Format: PNG for web, PDF for publication
-- Font: Times New Roman
-- Naming: `analysis_type_description_YYYYMMDD.ext`
-
-### Output Directory
-- `tables/`: Final, publication-ready tables (Markdown, LaTeX, PDF)
-- `reports/`: HTML reports and visualizations for review
-- All outputs follow APA 7th Edition guidelines
-
-### R Code Directory
-- All code comments in English
+### R Scripts
+- Comments in English
 - Variable names in English
-- Function documentation in English
-- Output formatting follows APA 7th Edition guidelines
+- Document analysis steps
 
-#### Structure
-- `functions/`: Utility functions and helper code
-  - `apa_style_utils.R`: Functions for APA-compliant output formatting
-  
-- `scripts/`: Analysis scripts
-  - `analysis_main.R`: Main analysis coordinator
-  - `data_preparation.R`: Data cleaning and preparation
-  - `descriptive_analysis.R`: Descriptive statistics
-  - `efa_prerequisites.R`: EFA assumptions checking
-  - `factor_analysis.R`: Factor analysis implementation
-  - `reliability_validity.R`: Reliability and validity analyses
+## Setup
 
-#### Usage
-All scripts are called from `analysis_main.R`. To run the complete analysis:
-
-```R
-source("R/scripts/analysis_main.R")
-```
-
-## Setup and Usage
-
-1. Install R dependencies:
+1. Install R packages:
 ```r
 # Install required R packages
 install.packages("papaja")
@@ -131,47 +49,115 @@ install.packages(c("knitr", "kableExtra", "tidyverse", "psych"))
    - Install a LaTeX distribution (e.g., TeX Live or MiKTeX)
    - XeLaTeX is required for Unicode support
 
-3. Manuscript Compilation with papaja::apa6_pdf:
+# GCLS Sankey Diagramm
 
-The template is configured in the manuscript's YAML header:
+Dieses Projekt visualisiert den Fluss von der Geschlechtszuweisung bei Geburt bis zum GCLS-Score (German Clinical Life Satisfaction) mit einem interaktiven Sankey-Diagramm.
 
-```yaml
-output:
-  papaja::apa6_pdf:
-    citation_package: natbib
-    latex_engine: xelatex
-    includes:
-      in_header: "../templates/apa7.tex"
+## Übersicht
+
+Das Sankey-Diagramm zeigt den Fluss durch folgende Ebenen:
+
+1. **Geschlechtszuweisung bei Geburt**
+   - AFAB (Assigned Female At Birth)
+   - AMAB (Assigned Male At Birth)
+
+2. **Zeitpunkt des Outings**
+   - Frühes Outing
+   - Mittleres Outing
+   - Spätes Outing
+
+3. **Zeit zwischen innerem und äußerem Outing**
+   - Kurze Zeit
+   - Mittlere Zeit
+   - Lange Zeit
+
+4. **Biomedizinische Maßnahmen**
+   - Mit biomedizinischen Maßnahmen
+   - Ohne biomedizinische Maßnahmen
+
+5. **GCLS Score**
+   - GCLS Niedrig
+   - GCLS Mittel
+   - GCLS Hoch
+
+## Dateien
+
+- `sankey_gcls.html` - Standalone HTML-Version mit interaktiven Buttons
+- `sankey_gcls.py` - Python-Script zur Generierung des Diagramms
+- `sankey_gcls_python.html` - Von Python generierte HTML-Datei
+- `requirements.txt` - Python-Abhängigkeiten
+
+## Verwendung
+
+### HTML-Version
+
+Öffnen Sie einfach `sankey_gcls.html` in einem modernen Webbrowser. Die Datei enthält:
+- Zwei verschiedene Beispieldatensätze
+- Interaktive Buttons zum Wechseln zwischen den Datensätzen
+- Zoom- und Pan-Funktionalität
+
+### Python-Version
+
+1. Installieren Sie die benötigten Pakete:
+```bash
+pip install -r requirements.txt
 ```
 
-The manuscript can be compiled in two ways:
-
-a) In RStudio:
-   - Open `manuscript/md/manuscript.Rmd`
-   - Click "Knit"
-
-b) Via command line:
-```r
-rmarkdown::render('manuscript/md/manuscript.Rmd')
+2. Führen Sie das Script aus:
+```bash
+python sankey_gcls.py
 ```
 
-### Troubleshooting
+Das Script erstellt automatisch eine HTML-Datei und öffnet sie im Browser.
 
-- Unicode issues: Use XeLaTeX engine
-- Citation issues: Check BibTeX file for completeness
-- Formatting issues: Check apa7.tex for conflicts
+## Anpassung der Daten
 
-## Deutsche Installationshinweise (German Installation Notes)
+### In der HTML-Version
 
-### LaTeX-Installation
-- Installieren Sie eine LaTeX-Distribution (z.B. TeX Live oder MiKTeX)
-- XeLaTeX wird für die Unicode-Unterstützung benötigt
+Bearbeiten Sie die Objekte `beispielDaten1` und `beispielDaten2` im Script-Bereich:
 
-### Manuskript-Kompilierung
-- In RStudio: Öffnen Sie `manuscript/md/manuscript.Rmd` und klicken Sie auf "Knit"
-- Über Kommandozeile: Nutzen Sie `rmarkdown::render('manuscript/md/manuscript.Rmd')`
+```javascript
+const beispielDaten1 = {
+    source: [...],  // Startknoten der Verbindungen
+    target: [...],  // Zielknoten der Verbindungen
+    value: [...]    // Werte (Anzahl der Personen)
+};
+```
 
-### Fehlerbehebung
-- Unicode-Probleme: XeLaTeX-Engine verwenden
-- Zitationsprobleme: BibTeX-Datei auf Vollständigkeit prüfen
-- Formatierungsprobleme: apa7.tex auf Konflikte prüfen
+### In der Python-Version
+
+Passen Sie die Listen `source`, `target` und `values` an:
+
+```python
+source = [...]  // Startknoten (0-basierte Indizes)
+target = [...]  // Zielknoten (0-basierte Indizes)
+values = [...]  // Werte (Anzahl der Personen)
+```
+
+## Farbanpassung
+
+Die Farben der Knoten können in beiden Versionen angepasst werden:
+
+- HTML: Array `nodeColors`
+- Python: Liste `node_colors`
+
+## Zusätzliche Features
+
+### Statisches Bild exportieren (Python)
+
+Uncommentieren Sie die letzte Zeile im Python-Script und installieren Sie kaleido:
+```bash
+pip install kaleido
+```
+
+### Weitere Ebenen hinzufügen
+
+1. Fügen Sie neue Knoten zum `nodes` Array hinzu
+2. Erweitern Sie die `source`, `target` und `value` Arrays
+3. Fügen Sie entsprechende Farben hinzu
+
+## Hinweise
+
+- Die Breite der Flüsse repräsentiert die Anzahl der Personen
+- Die Beispieldaten sind fiktiv und dienen nur zur Demonstration
+- Das Diagramm ist vollständig interaktiv - Sie können über Elemente hovern für Details

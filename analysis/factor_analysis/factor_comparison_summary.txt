@@ -1,0 +1,70 @@
+Factor Structure Comparison Summary
+
+Congruence Coefficients with Original Version
+
+Total Sample:
+       [,1]   [,2]   [,3]   [,4]   [,5]   [,6]   [,7]
+[1,]  0.495  0.075  0.589  0.170  0.107  0.120  0.202
+[2,] -0.168 -0.711 -0.080 -0.432 -0.022 -0.090 -0.118
+[3,]  0.096  0.015 -0.057  0.067  0.850 -0.089  0.111
+[4,]  0.089  0.002  0.353  0.066  0.027  0.064  0.027
+[5,]  0.212  0.288  0.187  0.602  0.152  0.156  0.144
+[6,] -0.025 -0.180 -0.165 -0.059 -0.206  0.002 -0.885
+[7,] -0.296  0.005 -0.017 -0.023  0.026  0.078  0.059
+
+AMAB Women:
+       [,1]   [,2]   [,3]   [,4]   [,5]   [,6]   [,7]
+[1,]  0.217  0.646  0.227  0.210  0.017  0.447  0.168
+[2,] -0.121 -0.131 -0.481 -0.081 -0.634 -0.124 -0.475
+[3,]  0.022 -0.022  0.109  0.804  0.037  0.138 -0.040
+[4,]  0.026  0.405  0.083  0.029 -0.005 -0.071  0.062
+[5,]  0.233  0.218  0.648  0.208  0.273  0.181  0.159
+[6,]  0.071 -0.144 -0.208 -0.301 -0.435 -0.467  0.050
+[7,] -0.134 -0.071 -0.039  0.021 -0.044 -0.040  0.144
+
+AFAB Men:
+       [,1]   [,2]   [,3]   [,4]   [,5]   [,6]   [,7]
+[1,]  0.074  0.450  0.615  0.106  0.115  0.184  0.194
+[2,] -0.678 -0.214 -0.092 -0.410 -0.080 -0.045 -0.129
+[3,]  0.040  0.043 -0.016  0.073  0.829 -0.129  0.114
+[4,] -0.037  0.125  0.334  0.005  0.029  0.160  0.139
+[5,]  0.361  0.247  0.192  0.529  0.157  0.080  0.223
+[6,] -0.227 -0.019 -0.169 -0.120 -0.354 -0.034 -0.787
+[7,]  0.074 -0.262 -0.047 -0.043  0.039  0.028  0.032
+
+Best matching factors (congruence > 0.85):
+
+Original Factor 1 matches best with:
+Total Sample: Factor 3 ( 0.589 )
+AMAB Women: Factor 2 ( 0.646 )
+AFAB Men: Factor 3 ( 0.615 )
+
+Original Factor 2 matches best with:
+Total Sample: Factor 2 ( 0.711 )
+AMAB Women: Factor 5 ( 0.634 )
+AFAB Men: Factor 1 ( 0.678 )
+
+Original Factor 3 matches best with:
+Total Sample: Factor 5 ( 0.85 )
+AMAB Women: Factor 4 ( 0.804 )
+AFAB Men: Factor 5 ( 0.829 )
+
+Original Factor 4 matches best with:
+Total Sample: Factor 3 ( 0.353 )
+AMAB Women: Factor 2 ( 0.405 )
+AFAB Men: Factor 3 ( 0.334 )
+
+Original Factor 5 matches best with:
+Total Sample: Factor 4 ( 0.602 )
+AMAB Women: Factor 3 ( 0.648 )
+AFAB Men: Factor 4 ( 0.529 )
+
+Original Factor 6 matches best with:
+Total Sample: Factor 7 ( 0.885 )
+AMAB Women: Factor 6 ( 0.467 )
+AFAB Men: Factor 7 ( 0.787 )
+
+Original Factor 7 matches best with:
+Total Sample: Factor 1 ( 0.296 )
+AMAB Women: Factor 7 ( 0.144 )
+AFAB Men: Factor 2 ( 0.262 )

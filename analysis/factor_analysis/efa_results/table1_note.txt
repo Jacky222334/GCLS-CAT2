@@ -1,0 +1,4 @@
+Note. N = 293. Factor loadings > |.30| are shown. h² = communality. 
+    PF = Psychological Function; SF = Social Function; PhF = Physical Function; 
+    LS = Life Satisfaction; BI = Body Image; RS = Relationship Satisfaction; 
+    GI = Gender Identity. Items marked with 'r' are reverse-scored.

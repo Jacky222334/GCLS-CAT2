@@ -1,0 +1,3 @@
+# Factor Structure of the GCLS-G v1.1
+
+Exploratory structural equation modeling (ESEM) yielded a seven-factor solution (CFI = .838, TLI = .823, RMSEA = .077), with factors ordered as follows: Psychological Functioning (PF), Social Gender Role Recognition (SGR), Physical and Emotional Intimacy (PEI), Life Satisfaction (LS), Body Image (BI), Genitalia (GEN), and Gender Identity (GI). The factor structure is visualized through both path diagrams and hierarchical cluster analysis (dendrograms), using a consistent color scheme to facilitate factor identification across different representations. While the model demonstrates adequate fit, the moderate fit indices suggest potential for refinement in future scale iterations. 

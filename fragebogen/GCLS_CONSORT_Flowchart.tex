@@ -1,0 +1,191 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=1.5cm}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning, fit, calc}
+\usepackage{xcolor}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Farben (CONSORT-Style)
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightblue}{RGB}{173,216,230}
+\definecolor{lightgray}{RGB}{240,240,240}
+\definecolor{darkgreen}{RGB}{0,100,0}
+\definecolor{orange}{RGB}{255,165,0}
+\definecolor{red}{RGB}{220,20,60}
+
+% TikZ Styles
+\tikzstyle{recruitment} = [rectangle, minimum width=4cm, minimum height=1.2cm, text centered, text width=4cm, draw=darkblue, fill=lightblue, font=\small\bfseries]
+\tikzstyle{process} = [rectangle, minimum width=4cm, minimum height=1cm, text centered, text width=4cm, draw=darkblue, fill=lightgray, font=\small]
+\tikzstyle{excluded} = [rectangle, minimum width=3cm, minimum height=0.8cm, text centered, text width=3cm, draw=red, fill=red!20, font=\footnotesize]
+\tikzstyle{final} = [rectangle, minimum width=4cm, minimum height=1cm, text centered, text width=4cm, draw=darkgreen, fill=green!20, font=\small\bfseries]
+\tikzstyle{arrow} = [thick,->,>=stealth, color=darkblue]
+
+\begin{document}
+
+\title{
+    {\Large\bfseries\color{darkblue} GCLS-Gv1.1 Validierungsstudie}\\[0.2cm]
+    {\large CONSORT-Flowchart der Rekrutierung}
+}
+\author{}
+\date{}
+\maketitle
+
+\vspace{-1cm}
+
+\begin{center}
+\begin{tikzpicture}[node distance=1.3cm]
+
+% INITIAL POPULATION
+\node (initial) [recruitment] {
+    \textbf{Transgender Personen in Datenbank}\\
+    \textbf{(ICD-10: F64, 2001-2021)}\\
+    \textbf{N = 1161}
+};
+
+% TEST RUN
+\node (testrun) [process, below of=initial] {
+    \textbf{Testlauf}\\
+    N = 15\\
+    Fragebogen-Anpassung
+};
+
+% FIRST CONTACT - LETTER
+\node (letter) [recruitment, below of=testrun] {
+    \textbf{1. Kontakt: Postbrief}\\
+    \textbf{09.01.2023}\\
+    Kontaktiert: n = 1146\\
+    Unzustellbar: n = 332
+};
+
+% FIRST WAVE RESPONSE
+\node (resp1) [process, below of=letter] {
+    \textbf{1. Welle Antworten}\\
+    \textbf{10.01.2023: n = 52}\\
+    Kumulativ: n = 52 (4.5\%)
+};
+
+% SECOND CONTACT - EMAIL
+\node (email) [recruitment, below of=resp1] {
+    \textbf{2. Kontakt: E-Mail}\\
+    \textbf{29.01.2023}\\
+    (20 Tage nach Postbrief)\\
+    Unzustellbar: n = 208
+};
+
+% SECOND WAVE RESPONSE
+\node (resp2) [process, below of=email] {
+    \textbf{2. Welle Antworten}\\
+    \textbf{29-30.01.2023: n = 59}\\
+    Kumulativ: n = 111 (9.7\%)
+};
+
+% THIRD CONTACT - SMS
+\node (sms) [recruitment, below of=resp2] {
+    \textbf{3. Kontakt: SMS}\\
+    \textbf{08.02.2023}\\
+    (30 Tage nach Postbrief)\\
+    Unzustellbar: n = 189
+};
+
+% THIRD WAVE RESPONSE
+\node (resp3) [process, below of=sms] {
+    \textbf{3. Welle Antworten}\\
+    \textbf{09.02.2023: n = 42}\\
+    Kumulativ: n = 153 (13.2\%)
+};
+
+% WEITERE ANTWORTEN
+\node (additional) [process, below of=resp3] {
+    \textbf{Weitere Antworten}\\
+    \textbf{bis 15.02.2023}\\
+    n = 140 (über 37 Tage verteilt)
+};
+
+% FINAL SAMPLE
+\node (final) [final, below of=additional] {
+    \textbf{Finale Stichprobe}\\
+    \textbf{N = 293 (25.3\%)}\\
+    Alter: 18-75 Jahre (M = 39.8, SD = 16.4)
+};
+
+% EXCLUSIONS (right side)
+\node (excl1) [excluded, right of=letter, xshift=4cm] {
+    Ausgeschlossen:\\
+    Unzustellbare Briefe\\
+    n = 332
+};
+
+\node (excl2) [excluded, right of=email, xshift=4cm] {
+    Ausgeschlossen:\\
+    Unzustellbare E-Mails\\
+    n = 208
+};
+
+\node (excl3) [excluded, right of=sms, xshift=4cm] {
+    Ausgeschlossen:\\
+    Unzustellbare SMS\\
+    n = 189
+};
+
+\node (excl4) [excluded, right of=final, xshift=4cm] {
+    Keine Teilnahme:\\
+    n = 868 (74.7\%)\\
+    Gründe unbekannt
+};
+
+% ARROWS
+\draw [arrow] (initial) -- (testrun);
+\draw [arrow] (testrun) -- (letter);
+\draw [arrow] (letter) -- (resp1);
+\draw [arrow] (resp1) -- (email);
+\draw [arrow] (email) -- (resp2);
+\draw [arrow] (resp2) -- (sms);
+\draw [arrow] (sms) -- (resp3);
+\draw [arrow] (resp3) -- (additional);
+\draw [arrow] (additional) -- (final);
+
+% EXCLUSION ARROWS
+\draw [arrow, color=red] (letter) -- (excl1);
+\draw [arrow, color=red] (email) -- (excl2);
+\draw [arrow, color=red] (sms) -- (excl3);
+\draw [arrow, color=red] (final) -- (excl4);
+
+% TIMELINE ANNOTATIONS
+\node[font=\footnotesize, color=darkblue, rotate=90] at ($(initial) + (-3,0)$) {Datenbank-Identifizierung};
+\node[font=\footnotesize, color=darkblue, rotate=90] at ($(letter) + (-3,0)$) {Rekrutierungsphase};
+\node[font=\footnotesize, color=darkblue, rotate=90] at ($(final) + (-3,0)$) {Datenerhebung};
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{1cm}
+
+% REKRUTIERUNGS-EFFEKTIVITÄT
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\textbf{Kontakt-Methode} & \textbf{Datum} & \textbf{Peak-Antworten} & \textbf{Kumulativ} & \textbf{Effektivität} \\
+\hline
+1. Postbrief & 09.01.2023 & 52 (10.01.) & 52 & 4.5\% \\
+2. E-Mail & 29.01.2023 & 59 (29-30.01.) & 111 & 9.7\% \\
+3. SMS & 08.02.2023 & 42 (09.02.) & 153 & 13.2\% \\
+\hline
+\textbf{Gesamt} & \textbf{37 Tage} & \textbf{293} & \textbf{293} & \textbf{25.3\%} \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{center}
+\footnotesize
+\textbf{Studiendetails:} Querschnitt-Validierungsstudie | BASEC Nr. Req-2022-00630\\
+UniversitätsSpital Zürich | Klinik für Konsiliar- und Liaisons-Psychiatrie
+\end{center}
+
+\end{document} 

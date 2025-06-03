@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCLS Sankey Diagramm</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        #sankey {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.06);
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .controls {
+            margin: 30px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-box {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        
+        .info-box h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .info-box p {
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GCLS Sankey Diagramm</h1>
+        <p class="subtitle">Von Geschlechtszuweisung bis Lebenszufriedenheit</p>
+        
+        <div class="controls">
+            <button onclick="updateData('beispiel1')">📊 Beispieldaten 1</button>
+            <button onclick="updateData('beispiel2')">📈 Beispieldaten 2</button>
+            <button onclick="resetView()">🔄 Ansicht zurücksetzen</button>
+        </div>
+        
+        <div id="sankey"></div>
+        
+        <div class="info-box">
+            <h3>Über dieses Diagramm</h3>
+            <p>Dieses interaktive Sankey-Diagramm visualisiert den Fluss von der Geschlechtszuweisung bei Geburt bis zum GCLS-Score.</p>
+            <p>Die Breite der Verbindungen repräsentiert die Anzahl der Personen in jedem Pfad.</p>
+            <p>Bewegen Sie die Maus über die Elemente für detaillierte Informationen.</p>
+        </div>
+    </div>
+
+    <script>
+        // Definiere die Knoten (nodes)
+        const nodes = [
+            // Ebene 1: Geschlechtszuweisung bei Geburt
+            "AFAB", // 0
+            "AMAB", // 1
+            
+            // Ebene 2: Zeitpunkt des Outings
+            "Frühes Outing", // 2
+            "Mittleres Outing", // 3
+            "Spätes Outing", // 4
+            
+            // Ebene 3: Zeit zwischen innerem und äußerem Outing
+            "Kurze Zeit", // 5
+            "Mittlere Zeit", // 6
+            "Lange Zeit", // 7
+            
+            // Ebene 4: Biomedizinische Maßnahmen
+            "Mit biomed. Maßnahmen", // 8
+            "Ohne biomed. Maßnahmen", // 9
+            
+            // Ebene 5: GCLS Score
+            "GCLS Niedrig", // 10
+            "GCLS Mittel", // 11
+            "GCLS Hoch" // 12
+        ];
+
+        // Beispieldaten 1
+        const beispielDaten1 = {
+            source: [
+                // AFAB zu Outing-Zeitpunkt
+                0, 0, 0,
+                // AMAB zu Outing-Zeitpunkt
+                1, 1, 1,
+                // Outing-Zeitpunkt zu Zeit zwischen Outings
+                2, 2, 2,
+                3, 3, 3,
+                4, 4, 4,
+                // Zeit zwischen Outings zu Biomedizinische Maßnahmen
+                5, 5,
+                6, 6,
+                7, 7,
+                // Biomedizinische Maßnahmen zu GCLS Score
+                8, 8, 8,
+                9, 9, 9
+            ],
+            target: [
+                // AFAB zu Outing-Zeitpunkt
+                2, 3, 4,
+                // AMAB zu Outing-Zeitpunkt
+                2, 3, 4,
+                // Outing-Zeitpunkt zu Zeit zwischen Outings
+                5, 6, 7,
+                5, 6, 7,
+                5, 6, 7,
+                // Zeit zwischen Outings zu Biomedizinische Maßnahmen
+                8, 9,
+                8, 9,
+                8, 9,
+                // Biomedizinische Maßnahmen zu GCLS Score
+                10, 11, 12,
+                10, 11, 12
+            ],
+            value: [
+                // AFAB zu Outing-Zeitpunkt
+                30, 25, 20,
+                // AMAB zu Outing-Zeitpunkt
+                35, 30, 25,
+                // Outing-Zeitpunkt zu Zeit zwischen Outings
+                25, 20, 20,
+                18, 22, 15,
+                15, 18, 12,
+                // Zeit zwischen Outings zu Biomedizinische Maßnahmen
+                40, 25,
+                35, 25,
+                30, 15,
+                // Biomedizinische Maßnahmen zu GCLS Score
+                15, 50, 40,
+                20, 30, 15
+            ]
+        };
+
+        // Beispieldaten 2 (andere Verteilung)
+        const beispielDaten2 = {
+            source: beispielDaten1.source,
+            target: beispielDaten1.target,
+            value: [
+                // AFAB zu Outing-Zeitpunkt
+                40, 20, 15,
+                // AMAB zu Outing-Zeitpunkt
+                45, 25, 20,
+                // Outing-Zeitpunkt zu Zeit zwischen Outings
+                35, 30, 20,
+                15, 20, 10,
+                10, 15, 10,
+                // Zeit zwischen Outings zu Biomedizinische Maßnahmen
+                50, 15,
+                40, 25,
+                25, 20,
+                // Biomedizinische Maßnahmen zu GCLS Score
+                10, 45, 50,
+                15, 35, 15
+            ]
+        };
+
+        // Farben für die Knoten
+        const nodeColors = [
+            // Geschlechtszuweisung
+            "#FF6B6B", // AFAB - Rosa/Rot
+            "#4ECDC4", // AMAB - Türkis
+            
+            // Outing-Zeitpunkt
+            "#95E1D3", // Früh - Hellgrün
+            "#F38181", // Mittel - Lachs
+            "#AA96DA", // Spät - Lila
+            
+            // Zeit zwischen Outings
+            "#FCE38A", // Kurz - Gelb
+            "#F38181", // Mittel - Lachs
+            "#95A3D3", // Lang - Blau
+            
+            // Biomedizinische Maßnahmen
+            "#6C5CE7", // Mit - Violett
+            "#A8E6CF", // Ohne - Mintgrün
+            
+            // GCLS Score
+            "#FF6B6B", // Niedrig - Rot
+            "#FFD93D", // Mittel - Gelb
+            "#6BCF7F", // Hoch - Grün
+        ];
+
+        // Funktion zum Erstellen des Sankey-Diagramms
+        function createSankey(data) {
+            const trace = {
+                type: "sankey",
+                orientation: "h",
+                node: {
+                    pad: 15,
+                    thickness: 20,
+                    line: {
+                        color: "black",
+                        width: 0.5
+                    },
+                    label: nodes,
+                    color: nodeColors,
+                    hovertemplate: '<b>%{label}</b><br>%{value} Personen<extra></extra>'
+                },
+                link: {
+                    source: data.source,
+                    target: data.target,
+                    value: data.value,
+                    color: 'rgba(0,0,0,0.2)',
+                    hovertemplate: '%{source.label} → %{target.label}<br>%{value} Personen<extra></extra>'
+                }
+            };
+
+            const layout = {
+                title: {
+                    text: "Fluss von Geschlechtszuweisung bis GCLS-Score",
+                    font: {
+                        size: 18,
+                        color: '#2c3e50'
+                    }
+                },
+                font: {
+                    size: 14,
+                    family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+                },
+                height: 650,
+                margin: {
+                    l: 20,
+                    r: 20,
+                    t: 60,
+                    b: 20
+                },
+                plot_bgcolor: 'white',
+                paper_bgcolor: 'white'
+            };
+
+            const config = {
+                responsive: true,
+                displayModeBar: true,
+                displaylogo: false,
+                modeBarButtonsToRemove: ['pan2d', 'select2d', 'lasso2d', 'autoScale2d'],
+                modeBarButtonsToAdd: [{
+                    name: 'Als Bild speichern',
+                    icon: Plotly.Icons.camera,
+                    click: function(gd) {
+                        Plotly.downloadImage(gd, {
+                            format: 'png',
+                            width: 1200,
+                            height: 700,
+                            filename: 'gcls_sankey_diagramm'
+                        });
+                    }
+                }]
+            };
+
+            Plotly.newPlot('sankey', [trace], layout, config);
+        }
+
+        // Funktion zum Aktualisieren der Daten
+        function updateData(dataset) {
+            const data = dataset === 'beispiel1' ? beispielDaten1 : beispielDaten2;
+            Plotly.restyle('sankey', {
+                'link.value': [data.value]
+            });
+        }
+
+        // Funktion zum Zurücksetzen der Ansicht
+        function resetView() {
+            Plotly.relayout('sankey', {
+                'xaxis.autorange': true,
+                'yaxis.autorange': true
+            });
+        }
+
+        // Initialisiere das Diagramm mit Beispieldaten 1
+        createSankey(beispielDaten1);
+    </script>
+</body>
+</html> 

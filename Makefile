@@ -115,3 +115,5 @@ install:
 
 # Full reproduction with structure validation
 reproduce: clean validate-structure install analysis figures all 
+
+code . 

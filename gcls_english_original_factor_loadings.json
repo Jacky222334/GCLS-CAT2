@@ -1,0 +1,700 @@
+{
+  "study_info": {
+    "title": "Original English GCLS Factor Analysis Results",
+    "source": "Jones et al. - Table 2",
+    "sample_size": 451,
+    "n_factors": 7,
+    "n_items": 38,
+    "analysis_type": "second_principle_components_analysis",
+    "total_variance_explained": 68.01
+  },
+  "factors": {
+    "Factor1": {
+      "name": "Psychological Functioning",
+      "eigenvalue": 14.83,
+      "variance_explained": 39.03,
+      "cronbach_alpha": 0.93
+    },
+    "Factor2": {
+      "name": "Genitalia",
+      "eigenvalue": 3.35,
+      "variance_explained": 8.82,
+      "cronbach_alpha": 0.79
+    },
+    "Factor3": {
+      "name": "Social Gender Role Recognition",
+      "eigenvalue": 2.30,
+      "variance_explained": 6.04,
+      "cronbach_alpha": 0.77
+    },
+    "Factor4": {
+      "name": "Physical and Emotional Intimacy",
+      "eigenvalue": 1.84,
+      "variance_explained": 4.85,
+      "cronbach_alpha": 0.85
+    },
+    "Factor5": {
+      "name": "Chest",
+      "eigenvalue": 1.24,
+      "variance_explained": 3.25,
+      "cronbach_alpha": 0.92
+    },
+    "Factor6": {
+      "name": "Other Secondary Sex Characteristics",
+      "eigenvalue": 1.21,
+      "variance_explained": 3.20,
+      "cronbach_alpha": 0.81
+    },
+    "Factor7": {
+      "name": "Life Satisfaction",
+      "eigenvalue": 1.07,
+      "variance_explained": 2.82,
+      "cronbach_alpha": 0.83
+    }
+  },
+  "items": [
+    {
+      "item_number": 1,
+      "text": "I have avoided social situations and/or social interactions",
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Factor1": 0.59,
+        "Factor2": -0.03,
+        "Factor3": 0.02,
+        "Factor4": 0.17,
+        "Factor5": 0.13,
+        "Factor6": -0.15,
+        "Factor7": -0.05
+      },
+      "primary_factor": "Factor1"
+    },
+    {
+      "item_number": 2,
+      "text": "I have not gone to school/college/work",
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Factor1": 0.79,
+        "Factor2": 0.02,
+        "Factor3": 0.01,
+        "Factor4": 0.01,
+        "Factor5": -0.04,
+        "Factor6": -0.05,
+        "Factor7": 0.09
+      },
+      "primary_factor": "Factor1"
+    },
+    {
+      "item_number": 3,
+      "text": "I have not been able to have emotional relationships with other people",
+      "subscale": "Physical and Emotional Intimacy",
+      "loadings": {
+        "Factor1": 0.32,
+        "Factor2": -0.01,
+        "Factor3": -0.07,
+        "Factor4": 0.63,
+        "Factor5": 0.08,
+        "Factor6": -0.07,
+        "Factor7": -0.06
+      },
+      "primary_factor": "Factor4"
+    },
+    {
+      "item_number": 4,
+      "text": "I have suffered from anxiety",
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Factor1": 0.58,
+        "Factor2": -0.11,
+        "Factor3": 0.16,
+        "Factor4": 0.02,
+        "Factor5": 0.12,
+        "Factor6": -0.04,
+        "Factor7": -0.14
+      },
+      "primary_factor": "Factor1"
+    },
+    {
+      "item_number": 5,
+      "text": "I have not been able to be physically intimate with other people",
+      "subscale": "Physical and Emotional Intimacy",
+      "loadings": {
+        "Factor1": 0.15,
+        "Factor2": -0.26,
+        "Factor3": -0.08,
+        "Factor4": 0.70,
+        "Factor5": 0.07,
+        "Factor6": -0.01,
+        "Factor7": 0.11
+      },
+      "primary_factor": "Factor4"
+    },
+    {
+      "item_number": 6,
+      "text": "I have been unable to leave the house",
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Factor1": 0.75,
+        "Factor2": -0.01,
+        "Factor3": -0.02,
+        "Factor4": 0.02,
+        "Factor5": 0.07,
+        "Factor6": -0.10,
+        "Factor7": -0.04
+      },
+      "primary_factor": "Factor1"
+    },
+    {
+      "item_number": 7,
+      "text": "I have found it difficult to make friends",
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Factor1": 0.45,
+        "Factor2": 0.03,
+        "Factor3": -0.02,
+        "Factor4": 0.23,
+        "Factor5": 0.02,
+        "Factor6": -0.14,
+        "Factor7": -0.32
+      },
+      "primary_factor": "Factor1"
+    },
+    {
+      "item_number": 8,
+      "text": "I have thought about cutting or hurting my chest, genitals, and/or surrounding areas",
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Factor1": 0.49,
+        "Factor2": -0.35,
+        "Factor3": 0.06,
+        "Factor4": -0.07,
+        "Factor5": 0.11,
+        "Factor6": 0.07,
+        "Factor7": -0.08
+      },
+      "primary_factor": "Factor1"
+    },
+    {
+      "item_number": 9,
+      "text": "I have felt that life is meaningless",
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Factor1": 0.47,
+        "Factor2": -0.17,
+        "Factor3": 0.03,
+        "Factor4": 0.12,
+        "Factor5": 0.07,
+        "Factor6": 0.01,
+        "Factor7": -0.37
+      },
+      "primary_factor": "Factor1"
+    },
+    {
+      "item_number": 10,
+      "text": "I have not enjoyed life",
+      "subscale": "Life Satisfaction",
+      "loadings": {
+        "Factor1": 0.38,
+        "Factor2": -0.18,
+        "Factor3": 0.15,
+        "Factor4": 0.19,
+        "Factor5": 0.08,
+        "Factor6": 0.02,
+        "Factor7": -0.39
+      },
+      "primary_factor": "Factor7"
+    },
+    {
+      "item_number": 11,
+      "text": "I have not engaged in leisure activities",
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Factor1": 0.51,
+        "Factor2": -0.05,
+        "Factor3": -0.07,
+        "Factor4": 0.19,
+        "Factor5": 0.29,
+        "Factor6": 0.00,
+        "Factor7": -0.15
+      },
+      "primary_factor": "Factor1"
+    },
+    {
+      "item_number": 12,
+      "text": "I have suffered from low mood",
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Factor1": 0.46,
+        "Factor2": -0.12,
+        "Factor3": 0.16,
+        "Factor4": 0.08,
+        "Factor5": 0.18,
+        "Factor6": -0.01,
+        "Factor7": -0.27
+      },
+      "primary_factor": "Factor1"
+    },
+    {
+      "item_number": 13,
+      "text": "I have thought about hurting myself or taking my own life",
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Factor1": 0.56,
+        "Factor2": -0.21,
+        "Factor3": 0.04,
+        "Factor4": -0.01,
+        "Factor5": 0.05,
+        "Factor6": 0.01,
+        "Factor7": -0.26
+      },
+      "primary_factor": "Factor1"
+    },
+    {
+      "item_number": 14,
+      "text": "I have felt distressed when touching my genitals as they do not match my gender identity",
+      "subscale": "Genitalia",
+      "loadings": {
+        "Factor1": 0.11,
+        "Factor2": -0.78,
+        "Factor3": 0.09,
+        "Factor4": 0.07,
+        "Factor5": 0.12,
+        "Factor6": -0.01,
+        "Factor7": 0.10
+      },
+      "primary_factor": "Factor2"
+    },
+    {
+      "item_number": 15,
+      "text": "I have felt so distressed about my chest that I have not been able to have a fulfilling life",
+      "subscale": "Chest",
+      "loadings": {
+        "Factor1": 0.22,
+        "Factor2": -0.14,
+        "Factor3": -0.05,
+        "Factor4": -0.07,
+        "Factor5": 0.76,
+        "Factor6": 0.08,
+        "Factor7": -0.01
+      },
+      "primary_factor": "Factor5"
+    },
+    {
+      "item_number": 16,
+      "text": "I have felt comfortable with how others have perceived my gender",
+      "subscale": "Social Gender Role Recognition",
+      "loadings": {
+        "Factor1": 0.02,
+        "Factor2": -0.03,
+        "Factor3": 0.79,
+        "Factor4": -0.01,
+        "Factor5": 0.02,
+        "Factor6": 0.06,
+        "Factor7": -0.04
+      },
+      "primary_factor": "Factor3"
+    },
+    {
+      "item_number": 17,
+      "text": "I have felt that my body hair conflicts with my gender identity, either because I have it and do not like it or because I would like to have it",
+      "subscale": "Other Secondary Sex Characteristics",
+      "loadings": {
+        "Factor1": 0.01,
+        "Factor2": -0.03,
+        "Factor3": 0.02,
+        "Factor4": 0.09,
+        "Factor5": 0.07,
+        "Factor6": -0.80,
+        "Factor7": -0.03
+      },
+      "primary_factor": "Factor6"
+    },
+    {
+      "item_number": 18,
+      "text": "I have felt like my chest does not match my gender identity",
+      "subscale": "Chest",
+      "loadings": {
+        "Factor1": -0.12,
+        "Factor2": 0.01,
+        "Factor3": 0.07,
+        "Factor4": -0.03,
+        "Factor5": 0.92,
+        "Factor6": -0.11,
+        "Factor7": 0.03
+      },
+      "primary_factor": "Factor5"
+    },
+    {
+      "item_number": 19,
+      "text": "I have found it distressing that others do not address me according to my gender identity",
+      "subscale": "Social Gender Role Recognition",
+      "loadings": {
+        "Factor1": 0.40,
+        "Factor2": 0.04,
+        "Factor3": 0.39,
+        "Factor4": -0.09,
+        "Factor5": 0.18,
+        "Factor6": -0.33,
+        "Factor7": 0.21
+      },
+      "primary_factor": "Factor1"
+    },
+    {
+      "item_number": 20,
+      "text": "I have felt satisfied with the pronouns that others use when talking about me",
+      "subscale": "Social Gender Role Recognition",
+      "loadings": {
+        "Factor1": 0.02,
+        "Factor2": 0.05,
+        "Factor3": 0.79,
+        "Factor4": 0.01,
+        "Factor5": -0.09,
+        "Factor6": -0.20,
+        "Factor7": 0.08
+      },
+      "primary_factor": "Factor3"
+    },
+    {
+      "item_number": 21,
+      "text": "I have felt unhappy about my genitalia since they do not match my gender identity",
+      "subscale": "Genitalia",
+      "loadings": {
+        "Factor1": -0.04,
+        "Factor2": -0.82,
+        "Factor3": 0.06,
+        "Factor4": 0.07,
+        "Factor5": 0.12,
+        "Factor6": -0.10,
+        "Factor7": 0.03
+      },
+      "primary_factor": "Factor2"
+    },
+    {
+      "item_number": 22,
+      "text": "I have felt comfortable with how other people perceive my gender based on my physical appearance",
+      "subscale": "Social Gender Role Recognition",
+      "loadings": {
+        "Factor1": -0.11,
+        "Factor2": -0.04,
+        "Factor3": 0.82,
+        "Factor4": -0.03,
+        "Factor5": 0.10,
+        "Factor6": 0.07,
+        "Factor7": -0.04
+      },
+      "primary_factor": "Factor3"
+    },
+    {
+      "item_number": 23,
+      "text": "I have felt that my voice has affected the way other people have perceived my gender identity which has been distressing for me",
+      "subscale": "Other Secondary Sex Characteristics",
+      "loadings": {
+        "Factor1": 0.28,
+        "Factor2": -0.01,
+        "Factor3": 0.16,
+        "Factor4": 0.06,
+        "Factor5": 0.14,
+        "Factor6": -0.53,
+        "Factor7": 0.19
+      },
+      "primary_factor": "Factor6"
+    },
+    {
+      "item_number": 24,
+      "text": "I have felt that my facial hair conflicts with my gender identity, either because I have it and do not like it or because I would like to have it",
+      "subscale": "Other Secondary Sex Characteristics",
+      "loadings": {
+        "Factor1": 0.04,
+        "Factor2": -0.12,
+        "Factor3": -0.01,
+        "Factor4": 0.01,
+        "Factor5": 0.12,
+        "Factor6": -0.78,
+        "Factor7": -0.02
+      },
+      "primary_factor": "Factor6"
+    },
+    {
+      "item_number": 25,
+      "text": "I have felt that my genitals do match with my gender identity",
+      "subscale": "Genitalia",
+      "loadings": {
+        "Factor1": 0.18,
+        "Factor2": 0.42,
+        "Factor3": 0.10,
+        "Factor4": 0.27,
+        "Factor5": 0.06,
+        "Factor6": 0.29,
+        "Factor7": 0.34
+      },
+      "primary_factor": "Factor2",
+      "note": "Reverse scored item"
+    },
+    {
+      "item_number": 26,
+      "text": "I have felt that genital surgery will address the unhappiness I experience in relation to my gender",
+      "subscale": "Genitalia",
+      "loadings": {
+        "Factor1": 0.06,
+        "Factor2": -0.83,
+        "Factor3": -0.10,
+        "Factor4": 0.18,
+        "Factor5": -0.04,
+        "Factor6": -0.06,
+        "Factor7": 0.16
+      },
+      "primary_factor": "Factor2"
+    },
+    {
+      "item_number": 27,
+      "text": "I have been unable to have a fulfilling life because of the distress relating to my genitalia",
+      "subscale": "Genitalia",
+      "loadings": {
+        "Factor1": 0.08,
+        "Factor2": -0.69,
+        "Factor3": 0.06,
+        "Factor4": 0.20,
+        "Factor5": 0.12,
+        "Factor6": -0.02,
+        "Factor7": -0.06
+      },
+      "primary_factor": "Factor2"
+    },
+    {
+      "item_number": 28,
+      "text": "I have felt extremely distressed when looking at my chest",
+      "subscale": "Chest",
+      "loadings": {
+        "Factor1": 0.10,
+        "Factor2": -0.19,
+        "Factor3": 0.01,
+        "Factor4": -0.06,
+        "Factor5": 0.81,
+        "Factor6": -0.01,
+        "Factor7": -0.01
+      },
+      "primary_factor": "Factor5"
+    },
+    {
+      "item_number": 29,
+      "text": "I have felt extremely distressed when looking at my genitals",
+      "subscale": "Genitalia",
+      "loadings": {
+        "Factor1": 0.05,
+        "Factor2": -0.81,
+        "Factor3": 0.03,
+        "Factor4": 0.08,
+        "Factor5": 0.16,
+        "Factor6": -0.03,
+        "Factor7": 0.03
+      },
+      "primary_factor": "Factor2"
+    },
+    {
+      "item_number": 30,
+      "text": "I have felt satisfied with my chest",
+      "subscale": "Chest",
+      "loadings": {
+        "Factor1": -0.16,
+        "Factor2": 0.08,
+        "Factor3": 0.02,
+        "Factor4": 0.05,
+        "Factor5": 0.94,
+        "Factor6": -0.08,
+        "Factor7": -0.01
+      },
+      "primary_factor": "Factor5",
+      "note": "Reverse scored item"
+    },
+    {
+      "item_number": 31,
+      "text": "I have felt satisfied at school/college/work",
+      "subscale": "Life Satisfaction",
+      "loadings": {
+        "Factor1": 0.21,
+        "Factor2": -0.05,
+        "Factor3": 0.24,
+        "Factor4": 0.13,
+        "Factor5": -0.05,
+        "Factor6": -0.01,
+        "Factor7": -0.39
+      },
+      "primary_factor": "Factor7",
+      "note": "Reverse scored item"
+    },
+    {
+      "item_number": 32,
+      "text": "I have felt satisfied with my emotional relationship(s)",
+      "subscale": "Physical and Emotional Intimacy",
+      "loadings": {
+        "Factor1": -0.05,
+        "Factor2": -0.02,
+        "Factor3": 0.03,
+        "Factor4": 0.75,
+        "Factor5": 0.00,
+        "Factor6": -0.06,
+        "Factor7": -0.26
+      },
+      "primary_factor": "Factor4",
+      "note": "Reverse scored item"
+    },
+    {
+      "item_number": 33,
+      "text": "I have felt satisfied with my sex life",
+      "subscale": "Physical and Emotional Intimacy",
+      "loadings": {
+        "Factor1": -0.19,
+        "Factor2": -0.25,
+        "Factor3": 0.14,
+        "Factor4": 0.76,
+        "Factor5": -0.02,
+        "Factor6": -0.08,
+        "Factor7": 0.03
+      },
+      "primary_factor": "Factor4",
+      "note": "Reverse scored item"
+    },
+    {
+      "item_number": 34,
+      "text": "I have felt satisfied in my leisure activities and hobbies",
+      "subscale": "Life Satisfaction",
+      "loadings": {
+        "Factor1": 0.14,
+        "Factor2": -0.03,
+        "Factor3": 0.14,
+        "Factor4": 0.22,
+        "Factor5": 0.21,
+        "Factor6": 0.08,
+        "Factor7": -0.45
+      },
+      "primary_factor": "Factor7",
+      "note": "Reverse scored item"
+    },
+    {
+      "item_number": 35,
+      "text": "I have not felt satisfied with my friends",
+      "subscale": "Life Satisfaction",
+      "loadings": {
+        "Factor1": 0.11,
+        "Factor2": 0.15,
+        "Factor3": -0.04,
+        "Factor4": 0.07,
+        "Factor5": 0.10,
+        "Factor6": -0.03,
+        "Factor7": -0.65
+      },
+      "primary_factor": "Factor7"
+    },
+    {
+      "item_number": 36,
+      "text": "I have felt satisfied with the support I have received from other significant people",
+      "subscale": "Life Satisfaction",
+      "loadings": {
+        "Factor1": -0.04,
+        "Factor2": 0.20,
+        "Factor3": 0.15,
+        "Factor4": 0.31,
+        "Factor5": 0.01,
+        "Factor6": -0.22,
+        "Factor7": -0.48
+      },
+      "primary_factor": "Factor7",
+      "note": "Reverse scored item"
+    },
+    {
+      "item_number": 37,
+      "text": "I have not felt satisfied with my health",
+      "subscale": "Life Satisfaction",
+      "loadings": {
+        "Factor1": 0.30,
+        "Factor2": 0.01,
+        "Factor3": 0.14,
+        "Factor4": -0.12,
+        "Factor5": 0.03,
+        "Factor6": 0.05,
+        "Factor7": -0.39
+      },
+      "primary_factor": "Factor7"
+    },
+    {
+      "item_number": 38,
+      "text": "I have felt satisfied with life in general",
+      "subscale": "Life Satisfaction",
+      "loadings": {
+        "Factor1": 0.07,
+        "Factor2": -0.09,
+        "Factor3": 0.30,
+        "Factor4": 0.16,
+        "Factor5": 0.09,
+        "Factor6": 0.04,
+        "Factor7": -0.48
+      },
+      "primary_factor": "Factor7",
+      "note": "Reverse scored item"
+    }
+  ],
+  "removed_items": [
+    {
+      "item_number": 21,
+      "text": "I have felt depressed when looking in the mirror as the body I have does not match my gender identity",
+      "reason": "removed_for_conceptual_reasons",
+      "loadings": {
+        "Factor1": 0.10,
+        "Factor2": -0.37,
+        "Factor3": 0.06,
+        "Factor4": -0.01,
+        "Factor5": 0.03,
+        "Factor6": 0.54,
+        "Factor7": -0.11
+      }
+    },
+    {
+      "item_number": 27,
+      "text": "I have felt that the way my body looks naked does not represent my gender identity",
+      "reason": "removed_for_conceptual_reasons",
+      "loadings": {
+        "Factor1": -0.06,
+        "Factor2": -0.46,
+        "Factor3": 0.07,
+        "Factor4": 0.05,
+        "Factor5": 0.07,
+        "Factor6": 0.50,
+        "Factor7": -0.03
+      }
+    },
+    {
+      "item_number": 28,
+      "text": "I have felt distressed about my gender as my body does not match my gender identity",
+      "reason": "removed_for_conceptual_reasons",
+      "loadings": {
+        "Factor1": 0.11,
+        "Factor2": -0.49,
+        "Factor3": 0.10,
+        "Factor4": -0.03,
+        "Factor5": 0.12,
+        "Factor6": 0.40,
+        "Factor7": -0.01
+      }
+    },
+    {
+      "item_number": 30,
+      "text": "I have felt that I do not need sex hormones to make me feel happy about my gender",
+      "reason": "removed_for_conceptual_reasons",
+      "loadings": {
+        "Factor1": 0.10,
+        "Factor2": -0.26,
+        "Factor3": -0.43,
+        "Factor4": 0.20,
+        "Factor5": 0.26,
+        "Factor6": 0.04,
+        "Factor7": 0.05
+      }
+    }
+  ],
+  "notes": {
+    "analysis_type": "Second principle components analysis after initial item removal",
+    "sample_characteristics": "N=451 participants from original English validation study",
+    "reverse_scored_items": "Items marked with # in original table",
+    "excluded_items": "Items marked with † were excluded from final scale",
+    "rotation_method": "Not specified in table but likely oblique given factor correlations expected"
+  }
+} 

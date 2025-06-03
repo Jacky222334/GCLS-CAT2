@@ -1,0 +1,25 @@
+EFA Eignungstests
+=================
+
+KMO-Test Ergebnisse:
+Kaiser-Meyer-Olkin factor adequacy
+Call: KMO(r = cor_matrix)
+Overall MSA =  0.92
+MSA for each item = 
+   I1    I2    I3    I4    I5    I6    I7    I8    I9 I10_r   I11   I12   I13 
+ 0.96  0.90  0.93  0.94  0.94  0.95  0.95  0.92  0.94  0.95  0.94  0.92  0.91 
+  I14   I15 I16_r   I17   I18   I19 I20_r   I21 I22_r   I23   I24   I25   I27 
+ 0.93  0.90  0.93  0.82  0.90  0.91  0.85  0.87  0.90  0.90  0.86  0.87  0.94 
+  I28   I29 I30_r I31_r   I32   I33 I34_r I35_r I36_r I37_r I38_r 
+ 0.90  0.90  0.93  0.95  0.95  0.93  0.94  0.85  0.95  0.94  0.95 
+
+Bartlett-Test Ergebnisse:
+$chisq
+[1] 6864.253
+
+$p.value
+[1] 0
+
+$df
+[1] 666
+

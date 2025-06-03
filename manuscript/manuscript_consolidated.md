@@ -94,34 +94,6 @@ For sample size justification, we followed psychometric guidelines recommending 
 
 Data was collected using LimeSurvey (Version 5.6.9), an online platform suitable for complex surveys. The questionnaire included demographic items and the GCLS and was hosted on a secure, GDPR-compliant server. Data was collected during a one-month period in January/February 2023. Of the 1,161 individuals invited to participate, 462 (39.8%) accessed the online questionnaire and 293 (25.2%) completed it fully. Participants accessed the survey through personalized links. On average, completion took about 33.8 minutes.
 
-
-
-```mermaid
-graph TD
-    A[Translation Phase] --> B[Statistical Analysis]
-    A --> |TRAPD Approach| A1[Translation]
-    A --> |Expert Review| A2[Cultural Adaptation]
-    A --> |N=7| A3[Cognitive Pretesting]
-    A --> |Original Authors| A4[Back-Translation]
-  
-    B --> |N=293| B1[Exploratory Factor Analysis]
-    B --> |7 Factors| B2[ESEM Analysis]
-    B --> |Parameter Stability| B3[Bayesian Fine-Tuning]
-  
-    A1 --> |2 Independent Translators| A2
-    A2 --> |Expert Panel Review| A3
-    A3 --> |Item Refinement| A4
-  
-    B1 --> |Factor Structure| B2
-    B2 --> |Model Optimization| B3
-  
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-```
-
-<!-- **Figure 1.** Workflow of the German GCLS validation process... -->
-
-
 ### Translation and Cultural Adaptation
 
 The translation and cultural adaptation process followed a modified TRAPD (Translation, Review, Adjudication, Pretesting, and Documentation) approach, which represents current best practice for survey translations (Mohler et al., 2016). Two independent professional translators with gender-related expertise produced parallel translations, focusing on conceptual rather than literal equivalence (Harkness et al., 2010). An expert panel comprising psychologists and psychiatrists reviewed the translations, discussed discrepancies, and reached consensus on culturally appropriate adaptations through structured deliberation (Behr, 2017). Two items illustrate how our translation process balanced semantic fidelity, clinical resonance, and psychometric foresight. The item "I thought about hurting myself or taking my life" required careful retention of affective intensity, as it loaded clearly on the psychological functioning factor (\lambda = .56) and was crucial for detecting clinically significant distress. The German translation maintains its polarity and diagnostic gravity, despite potential floor effects, to ensure comparability in clinical subpopulations. Similarly, "Touching my genitals was distressing to me because they do not match my gender identity" posed subtler challenges. To avoid overpathologization, we opted for a phrasing that conveys chronic burden rather than acute crisis, preserving both idiomatic naturalness and the causal structure. This item showed strong discriminatory power (\lambda = .78) across transition stages in the original data (Jones et al., 2019). Independent back-translation and review by the original authors helped ensure conceptual equivalence while identifying areas requiring cultural adaptation (Ozolins et al., 2020). Cognitive pretesting with target population members (n=7) using think-aloud protocols and probing techniques confirmed the accessibility and cultural appropriateness of the adapted items.

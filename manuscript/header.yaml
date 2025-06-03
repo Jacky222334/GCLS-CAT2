@@ -1,0 +1,40 @@
+---
+title: "Gender Congruence and Life Satisfaction Scale (GCLS): German Validation Study"
+author:
+  - name: Jan Ben Schulze^1^
+  - name: Flavio Ammann^1^
+  - name: Bethany A. Jones^2,3^
+  - name: Roland von Känel^1^
+  - name: Sebastian Euler^1^
+institute:
+  - ^1^Department of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich, Switzerland
+  - ^2^Nottingham Centre for Transgender Health, United Kingdom
+  - ^3^School of Sport, Exercise and Health Sciences, Loughborough University, United Kingdom
+corresponding_author: "Jan Ben Schulze, Department of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich, Culmannstrasse 8, 8091 Zurich, Switzerland"
+documentclass: article
+geometry: margin=1in
+fontsize: 11pt
+linestretch: 1.5
+bibliography: references/references.bib
+csl: references/apa.csl
+header-includes:
+  - \usepackage{float}
+  - \usepackage{graphicx}
+  - \usepackage{caption}
+  - \usepackage{subcaption}
+  - \usepackage{booktabs}
+  - \usepackage{longtable}
+  - \usepackage{array}
+  - \usepackage{multirow}
+  - \usepackage{wrapfig}
+  - \usepackage{pdflscape}
+  - \usepackage{tabu}
+  - \usepackage{threeparttable}
+  - \usepackage{threeparttablex}
+  - \usepackage[normalem]{ulem}
+  - \usepackage{makecell}
+  - \usepackage{xcolor}
+  - \usepackage{amsmath}
+  - \usepackage{amssymb}
+  - \usepackage{unicode-math}
+--- 

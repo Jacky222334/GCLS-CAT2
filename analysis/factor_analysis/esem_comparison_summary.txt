@@ -1,0 +1,18 @@
+ESEM Analysis Comparison
+
+Sample Sizes:
+Total Sample:  293 
+AMAB Women:  154 
+AFAB Men:  97 
+
+Variance Explained:
+         Group  Variance
+1 Total Sample 0.5799766
+2   AMAB Women 0.5781601
+3     AFAB Men 0.6275834
+
+Model Fit Statistics:
+         Group ChiSquare       PValue
+1 Total Sample  791.7769 4.785806e-24
+2   AMAB Women  614.8154 7.537963e-09
+3     AFAB Men  515.7801 2.262184e-03

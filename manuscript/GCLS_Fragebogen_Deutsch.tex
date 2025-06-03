@@ -1,0 +1,291 @@
+\documentclass[11pt,a4paper]{article}
+
+% ===========================================
+% PAKETE FÜR SPRACHE UND ZEICHENKODIERUNG
+% ===========================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+
+% ===========================================
+% PAKETE FÜR LAYOUT UND FORMATIERUNG
+% ===========================================
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left=2cm,
+    right=2cm,
+    top=2.5cm,
+    bottom=2.5cm,
+    headheight=14pt,
+    headsep=0.5cm
+}
+
+\usepackage{setspace}
+\onehalfspacing
+
+% Schriften
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Farben
+\usepackage{xcolor}
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightblue}{RGB}{173,216,230}
+\definecolor{lightgray}{RGB}{245,245,245}
+
+% Tabellen und Arrays
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+% Kopf- und Fußzeilen
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{GCLS-Gv1.1 - Deutsche Version}}
+\fancyhead[R]{Seite \thepage}
+\fancyfoot[C]{\footnotesize Gender Congruence and Life Satisfaction Scale}
+\renewcommand{\headrulewidth}{0.8pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Boxes und Rahmen
+\usepackage{tcolorbox}
+\tcbuselibrary{most}
+
+% Aufzählungen
+\usepackage{enumitem}
+
+% Kontrollkästchen
+\usepackage{amssymb}
+
+% ===========================================
+% TITEL UND HEADER
+% ===========================================
+\title{
+    \vspace{-1cm}
+    {\LARGE\bfseries\color{darkblue} Gender Congruence and Life Satisfaction Scale}\\[0.3cm]
+    {\Large\bfseries Deutsche Version (GCLS-Gv1.1)}
+}
+
+\author{}
+\date{}
+
+% ===========================================
+% CUSTOM COMMANDS
+% ===========================================
+% Antwortskala Box
+\newcommand{\responsescale}{
+\begin{tcolorbox}[colback=lightgray,colframe=darkblue,width=\textwidth,arc=2mm]
+\centering
+\textbf{Antwortskala:}\\[0.2cm]
+\begin{tabular}{ccccc}
+\textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} \\
+Immer & Häufig & Manchmal & Selten & Nie \\
+\end{tabular}
+\end{tcolorbox}
+}
+
+% Fragenbox
+\newcommand{\questionbox}[2]{
+\vspace{0.3cm}
+\begin{tcolorbox}[colback=white,colframe=darkblue,arc=1mm,left=0.5cm,right=0.5cm,top=0.3cm,bottom=0.3cm]
+\textbf{#1.} #2\\[0.3cm]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} \\
+\textbf{Immer} & \textbf{Häufig} & \textbf{Manchmal} & \textbf{Selten} & \textbf{Nie} \\
+\hline
+$\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+\hline
+\end{tabular}
+\end{tcolorbox}
+}
+
+% ===========================================
+% DOKUMENT BEGINN
+% ===========================================
+\begin{document}
+
+% Titelseite
+\maketitle
+
+\begin{center}
+\begin{tcolorbox}[colback=lightblue,colframe=darkblue,width=0.9\textwidth,arc=3mm]
+\centering
+\textbf{\large Patienteninformationen}\\[0.5cm]
+\small
+\textbf{Name:} \rule{4cm}{0.4pt} \hspace{1cm} \textbf{Geburtsdatum:} \rule{3cm}{0.4pt}\\[0.3cm]
+\textbf{Datum:} \rule{3cm}{0.4pt} \hspace{1cm} \textbf{ID:} \rule{3cm}{0.4pt}\\[0.5cm]
+\textbf{Geschlechtsidentität:} $\square$ Trans-weiblich \quad $\square$ Trans-männlich \quad $\square$ Non-binär \quad $\square$ Andere: \rule{3cm}{0.4pt}\\[0.3cm]
+\textbf{Zugewiesenes Geschlecht bei Geburt:} $\square$ Männlich \quad $\square$ Weiblich \quad $\square$ Intersex
+\end{tcolorbox}
+\end{center}
+
+\vspace{1cm}
+
+\begin{tcolorbox}[colback=lightgray,colframe=darkblue,width=\textwidth,arc=2mm]
+\textbf{\large Anweisungen:}\\[0.3cm]
+Die folgenden Fragen beziehen sich auf Ihre Erfahrungen mit Ihrer Geschlechtsidentität und Lebenszufriedenheit. Bitte beantworten Sie jede Frage, indem Sie das Kästchen ankreuzen, das am besten beschreibt, wie oft jede Aussage in den \textbf{letzten 6 Wochen} auf Sie zutraf.\\[0.3cm]
+Es gibt keine richtigen oder falschen Antworten. Bitte antworten Sie ehrlich und wählen Sie die Antwort, die Ihre Erfahrung am besten widerspiegelt.
+\end{tcolorbox}
+
+\responsescale
+
+\vspace{0.5cm}
+
+% ===========================================
+% SECTION 1: PSYCHOLOGISCHES FUNKTIONIEREN
+% ===========================================
+\section*{\color{darkblue}Bereich 1: Psychologisches Funktionieren}
+
+\questionbox{1}{Ich habe mich niedergeschlagen, traurig oder hoffnungslos gefühlt}
+
+\questionbox{2}{Ich habe mich ängstlich, nervös oder besorgt gefühlt}
+
+\questionbox{3}{Ich habe daran gedacht, mir selbst zu schaden oder mein Leben zu beenden}
+
+\questionbox{4}{Ich habe mich einsam gefühlt}
+
+\questionbox{5}{Ich habe mich wertlos gefühlt}
+
+\questionbox{6}{Ich habe mich von anderen Menschen isoliert gefühlt}
+
+\questionbox{7}{Ich habe Schwierigkeiten gehabt, mich zu konzentrieren}
+
+% ===========================================
+% SECTION 2: SOZIALE GESCHLECHTSROLLENANERKENNUNG
+% ===========================================
+\newpage
+\section*{\color{darkblue}Bereich 2: Soziale Geschlechtsrollenanerkennung}
+
+\questionbox{8}{Menschen haben mich fälschlicherweise mit dem falschen Pronomen (er/sie) angesprochen}
+
+\questionbox{9}{Menschen haben mich als das falsche Geschlecht wahrgenommen}
+
+\questionbox{10}{Menschen haben mich als mein wahres Geschlecht erkannt}
+
+\questionbox{11}{Ich habe Schwierigkeiten gehabt, von anderen in meiner Geschlechtsrolle akzeptiert zu werden}
+
+\questionbox{12}{Ich habe mich unwohl gefühlt, wenn Menschen meine Geschlechtsidentität in Frage gestellt haben}
+
+\questionbox{13}{Ich habe mich dabei unwohl gefühlt, öffentliche Toiletten zu benutzen}
+
+% ===========================================
+% SECTION 3: KÖRPERLICHE UND EMOTIONALE INTIMITÄT
+% ===========================================
+\section*{\color{darkblue}Bereich 3: Körperliche und emotionale Intimität}
+
+\questionbox{14}{Ich habe intime Beziehungen vermieden}
+
+\questionbox{15}{Ich habe körperliche Intimität vermieden}
+
+\questionbox{16}{Ich habe mich dabei unwohl gefühlt, körperlich intim zu sein}
+
+\questionbox{17}{Ich habe das Gefühl gehabt, dass mein Körper nicht zu meiner Geschlechtsidentität passt, wenn ich körperlich intim bin}
+
+% ===========================================
+% SECTION 4: GENITALIEN
+% ===========================================
+\section*{\color{darkblue}Bereich 4: Genitalien}
+
+\questionbox{18}{Das Berühren meiner Genitalien war für mich belastend, weil sie nicht zu meiner Geschlechtsidentität passen}
+
+\questionbox{19}{Ich habe meine Genitalien versteckt oder getarnt}
+
+\questionbox{20}{Ich habe mich wegen meiner Genitalien unvollständig gefühlt}
+
+\questionbox{21}{Ich bin mit meinen Genitalien zufrieden}
+
+\questionbox{22}{Ich habe das Gefühl gehabt, dass eine Genitaloperation das Unglück, das ich in Bezug auf mein Geschlecht empfinde, beheben würde}
+
+% ===========================================
+% SECTION 5: BRUST/CHEST
+% ===========================================
+\newpage
+\section*{\color{darkblue}Bereich 5: Brust/Chest}
+
+\questionbox{23}{Ich habe meine Brust versteckt oder getarnt}
+
+\questionbox{24}{Ich habe das Gefühl gehabt, dass meine Brust nicht zu meiner Geschlechtsidentität passt}
+
+\questionbox{25}{Ich bin mit meiner Brust zufrieden}
+
+\questionbox{26}{Ich habe mich wegen meiner Brust unvollständig gefühlt}
+
+\questionbox{27}{Das Berühren meiner Brust war für mich belastend, weil sie nicht zu meiner Geschlechtsidentität passt}
+
+% ===========================================
+% SECTION 6: ANDERE SEKUNDÄRE GESCHLECHTSMERKMALE
+% ===========================================
+\section*{\color{darkblue}Bereich 6: Andere sekundäre Geschlechtsmerkmale}
+
+\questionbox{28}{Ich habe das Gefühl gehabt, dass meine Körperbehaarung nicht zu meiner Geschlechtsidentität passt}
+
+\questionbox{29}{Ich habe das Gefühl gehabt, dass meine Stimme nicht zu meiner Geschlechtsidentität passt}
+
+\questionbox{30}{Ich habe das Gefühl gehabt, dass meine Gesichtszüge nicht zu meiner Geschlechtsidentität passen}
+
+\questionbox{31}{Ich habe das Gefühl gehabt, dass meine Körperform nicht zu meiner Geschlechtsidentität passt}
+
+\questionbox{32}{Ich habe mich wegen anderer Körpermerkmale (nicht Genitalien oder Brust) unvollständig gefühlt}
+
+\questionbox{33}{Ich bin mit anderen Aspekten meines Körpers (nicht Genitalien oder Brust) zufrieden}
+
+% ===========================================
+% SECTION 7: LEBENSZUFRIEDENHEIT
+% ===========================================
+\section*{\color{darkblue}Bereich 7: Lebenszufriedenheit}
+
+\questionbox{34}{Ich bin mit meinem Leben zufrieden}
+
+\questionbox{35}{Ich habe das Gefühl, dass mein Leben sinnvoll ist}
+
+\questionbox{36}{Ich bin optimistisch bezüglich meiner Zukunft}
+
+\questionbox{37}{Ich habe das Gefühl, dass sich meine Lebensqualität verbessert hat}
+
+\questionbox{38}{Ich bin mit meinem allgemeinen Wohlbefinden zufrieden}
+
+% ===========================================
+% FOOTER INFORMATION
+% ===========================================
+\newpage
+
+\begin{center}
+\begin{tcolorbox}[colback=lightgray,colframe=darkblue,width=\textwidth,arc=3mm]
+\centering
+\textbf{\large Vielen Dank für die Beantwortung der Fragen!}\\[0.5cm]
+\small
+\textbf{Auswertung:}\\
+Die GCLS besteht aus sieben Bereichen, die verschiedene Aspekte der Geschlechtskongruenz und Lebenszufriedenheit messen. Niedrigere Werte zeigen bessere Ergebnisse an.\\[0.3cm]
+
+\textbf{Bereiche:}
+\begin{itemize}[leftmargin=1cm]
+    \item \textbf{Psychologisches Funktionieren:} Fragen 1-7
+    \item \textbf{Soziale Geschlechtsrollenanerkennung:} Fragen 8-13
+    \item \textbf{Körperliche und emotionale Intimität:} Fragen 14-17
+    \item \textbf{Genitalien:} Fragen 18-22
+    \item \textbf{Brust/Chest:} Fragen 23-27
+    \item \textbf{Andere sekundäre Geschlechtsmerkmale:} Fragen 28-33
+    \item \textbf{Lebenszufriedenheit:} Fragen 34-38
+\end{itemize}
+\end{tcolorbox}
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+\footnotesize
+\textbf{GCLS-Gv1.1 - Deutsche Version}\\
+Übersetzt und validiert für den deutschsprachigen Raum\\
+Originalversion: Jones, B.A., et al. (2019)\\
+Deutsche Version: Schulze, J.B., et al. (2023)\\[0.3cm]
+UniversitätsSpital Zürich, Klinik für Konsiliar- und Liaisons-Psychiatrie\\
+sowie Psychosomatische Medizin\\
+Culmannstrasse 8, 8091 Zürich, Schweiz
+\end{center}
+
+\end{document} 

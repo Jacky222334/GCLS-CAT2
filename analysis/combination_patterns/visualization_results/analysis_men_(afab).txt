@@ -1,0 +1,114 @@
+
+Analyzing combinations for Men (AFAB) (n=97)
+--------------------------------------------------
+
+Most common intervention combinations:
+Chest masculinization + Testosterone HT: 37 (38.1%)
+Chest masculinization + Hysterectomy + Testosterone HT: 18 (18.6%)
+Chest masculinization + Hysterectomy + Phalloplasty + Testosterone HT: 10 (10.3%)
+Testosterone HT: 10 (10.3%)
+Anti-androgens + Chest masculinization + Testosterone HT: 3 (3.1%)
+
+Most common intervention pairs:
+Chest masculinization + Testosterone HT: 79 (81.4%)
+Hysterectomy + Testosterone HT: 37 (38.1%)
+Chest masculinization + Hysterectomy: 35 (36.1%)
+Phalloplasty + Testosterone HT: 12 (12.4%)
+Chest masculinization + Phalloplasty: 11 (11.3%)
+
+Anomaly Analysis:
+
+Case 104:
+Interventions: Estrogen HT, Anti-androgens
+Anomalies detected:
+- Unusual for männlich: Estrogen HT
+- Unusual for männlich: Anti-androgens
+
+Case 185:
+Interventions: Anti-androgens, Testosterone HT, Chest masculinization
+Anomalies detected:
+- Unusual for männlich: Anti-androgens
+
+Case 190:
+Interventions: Testosterone HT, Chest masculinization, Breast augmentation
+Anomalies detected:
+- Conflicting interventions: Breast augmentation and Chest masculinization
+- Unusual for männlich: Breast augmentation
+
+Case 218:
+Interventions: Anti-androgens, Testosterone HT, Chest masculinization
+Anomalies detected:
+- Unusual for männlich: Anti-androgens
+
+Case 219:
+Interventions: Testosterone HT, Laser epilation, Hysterectomy, Phalloplasty
+Anomalies detected:
+- Unusual for männlich: Laser epilation
+
+Case 222:
+Interventions: Anti-androgens, Testosterone HT, Chest masculinization, Hysterectomy
+Anomalies detected:
+- Unusual for männlich: Anti-androgens
+
+Case 225:
+Interventions: Anti-androgens, Testosterone HT, Chest masculinization
+Anomalies detected:
+- Unusual for männlich: Anti-androgens
+
+Case 254:
+Interventions: Anti-androgens, Testosterone HT, Laser epilation, Chest masculinization, Hysterectomy
+Anomalies detected:
+- Unusual for männlich: Anti-androgens
+- Unusual for männlich: Laser epilation
+
+Case 268:
+Interventions: Estrogen HT, Anti-androgens, Voice therapy, Laser epilation
+Anomalies detected:
+- Unusual for männlich: Estrogen HT
+- Unusual for männlich: Anti-androgens
+- Unusual for männlich: Laser epilation
+
+Total cases with anomalies: 9 (9.3%)
+
+Outcome Comparison:
+--------------------------------------------------
+
+Regret Analysis:
+Anomaly cases (n=9): 1.11
+Non-anomaly cases (n=88): 0.40
+T-test: t=1.04, p=0.300
+
+Coming Out Timeline Analysis:
+--------------------------------------------------
+
+Men (AFAB) (n=9):
+Mean birth year: 1993
+Current mean age: 31.9
+
+Coming Out Timeline:
+Inner Coming Out: mean age 17.2 years (around year 2009)
+Outer Coming Out: mean age 20.0 years (around year 2013)
+
+Time between coming outs:
+Mean: 3.0 years
+Median: 1.5 years
+Range: 0.0 to 13.0 years
+
+Distribution of time between coming outs:
+1 year: 3 cases (37.5%)
+2 years: 2 cases (25.0%)
+Same year: 1 cases (12.5%)
+2-5 years: 1 cases (12.5%)
+More than 10 years: 1 cases (12.5%)
+5-10 years: 0 cases (0.0%)
+
+Age distribution at coming out:
+Inner Coming Out:
+Range: 6.0 to 48.0 years
+Mean: 17.2 years
+Median: 14.0 years
+
+Outer Coming Out:
+Range: 14.0 to 48.0 years
+Mean: 20.2 years
+Median: 16.0 years

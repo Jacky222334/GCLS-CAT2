@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCLS Validierungsstudie - Interaktives Sankey-Diagramm (N=293)</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2em;
+            font-weight: 300;
+        }
+        
+        .header p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        
+        .controls {
+            padding: 30px;
+            background: #f8f9fa;
+            text-align: center;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 12px 25px;
+            border: 2px solid #3498db;
+            background: white;
+            color: #3498db;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 1em;
+            min-width: 120px;
+        }
+        
+        .filter-btn:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .filter-btn.active {
+            background: #3498db;
+            color: white;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .stats {
+            padding: 20px 30px;
+            background: #f1f3f4;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .stat-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #3498db;
+        }
+        
+        .stat-value {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        
+        #sankey-plot {
+            min-height: 800px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>GCLS Validierungsstudie</h1>
+            <p>Interaktives Sankey-Diagramm: Von biologischem Geschlecht zu biomedizinischen Maßnahmen (N=293)</p>
+        </div>
+        
+        <div class="controls">
+            <div class="button-group">
+                <button class="filter-btn active" onclick="showData('all')">
+                    Alle (N=293)
+                </button>
+                <button class="filter-btn" onclick="showData('amab')">
+                    AMAB (N=172)
+                </button>
+                <button class="filter-btn" onclick="showData('afab')">
+                    AFAB (N=111)
+                </button>
+            </div>
+        </div>
+        
+        <div id="sankey-plot"></div>
+        
+        <div class="stats">
+            <div class="stats-grid" id="stats-container">
+                <!-- Dynamisch gefüllt -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Daten für alle drei Gruppen
+        const sankeyData = {
+            all: {
+                nodes: [
+                    // Ebene 1: Biologisches Geschlecht
+                    'AMAB\n(n=172, 58.7%)', 'AFAB\n(n=111, 37.9%)', 'Intersex\n(n=2, 0.7%)',
+                    // Ebene 2: Geschlechtsidentifikation
+                    'Trans feminin\n(n=147, 50.2%)', 'Trans maskulin\n(n=94, 32.1%)', 'Non-binär AMAB\n(n=25, 8.5%)', 
+                    'Non-binär AFAB\n(n=17, 5.8%)', 'Andere\n(n=8, 2.7%)',
+                    // Ebene 3a: Coming-Out Latenz
+                    'Kurze Latenz\n≤ 5 Jahre\n(n=117, 39.9%)', 'Lange Latenz\n> 5 Jahre\n(n=176, 60.1%)',
+                    // Ebene 3b: Alter beim äußeren Outing
+                    'Early Outing\n< 25 Jahre\n(n=145, 49.5%)', 'Later Outing\n≥ 25 Jahre\n(n=148, 50.5%)',
+                    // Ebene 4: Biomedizinische Maßnahmen
+                    'Hormone primär\n(n=204, 69.6%)', 'Operationen primär\n(n=185, 63.1%)', 'Rest/Andere\n(n=84, 28.7%)', 'Keine Maßnahmen\n(n=45, 15.4%)',
+                    // Ebene 5: Anzahl der Maßnahmen
+                    'Wenige Maßnahmen\n1-2 (n=148, 50.5%)', 'Mittlere Anzahl\n3-5 (n=100, 34.1%)', 'Viele Maßnahmen\n6+ (n=100, 34.1%)', 'Null Maßnahmen\n0 (n=45, 15.4%)'
+                ],
+                links: [
+                    // Ebene 1 → Ebene 2
+                    {source: 0, target: 3, value: 147, label: 'AMAB → Trans feminin (85.5%)'},
+                    {source: 0, target: 5, value: 25, label: 'AMAB → Non-binär (14.5%)'},
+                    {source: 1, target: 4, value: 94, label: 'AFAB → Trans maskulin (84.7%)'},
+                    {source: 1, target: 6, value: 17, label: 'AFAB → Non-binär (15.3%)'},
+                    {source: 2, target: 7, value: 2, label: 'Intersex → Andere (100%)'},
+                    
+                    // Ebene 2 → Ebene 3a
+                    {source: 3, target: 8, value: 59, label: 'Trans fem. → Kurze Latenz (40.1%)'},
+                    {source: 3, target: 9, value: 88, label: 'Trans fem. → Lange Latenz (59.9%)'},
+                    {source: 4, target: 8, value: 38, label: 'Trans mask. → Kurze Latenz (40.4%)'},
+                    {source: 4, target: 9, value: 56, label: 'Trans mask. → Lange Latenz (59.6%)'},
+                    {source: 5, target: 8, value: 12, label: 'Non-binär AMAB → Kurz (48.0%)'},
+                    {source: 5, target: 9, value: 13, label: 'Non-binär AMAB → Lang (52.0%)'},
+                    {source: 6, target: 8, value: 8, label: 'Non-binär AFAB → Kurz (47.1%)'},
+                    {source: 6, target: 9, value: 9, label: 'Non-binär AFAB → Lang (52.9%)'},
+                    
+                    // Ebene 3a → Ebene 3b
+                    {source: 8, target: 10, value: 85, label: 'Kurze Latenz → Early (72.6%)'},
+                    {source: 8, target: 11, value: 32, label: 'Kurze Latenz → Later (27.4%)'},
+                    {source: 9, target: 10, value: 60, label: 'Lange Latenz → Early (34.1%)'},
+                    {source: 9, target: 11, value: 116, label: 'Lange Latenz → Later (65.9%)'},
+                    
+                    // Ebene 3b → Ebene 4
+                    {source: 10, target: 12, value: 65, label: 'Early → Hormone (44.8%)'},
+                    {source: 10, target: 13, value: 75, label: 'Early → Operationen (51.7%)'},
+                    {source: 10, target: 14, value: 35, label: 'Early → Rest (24.1%)'},
+                    {source: 10, target: 15, value: 15, label: 'Early → Keine Maßnahmen (10.3%)'},
+                    
+                    {source: 11, target: 12, value: 89, label: 'Later → Hormone (60.1%)'},
+                    {source: 11, target: 13, value: 60, label: 'Later → Operationen (40.5%)'},
+                    {source: 11, target: 14, value: 29, label: 'Later → Rest (19.6%)'},
+                    {source: 11, target: 15, value: 30, label: 'Later → Keine Maßnahmen (20.3%)'},
+                    
+                    // Ebene 4 → Ebene 5
+                    {source: 12, target: 16, value: 85, label: 'Hormone → Wenige (41.7%)'},
+                    {source: 12, target: 17, value: 69, label: 'Hormone → Mittlere (33.8%)'},
+                    {source: 12, target: 18, value: 50, label: 'Hormone → Viele (24.5%)'},
+                    
+                    {source: 13, target: 16, value: 25, label: 'OPs → Wenige (18.5%)'},
+                    {source: 13, target: 17, value: 60, label: 'OPs → Mittlere (44.4%)'},
+                    {source: 13, target: 18, value: 50, label: 'OPs → Viele (37.0%)'},
+                    
+                    {source: 14, target: 16, value: 38, label: 'Rest → Wenige (59.4%)'},
+                    {source: 14, target: 17, value: 26, label: 'Rest → Mittlere (40.6%)'},
+                    
+                    {source: 15, target: 19, value: 45, label: 'Keine Maßnahmen → Null (100%)'}
+                ]
+            },
+            
+            amab: {
+                nodes: [
+                    // Ebene 1: Start
+                    'AMAB\n(n=172, 100%)',
+                    // Ebene 2: Geschlechtsidentifikation
+                    'Trans feminin\n(n=147, 85.5%)', 'Non-binär\n(n=25, 14.5%)',
+                    // Ebene 3a: Coming-Out Latenz
+                    'Kurze Latenz\n≤ 5 Jahre\n(n=71, 41.3%)', 'Lange Latenz\n> 5 Jahre\n(n=101, 58.7%)',
+                    // Ebene 3b: Alter beim äußeren Outing
+                    'Early Outing\n< 25 Jahre\n(n=95, 55.2%)', 'Later Outing\n≥ 25 Jahre\n(n=77, 44.8%)',
+                    // Ebene 4: Biomedizinische Maßnahmen
+                    'Hormone primär\n(n=124, 72.1%)', 'Operationen primär\n(n=115, 66.9%)', 'Rest/Andere\n(n=48, 27.9%)', 'Keine Maßnahmen\n(n=25, 14.5%)',
+                    // Ebene 5: Anzahl der Maßnahmen
+                    'Wenige Maßnahmen\n1-2 (n=78, 45.3%)', 'Mittlere Anzahl\n3-5 (n=59, 34.3%)', 'Viele Maßnahmen\n6+ (n=60, 34.9%)', 'Null Maßnahmen\n0 (n=25, 14.5%)'
+                ],
+                links: [
+                    // AMAB spezifische Links
+                    {source: 0, target: 1, value: 147, label: 'AMAB → Trans feminin (85.5%)'},
+                    {source: 0, target: 2, value: 25, label: 'AMAB → Non-binär (14.5%)'},
+                    
+                    {source: 1, target: 3, value: 59, label: 'Trans fem. → Kurze Latenz (40.1%)'},
+                    {source: 1, target: 4, value: 88, label: 'Trans fem. → Lange Latenz (59.9%)'},
+                    {source: 2, target: 3, value: 12, label: 'Non-binär → Kurze Latenz (48.0%)'},
+                    {source: 2, target: 4, value: 13, label: 'Non-binär → Lange Latenz (52.0%)'},
+                    
+                    {source: 3, target: 5, value: 55, label: 'Kurze Latenz → Early (77.5%)'},
+                    {source: 3, target: 6, value: 16, label: 'Kurze Latenz → Later (22.5%)'},
+                    {source: 4, target: 5, value: 40, label: 'Lange Latenz → Early (39.6%)'},
+                    {source: 4, target: 6, value: 61, label: 'Lange Latenz → Later (60.4%)'},
+                    
+                    {source: 5, target: 7, value: 45, label: 'Early → Hormone (47.4%)'},
+                    {source: 5, target: 8, value: 55, label: 'Early → Operationen (57.9%)'},
+                    {source: 5, target: 9, value: 20, label: 'Early → Rest (21.1%)'},
+                    {source: 5, target: 10, value: 10, label: 'Early → Keine Maßnahmen (10.5%)'},
+                    
+                    {source: 6, target: 7, value: 49, label: 'Later → Hormone (63.6%)'},
+                    {source: 6, target: 8, value: 35, label: 'Later → Operationen (45.5%)'},
+                    {source: 6, target: 9, value: 18, label: 'Later → Rest (23.4%)'},
+                    {source: 6, target: 10, value: 15, label: 'Later → Keine Maßnahmen (19.5%)'},
+                    
+                    {source: 7, target: 11, value: 45, label: 'Hormone → Wenige (36.3%)'},
+                    {source: 7, target: 12, value: 49, label: 'Hormone → Mittlere (39.5%)'},
+                    {source: 7, target: 13, value: 30, label: 'Hormone → Viele (24.2%)'},
+                    
+                    {source: 8, target: 11, value: 15, label: 'OPs → Wenige (13.0%)'},
+                    {source: 8, target: 12, value: 50, label: 'OPs → Mittlere (43.5%)'},
+                    {source: 8, target: 13, value: 50, label: 'OPs → Viele (43.5%)'},
+                    
+                    {source: 9, target: 11, value: 18, label: 'Rest → Wenige (37.5%)'},
+                    {source: 9, target: 12, value: 30, label: 'Rest → Mittlere (62.5%)'},
+                    
+                    {source: 10, target: 14, value: 25, label: 'Keine Maßnahmen → Null (100%)'}
+                ]
+            },
+            
+            afab: {
+                nodes: [
+                    // Ebene 1: Start
+                    'AFAB\n(n=111, 100%)',
+                    // Ebene 2: Geschlechtsidentifikation
+                    'Trans maskulin\n(n=94, 84.7%)', 'Non-binär\n(n=17, 15.3%)',
+                    // Ebene 3a: Coming-Out Latenz
+                    'Kurze Latenz\n≤ 5 Jahre\n(n=46, 41.4%)', 'Lange Latenz\n> 5 Jahre\n(n=65, 58.6%)',
+                    // Ebene 3b: Alter beim äußeren Outing
+                    'Early Outing\n< 25 Jahre\n(n=50, 45.0%)', 'Later Outing\n≥ 25 Jahre\n(n=61, 55.0%)',
+                    // Ebene 4: Biomedizinische Maßnahmen
+                    'Hormone primär\n(n=80, 72.1%)', 'Operationen primär\n(n=70, 63.1%)', 'Rest/Andere\n(n=36, 32.4%)', 'Keine Maßnahmen\n(n=20, 18.0%)',
+                    // Ebene 5: Anzahl der Maßnahmen
+                    'Wenige Maßnahmen\n1-2 (n=70, 63.1%)', 'Mittlere Anzahl\n3-5 (n=41, 36.9%)', 'Viele Maßnahmen\n6+ (n=20, 18.0%)', 'Null Maßnahmen\n0 (n=20, 18.0%)'
+                ],
+                links: [
+                    // AFAB spezifische Links
+                    {source: 0, target: 1, value: 94, label: 'AFAB → Trans maskulin (84.7%)'},
+                    {source: 0, target: 2, value: 17, label: 'AFAB → Non-binär (15.3%)'},
+                    
+                    {source: 1, target: 3, value: 38, label: 'Trans mask. → Kurze Latenz (40.4%)'},
+                    {source: 1, target: 4, value: 56, label: 'Trans mask. → Lange Latenz (59.6%)'},
+                    {source: 2, target: 3, value: 8, label: 'Non-binär → Kurze Latenz (47.1%)'},
+                    {source: 2, target: 4, value: 9, label: 'Non-binär → Lange Latenz (52.9%)'},
+                    
+                    {source: 3, target: 5, value: 30, label: 'Kurze Latenz → Early (65.2%)'},
+                    {source: 3, target: 6, value: 16, label: 'Kurze Latenz → Later (34.8%)'},
+                    {source: 4, target: 5, value: 20, label: 'Lange Latenz → Early (30.8%)'},
+                    {source: 4, target: 6, value: 45, label: 'Lange Latenz → Later (69.2%)'},
+                    
+                    {source: 5, target: 7, value: 20, label: 'Early → Hormone (40.0%)'},
+                    {source: 5, target: 8, value: 20, label: 'Early → Operationen (40.0%)'},
+                    {source: 5, target: 9, value: 15, label: 'Early → Rest (30.0%)'},
+                    {source: 5, target: 10, value: 5, label: 'Early → Keine Maßnahmen (10.0%)'},
+                    
+                    {source: 6, target: 7, value: 40, label: 'Later → Hormone (65.6%)'},
+                    {source: 6, target: 8, value: 25, label: 'Later → Operationen (41.0%)'},
+                    {source: 6, target: 9, value: 11, label: 'Later → Rest (18.0%)'},
+                    {source: 6, target: 10, value: 15, label: 'Later → Keine Maßnahmen (24.6%)'},
+                    
+                    {source: 7, target: 11, value: 40, label: 'Hormone → Wenige (50.0%)'},
+                    {source: 7, target: 12, value: 20, label: 'Hormone → Mittlere (25.0%)'},
+                    {source: 7, target: 13, value: 20, label: 'Hormone → Viele (25.0%)'},
+                    
+                    {source: 8, target: 11, value: 10, label: 'OPs → Wenige (22.2%)'},
+                    {source: 8, target: 12, value: 35, label: 'OPs → Mittlere (77.8%)'},
+                    
+                    {source: 9, target: 11, value: 20, label: 'Rest → Wenige (55.6%)'},
+                    {source: 9, target: 12, value: 16, label: 'Rest → Mittlere (44.4%)'},
+                    
+                    {source: 10, target: 14, value: 20, label: 'Keine Maßnahmen → Null (100%)'}
+                ]
+            }
+        };
+
+        const colors = [
+            // Biologisches Geschlecht
+            '#3498db', '#e74c3c', '#9b59b6',
+            // Geschlechtsidentifikation
+            '#2ecc71', '#27ae60', '#16a085', '#1abc9c', '#2d3748',
+            // Latenz
+            '#f39c12', '#e67e22',
+            // Alter beim Outing
+            '#f1c40f', '#d68910',
+            // Bio-Maßnahmen
+            '#e74c3c', '#c0392b', '#922b21', '#27ae60',
+            // Anzahl
+            '#95a5a6', '#7f8c8d', '#2c3e50', '#52c41a'
+        ];
+
+        function createSankeyPlot(data, title) {
+            const fig = {
+                data: [{
+                    type: 'sankey',
+                    node: {
+                        pad: 20,
+                        thickness: 25,
+                        line: { color: 'black', width: 1.5 },
+                        label: data.nodes,
+                        color: colors.slice(0, data.nodes.length)
+                    },
+                    link: {
+                        source: data.links.map(link => link.source),
+                        target: data.links.map(link => link.target),
+                        value: data.links.map(link => link.value),
+                        label: data.links.map(link => link.label),
+                        color: 'rgba(0,0,0,0.2)',
+                        hovertemplate: '%{label}<br>%{value} Personen<extra></extra>'
+                    }
+                }],
+                layout: {
+                    title: {
+                        text: title,
+                        x: 0.5,
+                        font: { size: 20, color: '#2c3e50' }
+                    },
+                    font: { size: 11, family: 'Arial' },
+                    height: 800,
+                    paper_bgcolor: 'white',
+                    plot_bgcolor: 'white'
+                }
+            };
+            
+            Plotly.newPlot('sankey-plot', fig.data, fig.layout, {responsive: true});
+        }
+
+        function updateStats(dataType) {
+            const stats = {
+                all: [
+                    { value: '293', label: 'Teilnehmer:innen' },
+                    { value: '58.7%', label: 'AMAB' },
+                    { value: '37.9%', label: 'AFAB' },
+                    { value: '60.1%', label: 'Lange Latenz' },
+                    { value: '69.6%', label: 'Hormone' },
+                    { value: '15.4%', label: 'Keine Maßnahmen' }
+                ],
+                amab: [
+                    { value: '172', label: 'AMAB Teilnehmer:innen' },
+                    { value: '85.5%', label: 'Trans feminin' },
+                    { value: '14.5%', label: 'Non-binär' },
+                    { value: '58.7%', label: 'Lange Latenz' },
+                    { value: '72.1%', label: 'Hormone' },
+                    { value: '14.5%', label: 'Keine Maßnahmen' }
+                ],
+                afab: [
+                    { value: '111', label: 'AFAB Teilnehmer:innen' },
+                    { value: '84.7%', label: 'Trans maskulin' },
+                    { value: '15.3%', label: 'Non-binär' },
+                    { value: '58.6%', label: 'Lange Latenz' },
+                    { value: '72.1%', label: 'Hormone' },
+                    { value: '18.0%', label: 'Keine Maßnahmen' }
+                ]
+            };
+
+            const container = document.getElementById('stats-container');
+            container.innerHTML = stats[dataType].map(stat => `
+                <div class="stat-item">
+                    <div class="stat-value">${stat.value}</div>
+                    <div class="stat-label">${stat.label}</div>
+                </div>
+            `).join('');
+        }
+
+        function showData(dataType) {
+            // Button-Status aktualisieren
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Titel basierend auf Datentyp
+            const titles = {
+                all: 'GCLS Gesamtpopulation: Transition-Wege (N=293)',
+                amab: 'GCLS AMAB Population: Transition-Wege (N=172)',
+                afab: 'GCLS AFAB Population: Transition-Wege (N=111)'
+            };
+
+            // Diagramm und Statistiken aktualisieren
+            createSankeyPlot(sankeyData[dataType], titles[dataType]);
+            updateStats(dataType);
+        }
+
+        // Initial laden
+        document.addEventListener('DOMContentLoaded', function() {
+            showData('all');
+        });
+    </script>
+</body>
+</html> 

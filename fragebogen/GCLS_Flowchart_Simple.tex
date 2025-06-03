@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+\usepackage{xcolor}
+
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightblue}{RGB}{173,216,230}
+\definecolor{lightgray}{RGB}{240,240,240}
+
+\tikzstyle{box} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=darkblue, fill=lightblue]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\begin{document}
+
+\title{\textbf{GCLS-Gv1.1 Validierungsstudie\\Studienablauf-Flowchart}}
+\author{}
+\date{}
+\maketitle
+
+\begin{center}
+\begin{tikzpicture}[node distance=2cm]
+
+\node (start) [box] {Studienstart\\Ethikantrag genehmigt};
+\node (recruit) [box, below of=start] {Rekrutierung\\n = 350 angesprochen};
+\node (screen) [box, below of=recruit] {Screening\\Einschlusskriterien};
+\node (consent) [box, below of=screen] {Informierte Einwilligung\\n = 293};
+\node (data) [box, below of=consent] {Datenerhebung\\GCLS-Gv1.1 (38 Items)};
+\node (analysis) [box, below of=data] {Statistische Analyse\\Faktorenanalyse};
+\node (results) [box, below of=analysis] {Ergebnisse\\7-Faktoren-Struktur};
+\node (publish) [box, below of=results] {Manuskript\\Publikation};
+
+\draw [arrow] (start) -- (recruit);
+\draw [arrow] (recruit) -- (screen);
+\draw [arrow] (screen) -- (consent);
+\draw [arrow] (consent) -- (data);
+\draw [arrow] (data) -- (analysis);
+\draw [arrow] (analysis) -- (results);
+\draw [arrow] (results) -- (publish);
+
+\node[right of=screen, xshift=3cm] {Ausgeschlossen: n = 57};
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{1cm}
+
+\textbf{Studiendetails:}
+\begin{itemize}
+\item Querschnitt-Validierungsstudie
+\item N = 293 transgender Personen
+\item Alter: 18-75 Jahre (M = 39.8, SD = 16.4)
+\item BASEC Nr. Req-2022-00630
+\end{itemize}
+
+\end{document} 

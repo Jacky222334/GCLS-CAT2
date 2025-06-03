@@ -1,0 +1,164 @@
+\documentclass[11pt,a4paper]{article}
+
+% ===========================================
+% PAKETE
+% ===========================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+
+% TikZ für Flowchart
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning, fit, calc}
+
+% Farben
+\usepackage{xcolor}
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightblue}{RGB}{173,216,230}
+\definecolor{lightgray}{RGB}{240,240,240}
+\definecolor{mediumgray}{RGB}{128,128,128}
+\definecolor{darkgreen}{RGB}{0,100,0}
+\definecolor{orange}{RGB}{255,165,0}
+
+% Schriften
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ===========================================
+% TIKZ STYLES
+% ===========================================
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=darkblue, fill=lightblue, font=\bfseries]
+
+\tikzstyle{process} = [rectangle, minimum width=4cm, minimum height=1cm, text centered, draw=darkblue, fill=lightgray, font=\small]
+
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=orange, fill=orange!20, font=\small]
+
+\tikzstyle{data} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=darkgreen, fill=green!20, font=\small]
+
+\tikzstyle{arrow} = [thick,->,>=stealth, color=darkblue]
+
+\tikzstyle{exclusion} = [rectangle, minimum width=2.5cm, minimum height=0.8cm, text centered, draw=red, fill=red!20, font=\footnotesize]
+
+% ===========================================
+% DOKUMENT
+% ===========================================
+\begin{document}
+
+\title{
+    {\Large\bfseries\color{darkblue} GCLS-Gv1.1 Validierungsstudie}\\[0.2cm]
+    {\large Studienablauf-Flowchart}
+}
+\author{}
+\date{}
+\maketitle
+
+\vspace{-1cm}
+
+\begin{center}
+\begin{tikzpicture}[node distance=1.5cm]
+
+% START
+\node (start) [startstop] {Studienstart\\Ethikantrag genehmigt};
+
+% REKRUTIERUNG
+\node (recruit) [process, below of=start] {Rekrutierung\\Transgender Personen\\(n = 350 angesprochen)};
+
+% EINSCHLUSSKRITERIEN
+\node (inclusion) [decision, below of=recruit, yshift=-0.5cm] {Einschlusskriterien\\erfüllt?};
+
+% AUSSCHLUSS
+\node (exclude) [exclusion, right of=inclusion, xshift=3cm] {Ausgeschlossen\\(n = 57)\\- Alter < 18\\- Unvollständige Daten\\- Keine Einwilligung};
+
+% INFORMIERTE EINWILLIGUNG
+\node (consent) [process, below of=inclusion, yshift=-0.5cm] {Informierte Einwilligung\\und Studienaufklärung\\(n = 293)};
+
+% DATENERHEBUNG
+\node (datacoll) [data, below of=consent] {Datenerhebung\\- GCLS-Gv1.1 (38 Items)\\- Demographische Daten\\- Zusatzfragebögen};
+
+% DATENVERARBEITUNG
+\node (dataproc) [process, below of=datacoll] {Datenverarbeitung\\- Qualitätskontrolle\\- Missing Data Analysis\\- Datenbereinigung};
+
+% DATENQUALITÄT
+\node (quality) [decision, below of=dataproc, yshift=-0.5cm] {Datenqualität\\ausreichend?};
+
+% NACHERHEBUNG
+\node (recheck) [process, right of=quality, xshift=3cm] {Nacherhebung\\bei n = 12\\Teilnehmenden};
+
+% HAUPTANALYSE
+\node (analysis) [process, below of=quality, yshift=-0.5cm] {Statistische Analyse\\- Explorative Faktorenanalyse\\- Interne Konsistenz\\- Validitätsprüfung};
+
+% ERGEBNISSE
+\node (results) [data, below of=analysis] {Ergebnisse\\- 7-Faktoren-Struktur\\- Cronbachs α = .78-.90\\- Gute Modellpassung};
+
+% INTERPRETATION
+\node (interpret) [process, below of=results] {Interpretation\\und Diskussion\\der Ergebnisse};
+
+% PUBLIKATION
+\node (publish) [startstop, below of=interpret] {Manuskript\\und Publikation};
+
+% PFEILE
+\draw [arrow] (start) -- (recruit);
+\draw [arrow] (recruit) -- (inclusion);
+\draw [arrow] (inclusion) -- node[anchor=west] {Ja} (consent);
+\draw [arrow] (inclusion) -- node[anchor=south] {Nein} (exclude);
+\draw [arrow] (consent) -- (datacoll);
+\draw [arrow] (datacoll) -- (dataproc);
+\draw [arrow] (dataproc) -- (quality);
+\draw [arrow] (quality) -- node[anchor=west] {Ja} (analysis);
+\draw [arrow] (quality) -- node[anchor=south] {Nein} (recheck);
+\draw [arrow] (recheck) |- (dataproc);
+\draw [arrow] (analysis) -- (results);
+\draw [arrow] (results) -- (interpret);
+\draw [arrow] (interpret) -- (publish);
+
+% SAMPLE SIZE ANNOTATIONS
+\node[font=\footnotesize, color=mediumgray] at ($(consent) + (2.5,0)$) {n = 293};
+\node[font=\footnotesize, color=mediumgray] at ($(analysis) + (2.5,0)$) {Final Sample\\n = 293};
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{1cm}
+
+% LEGENDE
+\begin{center}
+\begin{tikzpicture}[node distance=0.5cm]
+\node[startstop, scale=0.7] (leg1) {Start/Ende};
+\node[process, scale=0.7, right of=leg1, xshift=2cm] (leg2) {Prozess};
+\node[decision, scale=0.7, right of=leg2, xshift=2cm] (leg3) {Entscheidung};
+\node[data, scale=0.7, right of=leg3, xshift=2cm] (leg4) {Daten};
+\node[exclusion, scale=0.7, right of=leg4, xshift=2cm] (leg5) {Ausschluss};
+
+\node[font=\footnotesize, below of=leg1] {Start/Ende};
+\node[font=\footnotesize, below of=leg2] {Prozess};
+\node[font=\footnotesize, below of=leg3] {Entscheidung};
+\node[font=\footnotesize, below of=leg4] {Daten};
+\node[font=\footnotesize, below of=leg5] {Ausschluss};
+\end{tikzpicture}
+\end{center}
+
+\vspace{1cm}
+
+% STUDIENDETAILS
+\begin{center}
+\begin{tabular}{ll}
+\textbf{Studientyp:} & Querschnitt-Validierungsstudie \\
+\textbf{Stichprobe:} & N = 293 transgender Personen \\
+\textbf{Altersbereich:} & 18-75 Jahre (M = 39.8, SD = 16.4) \\
+\textbf{Rekrutierung:} & Online-Plattformen, Selbsthilfegruppen \\
+\textbf{Studienzeit:} & 6 Monate (2022-2023) \\
+\textbf{Ethik:} & BASEC Nr. Req-2022-00630 \\
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{center}
+\footnotesize
+\textbf{GCLS-Gv1.1 Validierungsstudie} | UniversitätsSpital Zürich\\
+Klinik für Konsiliar- und Liaisons-Psychiatrie sowie Psychosomatische Medizin
+\end{center}
+
+\end{document} 

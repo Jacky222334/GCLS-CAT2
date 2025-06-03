@@ -1,0 +1,45 @@
+Bestimmung der optimalen Faktorenzahl
+===================================
+
+Eigenwerte > 1: 7 
+
+Eigenwerte:
+ [1] 13.0253963  3.6510760  2.3402473  1.6017827  1.3232694  1.1622683
+ [7]  1.0932360  0.9981824  0.8532787  0.8285113  0.7547484  0.6728399
+[13]  0.6446448  0.6187849  0.5896111  0.5663972  0.5231310  0.4688026
+[19]  0.4568348  0.4494107  0.4316910  0.4133872  0.3850205  0.3413218
+[25]  0.3028405  0.2888322  0.2779448  0.2754643  0.2642458  0.2229127
+[31]  0.2187676  0.2088914  0.1915180  0.1772509  0.1414662  0.1208701
+[37]  0.1151213
+
+VSS-Analyse Ergebnisse:
+
+Very Simple Structure
+Call: vss(x = x, n = n, rotate = rotate, diagonal = diagonal, fm = fm, 
+    n.obs = n.obs, plot = plot, title = title, use = use, cor = cor)
+VSS complexity 1 achieves a maximimum of 0.84  with  1  factors
+VSS complexity 2 achieves a maximimum of 0.76  with  2  factors
+
+The Velicer MAP achieves a minimum of 0.01  with  7  factors 
+BIC achieves a minimum of  -1668.4  with  5  factors
+Sample Size adjusted BIC achieves a minimum of  -283.18  with  8  factors
+
+Statistics by number of factors 
+  vss1 vss2   map dof chisq     prob sqresid  fit RMSEA   BIC  SABIC complex
+1 0.84 0.00 0.031 629  3330  0.0e+00      33 0.84 0.121  -243 1751.4     1.0
+2 0.65 0.76 0.020 593  2312 7.1e-201      49 0.76 0.099 -1056  824.1     1.1
+3 0.61 0.74 0.016 558  1720 1.2e-118      53 0.74 0.084 -1449  320.4     1.2
+4 0.58 0.69 0.014 524  1320  3.2e-70      60 0.70 0.072 -1657    5.2     1.3
+5 0.57 0.67 0.014 491  1121  3.7e-51      61 0.70 0.066 -1668 -111.3     1.3
+6 0.36 0.52 0.014 459   942  1.4e-35      79 0.61 0.060 -1665 -209.4     1.6
+7 0.32 0.47 0.014 428   800  6.3e-25      87 0.57 0.054 -1631 -273.3     1.5
+8 0.30 0.41 0.015 398   715  2.0e-20      90 0.55 0.052 -1545 -283.2     1.7
+  eChisq  SRMR eCRMS  eBIC
+1   4787 0.111 0.114  1214
+2   2033 0.072 0.076 -1335
+3   1088 0.053 0.058 -2082
+4    718 0.043 0.048 -2258
+5    527 0.037 0.043 -2261
+6    400 0.032 0.039 -2207
+7    285 0.027 0.034 -2146
+8    224 0.024 0.031 -2037

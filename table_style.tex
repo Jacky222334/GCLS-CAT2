@@ -1,0 +1,29 @@
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{caption}
+
+% APA Table formatting
+\renewcommand{\arraystretch}{1.15}
+\setlength{\tabcolsep}{0.5em}
+\captionsetup[table]{
+  labelsep=newline,
+  justification=raggedright,
+  singlelinecheck=off,
+  font=footnotesize,
+  labelfont=bf,
+  skip=0.5em
+}
+
+% Table font size
+\AtBeginEnvironment{longtable}{\footnotesize}
+\AtBeginEnvironment{tabular}{\footnotesize}
+
+% Table rules
+\setlength{\heavyrulewidth}{0.8pt}
+\setlength{\lightrulewidth}{0.5pt}
+
+% Custom command for table notes
+\newcommand{\tablenote}[1]{%
+  \par\vspace{0.5ex}\footnotesize\textit{Note.} #1%
+} 

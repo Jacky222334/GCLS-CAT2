@@ -1,0 +1,325 @@
+# Validation of the German Version of the Gender Congruence and Life Satisfaction Scale (G-GCLS)
+
+_Running head:_ GERMAN VALIDATION OF G-GCLS
+
+## Authors
+
+Jan Ben Schulze¹\*, Flavio Ammann¹, Bethany A. Jones²,³, Roland von Känel¹, & Sebastian Euler¹
+
+¹Department of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich, Switzerland
+²Nottingham Centre for Transgender Health, United Kingdom
+³School of Sport, Exercise and Health Sciences, Loughborough University, United Kingdom
+
+_Corresponding author:_ Jan Ben Schulze, Department of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich, Culmannstrasse 8, 8091 Zurich, Switzerland. Email: jan.schulze@usz.ch
+
+## Abstract
+
+The Gender Congruence and Life Satisfaction Scale (GCLS) is a validated measure assessing outcomes in transgender and gender diverse individuals. This study presents the translation and validation of the German version (G-GCLS). Using a sample of 293 participants, we conducted exploratory factor analysis and assessed psychometric properties. The G-GCLS demonstrated excellent internal consistency (Cronbach's α ranging from .78 to .90) and replicated the seven-factor structure of the original scale. Factor analysis revealed strong correspondence with the original English version, particularly for the Chest, Genitalia, and Social Gender Role Recognition subscales. The results support the G-GCLS as a reliable and valid instrument for assessing gender congruence and life satisfaction in German-speaking transgender and gender diverse populations.
+
+_Keywords:_ gender congruence, life satisfaction, scale validation, transgender health, psychometrics
+
+## Introduction
+
+The provision of healthcare for transgender individuals within the German-speaking healthcare systems is confronting existential challenges. Transgender people experience a fundamental incongruence between the sex assigned at birth and their lived gender identity, often identifying as gender-neutral, non-gender, or gender-queer (Arcelus and Bouman, 2017; Richards, Bouman and Barker, 2017; Richards et al., 2016). This discrepancy is frequently accompanied by significant distress, necessitating specialized and multidisciplinary treatment approaches (Beek, Kreukels, Cohen-Kettenis and Steensma, 2015).
+
+Despite substantial progress achieved through gender-affirming interventions—which numerous studies document as yielding notable improvements in mental health and overall quality of life (Coleman et al., 2012; Wylie et al., 2014; Dhejne, Van Vlerken, Heylens and Arcelus, 2016; Jones, Haycraft, Murjan and Arcelus, 2016; Marshall, Claes, Bouman, Witcomb and Arcelus, 2016)—the evaluation of treatment outcomes has predominantly focused on psychological symptoms. This unidimensional approach fails to capture the complex, multifaceted needs of transgender individuals (Bouman et al., 2016, 2017; Heylens et al., 2014; Murad et al., 2010; Witcomb et al., 2018).
+
+Moreover, the established measurement instruments—for instance, the Utrecht Gender Dysphoria Scale (Cohen-Kettenis and van Goozen, 1997) and the Hamburg Body Drawing Scale (Becker et al., 2016)—are generally based on a binary understanding of gender, thereby inadequately reflecting the growing diversity of transgender self-definitions (Beek et al., 2015; Clarke, Veale, Townsend, Frohard-Dourlent and Saewyc, 2018). In addition, the use of multiple questionnaires imposes a significant burden on respondents, which can detrimentally affect both participation rates and the validity and reliability of the collected data (Rolstad, Adler and Rydén, 2011; Turner et al., 2007; Diehr, Chen, Patrick, Feng and Yasui, 2005; Snyder et al., 2007).
+
+A parallel methodological gap in the German-speaking region further exacerbates these issues. Although representative surveys are still lacking, estimates suggest that approximately 0.3-0.6% of the population may be transgender (Beek, Kreukels, Cohen-Kettenis and Steensma, 2015; Arcelus and Bouman, 2017). Without robust, representative data, key questions regarding need-based, patient-centered care—such as the appropriateness of treatment offerings and long-term care planning—remain largely unresolved. This underrepresentation renders the needs, psychosocial circumstances, and healthcare requirements of transgender individuals insufficiently visible and understood.
+
+An innovative solution is offered by the "Gender Comprehensive Life Satisfaction Scale" (GCLS) developed in the English-speaking context by Jones et al. (2016). Unlike conventional measurement tools, the GCLS is built on a multidimensional model that integrates not only psychological symptoms but also aspects body perception, social participation, and overall life satisfaction. By incorporating extensive qualitative preliminary studies and advanced psychometric techniques—such as item response theory and factor analysis—a more refined construct validity and robust reliability have been achieved (Jones, Haycraft, Murjan and Arcelus, 2016; Marshall et al., 2016). Early pilot studies confirm that the GCLS effectively delineates nuanced differences in the life satisfaction dimensions of transgender individuals while simultaneously reducing the respondent burden through the consolidation of redundant measurement instruments (Dawson, Doll, Fitzpatrick, Jenkinson and Carr, 2010; Lawer et al., 2002).
+
+Particularly in the German-speaking region, the introduction of a culturally and linguistically adapted German version of the GCLS is of paramount importance. Such an adaptation would bridge the current research gap by accounting not only for idiomatic nuances but also for country-specific healthcare infrastructures and social contexts. Only through the generation of reliable, robust data—which accurately reflects the complex care needs, avoids redundant measurement processes (Rolstad, Adler and Rydén, 2011; Turner et al., 2007), and facilitates the development of evidence-based, patient-centered care models (Richards et al., 2016; Bouman and Richards, 2013)—can the quality of healthcare for transgender individuals be sustainably improved.
+
+## Methods
+
+### Study Design
+
+This validation study employed a cross-sectional design to evaluate the psychometric properties of the German version of the GCLS. The study protocol was approved by the Cantonal Ethics Committee Zurich (BASEC No. Req-2022-00630).
+
+### Measures
+
+#### Gender Congruence and Life Satisfaction Scale (GCLS)
+
+The GCLS is a 38-item self-report measure assessing gender congruence and life satisfaction across seven domains:
+
+- Psychological functioning (7 items)
+- Gender role recognition (5 items)
+- Social support (5 items)
+- Physical and emotional intimacy (4 items)
+- Other secondary sex characteristics (5 items)
+- Life satisfaction (6 items)
+- Global functioning (all items)
+
+Items are rated on a 5-point Likert scale (1 = always to 5 = never), with lower scores indicating better outcomes.
+
+#### Short Form Health Survey (SF-12)
+
+The SF-12 provides Physical (PCS) and Mental Component Summary (MCS) scores, with higher scores indicating better health status. German population norms were used for score standardization.
+
+#### Patient Satisfaction Questionnaire (ZUF-8)
+
+The ZUF-8 is the German version of the Client Satisfaction Questionnaire (CSQ-8), measuring satisfaction with healthcare services. Scores range from 8 to 32, with higher scores indicating greater satisfaction.
+
+#### World Health Organization Quality of Life Assessment (WHOQOL-BREF)
+
+The WHOQOL-BREF assesses quality of life across four domains: physical health, psychological health, social relationships, and environment. Scores are transformed to a 0-100 scale, with higher scores indicating better quality of life.
+
+### Participants
+
+- Sample: 293 German-speaking transgender and gender diverse individuals
+- Recruitment: Gender identity clinics and community organizations
+- Ethics: Approved by Cantonal Ethics Committee Zurich (BASEC No. Req-2022-00630)
+
+_Table S1_
+_Overview of Questionnaire Scores_
+
+| Fragebogen  | Score-Variable | Wertebereich | Mittelwert | Beschreibung                       |
+| ----------- | -------------- | ------------ | ---------- | ---------------------------------- |
+| SF-12       | pcs12          | -            | -          | Physical Component Score           |
+| SF-12       | mcs12          | -            | -          | Mental Component Score             |
+| ZUF-8       | zuf_score      | 8-32         | 24.55      | Gesamtscore Patientenzufriedenheit |
+| WHOQOL-BREF | phys           | -            | -          | Physische Gesundheit               |
+| WHOQOL-BREF | psych          | -            | -          | Psychische Gesundheit              |
+| WHOQOL-BREF | social         | -            | -          | Soziale Beziehungen                |
+| WHOQOL-BREF | envir          | -            | -          | Umwelt                             |
+| WHOQOL-BREF | global         | -            | -          | Globale Lebensqualität             |
+
+### Sampling Strategy
+
+Convergent, discriminant, and known-groups validity were examined within the transgender cohort. Including cisgender controls was deemed unnecessary because construct-level validity can be demonstrated through internal correlation patterns and subgroup comparisons within the target population (Kline, 2015). Moreover, established German population norms for the SF-12 and WHOQOL-BREF provide an external benchmark for contextualizing scores.
+
+For sample size justification, we followed psychometric guidelines recommending 5 to 10 participants per item (de Vet et al., 2011; Costello & Osborne, 2005). With 38 items in the GCLS, this suggested a minimum sample size of 190 (5 per item) to 380 (10 per item) participants. Our sample size of 293 participants falls within this range, exceeding the minimum recommendation by more than 50%.
+
+### Procedure
+
+Data was collected using LimeSurvey (Version 5.6.9), an online platform suitable for complex surveys. The questionnaire included demographic items and the GCLS and was hosted on a secure, GDPR-compliant server. Data was collected during a one-month period in January/February 2023. Of the 1,161 individuals invited to participate, 462 (39.8%) accessed the online questionnaire and 293 (25.2%) completed it fully. Participants accessed the survey through personalized links. On average, completion took about 33.8 minutes.
+
+### Translation and Cultural Adaptation
+
+The GCLS was translated following a modified TRAPD process (Translation, Review, Adjudication, Pretesting, and Documentation), based on best practices in cross-cultural adaptation (Harkness et al., 2004; Epstein et al., 2015). Professional bilingual translators with expertise in gender and clinical language carried out forward and backward translations. Pretests with members of the target group (n = XX) ensured linguistic clarity. Final versions were approved by clinicians, translators, and researchers.
+
+_Table 1_
+_Sample Characteristics by Sex Assigned at Birth_
+
+| Characteristic                      | AMAB (_n_ = 176) | AFAB (_n_ = 115) | Intersex (_n_ = 2)ᵃ | χ²    | _p_  |
+| ----------------------------------- | ---------------- | ---------------- | ------------------- | ----- | ---- |
+| Age (years)                         |                  |                  |                     |       |      |
+| Mean (SD)                           | 38.2 (13.4)      | 36.8 (12.9)      | 35.5 (4.9)          | 0.86ᵇ | .392 |
+| Range                               | 19-82            | 18-81            | 33-38               |       |      |
+| Living Situation                    |                  |                  |                     | 0.89  | .971 |
+| Alone                               | 71 (40.3%)       | 44 (38.3%)       | 1 (50.0%)           |       |      |
+| With partner(s)                     | 52 (29.5%)       | 32 (27.8%)       | 1 (50.0%)           |       |      |
+| With family                         | 35 (19.9%)       | 27 (23.5%)       | 0 (0.0%)            |       |      |
+| Shared accommodation                | 11 (6.3%)        | 7 (6.1%)         | 0 (0.0%)            |       |      |
+| Assisted living                     | 4 (2.3%)         | 2 (1.7%)         | 0 (0.0%)            |       |      |
+| Other                               | 3 (1.7%)         | 3 (2.6%)         | 0 (0.0%)            |       |      |
+| Education                           |                  |                  |                     | 0.45  | .994 |
+| Vocational training                 | 69 (39.2%)       | 42 (36.5%)       | 1 (50.0%)           |       |      |
+| University/College                  | 50 (28.4%)       | 34 (29.6%)       | 1 (50.0%)           |       |      |
+| High school diploma                 | 25 (14.2%)       | 17 (14.8%)       | 0 (0.0%)            |       |      |
+| Secondary education                 | 17 (9.7%)        | 11 (9.6%)        | 0 (0.0%)            |       |      |
+| Other                               | 11 (6.3%)        | 9 (7.8%)         | 0 (0.0%)            |       |      |
+| Primary education                   | 4 (2.3%)         | 2 (1.7%)         | 0 (0.0%)            |       |      |
+| Employment Status                   |                  |                  |                     | 0.12  | .989 |
+| Employed                            | 104 (59.1%)      | 67 (58.3%)       | 2 (100.0%)          |       |      |
+| Other                               | 35 (19.9%)       | 24 (20.9%)       | 0 (0.0%)            |       |      |
+| Unemployed/Job seeking              | 23 (13.1%)       | 14 (12.2%)       | 0 (0.0%)            |       |      |
+| Self-employed                       | 14 (8.0%)        | 10 (8.7%)        | 0 (0.0%)            |       |      |
+| Relationship Status                 |                  |                  |                     | 0.33  | .954 |
+| Single                              | 89 (50.6%)       | 59 (51.3%)       | 1 (50.0%)           |       |      |
+| In a relationship (no legal status) | 56 (31.8%)       | 36 (31.3%)       | 1 (50.0%)           |       |      |
+| In a legal relationship             | 26 (14.8%)       | 18 (15.7%)       | 0 (0.0%)            |       |      |
+| Other relationship form             | 5 (2.8%)         | 2 (1.7%)         | 0 (0.0%)            |       |      |
+
+_Note._ AMAB = Assigned Male at Birth; AFAB = Assigned Female at Birth. Percentages are calculated within each sex assigned at birth group. χ² tests compare AMAB and AFAB groups only. ᵃIntersex group (n = 2) was not included in statistical comparisons due to small sample size. ᵇt-test was used for age comparison.
+
+Transition-related characteristics are presented in Table 2. Analysis of gender identity development timelines showed comparable ages at inner coming out between AMAB (M = 24.8 years, SD = 12.3) and AFAB participants (M = 22.9 years, SD = 11.8), t(289) = 1.32, p = .189. The time until social coming out was also similar (AMAB: M = 31.4 years, SD = 13.7; AFAB: M = 29.2 years, SD = 12.9), t(289) = 1.45, p = .149, with a mean latency period of 6.5 years for both groups.
+
+Medical transition status was comparable between groups, χ²(3) = 2.18, p = .536, with similar rates of completed (AMAB: 29.5%, AFAB: 33.0%) and ongoing procedures (AMAB: 50.6%, AFAB: 44.3%). Healthcare utilization showed distinct patterns: AMAB participants reported high rates of estrogen therapy (94.9%), testosterone blockers (65.9%), voice therapy (51.1%), and laser hair removal (67.0%). They also frequently underwent breast augmentation (56.3%), neovaginoplasty (54.0%), and facial feminization surgery (21.6%). AFAB participants showed high utilization of testosterone therapy (93.9%) and chest surgery (82.6%), with lower rates of voice therapy (4.3%) and no reported voice surgery. All between-group comparisons for medical interventions were significant, χ²(1) > 34.92, all ps < .001, except for other procedures, χ²(1) = 2.84, p = .092.
+
+_Table 2_
+_Transition-Related Characteristics by Sex Assigned at Birth_
+
+| Characteristic                    | AMAB (_n_ = 176) | AFAB (_n_ = 115) | Intersex (_n_ = 2)ᵃ | Test Statistic | _p_    |
+| --------------------------------- | ---------------- | ---------------- | ------------------- | -------------- | ------ |
+| Coming Out Age (years)            |                  |                  |                     |                |        |
+| Inner Coming Out, M (SD)          | 24.8 (12.3)      | 22.9 (11.8)      | 23.5 (2.1)          | t = 1.32ᵇ      | .189   |
+| Range                             | 4-65             | 3-62             | 22-25               |                |        |
+| Social Coming Out, M (SD)         | 31.4 (13.7)      | 29.2 (12.9)      | 30.0 (2.8)          | t = 1.45ᵇ      | .149   |
+| Range                             | 6-71             | 5-68             | 28-32               |                |        |
+| Time between Coming Outs, M (SD)  | 6.6 (7.2)        | 6.3 (6.9)        | 6.5 (0.7)           | t = 0.35ᵇ      | .724   |
+| Range                             | 0-32             | 0-29             | 6-7                 |                |        |
+| Medical Transition Status, n (%)  |                  |                  |                     | χ²(3) = 2.18   | .536   |
+| Completed                         | 52 (29.5%)       | 38 (33.0%)       | 1 (50.0%)           |                |        |
+| In progress                       | 89 (50.6%)       | 51 (44.3%)       | 1 (50.0%)           |                |        |
+| Planned                           | 24 (13.6%)       | 19 (16.5%)       | 0 (0.0%)            |                |        |
+| Not planned                       | 11 (6.3%)        | 7 (6.1%)         | 0 (0.0%)            |                |        |
+| Healthcare Utilization, n (%)     |                  |                  |                     |                |        |
+| Hormone therapy with estrogen     | 167 (94.9%)      | 2 (1.7%)         | 2 (100.0%)          | χ²(1) = 234.89 | < .001 |
+| Testosterone blocker medication   | 116 (65.9%)      | 6 (5.2%)         | 2 (100.0%)          | χ²(1) = 109.73 | < .001 |
+| Hormone therapy with testosterone | 8 (4.5%)         | 108 (93.9%)      | 0 (0.0%)            | χ²(1) = 212.45 | < .001 |
+| Voice therapy                     | 90 (51.1%)       | 5 (4.3%)         | 1 (50.0%)           | χ²(1) = 69.85  | < .001 |
+| Laser hair removal                | 118 (67.0%)      | 3 (2.6%)         | 0 (0.0%)            | χ²(1) = 123.42 | < .001 |
+| Facial feminization surgery       | 38 (21.6%)       | 0 (0.0%)         | 0 (0.0%)            | χ²(1) = 28.12  | < .001 |
+| Mastectomy                        | 2 (1.1%)         | 95 (82.6%)       | 0 (0.0%)            | χ²(1) = 192.31 | < .001 |
+| Breast augmentation               | 99 (56.3%)       | 2 (1.7%)         | 1 (50.0%)           | χ²(1) = 91.84  | < .001 |
+| Hysterectomy                      | 1 (0.6%)         | 41 (35.7%)       | 0 (0.0%)            | χ²(1) = 65.43  | < .001 |
+| Neovaginoplasty                   | 95 (54.0%)       | 0 (0.0%)         | 1 (50.0%)           | χ²(1) = 86.92  | < .001 |
+| Phalloplasty                      | 0 (0.0%)         | 13 (11.3%)       | 0 (0.0%)            | χ²(1) = 20.81  | < .001 |
+| Vocal cord surgery                | 17 (9.7%)        | 0 (0.0%)         | 0 (0.0%)            | χ²(1) = 11.85  | < .001 |
+| Adam's apple reduction            | 29 (16.5%)       | 0 (0.0%)         | 0 (0.0%)            | χ²(1) = 20.98  | < .001 |
+| Other procedures                  | 17 (9.7%)        | 5 (4.3%)         | 1 (50.0%)           | χ²(1) = 2.84   | .092   |
+
+_Note._ M = Mean; SD = Standard Deviation. Test statistics compare AMAB and AFAB groups only. ᵃIntersex group (n = 2) was not included in statistical comparisons due to small sample size. ᵇDegrees of freedom = 289 for all t-tests.
+
+_Table 3_
+_Comparison of Questionnaire Scores by Sex Assigned at Birth_
+
+| Score                | AMAB (n=176) | AMAB Range | AFAB (n=115) | AFAB Range | Test Statistic   | p       | Sig. | Cohen's d |
+| :------------------- | :----------- | :--------- | :----------- | :--------- | :--------------- | :------ | :--- | :-------- |
+| SF-12 PCS            | 44.8 (5.5)   | 29.4-60.9  | 46.7 (5.5)   | 30.9-58.8  | t(244.0) = -2.84 | = 0.005 | \*\* | -0.34     |
+| SF-12 MCS            | 39.4 (9.3)   | 14.3-54.6  | 39.4 (8.4)   | 16.5-53.3  | t(261.4) = 0.02  | = 0.987 |      | 0.00      |
+| ZUF-8                | 24.0 (6.4)   | 8.0-32.0   | 25.3 (5.2)   | 9.0-32.0   | t(275.2) = -1.95 | = 0.053 | †    | -0.23     |
+| WHOQOL Physical      | 68.8 (21.8)  | 3.6-100.0  | 69.6 (16.4)  | 25.0-100.0 | t(283.2) = -0.36 | = 0.716 |      | -0.04     |
+| WHOQOL Psychological | 60.7 (24.4)  | 4.2-100.0  | 58.9 (20.3)  | 8.3-100.0  | t(272.2) = 0.65  | = 0.513 |      | 0.08      |
+| WHOQOL Social        | 57.3 (26.3)  | 0.0-100.0  | 62.3 (21.5)  | 0.0-100.0  | t(274.4) = -1.78 | = 0.076 | †    | -0.21     |
+| WHOQOL Environmental | 71.0 (20.9)  | 15.6-100.0 | 73.5 (16.1)  | 25.0-100.0 | t(281.2) = -1.13 | = 0.257 |      | -0.13     |
+| WHOQOL Global        | 63.2 (25.8)  | 0.0-100.0  | 65.9 (21.5)  | 12.5-100.0 | t(272.1) = -0.95 | = 0.342 |      | -0.11     |
+
+_Note._ Values are presented as M (SD). AMAB = Assigned Male at Birth; AFAB = Assigned Female at Birth; SF-12 = Short Form Health Survey-12; PCS = Physical Component Score; MCS = Mental Component Score; ZUF-8 = Client Satisfaction Questionnaire-8; WHOQOL-BREF = World Health Organization Quality of Life Assessment-Brief Version. Cohen's d: 0.20 = small effect, 0.50 = medium effect, 0.80 = large effect. Significance levels: **\* p < .001, ** p < .01, \* p < .05, † p < .10
+
+### Statistical Analysis
+
+1. Preliminary Analysis
+
+   - KMO test
+   - Bartlett's test
+   - Item distributions
+
+2. Factor Analysis
+
+   - Principal axis factoring
+   - Varimax rotation
+   - Loading criterion: ≥ 0.40
+
+3. Reliability Assessment
+
+   - Internal consistency
+   - Item-total correlations
+
+## Results
+
+### Preliminary Analyses
+
+- KMO = 0.920 (excellent sampling adequacy)
+- Significant Bartlett's test (p < .001)
+- Normal item distributions
+
+### Factor Analysis
+
+Seven-factor solution (57.1% variance explained):
+
+1. Psychological Functioning/Life Satisfaction (19.1%)
+2. Genitalia (10.5%)
+3. Chest (8.2%)
+4. Social Gender Role (6.9%)
+5. Secondary Sex Characteristics (4.8%)
+6. Physical/Emotional Aspects (4.0%)
+7. Residual Factor (3.7%)
+
+### Convergent Validity
+
+Table 3 presents the correlations between G-GCLS subscales and other measures (SF-12, ZUF-8). The G-GCLS showed expected patterns of convergent validity. Psychological functioning showed strong correlations with SF-12 MCS (r = -.68) and moderate correlations with treatment satisfaction (ZUF-8, r = -.36). Physical aspects (genitalia, chest) showed weaker correlations with SF-12 PCS (r = .05 to .08). All correlations with ZUF-8 were negative due to inverse scoring (G-GCLS: lower scores = better outcomes; ZUF-8: higher scores = better outcomes).
+
+_Table 3_
+_Spearman's Rho Correlations Between G-GCLS, SF-12, and ZUF-8 (N = 293)_
+
+| Scale                                       | M (SD)       | Range     | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9    | 10   | 11   |
+| ------------------------------------------- | ------------ | --------- | --- | --- | --- | --- | --- | --- | --- | --- | ---- | ---- | ---- |
+| 1. GCLS psychological functioning           | 2.13 (0.83)  | 1.0-4.6   | -   | .36 | .41 | .71 | .39 | .35 | .79 | .83 | .08  | -.68 | -.36 |
+| 2. GCLS genitalia                           | 2.62 (1.21)  | 1.0-5.0   |     | -   | .35 | .46 | .46 | .33 | .42 | .68 | .05  | -.27 | -.17 |
+| 3. GCLS social gender role recognition      | 2.25 (1.10)  | 1.0-5.0   |     |     | -   | .37 | .44 | .56 | .45 | .65 | -.11 | -.26 | -.28 |
+| 4. GCLS physical and emotional intimacy     | 2.72 (1.07)  | 1.0-5.0   |     |     |     | -   | .36 | .33 | .69 | .78 | .06  | -.52 | -.35 |
+| 5. GCLS chest                               | 1.97 (1.23)  | 1.0-5.0   |     |     |     |     | -   | .48 | .42 | .64 | -.01 | -.27 | -.24 |
+| 6. GCLS other secondary sex characteristics | 2.58 (1.29)  | 1.0-5.0   |     |     |     |     |     | -   | .36 | .60 | .00  | -.33 | -.18 |
+| 7. GCLS life satisfaction                   | 2.43 (0.80)  | 1.0-4.6   |     |     |     |     |     |     | -   | .83 | -.01 | -.61 | -.43 |
+| 8. GCLS total score                         | 2.34 (0.76)  | 1.1-4.8   |     |     |     |     |     |     |     | -   | .05  | -.61 | -.38 |
+| 9. SF-12 PCS                                | 45.58 (5.52) | 29.4-60.9 |     |     |     |     |     |     |     |     | -    | -    | -    |
+| 10. SF-12 MCS                               | 39.42 (8.91) | 14.3-54.6 |     |     |     |     |     |     |     |     |      | -    | -    |
+| 11. ZUF-8                                   | 24.55 (5.99) | 8.0-32.0  |     |     |     |     |     |     |     |     |      |      | -    |
+
+_Note._ All correlations significant at p < .001. Lower G-GCLS scores indicate better outcomes. Higher SF-12 and ZUF-8 scores indicate better outcomes. PCS = Physical Component Score; MCS = Mental Component Score.
+
+### Reliability
+
+Internal consistency:
+
+- GEN: α = 0.883
+- CH: α = 0.900
+- SSC: α = 0.795
+- SGR: α = 0.842
+- PEI: α = 0.779
+- PF: α = 0.884
+- LS: α = 0.811
+
+## Discussion
+
+### Factor Structure
+
+The German version of the GCLS demonstrates strong psychometric properties and replicates the factor structure of the original English version. The high internal consistency values (α > 0.77 for all subscales) indicate reliable measurement of the intended constructs.
+
+### Reliability and Validity
+
+The observed patterns in transition-related characteristics reveal several noteworthy findings. First, the remarkable symmetry in gender identity development timelines, with nearly identical latency periods between inner and social coming out, suggests shared psychosocial factors in gender identity disclosure that transcend assigned sex at birth. This uniform developmental trajectory contrasts with the highly differentiated patterns of medical interventions.
+
+The utilization of medical interventions showed distinct group-specific patterns beyond primary sex characteristic modifications. Voice-related interventions particularly highlighted different approach strategies: while AMAB individuals often combined therapeutic and surgical approaches, AFAB participants rarely sought voice modifications, likely reflecting the differential effects of hormone therapy on vocal characteristics.
+
+The sequence and combination of interventions also revealed group-specific patterns. AMAB participants typically pursued multiple concurrent procedures, combining hormonal, surgical, and other interventions, suggesting a more gradual approach to transition. In contrast, AFAB participants showed a stronger tendency toward early surgical intervention, particularly regarding chest surgery. These differences may reflect varying social pressures, personal priorities, and the relative impact of different interventions on gender expression and recognition.
+
+Despite these distinct intervention patterns, the similar rates of transition completion and progression suggest that participants across groups achieved their transition goals through different pathways. This finding highlights the importance of individualized, flexible approaches to gender-affirming healthcare that acknowledge group-specific needs while remaining adaptable to individual preferences and priorities.
+
+### Strengths and Limitations
+
+#### Strengths
+
+- Large validation sample
+- Comprehensive psychometric evaluation
+- Strong reliability coefficients
+- Clear factor structure
+
+#### Limitations
+
+- Cross-sectional design
+- Lack of test-retest reliability data
+- Need for confirmatory factor analysis in an independent sample
+
+### Clinical Implications
+
+The results support the use of the German GCLS in clinical practice and research with German-speaking transgender and gender diverse populations. The robust psychometric properties and clear factor structure suggest that the instrument can effectively assess gender congruence and life satisfaction in this population.
+
+### Future Research Directions
+
+Future research should focus on:
+
+1. Confirmatory factor analysis in independent samples
+2. Test-retest reliability assessment
+3. Measurement invariance testing across diverse gender groups
+4. External validity evaluation in clinical settings
+
+## Conclusion
+
+The German version of the GCLS demonstrates robust psychometric properties and can be recommended for use in clinical practice and research with German-speaking transgender and gender diverse populations.
+
+## References
+
+1. Arcelus, J., & Bouman, W. P. (2017). Language and terminology. In W. P. Bouman & J. Arcelus (Eds.), The transgender handbook: A guide for transgender people, their families and professionals (pp. 1-12). Nova Science Publishers.
+2. Richards, C., Bouman, W. P., Seal, L., Barker, M. J., Nieder, T. O., & T'Sjoen, G. (2016). Non-binary or genderqueer genders. International Review of Psychiatry, 28(1), 95-102.
+3. Beek, T. F., Cohen-Kettenis, P. T., & Kreukels, B. P. (2015). Gender incongruence/gender dysphoria and its classification history. International Review of Psychiatry, 27(1), 5-12.
+4. Cohen-Kettenis, P. T., & van Goozen, S. H. (1997). Sex reassignment of adolescent transsexuals: A follow-up study. Journal of the American Academy of Child & Adolescent Psychiatry, 36(2), 263-271.
+5. Becker, I., Nieder, T. O., Cerwenka, S., Briken, P., Kreukels, B. P., Cohen-Kettenis, P. T., ... & Richter-Appelt, H. (2016). Body image in young gender dysphoric adults: A European multi-center study. Archives of Sexual Behavior, 45(3), 559-574.
+6. Bouman, W. P., Claes, L., Brewin, N., Crawford, J. R., Millet, N., Fernandez-Aranda, F., & Arcelus, J. (2017). Transgender and anxiety: A comparative study between transgender people and the general population. International Journal of Transgenderism, 18(1), 16-26.
+7. Rolstad, S., Adler, J., & Rydén, A. (2011). Response burden and questionnaire length: Is shorter better? A review and meta-analysis. Value in Health, 14(8), 1101-1108.
+8. Jones, B. A., Bouman, W. P., Haycraft, E., & Arcelus, J. (2019). The Gender Congruence and Life Satisfaction Scale (GCLS): Development and validation of a scale to measure outcomes from transgender health services. International Journal of Transgenderism, 20(1), 63-80.
+9. Beaton, D. E., Bombardier, C., Guillemin, F., & Ferraz, M. B. (2000). Guidelines for the process of cross-cultural adaptation of self-report measures. Spine, 25(24), 3186-3191.

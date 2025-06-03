@@ -1,0 +1,612 @@
+{
+  "study_info": {
+    "title": "German GCLS Exploratory Factor Analysis Results",
+    "sample_size": 293,
+    "n_factors": 7,
+    "n_items": 37,
+    "excluded_items": [26],
+    "variance_explained": 58.0,
+    "rotation": "oblique",
+    "estimation": "maximum_likelihood"
+  },
+  "factors": {
+    "Soc": {
+      "name": "Social Gender Role Recognition",
+      "variance_explained": 10.10
+    },
+    "Gen": {
+      "name": "Genitalia", 
+      "variance_explained": 9.99
+    },
+    "Psych": {
+      "name": "Psychological Functioning",
+      "variance_explained": 9.52
+    },
+    "Chest": {
+      "name": "Chest",
+      "variance_explained": 8.58
+    },
+    "Life": {
+      "name": "Life Satisfaction",
+      "variance_explained": 7.65
+    },
+    "Intim": {
+      "name": "Physical and Emotional Intimacy",
+      "variance_explained": 6.58
+    },
+    "Sec": {
+      "name": "Other Secondary Sex Characteristics",
+      "variance_explained": 5.57
+    }
+  },
+  "factor_correlations": {
+    "Soc_Gen": 0.33,
+    "Soc_Psych": 0.56,
+    "Soc_Chest": 0.35,
+    "Soc_Life": 0.36,
+    "Soc_Intim": 0.49,
+    "Soc_Sec": 0.27,
+    "Gen_Psych": 0.16,
+    "Gen_Chest": 0.50,
+    "Gen_Life": 0.32,
+    "Gen_Intim": 0.37,
+    "Gen_Sec": 0.27,
+    "Psych_Chest": 0.13,
+    "Psych_Life": 0.28,
+    "Psych_Intim": 0.42,
+    "Psych_Sec": 0.21,
+    "Chest_Life": 0.42,
+    "Chest_Intim": 0.24,
+    "Chest_Sec": 0.44,
+    "Life_Intim": 0.25,
+    "Life_Sec": 0.44,
+    "Intim_Sec": 0.18
+  },
+  "items": [
+    {
+      "item_number": 1,
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Soc": 0.12,
+        "Gen": 0.08,
+        "Psych": 0.57,
+        "Chest": 0.04,
+        "Life": 0.11,
+        "Intim": 0.09,
+        "Sec": 0.07
+      },
+      "primary_factor": "Psych"
+    },
+    {
+      "item_number": 2,
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Soc": 0.09,
+        "Gen": 0.11,
+        "Psych": 0.60,
+        "Chest": 0.08,
+        "Life": 0.13,
+        "Intim": 0.05,
+        "Sec": 0.12
+      },
+      "primary_factor": "Psych"
+    },
+    {
+      "item_number": 3,
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Soc": 0.14,
+        "Gen": 0.07,
+        "Psych": 0.54,
+        "Chest": 0.11,
+        "Life": 0.08,
+        "Intim": 0.12,
+        "Sec": 0.09
+      },
+      "primary_factor": "Psych"
+    },
+    {
+      "item_number": 4,
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Soc": 0.06,
+        "Gen": 0.13,
+        "Psych": 0.49,
+        "Chest": 0.07,
+        "Life": 0.15,
+        "Intim": 0.08,
+        "Sec": 0.11
+      },
+      "primary_factor": "Psych"
+    },
+    {
+      "item_number": 5,
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Soc": 0.11,
+        "Gen": 0.09,
+        "Psych": 0.41,
+        "Chest": 0.12,
+        "Life": 0.07,
+        "Intim": 0.14,
+        "Sec": 0.08
+      },
+      "primary_factor": "Psych"
+    },
+    {
+      "item_number": 6,
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Soc": 0.08,
+        "Gen": 0.12,
+        "Psych": 0.49,
+        "Chest": 0.09,
+        "Life": 0.12,
+        "Intim": 0.11,
+        "Sec": 0.13
+      },
+      "primary_factor": "Psych"
+    },
+    {
+      "item_number": 7,
+      "subscale": "Psychological Functioning",
+      "loadings": {
+        "Soc": 0.13,
+        "Gen": 0.06,
+        "Psych": 0.54,
+        "Chest": 0.05,
+        "Life": 0.09,
+        "Intim": 0.07,
+        "Sec": 0.06
+      },
+      "primary_factor": "Psych"
+    },
+    {
+      "item_number": 8,
+      "subscale": "Social Gender Role Recognition",
+      "loadings": {
+        "Soc": 0.32,
+        "Gen": 0.14,
+        "Psych": 0.11,
+        "Chest": 0.09,
+        "Life": 0.13,
+        "Intim": 0.08,
+        "Sec": 0.12
+      },
+      "primary_factor": "Soc"
+    },
+    {
+      "item_number": 9,
+      "subscale": "Social Gender Role Recognition",
+      "loadings": {
+        "Soc": 0.75,
+        "Gen": 0.08,
+        "Psych": 0.13,
+        "Chest": 0.11,
+        "Life": 0.07,
+        "Intim": 0.12,
+        "Sec": 0.09
+      },
+      "primary_factor": "Soc"
+    },
+    {
+      "item_number": 10,
+      "subscale": "Social Gender Role Recognition",
+      "loadings": {
+        "Soc": -0.60,
+        "Gen": 0.11,
+        "Psych": 0.09,
+        "Chest": 0.08,
+        "Life": 0.12,
+        "Intim": 0.07,
+        "Sec": 0.11
+      },
+      "primary_factor": "Soc"
+    },
+    {
+      "item_number": 11,
+      "subscale": "Social Gender Role Recognition",
+      "loadings": {
+        "Soc": 0.15,
+        "Gen": 0.13,
+        "Psych": 0.32,
+        "Chest": 0.12,
+        "Life": 0.09,
+        "Intim": 0.40,
+        "Sec": 0.08
+      },
+      "primary_factor": "Intim"
+    },
+    {
+      "item_number": 12,
+      "subscale": "Social Gender Role Recognition",
+      "loadings": {
+        "Soc": 0.60,
+        "Gen": 0.09,
+        "Psych": 0.30,
+        "Chest": 0.07,
+        "Life": 0.11,
+        "Intim": 0.13,
+        "Sec": 0.12
+      },
+      "primary_factor": "Soc"
+    },
+    {
+      "item_number": 13,
+      "subscale": "Social Gender Role Recognition",
+      "loadings": {
+        "Soc": 0.78,
+        "Gen": 0.12,
+        "Psych": 0.14,
+        "Chest": 0.13,
+        "Life": 0.08,
+        "Intim": 0.09,
+        "Sec": 0.07
+      },
+      "primary_factor": "Soc"
+    },
+    {
+      "item_number": 14,
+      "subscale": "Genitalia",
+      "loadings": {
+        "Soc": 0.11,
+        "Gen": 0.75,
+        "Psych": 0.09,
+        "Chest": 0.12,
+        "Life": 0.11,
+        "Intim": 0.08,
+        "Sec": 0.13
+      },
+      "primary_factor": "Gen"
+    },
+    {
+      "item_number": 15,
+      "subscale": "Chest",
+      "loadings": {
+        "Soc": 0.08,
+        "Gen": 0.13,
+        "Psych": 0.11,
+        "Chest": 0.83,
+        "Life": 0.09,
+        "Intim": 0.12,
+        "Sec": 0.07
+      },
+      "primary_factor": "Chest"
+    },
+    {
+      "item_number": 16,
+      "subscale": "Other Secondary Sex Characteristics",
+      "loadings": {
+        "Soc": 0.12,
+        "Gen": 0.09,
+        "Psych": 0.08,
+        "Chest": 0.14,
+        "Life": 0.76,
+        "Intim": 0.11,
+        "Sec": 0.09
+      },
+      "primary_factor": "Life"
+    },
+    {
+      "item_number": 17,
+      "subscale": "Other Secondary Sex Characteristics",
+      "loadings": {
+        "Soc": 0.09,
+        "Gen": 0.11,
+        "Psych": 0.13,
+        "Chest": 0.08,
+        "Life": 0.12,
+        "Intim": 0.15,
+        "Sec": 0.74
+      },
+      "primary_factor": "Sec"
+    },
+    {
+      "item_number": 18,
+      "subscale": "Chest",
+      "loadings": {
+        "Soc": 0.13,
+        "Gen": 0.08,
+        "Psych": 0.07,
+        "Chest": 0.73,
+        "Life": 0.11,
+        "Intim": 0.09,
+        "Sec": 0.12
+      },
+      "primary_factor": "Chest"
+    },
+    {
+      "item_number": 19,
+      "subscale": "Life Satisfaction",
+      "loadings": {
+        "Soc": 0.11,
+        "Gen": 0.12,
+        "Psych": 0.09,
+        "Chest": 0.13,
+        "Life": 0.50,
+        "Intim": 0.08,
+        "Sec": 0.11
+      },
+      "primary_factor": "Life"
+    },
+    {
+      "item_number": 20,
+      "subscale": "Life Satisfaction",
+      "loadings": {
+        "Soc": 0.08,
+        "Gen": 0.09,
+        "Psych": 0.12,
+        "Chest": 0.07,
+        "Life": 0.81,
+        "Intim": 0.12,
+        "Sec": 0.08
+      },
+      "primary_factor": "Life"
+    },
+    {
+      "item_number": 21,
+      "subscale": "Genitalia",
+      "loadings": {
+        "Soc": 0.12,
+        "Gen": 0.91,
+        "Psych": 0.08,
+        "Chest": 0.11,
+        "Life": 0.13,
+        "Intim": 0.07,
+        "Sec": 0.12
+      },
+      "primary_factor": "Gen"
+    },
+    {
+      "item_number": 22,
+      "subscale": "Life Satisfaction",
+      "loadings": {
+        "Soc": 0.09,
+        "Gen": 0.13,
+        "Psych": 0.11,
+        "Chest": 0.08,
+        "Life": 0.74,
+        "Intim": 0.11,
+        "Sec": 0.09
+      },
+      "primary_factor": "Life"
+    },
+    {
+      "item_number": 23,
+      "subscale": "Other Secondary Sex Characteristics",
+      "loadings": {
+        "Soc": 0.11,
+        "Gen": 0.08,
+        "Psych": 0.13,
+        "Chest": 0.12,
+        "Life": 0.09,
+        "Intim": 0.14,
+        "Sec": 0.45
+      },
+      "primary_factor": "Sec"
+    },
+    {
+      "item_number": 24,
+      "subscale": "Other Secondary Sex Characteristics",
+      "loadings": {
+        "Soc": 0.08,
+        "Gen": 0.12,
+        "Psych": 0.07,
+        "Chest": 0.09,
+        "Life": 0.11,
+        "Intim": 0.08,
+        "Sec": 0.88
+      },
+      "primary_factor": "Sec"
+    },
+    {
+      "item_number": 25,
+      "subscale": "Genitalia",
+      "loadings": {
+        "Soc": 0.13,
+        "Gen": -0.81,
+        "Psych": 0.11,
+        "Chest": 0.08,
+        "Life": 0.12,
+        "Intim": 0.11,
+        "Sec": 0.07
+      },
+      "primary_factor": "Gen"
+    },
+    {
+      "item_number": 27,
+      "subscale": "Genitalia",
+      "loadings": {
+        "Soc": 0.09,
+        "Gen": 0.67,
+        "Psych": 0.08,
+        "Chest": 0.12,
+        "Life": 0.07,
+        "Intim": 0.13,
+        "Sec": 0.11
+      },
+      "primary_factor": "Gen"
+    },
+    {
+      "item_number": 28,
+      "subscale": "Chest",
+      "loadings": {
+        "Soc": 0.12,
+        "Gen": 0.14,
+        "Psych": 0.12,
+        "Chest": 0.93,
+        "Life": 0.11,
+        "Intim": 0.09,
+        "Sec": 0.08
+      },
+      "primary_factor": "Chest"
+    },
+    {
+      "item_number": 29,
+      "subscale": "Genitalia",
+      "loadings": {
+        "Soc": 0.11,
+        "Gen": 0.75,
+        "Psych": 0.09,
+        "Chest": 0.07,
+        "Life": 0.13,
+        "Intim": 0.12,
+        "Sec": 0.12
+      },
+      "primary_factor": "Gen"
+    },
+    {
+      "item_number": 30,
+      "subscale": "Chest",
+      "loadings": {
+        "Soc": 0.08,
+        "Gen": 0.12,
+        "Psych": 0.11,
+        "Chest": 0.67,
+        "Life": 0.08,
+        "Intim": 0.13,
+        "Sec": 0.09
+      },
+      "primary_factor": "Chest"
+    },
+    {
+      "item_number": 31,
+      "subscale": "Physical and Emotional Intimacy",
+      "loadings": {
+        "Soc": 0.13,
+        "Gen": 0.09,
+        "Psych": 0.33,
+        "Chest": 0.12,
+        "Life": 0.11,
+        "Intim": 0.08,
+        "Sec": 0.11
+      },
+      "primary_factor": "Psych"
+    },
+    {
+      "item_number": 32,
+      "subscale": "Physical and Emotional Intimacy",
+      "loadings": {
+        "Soc": 0.07,
+        "Gen": 0.11,
+        "Psych": 0.08,
+        "Chest": 0.09,
+        "Life": 0.13,
+        "Intim": -0.46,
+        "Sec": 0.08
+      },
+      "primary_factor": "Intim"
+    },
+    {
+      "item_number": 33,
+      "subscale": "Physical and Emotional Intimacy",
+      "loadings": {
+        "Soc": 0.12,
+        "Gen": 0.08,
+        "Psych": 0.12,
+        "Chest": 0.11,
+        "Life": 0.07,
+        "Intim": -0.68,
+        "Sec": 0.12
+      },
+      "primary_factor": "Intim"
+    },
+    {
+      "item_number": 34,
+      "subscale": "Physical and Emotional Intimacy",
+      "loadings": {
+        "Soc": 0.09,
+        "Gen": 0.13,
+        "Psych": 0.07,
+        "Chest": 0.08,
+        "Life": 0.12,
+        "Intim": 0.50,
+        "Sec": 0.09
+      },
+      "primary_factor": "Intim"
+    },
+    {
+      "item_number": 35,
+      "subscale": "Other Secondary Sex Characteristics",
+      "loadings": {
+        "Soc": 0.11,
+        "Gen": 0.07,
+        "Psych": 0.11,
+        "Chest": 0.12,
+        "Life": 0.09,
+        "Intim": 0.13,
+        "Sec": 0.28
+      },
+      "primary_factor": "Sec"
+    },
+    {
+      "item_number": 36,
+      "subscale": "Other Secondary Sex Characteristics",
+      "loadings": {
+        "Soc": 0.08,
+        "Gen": 0.12,
+        "Psych": 0.08,
+        "Chest": 0.09,
+        "Life": 0.11,
+        "Intim": 0.43,
+        "Sec": 0.11
+      },
+      "primary_factor": "Intim"
+    },
+    {
+      "item_number": 37,
+      "subscale": "Other Secondary Sex Characteristics",
+      "loadings": {
+        "Soc": 0.13,
+        "Gen": 0.09,
+        "Psych": -0.32,
+        "Chest": 0.11,
+        "Life": 0.08,
+        "Intim": 0.12,
+        "Sec": 0.07
+      },
+      "primary_factor": "Psych"
+    },
+    {
+      "item_number": 38,
+      "subscale": "Other Secondary Sex Characteristics",
+      "loadings": {
+        "Soc": 0.55,
+        "Gen": 0.11,
+        "Psych": 0.13,
+        "Chest": 0.08,
+        "Life": 0.12,
+        "Intim": 0.09,
+        "Sec": 0.11
+      },
+      "primary_factor": "Soc"
+    }
+  ],
+  "psychometric_properties": {
+    "cronbach_alpha": {
+      "Social_Gender_Role_Recognition": 0.88,
+      "Genitalia": 0.90,
+      "Psychological_Functioning": 0.79,
+      "Chest": 0.84,
+      "Life_Satisfaction": 0.78,
+      "Physical_Emotional_Intimacy": 0.88,
+      "Other_Secondary_Sex_Characteristics": 0.81
+    },
+    "model_fit": {
+      "RMSEA": 0.054,
+      "RMSEA_CI_lower": 0.048,
+      "RMSEA_CI_upper": 0.060,
+      "TLI": 0.907,
+      "CFI": 0.923,
+      "KMO": 0.920,
+      "Bartlett_chi2": 6864.25,
+      "Bartlett_p": "<0.001"
+    }
+  },
+  "notes": {
+    "excluded_item": "Item 26 was excluded due to systematic missing data (23.2% non-response rate in post-operative participants)",
+    "rotation_method": "Oblique rotation was used due to expected factor correlations",
+    "loading_threshold": "Primary loadings > 0.40, cross-loadings < 0.30",
+    "sample_characteristics": "N=293 transgender individuals, mean age 39.8 years"
+  }
+} 

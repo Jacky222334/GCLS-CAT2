@@ -1,0 +1,324 @@
+\documentclass[11pt,a4paper]{article}
+
+% ===========================================
+% PAKETE FÜR SPRACHE UND ZEICHENKODIERUNG
+% ===========================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+
+% ===========================================
+% PAKETE FÜR LAYOUT UND FORMATIERUNG
+% ===========================================
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left=2.5cm,
+    right=2.5cm,
+    top=3cm,
+    bottom=3cm,
+    headheight=1.5cm,
+    headsep=1cm
+}
+
+\usepackage{setspace}
+\onehalfspacing
+
+% Schriften
+\usepackage{mathptmx} % Times New Roman ähnliche Schrift
+\usepackage{helvet}   % Helvetica für Sans Serif
+\usepackage{courier}  % Courier für Monospace
+
+% Farben und Grafiken
+\usepackage{xcolor}
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightgray}{RGB}{240,240,240}
+\definecolor{mediumgray}{RGB}{128,128,128}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+
+% Tabellen
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{tabularx}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+% Aufzählungen und Listen
+\usepackage{enumitem}
+\setlist{itemsep=0.3em}
+
+% Kopf- und Fußzeilen
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textsc{GCLS-Gv1.1 - Deutsche Version}}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{\footnotesize Gender Congruence and Life Satisfaction Scale}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.2pt}
+
+% Überschriften-Formatierung
+\usepackage{titlesec}
+\titleformat{\section}
+  {\large\bfseries\color{darkblue}}
+  {\thesection.}
+  {0.5em}
+  {}
+  [\vspace{0.3em}\titlerule]
+
+\titleformat{\subsection}
+  {\normalsize\bfseries\color{darkblue}}
+  {\thesubsection}
+  {0.5em}
+  {}
+
+\titleformat{\subsubsection}
+  {\normalsize\bfseries}
+  {\thesubsubsection}
+  {0.5em}
+  {}
+
+% Boxes und Rahmen
+\usepackage{tcolorbox}
+\tcbuselibrary{most}
+
+% ===========================================
+% DOKUMENT TITEL UND METADATEN
+% ===========================================
+\title{
+    \vspace{-2cm}
+    {\Huge\bfseries\color{darkblue} Gender Congruence and Life Satisfaction Scale}\\[0.5cm]
+    {\Large\bfseries Deutsche Version (GCLS-Gv1.1)}\\[1cm]
+    {\large Validierungsstudie für den deutschsprachigen Raum}
+}
+
+\author{
+    \large 
+    \textbf{Jan Ben Schulze}$^{1*}$ \and
+    \textbf{Flavio Ammann}$^{1}$ \and 
+    \textbf{Bethany A. Jones}$^{2,3}$ \and\\
+    \textbf{Roland von Känel}$^{1}$ \and
+    \textbf{Sebastian Euler}$^{1}$
+}
+
+\date{\today}
+
+% ===========================================
+% DOKUMENT BEGINN
+% ===========================================
+\begin{document}
+
+% Titelseite
+\maketitle
+
+\begin{center}
+\vspace{1cm}
+\begin{tcolorbox}[colback=lightgray,colframe=darkblue,width=0.8\textwidth,arc=3mm]
+\centering
+\footnotesize
+$^{1}$Klinik für Konsiliar- und Liaisons-Psychiatrie sowie Psychosomatische Medizin,\\
+UniversitätsSpital Zürich, Schweiz\\[0.3cm]
+$^{2}$Nottingham Centre for Transgender Health, Vereinigtes Königreich\\[0.1cm]
+$^{3}$School of Sport, Exercise and Health Sciences, Loughborough University,\\
+Vereinigtes Königreich\\[0.5cm]
+\textbf{*Korrespondenz:} Dr. Jan Ben Schulze\\
+E-Mail: jan.schulze@usz.ch\\
+Culmannstrasse 8, 8091 Zürich, Schweiz
+\end{tcolorbox}
+\end{center}
+
+\vfill
+
+\begin{center}
+\begin{tcolorbox}[colback=darkblue!10,colframe=darkblue,width=0.9\textwidth,arc=3mm]
+\centering
+\textbf{\large Zusammenfassung}\\[0.5cm]
+\small
+\textbf{Hintergrund:} Die Gender Congruence and Life Satisfaction Scale (GCLS) ist ein validiertes Instrument zur Bewertung von Behandlungsergebnissen bei transgender und geschlechtsdiversen Personen. Eine deutsche Version wird benötigt, um Diagnostik und Forschung in deutschsprachigen Gesundheitssystemen zu ermöglichen.\\[0.3cm]
+
+\textbf{Methoden:} Wir führten eine Validierungsstudie der deutschen GCLS (G-GCLS) mit 293 transgender und geschlechtsdiversen Teilnehmenden durch. Nach rigoroser Übersetzung führten wir explorative Faktorenanalysen durch und bewerteten psychometrische Eigenschaften.\\[0.3cm]
+
+\textbf{Ergebnisse:} Die G-GCLS zeigte exzellente interne Konsistenz (Cronbachs α = .78-.90) und replizierte die Sieben-Faktoren-Struktur der Originalskala. Die Faktorenanalyse ergab gute Modellpassung (RMSEA = 0.054; TLI = 0.907) und erklärte 58.0\% der Gesamtvarianz.\\[0.3cm]
+
+\textbf{Schlussfolgerung:} Die Ergebnisse unterstützen die G-GCLS als zuverlässiges und valides Instrument für deutschsprachige transgender und geschlechtsdiverse Populationen.
+\end{tcolorbox}
+\end{center}
+
+\newpage
+
+% ===========================================
+% INHALTSVERZEICHNIS
+% ===========================================
+\tableofcontents
+\newpage
+
+% ===========================================
+% EINLEITUNG
+% ===========================================
+\section{Einleitung}
+
+\subsection{Ausgangslage}
+
+Die Versorgung transgender Personen im deutschsprachigen Gesundheitswesen steht vor grundlegenden Herausforderungen. Transgender Personen erleben eine fundamentale Inkongruenz zwischen dem bei der Geburt zugewiesenen Geschlecht und ihrer gelebten Geschlechtsidentität, wobei sie sich oft als geschlechtsneutral, nicht-geschlechtlich oder genderqueer identifizieren \cite{Arcelus2017, Richards2017, Richards2016}.
+
+\begin{tcolorbox}[colback=lightgray,colframe=mediumgray,title=\textbf{Aktuelle Herausforderungen},arc=2mm]
+\begin{itemize}
+    \item Mangel an validierten deutschsprachigen Messinstrumenten
+    \item Begrenzte Erfassung der multidimensionalen Bedürfnisse
+    \item Hohe Belastung durch multiple Fragebögen
+    \item Fehlende repräsentative Daten im deutschsprachigen Raum
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Die GCLS als innovative Lösung}
+
+Die ``Gender Congruence and Life Satisfaction Scale'' (GCLS), entwickelt von Jones et al. (2019), bietet eine innovative Lösung. Im Gegensatz zu herkömmlichen Messinstrumenten basiert die GCLS auf einem multidimensionalen Modell, das nicht nur psychologische Symptome, sondern auch Aspekte der Körperwahrnehmung, sozialen Teilhabe und allgemeinen Lebenszufriedenheit integriert.
+
+\section{Methoden}
+
+\subsection{Studiendesign}
+
+Diese Validierungsstudie verwendete ein Querschnittsdesign zur Bewertung der psychometrischen Eigenschaften der deutschen Version der GCLS. Das Studienprotokoll wurde von der Kantonalen Ethikkommission Zürich genehmigt (BASEC Nr. Req-2022-00630).
+
+\subsection{Messinstrumente}
+
+\subsubsection{Gender Congruence and Life Satisfaction Scale (GCLS)}
+
+Die GCLS, ursprünglich in englischer Sprache von Jones et al. (2019) entwickelt und validiert, ist ein umfassendes 38-Item-Selbstbeurteilungsinstrument, das speziell für transgender und geschlechtsdiverse Populationen entwickelt wurde.
+
+\begin{tcolorbox}[colback=darkblue!5,colframe=darkblue,title=\textbf{GCLS Dimensionen},arc=2mm]
+\begin{enumerate}
+    \item \textbf{Psychologisches Funktionieren} (7 Items)
+    \item \textbf{Genitalien} (5 Items) 
+    \item \textbf{Soziale Geschlechtsrollenanerkennung} (5 Items)
+    \item \textbf{Körperliche und emotionale Intimität} (4 Items)
+    \item \textbf{Brust/Chest} (5 Items)
+    \item \textbf{Andere sekundäre Geschlechtsmerkmale} (6 Items)
+    \item \textbf{Lebenszufriedenheit} (6 Items)
+\end{enumerate}
+\end{tcolorbox}
+
+Die Items werden auf einer 5-Punkt-Likert-Skala von 1 (immer) bis 5 (nie) bewertet, wobei niedrigere Werte bessere Ergebnisse anzeigen.
+
+\subsection{Stichprobe}
+
+Wir rekrutierten 293 transgender Personen (Durchschnittsalter = 39,8 Jahre, SD = 16,4). Die Stichprobe bestand aus:
+
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+\textbf{Geschlechtsidentität} & \textbf{Anteil} \\
+\midrule
+Trans feminin & 44,3\% \\
+Non-binär (inkl. Intersex) & 33,3\% \\
+Trans maskulin & 16,7\% \\
+Andere & 4,6\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Ergebnisse}
+
+\subsection{Explorative Faktorenanalyse}
+
+Die datengesteuerte explorative Faktorenanalyse (EFA) mit Maximum-Likelihood-Schätzung und oblique Rotation ergab eine Sieben-Faktoren-Lösung mit guter Modellpassung:
+
+\begin{center}
+\begin{tcolorbox}[colback=lightgray,colframe=darkblue,width=0.7\textwidth,arc=3mm]
+\centering
+\textbf{Modellpassung}\\[0.3cm]
+RMSEA = 0.054 (90\% CI [0.048, 0.060])\\
+TLI = 0.907\\
+BIC = -1639.34\\[0.2cm]
+\textbf{Erklärte Varianz: 58.0\%}
+\end{tcolorbox}
+\end{center}
+
+\subsection{Interne Konsistenz}
+
+Alle Subskalen zeigten starke interne Konsistenz:
+
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+\textbf{Subskala} & \textbf{Cronbachs α} \\
+\midrule
+Soziale Geschlechtsrollenanerkennung & .88 \\
+Genitalien & .90 \\
+Psychologisches Funktionieren & .79 \\
+Brust/Chest & .84 \\
+Lebenszufriedenheit & .78 \\
+Körperliche und emotionale Intimität & .88 \\
+Andere sekundäre Geschlechtsmerkmale & .81 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Diskussion}
+
+\subsection{Hauptergebnisse}
+
+Die deutsche Version der GCLS demonstriert robuste psychometrische Eigenschaften und repliziert die Faktorenstruktur der ursprünglichen englischen Version. Die hohen Werte der internen Konsistenz (α > 0.77 für alle Subskalen) zeigen eine zuverlässige Messung der beabsichtigten Konstrukte.
+
+\begin{tcolorbox}[colback=darkblue!10,colframe=darkblue,title=\textbf{Klinische Implikationen},arc=2mm]
+\begin{itemize}
+    \item Zuverlässige Bewertung von Geschlechtskongruenz und Lebenszufriedenheit
+    \item Anwendbarkeit in klinischer Praxis und Forschung
+    \item Verbesserung der evidenzbasierten Versorgung
+    \item Standardisierte Ergebnismessung möglich
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Stärken und Limitationen}
+
+\subsubsection{Stärken}
+\begin{itemize}
+    \item Rigoroser Übersetzungs- und Validierungsprozess
+    \item Umfassende psychometrische Evaluation
+    \item Diverse Stichprobe über verschiedene Altersgruppen
+    \item Starke statistische Evidenz für Faktorenstruktur
+\end{itemize}
+
+\subsubsection{Limitationen}
+\begin{itemize}
+    \item Querschnittsdesign verhindert Test-Retest-Reliabilität
+    \item Ungleiche Verteilung der Geschlechtsidentitätsgruppen
+    \item Fehlende Vergleichsdaten zu cisgender Kontrollgruppen
+\end{itemize}
+
+\section{Schlussfolgerung}
+
+Die deutsche Version der GCLS zeigt robuste psychometrische Eigenschaften und kann für die Anwendung in klinischer Praxis und Forschung mit deutschsprachigen transgender und geschlechtsdiversen Populationen empfohlen werden.
+
+\begin{center}
+\begin{tcolorbox}[colback=darkblue!15,colframe=darkblue,width=0.9\textwidth,arc=3mm]
+\centering
+\textbf{\large Ausblick und zukünftige Forschung}\\[0.5cm]
+\small
+\begin{itemize}
+    \item Konfirmatorische Faktorenanalyse in unabhängigen Stichproben
+    \item Test-Retest-Reliabilitätsbewertung
+    \item Messinvarianz-Testung zwischen verschiedenen Geschlechtsgruppen
+    \item Evaluation der externen Validität in klinischen Settings
+    \item Entwicklung klinischer Cutoff-Werte
+\end{itemize}
+\end{tcolorbox}
+\end{center}
+
+\vfill
+
+\begin{center}
+\footnotesize
+\textbf{Förderung:} Diese Studie wurde durch das UniversitätsSpital Zürich unterstützt.\\
+\textbf{Interessenskonflikte:} Die Autoren erklären keine Interessenskonflikte.\\
+\textbf{Ethik:} Genehmigt durch die Kantonale Ethikkommission Zürich (BASEC Nr. Req-2022-00630).
+\end{center}
+
+\end{document} 
