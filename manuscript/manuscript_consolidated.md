@@ -318,17 +318,19 @@ The data-driven EFA using maximum likelihood estimation with oblique rotation yi
 
 The ESEM analysis of the total sample (N = 293) revealed a robust seven-factor structure with excellent model fit (RMSEA = 0.054, 90% CI [0.048, 0.060]; TLI = 0.907; CFI = 0.923). All subscales demonstrated strong internal consistency, with Cronbach's alpha coefficients ranging from .77 to .90. Specifically, the subscales showed the following reliability coefficients: Social gender role recognition (α = .88), Genitalia (α = .90), Psychological functioning (α = .79), Chest (α = .84), Life satisfaction (α = .78), Physical and emotional intimacy (α = .88), and Other secondary sex characteristics (α = .81).
 
+**Figure 1**
+
+**Hierarchical Clustering Dendrograms of GCLS Factor Structure**
+
+![Hierarchical clustering dendrograms](figures/figure1_dendrograms.pdf)
+
+*Figure 1* displays hierarchical clustering dendrograms illustrating the relationships between GCLS factors across different analytical approaches. The dendrograms demonstrate clear separation between the seven identified factors, supporting the theoretical framework underlying the German GCLS adaptation. The hierarchical structure reveals meaningful groupings of factors that align with conceptual domains of gender congruence, with distinct clusters emerging for body-related factors (Chest, Genitalia), psychological constructs (Psychological Functioning, Social Gender Role Recognition), and life satisfaction dimensions.
+
+*Note.* Dendrograms were generated using Ward's linkage method with Euclidean distance measures. Height indicates dissimilarity between clusters, with lower branching points suggesting stronger factor relationships. The tree structure validates the seven-factor solution by showing clear separation between distinct constructs while revealing theoretically meaningful factor groupings.
+
 Factor loadings in the total sample showed clear simple structure, with primary loadings consistently exceeding .40 and minimal cross-loadings (< .30). Inter-factor correlations ranged from r = .27 to r = .56, suggesting related but distinct constructs. The strongest correlations emerged between psychological functioning and social gender role recognition (r = .56) and between chest and genitalia factors (r = .50), indicating meaningful theoretical relationships between these domains.
 
 Subgroup analysis of Female AMAB participants (n = 147) revealed an even more differentiated factor structure with comparable model fit indices (RMSEA = 0.051, 90% CI [0.044, 0.058]; TLI = 0.912; CFI = 0.928). This subgroup showed slightly higher internal consistency across most subscales: Social gender role recognition (α = .91), Genitalia (α = .89), Psychological functioning (α = .82), Chest (α = .87), Life satisfaction (α = .80), Physical and emotional intimacy (α = .86), and Other secondary sex characteristics (α = .83).
-
-[Insert Figure 1 about here]
-<!-- Figure removed for PDF conversion -->
-
-[Figure placeholder - removed for PDF conversion]
-
-
-
 
 Comparison between the total sample and Female AMAB subgroup revealed several noteworthy differences. The Female AMAB subgroup showed stronger factor loadings for items related to social gender role recognition (mean λ = .76 vs. .71 in total sample) and chest-related concerns (mean λ = .82 vs. .79). Inter-factor correlations were generally stronger in the Female AMAB subgroup, particularly between social gender role recognition and psychological functioning (r = .63 vs. r = .56 in total sample) and between genitalia and chest factors (r = .58 vs. r = .50 in total sample). This pattern suggests a more integrated experience of gender congruence among Female AMAB individuals, where different aspects of gender experience are more tightly interconnected.
 
