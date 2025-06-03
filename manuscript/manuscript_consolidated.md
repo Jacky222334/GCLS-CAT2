@@ -306,14 +306,6 @@ The data-driven EFA using maximum likelihood estimation with oblique rotation yi
 
 *Note.* N = 293. All correlations > .30 are significant at p < .001. Factor labels: Soc = Social gender role recognition; Gen = Genitalia; Psych = Psychological functioning; Chest = Chest; Life = Life satisfaction; Intim = Physical and emotional intimacy; Sec = Other secondary sex characteristics. Total variance explained = 58.0%.
 
-<!-- : # (Insert Figure 1 about here)
-: # (<!-- Figure removed for PDF conversion -->)
-: # ()
-: # ([Figure placeholder - removed for PDF conversion])
-: # ()
-: # ()
-: # () -->
-
 ### Advanced Structural Validation Using ESEM
 
 The ESEM analysis of the total sample (N = 293) revealed a robust seven-factor structure with excellent model fit (RMSEA = 0.054, 90% CI [0.048, 0.060]; TLI = 0.907; CFI = 0.923). All subscales demonstrated strong internal consistency, with Cronbach's alpha coefficients ranging from .77 to .90. Specifically, the subscales showed the following reliability coefficients: Social gender role recognition (α = .88), Genitalia (α = .90), Psychological functioning (α = .79), Chest (α = .84), Life satisfaction (α = .78), Physical and emotional intimacy (α = .88), and Other secondary sex characteristics (α = .81).
