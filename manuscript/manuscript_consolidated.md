@@ -221,71 +221,71 @@ The data-driven EFA using maximum likelihood estimation with oblique rotation yi
 
 *Factor Loadings for the German Gender Congruence and Life Satisfaction Scale (N = 293)*
 
-| Item | Soc | Gen | Psych | Chest | Life | Intim | Sec |
+| Item | Gen | Soc | Chest | Life | Intim | Sec | Psych |
 | :--- | :-- | :-- | :---- | :---- | :--- | :---- | :-- |
-| Social Gender Role Recognition (Soc)     |     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 9                       | **-.82** | .04  | .03   | .01   | -.04  | .01   | .04 |
-| &nbsp;&nbsp;Item 10                      | **.72** | -.14 | -.04  | -.03  | -.03  | -.03  | -.14 |
-| &nbsp;&nbsp;Item 12                      | **-.75** | .12  | -.12  | .01   | .10   | -.03  | .12 |
-| &nbsp;&nbsp;Item 13                      | **-.77** | -.19 | .14   | .05   | .01   | .06   | -.19 |
-| &nbsp;&nbsp;Item 38                      | **-.60** | .13  | .06   | .11   | -.07  | .07   | .13 |
 | Genitalia (Gen)                          |     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 14                      | .02  | **.71** | .10   | .06   | .07   | .06   | .01 |
-| &nbsp;&nbsp;Item 21                      | .09  | **.88** | .05   | -.03  | .04   | -.00  | -.10 |
-| &nbsp;&nbsp;Item 25                      | .04  | **-.88** | .05   | -.05  | .00   | .28   | -.03 |
-| &nbsp;&nbsp;Item 27                      | .05  | **.60** | .02   | .04   | .11   | .37   | .14 |
-| &nbsp;&nbsp;Item 29                      | .01  | **.68** | .22   | .01   | -.04  | .28   | .10 |
-| Psychological Functioning (Psych)        |     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 1                       | -.05 | .03  | **.44** | .05   | .02   | -.11  | .37 |
-| &nbsp;&nbsp;Item 2                       | .06  | -.12 | .03   | -.10  | .26   | -.09  | **.48** |
-| &nbsp;&nbsp;Item 3                       | .13  | .01  | .17   | .03   | .07   | -.12  | **.52** |
-| &nbsp;&nbsp;Item 4                       | .10  | -.02 | **.41** | -.10  | .13   | -.08  | .36 |
-| &nbsp;&nbsp;Item 5                       | -.09 | .18  | .09   | .11   | .04   | .04   | **.50** |
-| &nbsp;&nbsp;Item 6                       | .10  | .00  | .29   | .00   | .04   | -.10  | **.40** |
-| &nbsp;&nbsp;Item 7                       | -.04 | -.02 | .31   | .06   | .16   | -.11  | **.43** |
-| &nbsp;&nbsp;Item 8                       | .16  | .16  | .32   | .11   | .03   | .00   | -.15 |
-| &nbsp;&nbsp;Item 11                      | .07  | .02  | .15   | .10   | -.06  | .08   | **.55** |
-| &nbsp;&nbsp;Item 31                      | .08  | .02  | .26   | .14   | .04   | -.02  | .37 |
-| &nbsp;&nbsp;Item 34                      | .02  | .12  | .28   | .04   | -.06  | .11   | **.41** |
-| &nbsp;&nbsp;Item 36                      | .06  | .01  | .05   | .24   | .01   | .11   | .37 |
+| &nbsp;&nbsp;Item 14                      | **.71** | .02  | .10   | .06   | .07   | .06   | .01 |
+| &nbsp;&nbsp;Item 21                      | **.88** | .09  | .05   | -.03  | .04   | -.00  | -.10 |
+| &nbsp;&nbsp;Item 25                      | **-.88** | .04  | .05   | -.05  | .00   | .28   | -.03 |
+| &nbsp;&nbsp;Item 27                      | **.60** | .05  | .02   | .04   | .11   | .37   | .14 |
+| &nbsp;&nbsp;Item 29                      | **.68** | .01  | .22   | .01   | -.04  | .28   | .10 |
+| Social Gender Role Recognition (Soc)     |     |     |       |       |      |       |     |
+| &nbsp;&nbsp;Item 9                       | .01  | **.82** | .03   | .01   | -.04  | .01   | .04 |
+| &nbsp;&nbsp;Item 10                      | -.03 | **-.72** | -.04  | -.03  | -.03  | -.03  | -.14 |
+| &nbsp;&nbsp;Item 12                      | .04  | **.75** | -.12  | .01   | .10   | -.03  | .12 |
+| &nbsp;&nbsp;Item 13                      | -.01 | **.77** | .14   | .05   | .01   | .06   | -.19 |
+| &nbsp;&nbsp;Item 38                      | .13  | **.60** | .06   | .11   | -.07  | .07   | .13 |
 | Chest (Chest)                           |     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 15                      | -.02 | .06  | .04   | **.84** | -.02  | .06   | -.03 |
-| &nbsp;&nbsp;Item 18                      | .07  | .07  | .05   | **.73** | .11   | -.11  | -.12 |
-| &nbsp;&nbsp;Item 28                      | .09  | -.01 | -.07  | **.93** | .01   | .01   | .09 |
-| &nbsp;&nbsp;Item 30                      | -.01 | -.02 | .11   | **.66** | .07   | -.07  | .03 |
+| &nbsp;&nbsp;Item 15                      | .06  | .04  | **.84** | .02   | -.02  | .06   | -.03 |
+| &nbsp;&nbsp;Item 18                      | .07  | .05  | **.73** | .08   | .11   | -.11  | -.12 |
+| &nbsp;&nbsp;Item 28                      | -.01 | -.07 | **.93** | .02   | .02   | .01   | .09 |
+| &nbsp;&nbsp;Item 30                      | -.02 | .11  | **.66** | -.01  | .07   | -.07  | .03 |
 | Life Satisfaction (Life)                 |     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 16                      | .00  | -.02 | -.01  | **.77** | .04   | -.01  | .07 |
-| &nbsp;&nbsp;Item 19                      | .04  | .07  | .15   | **.51** | .24   | .07   | -.08 |
-| &nbsp;&nbsp;Item 20                      | .03  | -.01 | -.05  | **.80** | -.03  | -.00  | -.05 |
-| &nbsp;&nbsp;Item 22                      | .02  | -.02 | .03   | **.75** | .02   | -.07  | .02 |
+| &nbsp;&nbsp;Item 16                      | -.02 | -.01 | .00   | **.77** | .04   | -.01  | .07 |
+| &nbsp;&nbsp;Item 19                      | .07  | .15  | .04   | **.51** | .24   | .07   | -.08 |
+| &nbsp;&nbsp;Item 20                      | -.01 | -.05 | .03   | **.80** | -.03  | -.00  | -.05 |
+| &nbsp;&nbsp;Item 22                      | -.02 | .03  | .02   | **.75** | .02   | -.07  | .02 |
 | Physical and Emotional Intimacy (Intim)  |     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 17                      | .15  | -.01 | -.05  | -.01  | **.74** | -.01  | .02 |
-| &nbsp;&nbsp;Item 23                      | -.02 | .04  | .02   | .29   | **.46** | .14   | .04 |
-| &nbsp;&nbsp;Item 24                      | -.01 | .04  | .00   | .04   | **.85** | .01   | -.02 |
+| &nbsp;&nbsp;Item 17                      | -.01 | -.05 | .15   | -.01  | **.74** | -.01  | .02 |
+| &nbsp;&nbsp;Item 23                      | .04  | .02  | -.02  | .29   | **.46** | .14   | .04 |
+| &nbsp;&nbsp;Item 24                      | .04  | .00  | -.01  | .04   | **.85** | .01   | -.02 |
 | Other Secondary Sex Characteristics (Sec)|     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 26                      | -.10 | -.17 | .12   | -.09  | .11   | **.57** | -.09 |
-| &nbsp;&nbsp;Item 32                      | -.10 | -.01 | -.18  | -.21  | .04   | -.04  | **.49** |
-| &nbsp;&nbsp;Item 33                      | -.04 | -.23 | -.03  | -.01  | -.03  | -.28  | **.41** |
-| &nbsp;&nbsp;Item 35                      | .06  | .00  | .07   | -.12  | -.06  | -.14  | -.33 |
-| &nbsp;&nbsp;Item 37                      | -.02 | -.06 | -.16  | -.05  | -.02  | .06   | -.30 |
+| &nbsp;&nbsp;Item 26                      | -.17 | .12  | -.10  | -.09  | .11   | **.57** | -.09 |
+| Psychological Functioning (Psych)        |     |     |       |       |      |       |     |
+| &nbsp;&nbsp;Item 1                       | .03  | -.05 | **.44** | .05   | .02   | -.11  | .38 |
+| &nbsp;&nbsp;Item 2                       | -.12 | .06  | .03   | -.10  | .26   | -.09  | **.48** |
+| &nbsp;&nbsp;Item 3                       | .01  | .13  | .17   | .03   | .07   | -.12  | **.52** |
+| &nbsp;&nbsp;Item 4                       | -.02 | .10  | **.41** | -.10  | .13   | -.08  | .36 |
+| &nbsp;&nbsp;Item 5                       | .18  | -.09 | .09   | .11   | .04   | .04   | **.50** |
+| &nbsp;&nbsp;Item 6                       | .00  | .10  | .29   | .00   | .04   | -.10  | **.40** |
+| &nbsp;&nbsp;Item 7                       | -.02 | -.04 | .31   | .06   | .16   | -.11  | **.43** |
+| &nbsp;&nbsp;Item 8                       | .16  | .16  | .32   | .11   | .03   | .00   | -.15 |
+| &nbsp;&nbsp;Item 11                      | .02  | .07  | .15   | .10   | -.06  | .08   | **.55** |
+| &nbsp;&nbsp;Item 31                      | .02  | .08  | .26   | .14   | .04   | -.02  | .37 |
+| &nbsp;&nbsp;Item 32                      | -.01 | -.18 | -.10  | -.21  | .04   | -.04  | **-.49** |
+| &nbsp;&nbsp;Item 33                      | -.23 | -.03 | -.04  | -.01  | -.03  | -.28  | **-.41** |
+| &nbsp;&nbsp;Item 34                      | .12  | .02  | .28   | .04   | -.06  | .11   | **.41** |
+| &nbsp;&nbsp;Item 35                      | .00  | .07  | .06   | -.12  | -.06  | -.14  | -.33 |
+| &nbsp;&nbsp;Item 36                      | .01  | .06  | .05   | .24   | .01   | .11   | .37 |
+| &nbsp;&nbsp;Item 37                      | -.06 | -.16 | -.02  | -.05  | -.02  | .06   | -.30 |
 
-*Note.* N = 293. Primary factor loadings > .40 are shown in bold. Factor labels: Soc = Social gender role recognition; Gen = Genitalia; Psych = Psychological functioning; Chest = Chest; Life = Life satisfaction; Intim = Physical and emotional intimacy; Sec = Other secondary sex characteristics.
+*Note.* N = 293. Primary factor loadings > .40 are shown in bold. Factor order reflects data-driven EFA results (ML1-ML7). Factor labels: Gen = Genitalia; Soc = Social gender role recognition; Chest = Chest; Life = Life satisfaction; Intim = Physical and emotional intimacy; Sec = Other secondary sex characteristics; Psych = Psychological functioning.
 
 **Table 4**
 
 *Factor Correlations and Variance Explained in the German GCLS*
 
-| Factor | Soc | Gen | Psych | Chest | Life | Intim | Sec | Variance explained (%) |
+| Factor | Gen | Soc | Chest | Life | Intim | Sec | Psych | Variance explained (%) |
 | :----- | :-- | :-- | :---- | :---- | :--- | :---- | :-- | :--------------------- |
-| Soc    | —  |     |       |       |      |       |     | 10.10                  |
-| Gen    | .33 | —  |       |       |      |       |     | 9.99                   |
-| Psych  | .56 | .16 | —    |       |      |       |     | 9.52                   |
-| Chest  | .35 | .50 | .13   | —    |      |       |     | 8.58                   |
-| Life   | .36 | .32 | .28   | .42   | —   |       |     | 7.65                   |
-| Intim  | .49 | .37 | .42   | .24   | .25  | —    |     | 6.58                   |
-| Sec    | .27 | .27 | .21   | .44   | .44  | .18   | —  | 5.57                   |
+| Gen    | —  |     |       |       |      |       |     | 12.9                   |
+| Soc    | .30 | —  |       |       |      |       |     | 10.4                   |
+| Chest  | .46 | .23 | —    |       |      |       |     | 9.3                    |
+| Life   | .31 | .39 | .43   | —    |      |       |     | 7.6                    |
+| Intim  | .21 | .31 | .42   | .44   | —   |       |     | 5.6                    |
+| Sec    | .16 | .12 | .13   | .03   | .08  | —    |     | 2.4                    |
+| Psych  | .23 | .62 | .16   | .27   | .21  | .05   | —  | 10.4                   |
 
-*Note.* N = 293. All correlations > .30 are significant at p < .001. Factor labels: Soc = Social gender role recognition; Gen = Genitalia; Psych = Psychological functioning; Chest = Chest; Life = Life satisfaction; Intim = Physical and emotional intimacy; Sec = Other secondary sex characteristics. Total variance explained = 58.0%.
+*Note.* N = 293. All correlations > .30 are significant at p < .001. Factor order reflects data-driven EFA results (ML1-ML7). Factor labels: Gen = Genitalia; Soc = Social gender role recognition; Chest = Chest; Life = Life satisfaction; Intim = Physical and emotional intimacy; Sec = Other secondary sex characteristics; Psych = Psychological functioning. Total variance explained = 58.6%.
 
 ### Advanced Structural Validation Using ESEM
 
