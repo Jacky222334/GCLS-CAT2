@@ -340,13 +340,11 @@ To assess the stability and generalizability of the ESEM-derived factor structur
 
 The model fit indices demonstrated remarkable stability across the three subsamples. The Comparative Fit Index showed excellent consistency (*M* `<sub>`CFI `</sub>` = 0.927, 95% CI [0.917, 0.937], CV = 0.9%), while the Root Mean Square Error of Approximation demonstrated good fit (*M* `<sub>`RMSEA `</sub>` = 0.058, 95% CI [0.054, 0.062], CV = 5.8%). The Tucker-Lewis Index indicated acceptable fit (*M* `<sub>`TLI `</sub>` = 0.878, 95% CI [0.861, 0.894], CV = 1.7%).
 
-<!-- : # (Insert Figure 3 about here)
-: # (<!-- Figure removed for PDF conversion -->)
-: # ()
-: # ([Figure placeholder - removed for PDF conversion])
-: # ()
-: # ()
-: # () -->
+**Figure 3**
+
+**Cross-Validation Stability of ESEM Model Fit Indices**
+
+![Cross-validation stability analysis](figures/figure3_combined_fit_indices.pdf)
 
 Figure 3 illustrates the stability of the model fit across all three folds. The consistently low coefficients of variation (all CV < 6%) and narrow confidence intervals provide strong evidence for the robustness of the identified model structure. This remarkable stability across subsamples strongly supports the generalizability of the seven-factor structure in the German validation of the GCLS, offering compelling internal replication evidence.
 
