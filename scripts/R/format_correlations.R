@@ -38,10 +38,16 @@ all_items <- unlist(subscales)
 all_items <- all_items[all_items != "I26"]
 gcls_scores$"Total Score" <- rowMeans(raw_data[all_items], na.rm = TRUE)
 
-# Add SF-12 and ZUF-8 scores
+# Add SF-12, ZUF-8, and WHOQOL-BREF scores
 gcls_scores$"SF-12 PCS" <- other_data$pcs12
 gcls_scores$"SF-12 MCS" <- other_data$mcs12
 gcls_scores$"ZUF-8" <- other_data$zuf_score
+
+# Add WHOQOL-BREF domains
+gcls_scores$"WHOQOL Physical" <- other_data$phys
+gcls_scores$"WHOQOL Psychological" <- other_data$psych
+gcls_scores$"WHOQOL Social" <- other_data$social
+gcls_scores$"WHOQOL Environmental" <- other_data$envir
 
 # Calculate descriptive statistics
 stats <- data.frame(
@@ -54,52 +60,87 @@ stats <- data.frame(
 # Calculate correlation matrix
 cor_matrix <- cor(gcls_scores, method = "spearman", use = "pairwise.complete.obs")
 
-# Format correlations with significance stars
-format_correlation <- function(x) {
-  if (is.na(x)) return("-")
-  if (abs(x) >= 0.4) return(sprintf("%.2f**", x))
-  if (abs(x) >= 0.3) return(sprintf("%.2f*", x))
-  return(sprintf("%.2f", x))
+# Function to calculate p-values for correlations
+cor_test_p <- function(x, y) {
+  test <- cor.test(x, y, method = "spearman", use = "pairwise.complete.obs")
+  return(test$p.value)
 }
 
-# Create formatted matrix
-formatted_matrix <- matrix("", nrow = nrow(cor_matrix), ncol = ncol(cor_matrix))
-for (i in 1:nrow(cor_matrix)) {
-  for (j in 1:ncol(cor_matrix)) {
-    if (i <= j) {
-      formatted_matrix[i,j] <- format_correlation(cor_matrix[i,j])
+# Calculate p-value matrix
+n_vars <- ncol(gcls_scores)
+p_matrix <- matrix(NA, n_vars, n_vars)
+for(i in 1:n_vars) {
+  for(j in 1:n_vars) {
+    if(i != j) {
+      p_matrix[i,j] <- cor_test_p(gcls_scores[,i], gcls_scores[,j])
     }
   }
 }
 
-# Create final table
-final_table <- data.frame(
-  Scale = stats$Scale,
-  "M (SD)" = sprintf("%.2f (%.2f)", stats$M, stats$SD),
-  Range = stats$Range,
-  matrix(formatted_matrix, nrow = nrow(stats))
+# Format correlations with significance stars based on p-values
+format_correlation_with_p <- function(r, p) {
+  if (is.na(r) || is.na(p)) return("—")
+  if (p < 0.001) return(sprintf("%.2f***", r))
+  if (p < 0.01) return(sprintf("%.2f**", r))
+  if (p < 0.05) return(sprintf("%.2f*", r))
+  return(sprintf("%.2f", r))
+}
+
+# Create variable labels
+var_labels <- c(
+  "GCLS: Psychological Functioning",
+  "GCLS: Genitalia", 
+  "GCLS: Social Gender Role Recognition",
+  "GCLS: Physical and Emotional Intimacy",
+  "GCLS: Chest",
+  "GCLS: Other Secondary Sex Characteristics", 
+  "GCLS: Life Satisfaction",
+  "GCLS: Total Score",
+  "SF-12: PCS",
+  "SF-12: MCS", 
+  "ZUF-8",
+  "WHOQOL: Physical",
+  "WHOQOL: Psychological",
+  "WHOQOL: Social", 
+  "WHOQOL: Environmental"
 )
 
-# Rename columns
-colnames(final_table)[4:14] <- paste0(1:11)
+# Create compact correlation matrix (lower triangle only)
+compact_matrix <- data.frame(
+  Variable = paste0(1:n_vars, " ", var_labels),
+  stringsAsFactors = FALSE
+)
 
-# Print table in APA format
+# Add correlation columns
+for(j in 1:n_vars) {
+  col_name <- as.character(j)
+  compact_matrix[[col_name]] <- ""
+  
+  for(i in 1:n_vars) {
+    if(i == j) {
+      compact_matrix[i, col_name] <- "—"
+    } else if(i > j) {
+      compact_matrix[i, col_name] <- format_correlation_with_p(cor_matrix[i,j], p_matrix[i,j])
+    } else {
+      compact_matrix[i, col_name] <- ""
+    }
+  }
+}
+
+# Print compact table
 cat("\nTable 3\n")
-cat("Spearman's Rho Correlations Between G-GCLS, SF-12, and ZUF-8 (N = 293)\n")
-cat(paste(rep("=", 120), collapse = ""), "\n\n")
+cat("Spearman's Rho Correlation Matrix Between GCLS, SF-12, ZUF-8, and WHOQOL-BREF (N = 293)\n\n")
 
-# Print table
-print(kable(final_table, format = "simple", align = c("l", "r", "r", rep("r", 11))))
+# Print the table
+print(kable(compact_matrix, format = "simple", align = c("l", rep("r", n_vars))))
 
 # Print note
-cat("\nNote. All correlations significant at p < .001. Lower G-GCLS scores indicate better outcomes.\n")
-cat("Higher SF-12 and ZUF-8 scores indicate better outcomes. PCS = Physical Component Score;\n")
-cat("MCS = Mental Component Score.\n\n")
-cat("* p < .05\n")
-cat("** p < .001\n")
+cat("\nNote. GCLS = Gender Congruence and Life Satisfaction Scale; SF-12 = Short Form Health Survey;\n")
+cat("ZUF-8 = Client Satisfaction Questionnaire; WHOQOL-BREF = World Health Organization Quality of Life-Brief.\n")
+cat("* p < .05. ** p < .01. *** p < .001.\n")
 
 # Create processed directory if it doesn't exist
 dir.create("data/processed", showWarnings = FALSE, recursive = TRUE)
 
 # Save table to file
-write.csv(final_table, "data/processed/correlation_table_apa.csv", row.names = FALSE) 
+write.csv(compact_matrix, "data/processed/correlation_table_apa.csv", row.names = FALSE) 

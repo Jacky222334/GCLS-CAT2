@@ -274,6 +274,40 @@ Comparison between the total sample and Female AMAB subgroup revealed several no
 
 The Kaiser-Meyer-Olkin measure verified sampling adequacy for both the total sample (KMO = .89) and Female AMAB subgroup (KMO = .87), and Bartlett's test of sphericity was significant in both cases (total sample: χ²(666) = 6864.25, p < .001; Female AMAB: χ²(666) = 3428.12, p < .001). These results support the appropriateness of the factor analytic approach and suggest sufficient factorability of the correlation matrices in both groups.
 
+### Convergent and Discriminant Validity
+
+To assess convergent and discriminant validity, we examined correlations between the GCLS-G subscales and established measures of physical health (SF-12), mental health (SF-12), treatment satisfaction (ZUF-8), and quality of life (WHOQOL-BREF). Results are presented in Table 3.
+
+**Table 3**
+
+*Spearman's Rho Correlation Matrix Between GCLS, SF-12, ZUF-8, and WHOQOL-BREF (N = 293)*
+
+| Variable | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
+|:---------|--:|--:|--:|--:|--:|--:|--:|--:|--:|---:|---:|---:|---:|---:|---:|
+| 1 GCLS: Psychological Functioning | — |   |   |   |   |   |   |   |   |    |    |    |    |    |    |
+| 2 GCLS: Genitalia | 0.36*** | — |   |   |   |   |   |   |   |    |    |    |    |    |    |
+| 3 GCLS: Social Gender Role Recognition | 0.41*** | 0.35*** | — |   |   |   |   |   |   |    |    |    |    |    |    |
+| 4 GCLS: Physical and Emotional Intimacy | 0.71*** | 0.46*** | 0.37*** | — |   |   |   |   |   |    |    |    |    |    |    |
+| 5 GCLS: Chest | 0.39*** | 0.46*** | 0.44*** | 0.36*** | — |   |   |   |   |    |    |    |    |    |    |
+| 6 GCLS: Other Secondary Sex Characteristics | 0.35*** | 0.33*** | 0.56*** | 0.33*** | 0.48*** | — |   |   |   |    |    |    |    |    |    |
+| 7 GCLS: Life Satisfaction | 0.79*** | 0.42*** | 0.45*** | 0.69*** | 0.42*** | 0.36*** | — |   |   |    |    |    |    |    |    |
+| 8 GCLS: Total Score | 0.83*** | 0.68*** | 0.65*** | 0.78*** | 0.64*** | 0.60*** | 0.83*** | — |   |    |    |    |    |    |    |
+| 9 SF-12: PCS | 0.08 | 0.05 | -0.11 | 0.06 | -0.01 | 0.00 | -0.01 | 0.05 | — |    |    |    |    |    |    |
+| 10 SF-12: MCS | -0.68*** | -0.27*** | -0.26*** | -0.52*** | -0.27*** | -0.33*** | -0.61*** | -0.61*** | -0.27*** | — |    |    |    |    |    |
+| 11 ZUF-8 | -0.36*** | -0.17** | -0.28*** | -0.35*** | -0.24*** | -0.18** | -0.43*** | -0.38*** | -0.04 | 0.30*** | — |    |    |    |    |
+| 12 WHOQOL: Physical | -0.68*** | -0.27*** | -0.37*** | -0.56*** | -0.30*** | -0.30*** | -0.74*** | -0.65*** | 0.14* | 0.65*** | 0.35*** | — |    |    |    |
+| 13 WHOQOL: Psychological | -0.81*** | -0.43*** | -0.45*** | -0.70*** | -0.40*** | -0.37*** | -0.83*** | -0.81*** | -0.06 | 0.70*** | 0.38*** | 0.77*** | — |    |    |
+| 14 WHOQOL: Social | -0.57*** | -0.34*** | -0.27*** | -0.75*** | -0.27*** | -0.29*** | -0.65*** | -0.62*** | 0.01 | 0.44*** | 0.34*** | 0.51*** | 0.57*** | — |    |
+| 15 WHOQOL: Environmental | -0.62*** | -0.37*** | -0.41*** | -0.56*** | -0.45*** | -0.36*** | -0.70*** | -0.68*** | 0.09 | 0.51*** | 0.39*** | 0.70*** | 0.70*** | 0.50*** | — |
+
+*Note.* GCLS = Gender Congruence and Life Satisfaction Scale; SF-12 = Short Form Health Survey; ZUF-8 = Client Satisfaction Questionnaire; WHOQOL-BREF = World Health Organization Quality of Life-Brief. * p < .05. ** p < .01. *** p < .001.
+
+**Convergent validity** was robustly demonstrated through substantial negative correlations between GCLS-G subscales and conceptually related measures. The strongest convergent relationships emerged between GCLS-G and WHOQOL-BREF domains (r = -.27*** to -.83***), with particularly strong associations between GCLS Life Satisfaction and WHOQOL Psychological (r = -.83***), and GCLS Psychological Functioning and WHOQOL Psychological (r = -.81***). These large effect sizes confirm excellent construct overlap between theoretically similar psychological domains. Mental health convergence was further evidenced by moderate to strong correlations with SF-12 Mental Component Summary scores (r = -.26*** to -.68***), with GCLS Psychological Functioning showing the strongest relationship (r = -.68***). Treatment satisfaction (ZUF-8) demonstrated theoretically expected negative correlations across all GCLS subscales (r = -.17** to -.43***), indicating that greater gender congruence relates systematically to higher healthcare satisfaction.
+
+**Discriminant validity** was excellently supported through negligible correlations between GCLS subscales and SF-12 Physical Component Summary scores (r = -.11 to .08), demonstrating that gender-specific concerns are conceptually distinct from general physical health functioning. This pattern provides compelling evidence that the GCLS-G measures gender congruence rather than broader health constructs, supporting its specificity as a transgender-focused instrument.
+
+Within-scale correlations revealed theoretically coherent relationships while maintaining adequate discriminant validity (all r < .80). The strongest inter-subscale correlations occurred between Psychological Functioning and Life Satisfaction (r = .79***), and Physical and Emotional Intimacy and Psychological Functioning (r = .71***), reflecting the interconnected nature of psychological well-being and embodied gender experience. These findings support the multidimensional yet unified theoretical model underlying the GCLS-G, demonstrating both conceptual coherence and empirical distinctiveness across domains.
+
 ### Three-Fold Cross-Validation of the ESEM Model
 
 To assess the stability and generalizability of the ESEM-derived factor structure, we conducted a three-fold cross-validation analysis. Given the sample size requirements for factor analysis (minimum 2.5 observations per variable; Cattell, 1978) and our total sample of *N* = 293 with 38 variables, a three-fold approach was deemed optimal, resulting in approximately 97 observations per fold (2.6 observations per variable). Each fold was used once as the test set while the remaining data (approximately 196 observations) served as the training set.
