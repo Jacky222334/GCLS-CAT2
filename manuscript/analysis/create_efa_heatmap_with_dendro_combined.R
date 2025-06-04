@@ -55,7 +55,7 @@ dendro_plot <- ggplot(segment(dendro_data)) +
                linewidth = 0.6, color = "black") +
   coord_flip() +  # Rotate to match heatmap orientation
   scale_x_continuous(expand = c(0.01, 0.01)) +
-  scale_y_continuous(expand = c(0.01, 0.01)) +
+  scale_y_reverse(expand = c(0.01, 0.01)) +  # Reverse y-axis to flip 180 degrees
   theme_void() +
   theme(
     plot.margin = margin(5, 2, 5, 5),
@@ -110,11 +110,11 @@ heatmap_plot <- ggplot(loadings_long, aes(x = Factor_Combined, y = Item, fill = 
     size = 1.6,
     fontface = "plain"
   ) +
-  scale_y_discrete(position = "right") +  # Move item labels to the right
+  scale_y_discrete(position = "left") +  # Move item labels to the left
   theme_minimal() +
   theme(
-    axis.text.x = element_text(angle = 0, hjust = 0.5, size = 8, lineheight = 0.8),
-    axis.text.y = element_text(size = 6),
+    axis.text.x = element_text(angle = 0, hjust = 0.5, size = 7, lineheight = 0.6),  # Smaller, tighter spacing
+    axis.text.y = element_text(size = 7),  # Slightly larger item labels
     axis.title = element_text(size = 10),
     axis.title.y = element_blank(),  # Remove y-axis title
     legend.title = element_text(size = 9),
@@ -152,7 +152,7 @@ dendro_compact <- ggplot(segment(dendro_data)) +
                linewidth = 0.5, color = "darkblue") +
   coord_flip() +
   scale_x_continuous(expand = c(0.01, 0.01)) +
-  scale_y_continuous(expand = c(0.01, 0.01)) +
+  scale_y_reverse(expand = c(0.01, 0.01)) +  # Also reverse for compact version
   theme_void() +
   theme(
     plot.margin = margin(2, 1, 2, 2),
@@ -183,11 +183,11 @@ heatmap_compact <- ggplot(loadings_long, aes(x = Factor_Combined, y = Item, fill
     color = "gray30",
     size = 1.6
   ) +
-  scale_y_discrete(position = "right") +
+  scale_y_discrete(position = "left") +  # Also move to left in compact version
   theme_minimal() +
   theme(
-    axis.text.x = element_text(angle = 0, hjust = 0.5, size = 7, lineheight = 0.8),
-    axis.text.y = element_text(size = 5),
+    axis.text.x = element_text(angle = 0, hjust = 0.5, size = 6, lineheight = 0.5),  # Even more compact
+    axis.text.y = element_text(size = 6),  # Larger item labels
     axis.title = element_text(size = 9),
     axis.title.y = element_blank(),
     legend.title = element_text(size = 8),
