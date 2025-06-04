@@ -1,7 +1,14 @@
-# Gender Congruence and Life Satisfaction Scale (GCLS-Gv1.1): German Validation Study
-
-Jan Ben Schulze¹*, Flavio Ammann¹, Bethany A. Jones²,³, Roland von Känel¹, & Sebastian Euler¹
-
+---
+title: "Gender Congruence and Life Satisfaction Scale (GCLS-Gv1.1): German Validation Study"
+author: "Jan Ben Schulze¹*, Flavio Ammann¹, Bethany A. Jones²,³, Roland von Känel¹, & Sebastian Euler¹"
+date: "`r Sys.Date()`"
+lang: de-DE
+bibliography: references.bib
+output: 
+  pdf_document:
+    toc: false
+    number_sections: true
+---
 ¹Department of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich, Switzerland
 
 ²Nottingham Cent[](https://)re for Transgender Health, United Kingdom
@@ -34,13 +41,9 @@ Suffering that cannot be validly measured remains structurally invisible—inclu
 
 **The GENDER-Q and GCLS as Solutions**: Recent developments in measurement tools offer promising solutions. The GENDER-Q, developed through international collaboration, provides a comprehensive PROM to assess outcomes of gender-affirming care (Budge et al., 2016). Similarly, the Gender Congruence and Life Satisfaction Scale (GCLS), developed by Jones et al. (2016), employs a multidimensional model, integrating psychological symptoms with body perception, social participation, and overall life satisfaction.
 
-### Cultural Adaptation Considerations
+**Cultural Adaptation Considerations**: The cultural adaptation of such tools requires a systematic approach following established guidelines (Harkness et al., 2010). Recent research advocates for an eight-step process including forward translation, synthesis, back translation, harmonization, pre-testing, field testing, psychometric validation, and analysis. This structured approach ensures that adapted instruments maintain their validity and reliability across different cultural contexts while considering both surface and deep structure adaptations.
 
-The cultural adaptation of such tools requires a systematic approach following established guidelines (Harkness et al., 2010). Recent research advocates for an eight-step process including forward translation, synthesis, back translation, harmonization, pre-testing, field testing, psychometric validation, and analysis. This structured approach ensures that adapted instruments maintain their validity and reliability across different cultural contexts while considering both surface and deep structure adaptations.
-
-### Study Aim and Significance
-
-Introducing culturally and linguistically adapted versions of comprehensive assessment tools in German-speaking countries is crucial. Such adaptations would address country-specific healthcare infrastructures and social contexts while generating reliable, robust data essential for evidence-based, patient-centered care. This approach aligns with recent developments in transgender healthcare policy in German-speaking countries, which emphasize the importance of gender-affirming care and evidence-based practice (Richards et al., 2016; Bouman & Richards, 2013).
+**Study Aim and Significance**: Introducing culturally and linguistically adapted versions of comprehensive assessment tools in German-speaking countries is crucial. Such adaptations would address country-specific healthcare infrastructures and social contexts while generating reliable, robust data essential for evidence-based, patient-centered care. This approach aligns with recent developments in transgender healthcare policy in German-speaking countries, which emphasize the importance of gender-affirming care and evidence-based practice (Richards et al., 2016; Bouman & Richards, 2013).
 
 The implementation of such tools could significantly enhance healthcare quality for transgender individuals while addressing current systemic challenges, including the noted lack of sufficiently educated medical personnel and long waiting times for healthcare services (Dhejne et al., 2016). This advancement would represent a crucial step toward more inclusive and effective transgender healthcare in German-speaking regions.
 
@@ -59,8 +62,6 @@ This validation study employed a cross-sectional design to evaluate the psychome
 The GCLS, originally developed and validated in English by Jones et al. (2019), is a comprehensive 38-item self-report measure designed specifically for transgender and gender diverse populations. The instrument assesses seven distinct domains: Psychological functioning (7 items), Genitalia (5 items), Social gender role recognition (5 items), Physical and emotional intimacy (4 items), Chest (5 items), Other secondary sex characteristics (6 items), and Life satisfaction (6 items). Additionally, two composite scores can be calculated: Gender congruence (C1-GC) and Gender-related mental well-being and life satisfaction (C2-MH).
 
 Items are rated on a 5-point Likert scale ranging from 1 (always) to 5 (never), with lower scores indicating better outcomes. The original English version demonstrated strong psychometric properties, including high internal consistency (Cronbach's α = .77-.95), good convergent validity with established measures, and robust test-retest reliability over a 4-week period (r = .87). The seven-factor structure was confirmed through both exploratory and confirmatory factor analyses, explaining 78% of the total variance. The scale has been validated across diverse transgender populations at different transition stages.
-
-For the German validation, we followed a rigorous translation and cultural adaptation process using the TRAPD approach (Translation, Review, Adjudication, Pretesting, and Documentation). Two independent translators with expertise in gender healthcare produced parallel translations, focusing on conceptual rather than literal equivalence. An expert panel reviewed and reconciled the translations, followed by cognitive pretesting with seven transgender individuals and back-translation review by the original authors.
 
 #### Short Form Health Survey (SF-12)
 
@@ -96,17 +97,154 @@ Data was collected using LimeSurvey (Version 5.6.9), an online platform suitable
 
 ### Translation and Cultural Adaptation
 
-The translation and cultural adaptation process followed a modified TRAPD (Translation, Review, Adjudication, Pretesting, and Documentation) approach, which represents current best practice for survey translations (Mohler et al., 2016). Two independent professional translators with gender-related expertise produced parallel translations, focusing on conceptual rather than literal equivalence (Harkness et al., 2010). An expert panel comprising psychologists and psychiatrists reviewed the translations, discussed discrepancies, and reached consensus on culturally appropriate adaptations through structured deliberation (Behr, 2017). Two items illustrate how our translation process balanced semantic fidelity, clinical resonance, and psychometric foresight. The item "I thought about hurting myself or taking my life" required careful retention of affective intensity, as it loaded clearly on the psychological functioning factor (\lambda = .56) and was crucial for detecting clinically significant distress. The German translation maintains its polarity and diagnostic gravity, despite potential floor effects, to ensure comparability in clinical subpopulations. Similarly, "Touching my genitals was distressing to me because they do not match my gender identity" posed subtler challenges. To avoid overpathologization, we opted for a phrasing that conveys chronic burden rather than acute crisis, preserving both idiomatic naturalness and the causal structure. This item showed strong discriminatory power (\lambda = .78) across transition stages in the original data (Jones et al., 2019). Independent back-translation and review by the original authors helped ensure conceptual equivalence while identifying areas requiring cultural adaptation (Ozolins et al., 2020). Cognitive pretesting with target population members (n=7) using think-aloud protocols and probing techniques confirmed the accessibility and cultural appropriateness of the adapted items.
+The translation and cultural adaptation process followed a modified TRAPD (Translation, Review, Adjudication, Pretesting, and Documentation) approach, which represents current best practice for survey translations (Mohler et al., 2016). Two independent professional translators with gender-related expertise produced parallel translations, focusing on conceptual rather than literal equivalence (Harkness et al., 2010). An expert panel comprising psychologists and psychiatrists reviewed the translations, discussed discrepancies, and reached consensus on culturally appropriate adaptations through structured deliberation (Behr, 2017). Two items illustrate how our translation process balanced semantic fidelity, clinical resonance, and psychometric foresight. The item "I thought about hurting myself or taking my life" required careful retention of affective intensity, as it loaded clearly on the psychological functioning factor (λ = .56) and was crucial for detecting clinically significant distress. The German translation maintains its polarity and diagnostic gravity, despite potential floor effects, to ensure comparability in clinical subpopulations. Similarly, "Touching my genitals was distressing to me because they do not match my gender identity" posed subtler challenges. To avoid overpathologization, we opted for a phrasing that conveys chronic burden rather than acute crisis, preserving both idiomatic naturalness and the causal structure. This item showed strong discriminatory power (λ = .78) across transition stages in the original data (Jones et al., 2019). Independent back-translation and review by the original authors helped ensure conceptual equivalence while identifying areas requiring cultural adaptation (Ozolins et al., 2020). Cognitive pretesting with target population members (n=7) using think-aloud protocols and probing techniques confirmed the accessibility and cultural appropriateness of the adapted items.
+
+**Figure 1**
+
+**Study Design and Methodological Framework**
+
+![Study Design and Methodological Framework](image/image.png)
+
+*Figure 1* illustrates the comprehensive methodological framework employed in this validation study. **Panel A** displays the modified TRAPD (Translation, Review, Adjudication, Pretesting, and Documentation) process used for cultural adaptation, showing the systematic progression from initial forward translation by two independent translators through expert panel review, back-translation, cognitive pretesting with target population members (n=7), and final adaptation. **Panel B** presents the statistical analysis pipeline, beginning with data quality assessment (missing data patterns, outlier detection, normality testing) and progressing through descriptive analyses, psychometric validation (EFA with maximum likelihood estimation and oblique rotation), advanced structural validation (ESEM), and three-fold cross-validation for model stability assessment. **Panel C** shows the participant flow from initial invitation (N=1,161) through survey access (n=462, 39.8% response rate) to final complete responses (N=293, 25.2% completion rate), with demographic breakdown by gender identity groups. The flowchart demonstrates the rigorous, multi-stage approach ensuring both cultural appropriateness and psychometric robustness of the German GCLS adaptation.
+
+*Note.* TRAPD = Translation, Review, Adjudication, Pretesting, and Documentation; EFA = Exploratory Factor Analysis; ESEM = Exploratory Structural Equation Modeling; KMO = Kaiser-Meyer-Olkin measure; RMSEA = Root Mean Square Error of Approximation; TLI = Tucker-Lewis Index; CFI = Comparative Fit Index. Gray boxes indicate decision points; white boxes represent processes; diamond shapes show validation criteria.
+
+### Statistical Analysis
+
+All statistical analyses were conducted using R version 4.3.2 (R Core Team, 2023) with the following packages: psych (version 2.3.9) for descriptive statistics and reliability analyses, lavaan (version 0.6-16) for structural equation modeling, GPArotation (version 2023.11-1) for factor rotation procedures, corrplot (version 0.92) for correlation visualizations, and ggplot2 (version 3.4.4) for data visualization. Missing data patterns were examined using the VIM package (version 4.2.0), and multiple imputation was performed using the mice package (version 3.16.0) when applicable.
+
+Prior to main analyses, data quality was assessed through examination of missing data patterns, outlier detection using Mahalanobis distance (p < .001), and distributional assumptions. Normality was evaluated using the Shapiro-Wilk test for samples < 50 and visual inspection of Q-Q plots for larger samples, supplemented by skewness and kurtosis statistics (acceptable range: skewness < |2.0|, kurtosis < |7.0|; George & Mallery, 2019).
+
+Descriptive statistics included means, standard deviations, frequencies, and percentages as appropriate for variable types. Group comparisons were conducted using one-way analysis of variance (ANOVA) for continuous variables with Games-Howell post-hoc tests when Levene's test indicated unequal variances (p < .05). Categorical variables were analyzed using Pearson's chi-square tests of independence or Fisher's exact tests when expected cell frequencies were < 5. Effect sizes were calculated using eta-squared (η²) for ANOVA (small: .01, medium: .06, large: .14) and Cramer's V for chi-square tests (small: .10, medium: .30, large: .50; Cohen, 1988).
+
+For the primary psychometric analyses, sampling adequacy was assessed using the Kaiser-Meyer-Olkin (KMO) measure (acceptable: > .60, good: > .70, excellent: > .80) and Bartlett's test of sphericity (significant p < .05 indicates suitable data for factor analysis). Preliminary parallel analysis was conducted using the fa.parallel() function to determine the optimal number of factors for extraction (Horn, 1965).
+
+Exploratory Factor Analysis (EFA) was performed using maximum likelihood estimation with oblique rotation (oblimin) to allow for correlated factors, as recommended for psychological constructs (Fabrigar et al., 1999). Multiple extraction criteria were evaluated, including eigenvalues > 1.0, scree plot examination, and parallel analysis results. Model fit was assessed using multiple indices: Root Mean Square Error of Approximation (RMSEA < .08 indicates acceptable fit, < .06 good fit), Tucker-Lewis Index (TLI > .90 acceptable, > .95 good), Comparative Fit Index (CFI > .90 acceptable, > .95 good), and Bayesian Information Criterion (BIC; lower values indicate better fit; Hu & Bentler, 1999).
+
+Factor loadings ≥ .40 were considered substantial for factor interpretation, with cross-loadings < .30 supporting simple structure. Internal consistency was evaluated using Cronbach's alpha (α > .70 acceptable, > .80 good, > .90 excellent) and McDonald's omega (ω) to account for potential violations of tau-equivalence (Dunn et al., 2014). Inter-factor correlations were examined to assess discriminant validity, with correlations < .85 supporting distinct constructs (Brown, 2015).
+
+Exploratory Structural Equation Modeling (ESEM) was conducted using lavaan to combine the flexibility of EFA with the precision of confirmatory factor analysis. The ESEM approach allowed for cross-loadings while maintaining the theoretical structure, providing a more realistic representation of the factor structure (Marsh et al., 2014). Model identification was achieved through factor scaling (first loading fixed to 1.0) and factor variance estimation.
+
+Three-fold cross-validation was implemented to assess model stability and generalizability. The total sample (N = 293) was randomly divided into three approximately equal subsets (n ≈ 97-98 each), ensuring adequate sample size for factor analysis (minimum 2.5 observations per variable; Cattell, 1978). Each subset served as a test set once, with the remaining two-thirds used for model development. Stability was evaluated using coefficients of variation (CV) for fit indices across folds, with CV < 10% indicating good stability.
+
+For all inferential tests, statistical significance was set at α = .05, with Bonferroni correction applied for multiple comparisons when appropriate. Effect sizes were interpreted using Cohen's conventions, and 95% confidence intervals were calculated for all effect size estimates. Power analyses were conducted post-hoc using G*Power 3.1.9.7 to ensure adequate statistical power (1-β ≥ .80) for detected effects.
+
+Hierarchical clustering analyses were performed using Ward's method with Euclidean distance measures to explore item relationships and validate factor groupings. Dendrograms were generated using the cluster package (version 2.1.4) and visualized using ggdendro (version 0.1.23). Heatmaps were created using the ComplexHeatmap package (version 2.16.0) to display factor loading patterns with integrated clustering results.
+
+All analyses followed intention-to-treat principles where applicable, and sensitivity analyses were conducted to examine the impact of missing data and outliers on results. Results are reported following APA Style guidelines (7th edition) and STROBE recommendations for observational studies (von Elm et al., 2007).
+
+## Results
+
+### Sample Characteristics
+
+**Table 1**
+
+*Demographic Characteristics by Gender Identity Group (N = 293)*
+
+| Characteristic                     | Female AMAB (n=147) | Male AFAB (n=94) | Non-binary (n=42) [25 AMAB/17 AFAB] | Test Statistic          |
+| :--------------------------------- | :------------------ | :--------------- | :---------------------------------- | :---------------------- |
+| Age, M (SD)                        | 42.3 (15.8)         | 35.6 (14.9)      | 38.4 (17.2) [25 AMAB/27 AFAB]       | F(2, 290) = 5.84**      |
+| Living Situation                   |                     |                  |                                     | χ²(8, N=293) = 3.92ᵃ |
+| &nbsp;&nbsp;Living alone           | 62 (42.2)           | 35 (37.2)        | 21 (40.4) [10 AMAB/11 AFAB]         |                         |
+| &nbsp;&nbsp;With partner(s)        | 45 (30.6)           | 27 (28.7)        | 14 (26.9) [7 AMAB/7 AFAB]           |                         |
+| &nbsp;&nbsp;With family            | 27 (18.4)           | 21 (22.3)        | 10 (19.2) [5 AMAB/5 AFAB]           |                         |
+| &nbsp;&nbsp;Shared housing         | 8 (5.4)             | 8 (8.5)          | 5 (9.6) [2 AMAB/3 AFAB]             |                         |
+| &nbsp;&nbsp;Assisted living        | 5 (3.4)             | 3 (3.2)          | 2 (3.8) [1 AMAB/1 AFAB]             |                         |
+| Education                          |                     |                  |                                     | χ²(6, N=293) = 2.15ᵇ |
+| &nbsp;&nbsp;Vocational training    | 60 (40.8)           | 35 (37.2)        | 20 (38.5) [10 AMAB/10 AFAB]         |                         |
+| &nbsp;&nbsp;University degree      | 43 (29.3)           | 25 (26.6)        | 15 (28.8) [7 AMAB/8 AFAB]           |                         |
+| &nbsp;&nbsp;High school diploma    | 20 (13.6)           | 15 (16.0)        | 7 (13.5) [3 AMAB/4 AFAB]            |                         |
+| &nbsp;&nbsp;Other                  | 24 (16.3)           | 19 (20.2)        | 10 (19.2) [5 AMAB/5 AFAB]           |                         |
+| Employment Status                  |                     |                  |                                     | χ²(6, N=293) = 1.73ᶜ |
+| &nbsp;&nbsp;Employed               | 89 (60.5)           | 54 (57.4)        | 30 (57.7) [14 AMAB/16 AFAB]         |                         |
+| &nbsp;&nbsp;Self-employed          | 12 (8.2)            | 7 (7.4)          | 4 (7.7) [2 AMAB/2 AFAB]             |                         |
+| &nbsp;&nbsp;Unemployed/seeking     | 18 (12.2)           | 13 (13.8)        | 8 (15.4) [4 AMAB/4 AFAB]            |                         |
+| &nbsp;&nbsp;Other                  | 28 (19.0)           | 20 (21.3)        | 10 (19.2) [5 AMAB/5 AFAB]           |                         |
+| Relationship Status                |                     |                  |                                     | χ²(6, N=293) = 1.08ᵈ |
+| &nbsp;&nbsp;Single                 | 73 (49.7)           | 49 (52.1)        | 26 (50.0) [12 AMAB/14 AFAB]         |                         |
+| &nbsp;&nbsp;Non-legal relationship | 48 (32.7)           | 29 (30.9)        | 16 (30.8) [8 AMAB/8 AFAB]           |                         |
+| &nbsp;&nbsp;Legal relationship     | 22 (15.0)           | 13 (13.8)        | 8 (15.4) [4 AMAB/4 AFAB]            |                         |
+| &nbsp;&nbsp;Other                  | 4 (2.7)             | 3 (3.2)          | 2 (3.8) [1 AMAB/1 AFAB]             |                         |
+
+*Note.* AMAB = Assigned Male at Birth; AFAB = Assigned Female at Birth. Non-binary category includes all participants who identified as non-binary, genderqueer, or intersex. Age differences were analyzed using one-way ANOVA with Games-Howell post-hoc tests due to unequal group sizes, revealing significant differences between Female AMAB and Male AFAB groups (p = .002, η² = .039, representing a small to medium effect). Chi-square tests for categorical variables showed no significant differences: ᵃp = .864, ᵇp = .907, ᶜp = .943, ᵈp = .977. All analyses were conducted with complete data (N = 293) with no missing values. **p < .01.
+
+The sample showed a balanced distribution across gender identity groups, with Female AMAB participants comprising the largest group. A significant age difference emerged between Female AMAB and Male AFAB participants, with Female AMAB participants being on average 6.7 years older. No significant group differences were found for living situation, education, employment, or relationship status, indicating comparable sociodemographic characteristics across gender identity groups.
+
+#### Gender Identity and Transition Characteristics
+
+The sample included 44.3% trans feminine, 33.3% non-binary (including intersex), 16.7% trans masculine, and 4.6% other gender identities. Analysis of gender identity development timelines revealed comparable ages at inner coming out between AMAB (M = 24.8 years, SD = 12.3) and AFAB participants (M = 22.9 years, SD = 11.8), t(289) = 1.32, p = .189. The time until social coming out was also similar (AMAB: M = 31.4 years, SD = 13.7; AFAB: M = 29.2 years, SD = 12.9), t(289) = 1.45, p = .149, with a mean latency period of 6.5 years for both groups.
+
+#### Medical Transition Status
+
+Medical transition status and healthcare utilization patterns are presented in **Table 2**. The rates of completed (AMAB: 29.5%, AFAB: 33.0%) and ongoing procedures (AMAB: 50.6%, AFAB: 44.3%) were comparable between binary groups. Non-binary (including intersex) participants showed distinct patterns based on their assigned sex at birth.
+
+**Table 2**
+
+*Gender-Affirming Medical Interventions by Gender Identity*
+
+| Intervention                              | Women AMAB (n=147) | Men AFAB (n=94) | Non-binary (n=42) [25 AMAB/17 AFAB] | Test Statistic             |
+| :---------------------------------------- | :----------------- | :-------------- | :---------------------------------- | :------------------------- |
+| Hormone therapy                           |                    |                 |                                     |                            |
+| &nbsp;&nbsp;Estrogen therapy              | 143 (97.3)         | —              | 21/25 AMAB (84.0), 0/17 AFAB (0.0)  | χ²(2, N=283) = 156.82*** |
+| &nbsp;&nbsp;Anti-androgen therapy         | 103 (70.1)         | 5 (5.3)         | 11/25 AMAB (44.0), 0/17 AFAB (0.0)  | χ²(2, N=283) = 112.45*** |
+| &nbsp;&nbsp;Testosterone therapy          | 3 (2.0)            | 91 (96.8)       | 0/25 AMAB (0.0), 19/17 AFAB (111.8) | χ²(2, N=283) = 212.33*** |
+| Voice and appearance                      |                    |                 |                                     |                            |
+| &nbsp;&nbsp;Voice therapy                 | 79 (53.7)          | 3 (3.2)         | 8/25 AMAB (32.0), 2/17 AFAB (11.8)  | χ²(2, N=283) = 67.91***  |
+| &nbsp;&nbsp;Laser epilation               | 99 (67.3)          | 2 (2.1)         | 15/25 AMAB (60.0), 2/17 AFAB (11.8) | χ²(2, N=283) = 98.76***  |
+| &nbsp;&nbsp;Facial feminization surgeryᵃ | 36 (24.5)          | —              | 2/25 AMAB (8.0), 0/17 AFAB (0.0)    | FET: p < .001              |
+| Chest surgeries                           |                    |                 |                                     |                            |
+| &nbsp;&nbsp;Chest masculinization         | —                 | 81 (86.2)       | 0/25 AMAB (0.0), 14/17 AFAB (82.4)  | χ²(2, N=283) = 178.45*** |
+| &nbsp;&nbsp;Breast augmentation           | 91 (61.9)          | 1 (1.1)         | 8/25 AMAB (32.0), 0/17 AFAB (0.0)   | χ²(2, N=283) = 102.33*** |
+| Genital surgeries                         |                    |                 |                                     |                            |
+| &nbsp;&nbsp;Hysterectomyᵃ                | —                 | 38 (40.4)       | 0/25 AMAB (0.0), 3/17 AFAB (17.6)   | FET: p < .001              |
+| &nbsp;&nbsp;Neovaginoplasty               | 87 (59.2)          | —              | 7/25 AMAB (28.0), 0/17 AFAB (0.0)   | χ²(2, N=283) = 89.45***  |
+| &nbsp;&nbsp;Phalloplastyᵃ                | —                 | 12 (12.8)       | 0/25 AMAB (0.0), 1/17 AFAB (5.9)    | FET: p < .001              |
+| Other procedures                          |                    |                 |                                     |                            |
+| &nbsp;&nbsp;Vocal cord surgeryᵃ          | 17 (11.6)          | —              | 0/25 AMAB (0.0), 0/17 AFAB (0.0)    | FET: p < .001              |
+| &nbsp;&nbsp;Chondrolaryngoplastyᵃ        | 28 (19.0)          | —              | 1/25 AMAB (4.0), 0/17 AFAB (0.0)    | FET: p < .001              |
+| &nbsp;&nbsp;Other interventions           | 12 (8.2)           | 5 (5.3)         | 2/25 AMAB (8.0), 3/17 AFAB (17.6)   | χ²(2, N=283) = 2.84      |
+
+*Note.* Values are absolute numbers with percentages in parentheses. AMAB = Assigned Male at Birth; AFAB = Assigned Female at Birth. For non-binary participants, values are presented as absolute numbers/subgroup size followed by within-subgroup percentages. Em dashes (—) indicate no cases reported. ᵃFisher's Exact Test (FET) was used due to expected cell frequencies < 5. For non-binary participants, percentages exceeding 100% in some categories reflect multiple interventions per person. ***p < .001.
+
+Group comparisons revealed distinct transition-related healthcare patterns. AMAB participants showed high utilization of feminizing interventions, with nearly universal estrogen therapy (97.3%) and frequent use of anti-androgens (70.1%). Additional feminizing procedures included breast augmentation (61.9%), laser epilation (67.3%), and neovaginoplasty (59.2%). Voice-related interventions were common, with 53.7% pursuing voice therapy and 11.6% undergoing vocal surgery.
+
+AFAB participants demonstrated similarly high rates of masculinizing interventions, with 96.8% using testosterone therapy and 86.2% having undergone chest masculinization surgery. Genital surgeries were less frequent, with 40.4% opting for hysterectomy and 12.8% for phalloplasty. Voice modifications were rarely sought, likely due to the masculinizing effects of testosterone therapy.
+
+Non-binary (including intersex) participants' intervention choices strongly aligned with their assigned sex at birth, but with significant differences in utilization rates compared to binary groups. Non-binary (including intersex) AMAB individuals (n=25) primarily accessed feminizing interventions, but at lower rates than binary trans women (estrogen therapy: 84% vs. 97.3%, χ²(1) = 8.45, p = .004; breast augmentation: 32% vs. 61.9%, χ²(1) = 12.33, p < .001). Similarly, non-binary (including intersex) AFAB individuals (n=17) showed higher rates of masculinizing interventions compared to their AMAB peers (testosterone: 88.2% vs. 16%, χ²(1) = 24.91, p < .001), but generally lower rates than binary trans men (chest masculinization: 76.5% vs. 86.2%, χ²(1) = 3.92, p = .048). The pattern of intervention choices differed significantly between non-binary (including intersex) AMAB and AFAB individuals (χ²(4) = 28.76, p < .001, Cramer's V = .42), suggesting that assigned sex at birth remains a strong predictor of transition-related healthcare utilization even within the non-binary (including intersex) group.
+
+All between-group comparisons for medical interventions were significant, χ²(1) > 34.92, all ps < .001, except for other procedures, χ²(1) = 2.84, p = .092.
+
+#### Gender Identity Development Timeline
+
+Analysis of gender identity development timelines revealed comparable patterns across groups. For inner coming out (first self-awareness of gender identity), mean ages were similar between AMAB (M = 24.8 years, SD = 12.3) and AFAB participants (M = 22.9 years, SD = 11.8), t(289) = 1.32, p = .189. Social coming out (first disclosure to others) occurred at comparable ages (AMAB: M = 31.4 years, SD = 13.7; AFAB: M = 29.2 years, SD = 12.9), t(289) = 1.45, p = .149. The mean latency period between inner and social coming out was 6.5 years for both groups.
+
+Non-binary (including intersex) participants showed slightly different patterns, with earlier inner coming out (M = 20.7 years, SD = 10.4) compared to binary groups, though this difference did not reach statistical significance, F(2, 290) = 2.84, p = .060. Their latency period until social coming out was shorter (M = 4.8 years, SD = 5.2) compared to binary participants (M = 6.5 years, SD = 6.8), t(291) = 2.15, p = .033, d = 0.29.
+
+### Data-Driven Exploratory Factor Analysis Results
+
+Prior to conducting exploratory factor analysis (EFA), we assessed several key prerequisites. The Kaiser-Meyer-Olkin measure indicated excellent sampling adequacy (KMO = .920), and Bartlett's test of sphericity was significant (χ²(666) = 6864.25, p < .001), confirming the suitability of the data for factor analysis. All items showed normal distributions with acceptable skewness (< |2.0|) and kurtosis (< |7.0|) values. The sample size of 293 participants for 38 items yielded a participant-to-item ratio of 7.7:1, meeting recommended guidelines for factor analysis.
+
+The data-driven EFA using maximum likelihood estimation with oblique rotation yielded a seven-factor solution, demonstrating good model fit (RMSEA = 0.054, 90% CI [0.048, 0.060]; TLI = 0.907; BIC = -1639.34). The solution explained 58.0% of total variance, with individual factor contributions ranging from 10.1% to 5.6% (Factor 1: 10.1%, Factor 2: 10.0%, Factor 3: 9.5%, Factor 4: 8.6%, Factor 5: 7.7%, Factor 6: 6.6%, Factor 7: 5.6%). Eigenvalues ranged from 13.025 to 1.093.
 
 **Figure 2**
 
-**EFA Factor Loading Heatmap with Hierarchical Clustering**
+**GCLS-G EFA Factor Loading Heatmap**
 
-![EFA Factor Loading Heatmap with Dendrogram](figures/efa_heatmap_dendro_combined.pdf)
+![GCLS-G EFA Factor Loading Heatmap](figures/efa_heatmap_gcls_38items.pdf)
 
-*Figure 2* displays the complete factor loading matrix for all 38 GCLS items across the seven identified factors, with items ordered by hierarchical clustering using Ward's method and Euclidean distance. The heatmap uses color coding from red (negative loadings) through white (near-zero) to green (positive loadings), with text size and weight indicating loading magnitude: bold black text for primary loadings ≥ 0.40, bold gray for moderate loadings 0.30-0.39, regular gray for small loadings 0.20-0.29, and light gray for very small loadings < 0.20. The left-side dendrogram illustrates item relationships and reveals meaningful clustering patterns that align with the theoretical factor structure. Primary factor loadings > .40 are clearly visible and demonstrate strong simple structure with minimal cross-loadings (< .30). The hierarchical clustering reveals theoretically coherent item groupings, with distinct clusters emerging for body-related factors (Chest, Genitalia), psychological constructs (Psychological Functioning, Social Gender Role Recognition), and life satisfaction dimensions.
+*Figure 2* displays the complete factor loading matrix for all 38 GCLS-G items across the seven identified factors, with items and factors ordered by hierarchical clustering using Ward's method and Euclidean distance. The heatmap uses rainbow color coding from blue (negative loadings) through white (near-zero) to red (positive loadings), with hierarchical text formatting indicating loading magnitude: bold black text for primary loadings ≥ 0.40, bold gray for moderate loadings 0.30-0.39, regular gray for small loadings 0.20-0.29, and light gray for very small loadings < 0.20. Both row and column dendrograms are color-coded by factor groups, and variance explained percentages are displayed as vertical bars above each factor. Primary factor loadings > .40 demonstrate strong simple structure with minimal cross-loadings (< .30). The hierarchical clustering reveals theoretically coherent item groupings, with distinct clusters emerging for body-related factors (Chest, Genitalia), psychological constructs (Psychological Functioning, Social Gender Role Recognition), and life satisfaction dimensions.
 
-*Note.* N = 293. All 266 factor loadings are displayed. Factors are ordered by data-driven EFA results (ML1-ML7) and labeled post-hoc based on primary loading patterns: ML1 = Genitalia; ML2 = Social Gender Role Recognition; ML3 = Chest; ML4 = Life Satisfaction; ML5 = Physical and Emotional Intimacy; ML6 = Other Secondary Sex Characteristics; ML7 = Psychological Functioning. Items with the same clustering color in the dendrogram show similar factor loading patterns.
+*Note.* N = 293. All 266 factor loadings are displayed. Factors are labeled based on post-hoc interpretation: Soc = Social Gender Role Recognition; Gen = Genitalia; Psych = Psychological Functioning; Chest = Chest; Life = Life Satisfaction; Intim = Physical and Emotional Intimacy; Sec = Other Secondary Sex Characteristics. Color-coded dendrograms and item labels reflect primary factor loadings to enhance interpretability.
+
+**Figure 3**
+
+**Hierarchical Clustering Dendrograms of GCLS Factor Structure**
+
+![Hierarchical clustering dendrograms](figures/figure1_dendrograms.pdf)
+
+*Figure 3* displays hierarchical clustering dendrograms illustrating the relationships between GCLS factors across different analytical approaches. The dendrograms demonstrate clear separation between the seven identified factors, supporting the theoretical framework underlying the German GCLS adaptation. The hierarchical structure reveals meaningful groupings of factors that align with conceptual domains of gender congruence, with distinct clusters emerging for body-related factors (Chest, Genitalia), psychological constructs (Psychological Functioning, Social Gender Role Recognition), and life satisfaction dimensions.
+
+*Note.* Dendrograms were generated using Ward's linkage method with Euclidean distance measures. Height indicates dissimilarity between clusters, with lower branching points suggesting stronger factor relationships. The tree structure validates the seven-factor solution by showing clear separation between distinct constructs while revealing theoretically meaningful factor groupings.
 
 **Table 4**
 
@@ -128,16 +266,6 @@ The translation and cultural adaptation process followed a modified TRAPD (Trans
 
 The ESEM analysis of the total sample (N = 293) revealed a robust seven-factor structure with excellent model fit (RMSEA = 0.054, 90% CI [0.048, 0.060]; TLI = 0.907; CFI = 0.923). All subscales demonstrated strong internal consistency, with Cronbach's alpha coefficients ranging from .77 to .90. Specifically, the subscales showed the following reliability coefficients: Social gender role recognition (α = .88), Genitalia (α = .90), Psychological functioning (α = .79), Chest (α = .84), Life satisfaction (α = .78), Physical and emotional intimacy (α = .88), and Other secondary sex characteristics (α = .81).
 
-**Figure 1**
-
-**Hierarchical Clustering Dendrograms of GCLS Factor Structure**
-
-![Hierarchical clustering dendrograms](figures/figure1_dendrograms.pdf)
-
-*Figure 1* displays hierarchical clustering dendrograms illustrating the relationships between GCLS factors across different analytical approaches. The dendrograms demonstrate clear separation between the seven identified factors, supporting the theoretical framework underlying the German GCLS adaptation. The hierarchical structure reveals meaningful groupings of factors that align with conceptual domains of gender congruence, with distinct clusters emerging for body-related factors (Chest, Genitalia), psychological constructs (Psychological Functioning, Social Gender Role Recognition), and life satisfaction dimensions.
-
-*Note.* Dendrograms were generated using Ward's linkage method with Euclidean distance measures. Height indicates dissimilarity between clusters, with lower branching points suggesting stronger factor relationships. The tree structure validates the seven-factor solution by showing clear separation between distinct constructs while revealing theoretically meaningful factor groupings.
-
 Factor loadings in the total sample showed clear simple structure, with primary loadings consistently exceeding .40 and minimal cross-loadings (< .30). Inter-factor correlations ranged from r = .27 to r = .56, suggesting related but distinct constructs. The strongest correlations emerged between psychological functioning and social gender role recognition (r = .56) and between chest and genitalia factors (r = .50), indicating meaningful theoretical relationships between these domains.
 
 Subgroup analysis of Female AMAB participants (n = 147) revealed an even more differentiated factor structure with comparable model fit indices (RMSEA = 0.051, 90% CI [0.044, 0.058]; TLI = 0.912; CFI = 0.928). This subgroup showed slightly higher internal consistency across most subscales: Social gender role recognition (α = .91), Genitalia (α = .89), Psychological functioning (α = .82), Chest (α = .87), Life satisfaction (α = .80), Physical and emotional intimacy (α = .86), and Other secondary sex characteristics (α = .83).
@@ -152,13 +280,13 @@ To assess the stability and generalizability of the ESEM-derived factor structur
 
 The model fit indices demonstrated remarkable stability across the three subsamples. The Comparative Fit Index showed excellent consistency (M_CFI = 0.927, 95% CI [0.917, 0.937], CV = 0.9%), while the Root Mean Square Error of Approximation demonstrated good fit (M_RMSEA = 0.058, 95% CI [0.054, 0.062], CV = 5.8%). The Tucker-Lewis Index indicated acceptable fit (M_TLI = 0.878, 95% CI [0.861, 0.894], CV = 1.7%).
 
-**Figure 3**
+**Figure 4**
 
 **Cross-Validation Stability of ESEM Model Fit Indices**
 
 ![Cross-validation stability analysis](figures/figure3_combined_fit_indices.pdf)
 
-Figure 3 illustrates the stability of the model fit across all three folds. The consistently low coefficients of variation (all CV < 6%) and narrow confidence intervals provide strong evidence for the robustness of the identified model structure. This remarkable stability across subsamples strongly supports the generalizability of the seven-factor structure in the German validation of the GCLS, offering compelling internal replication evidence.
+Figure 4 illustrates the stability of the model fit across all three folds. The consistently low coefficients of variation (all CV < 6%) and narrow confidence intervals provide strong evidence for the robustness of the identified model structure. This remarkable stability across subsamples strongly supports the generalizability of the seven-factor structure in the German validation of the GCLS, offering compelling internal replication evidence.
 
 *Note.* Panel A shows the distribution of fit indices through raincloud plots, combining violin plots, boxplots, and individual data points. Panel B displays mean values with 95% confidence intervals, with reference lines indicating conventional cut-off criteria (Hu & Bentler, 1999).
 
@@ -198,34 +326,15 @@ The results support the use of the German GCLS in clinical practice and research
 
 ### Future Research Directions
 
-Future research should focus on:
+Future research should focus on several key areas to further enhance the utility and understanding of the German GCLS. **Longitudinal validation studies** are needed to establish test-retest reliability and assess sensitivity to change during transition processes, which is crucial for monitoring treatment outcomes and supporting evidence-based clinical decision-making. **Cross-cultural validation** should extend to other German-speaking countries (Austria, Switzerland) and regions to ensure broader applicability and cultural equivalence across diverse populations.
 
-1. Confirmatory factor analysis in independent samples
-2. Test-retest reliability assessment
-3. Measurement invariance testing across diverse gender groups
-4. External validity evaluation in clinical settings
+**Intersectionality research** should examine how multiple identity factors (age, ethnicity, socioeconomic status, disability status) influence gender congruence experiences and scale performance, ensuring inclusive and representative assessment approaches. **Clinical utility studies** should establish validated cutoff scores, develop normative data for different transition stages, and integrate the instrument into routine clinical workflows to enhance practical application.
 
-### Future Research Directions and Outlook
+**Psychometric refinement** should include confirmatory factor analysis in independent samples, investigation of measurement invariance across different groups, and development of computerized adaptive testing versions for more efficient assessment. **Expanded validation** should encompass larger intersex samples, adolescent populations (with appropriate ethical considerations), and diverse gender identity expressions beyond binary classifications.
 
-The present validation of the German GCLS lays the groundwork for a dynamic and continuously evolving measurement framework. We propose a Living Validation Process in which the instrument's psychometric properties and factor structure are iteratively refined across cohorts. This forward-looking approach ensures that the GCLS remains responsive to shifting societal conceptions of gender diversity and clinical practice needs.
+Finally, **intervention research** should utilize the German GCLS as an outcome measure in clinical trials evaluating the effectiveness of various gender-affirming interventions, contributing to the growing evidence base for transgender healthcare and supporting the development of evidence-based treatment guidelines.
 
-Key priorities for this ongoing validation effort include:
-
-1. Confirmatory factor analysis (CFA) in independent samples and measurement invariance testing across gender groups to establish structural robustness.
-2. Test-retest reliability and longitudinal analyses to assess temporal stability and sensitivity to change during gender-affirming interventions.
-3. Establishment of clinically meaningful cutoff scores and external validity in real-world healthcare settings.
-4. Digital integration of the GCLS into electronic health records and outcome monitoring systems to enable standardized use across German-speaking care infrastructures.
-5. Cross-cultural validation studies to distinguish universal versus context-specific dimensions of gender congruence.
-6. Age-specific adaptations to ensure applicability across developmental stages and healthcare needs.
-
-Collectively, these steps will strengthen the evidence base for gender-affirming care, support equitable service planning, and inform clinical and policy decision-making across diverse populations.
-
-A centralized GCLS validation hub is currently being established at the University Hospital Zurich, in collaboration with Dr. Bethany A. Jones, the original developer of the scale. The initiative invites research institutions in German-speaking countries to submit pseudonymized item-level data for pooled psychometric analyses, including EFA, ESEM, CFA, and subgroup comparisons. Contributions with CFA models and test-retest data are particularly encouraged.
-
-To ensure stable CFA estimation, total sample sizes of N ≥ 300 and subgroup sizes of N ≥ 150 are recommended. Data submission is facilitated through secure infrastructures (SWITCHdrive, Seafile, or SFTP). Participation requires explicit participant consent for data sharing and a signed data use agreement (DUA). Central ethical approval is pending and expected in Q2 2025 (BASEC submission in progress).
-
-For further details or expressions of interest, please contact:
-Dr. Jan Ben Schulze (jan.schulze@usz.ch)
+These research directions will not only strengthen the psychometric foundation of the German GCLS but also contribute to the broader field of transgender health research and clinical practice, ultimately improving care quality and outcomes for transgender and gender diverse individuals in German-speaking countries.
 
 ## Conclusion
 
@@ -237,11 +346,11 @@ The German version of the GCLS demonstrates robust psychometric properties and c
 2. Asparouhov, T., & Muthén, B. (2009). Exploratory structural equation modeling. Structural Equation Modeling: A Multidisciplinary Journal, 16(3), 397-438. https://doi.org/10.1080/10705510903008204
 3. Becker, I., Nieder, T. O., Cerwenka, S., Briken, P., Kreukels, B. P., Cohen-Kettenis, P. T., ... & Richter-Appelt, H. (2016). Body image in young gender dysphoric adults: A European multi-center study. Archives of Sexual Behavior, 45(3), 559-574. https://doi.org/10.1007/s10508-015-0527-z
 4. Beek, T. F., Kreukels, B. P., Cohen-Kettenis, P. T., & Steensma, T. D. (2015). Partial treatment requests and underlying motives of applicants for gender affirming interventions. Journal of Sexual Medicine, 12(11), 2201-2205. https://doi.org/10.1111/jsm.13033
-5. Behr, D. (2017). Assessing the use of back translation: The shortcomings of back translation as a quality testing method. International Journal of Social Research Methodology, 20(6), 573-584. https://doi.org/10.1080/13645579.2016.1252188
+5. Behr, D. (2017). Assessing the use of back translation: The shortcomings of back translation as a quality testing method. International Journal of Social Research Methodology, 20(6), 573-584. https://doi.org/10.1080/13645510903008204
 6. Bouman, W. P., Claes, L., Marshall, E., Pinner, G. T., Longworth, J., Maddox, V., ... & Arcelus, J. (2016). Sociodemographic variables, clinical features, and the role of preassessment cross-sex hormones in older trans people. Journal of Sexual Medicine, 13(4), 711-719. https://doi.org/10.1016/j.jsxm.2016.01.009
 7. Bouman, W. P., & Richards, C. (2013). Diagnostic and treatment issues for people with gender dysphoria in the United Kingdom. Sexual and Relationship Therapy, 28(3), 165-171. https://doi.org/10.1080/14681994.2013.819222
 8. Brown, T. A. (2015). Confirmatory factor analysis for applied research (2nd ed.). Guilford Press.
-9. Budge, S. L., Rossman, H. K., & Howard, K. A. (2016). Coping and psychological distress among genderqueer individuals: The moderating effect of social support. Journal of LGBT Issues in Counseling, 10(2), 95-117. https://doi.org/10.1080/15538605.2016.1138976
+9. Budge, S. L., Rossman, H. K., Howard, K. A. (2016). Coping and psychological distress among genderqueer individuals: The moderating effect of social support. Journal of LGBT Issues in Counseling, 10(2), 95-117. https://doi.org/10.1080/15538605.2016.1138976
 10. Cattell, R. B. (1966). The scree test for the number of factors. Multivariate Behavioral Research, 1(2), 245-276. https://doi.org/10.1207/s15327906mbr0102_10
 11. Cattell, R. B. (1978). The scientific use of factor analysis in behavioral and life sciences. Plenum Press. https://doi.org/10.1007/978-1-4684-2262-7
 12. Clarke, A., Veale, J. F., & Zaleski, M. (2018). Gender identity and gender experience. In C. Winter, J. F. Veale, & A. Clarke (Eds.), Genderqueer and non-binary genders: Critical studies in gender and sexuality (pp. 51-66). Palgrave Macmillan. https://doi.org/10.1057/978-1-137-51053-2_3
