@@ -246,7 +246,7 @@ The data-driven EFA using maximum likelihood estimation with oblique rotation yi
 
 *Note.* Dendrograms were generated using Ward's linkage method with Euclidean distance measures. Height indicates dissimilarity between clusters, with lower branching points suggesting stronger factor relationships. The tree structure validates the seven-factor solution by showing clear separation between distinct constructs while revealing theoretically meaningful factor groupings.
 
-**Table 4**
+**Table 3**
 
 *Factor Correlations and Variance Explained in the German GCLS*
 
@@ -276,9 +276,9 @@ The Kaiser-Meyer-Olkin measure verified sampling adequacy for both the total sam
 
 ### Convergent and Discriminant Validity
 
-To assess convergent and discriminant validity, we examined correlations between the GCLS-G subscales and established measures of physical health (SF-12), mental health (SF-12), treatment satisfaction (ZUF-8), and quality of life (WHOQOL-BREF). Results are presented in Table 3.
+To assess convergent and discriminant validity, we examined correlations between the GCLS-G subscales and established measures of physical health (SF-12), mental health (SF-12), treatment satisfaction (ZUF-8), and quality of life (WHOQOL-BREF). Results are presented in Table 4.
 
-**Table 3**
+**Table 4**
 
 *Spearman's Rho Correlation Matrix Between GCLS, SF-12, ZUF-8, and WHOQOL-BREF (N = 293)*
 
@@ -419,3 +419,29 @@ The German version of the GCLS demonstrates robust psychometric properties and c
 41. Ware Jr, J. E., Kosinski, M., & Keller, S. D. (1996). A 12-Item Short-Form Health Survey: Construction of scales and preliminary tests of reliability and validity. Medical Care, 34(3), 220-233. https://doi.org/10.1097/00005650-199603000-00003
 42. Witcomb, G. L., Bouman, W. P., Brewin, N., Richards, C., Fernandez-Aranda, F., & Arcelus, J. (2018). Body image dissatisfaction and eating-related psychopathology in trans individuals: A matched control study. European Eating Disorders Review, 23(4), 287-293. https://doi.org/10.1002/erv.2362
 43. Wylie, K., Barrett, J., Besser, M., Bouman, W. P., Bridgman, M., Clayton, A., ... & Ward, D. (2014). Good practice guidelines for the assessment and treatment of adults with gender dysphoria. Sexual and Relationship Therapy, 29(2), 154-214. https://doi.org/10.1080/14681994.2014.883353
+
+#### Known-Groups Validity
+
+To evaluate known-groups validity, we compared GCLS subscale scores between AMAB and AFAB participants using Mann-Whitney U tests, as these groups are expected to show different patterns of gender congruence difficulties based on biological and social factors (Table 5). 
+
+Table 5
+*Mann-Whitney U Test Comparisons Between AMAB and AFAB Groups on GCLS Subscales (N = 241)*
+
+| Subscale | AMAB Group | AFAB Group | Mann-Whitney U | Z | Effect Size (r) | p |
+|:---------|:-----------|:-----------|:---------------|:--|:----------------|:--|
+| Psychological Functioning | 2.17 (0.87) | 2.04 (0.77) | 7460 | -1.04 | 0.07 | 1.000 |
+| Genitalia | 2.46 (1.20) | 2.67 (1.23) | 6226 | -1.30 | 0.08 | 1.000 |
+| Social Gender Role Recognition | 2.29 (1.01) | 2.21 (1.22) | 7562 | -1.24 | 0.08 | 1.000 |
+| Physical and Emotional Intimacy | 2.73 (1.11) | 2.64 (1.02) | 7210 | -0.57 | 0.04 | 1.000 |
+| Chest | 1.90 (1.14) | 1.89 (1.32) | 7347 | -0.86 | 0.06 | 1.000 |
+| Other Secondary Sex Characteristics | 2.87 (1.24) | 2.16 (1.23) | 9249 | -4.46 | 0.29 | <.001 |
+| Life Satisfaction | 2.49 (0.86) | 2.29 (0.67) | 7840 | -1.76 | 0.11 | 0.621 |
+| Total Score | 2.36 (0.78) | 2.24 (0.74) | 7512 | -1.14 | 0.07 | 1.000 |
+
+*Note.* AMAB = Assigned Male at Birth (Women, n = 147); AFAB = Assigned Female at Birth (Men, n = 94). Values are M (SD). Effect sizes calculated as r = |Z|/√N. p-values are Bonferroni-corrected. Lower scores indicate better gender congruence and life satisfaction.
+
+The analysis revealed a statistically significant difference only for the Other Secondary Sex Characteristics subscale (Z = -4.46, p < .001, r = .29), representing a large effect size. AMAB participants reported significantly greater difficulties with secondary sex characteristics other than chest (M = 2.87, SD = 1.24) compared to AFAB participants (M = 2.16, SD = 1.23). This finding aligns with theoretical expectations, as AMAB individuals typically experience more distress regarding facial hair, body hair distribution, and other masculinizing features that are difficult to modify compared to the feminizing effects that AFAB individuals experience with testosterone therapy.
+
+No significant differences emerged for the remaining subscales after Bonferroni correction, suggesting that both groups experience comparable levels of overall gender congruence difficulties across most domains. The comparable total scores (AMAB: M = 2.36; AFAB: M = 2.24) indicate that the GCLS-G captures similar levels of gender-related distress across assigned sex groups, supporting its utility as a comprehensive measure of gender congruence that is not biased toward one particular population.
+
+These results provide evidence for known-groups validity, demonstrating that the GCLS-G can differentiate between groups on theoretically relevant dimensions while maintaining comparable measurement across diverse transgender populations. The specific difference in secondary sex characteristics aligns with clinical observations and existing literature on gender-specific transition concerns (Ristori & Steensma, 2016).
