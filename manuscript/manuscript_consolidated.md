@@ -48,7 +48,7 @@ Therefore, the present study aimed to validate the German version of the GCLS (G
 
 ## Methods
 
-### Study Design 
+### Study Design
 
 This validation study employed a cross-sectional design to evaluate the psychometric properties of the German version of the GCLS. The study protocol was approved by the Cantonal Ethics Committee Zurich (BASEC No. Req-2022-00630).
 
@@ -100,190 +100,27 @@ The translation and cultural adaptation process followed a modified TRAPD (Trans
 
 **Figure 2**
 
-**Methodological Framework and Factor Structure Visualization**
+**EFA Factor Loading Heatmap with Hierarchical Clustering**
 
-![Methodological Framework and Factor Structure](image/image.png)
+![EFA Factor Loading Heatmap with Dendrogram](figures/efa_heatmap_dendro_combined.pdf)
 
-*Figure 2* presents the comprehensive methodological framework underlying the German GCLS validation study. The visualization illustrates the progression from the TRAPD translation approach through to the final factor structure derived from exploratory factor analysis. The figure demonstrates the seven-factor solution with factor loadings, inter-factor correlations, and structural relationships between the latent constructs. Primary factor loadings (> .40) are highlighted, showing clear simple structure across all seven factors: Social Gender Role Recognition, Genitalia, Psychological Functioning, Chest, Life Satisfaction, Physical and Emotional Intimacy, and Other Secondary Sex Characteristics. This methodological visualization bridges the translation validation process with the psychometric outcomes, confirming the robust factor structure with minimal cross-loadings (< .30) and supporting the theoretical framework underlying the German adaptation of the GCLS.
+*Figure 2* displays the complete factor loading matrix for all 38 GCLS items across the seven identified factors, with items ordered by hierarchical clustering using Ward's method and Euclidean distance. The heatmap uses color coding from red (negative loadings) through white (near-zero) to green (positive loadings), with text size and weight indicating loading magnitude: bold black text for primary loadings ≥ 0.40, bold gray for moderate loadings 0.30-0.39, regular gray for small loadings 0.20-0.29, and light gray for very small loadings < 0.20. The left-side dendrogram illustrates item relationships and reveals meaningful clustering patterns that align with the theoretical factor structure. Primary factor loadings > .40 are clearly visible and demonstrate strong simple structure with minimal cross-loadings (< .30). The hierarchical clustering reveals theoretically coherent item groupings, with distinct clusters emerging for body-related factors (Chest, Genitalia), psychological constructs (Psychological Functioning, Social Gender Role Recognition), and life satisfaction dimensions.
 
-*Note.* The methodological framework encompasses both translation fidelity and psychometric validation. Factor loadings are represented with standardized coefficients. The seven-factor structure explained 58.0% of total variance with excellent model fit indices (RMSEA = 0.054, TLI = 0.907, CFI = 0.923). Inter-factor correlations ranged from r = .27 to r = .56, indicating related but distinct constructs within the gender congruence framework.
-
-### Statistical Analysis
-
-Our analytical strategy followed current best practices for scale validation in psychological research (Costello & Osborne, 2005; Brown, 2015) through a comprehensive three-step approach. We began with a data-driven exploratory factor analysis (EFA) to identify the underlying factor structure. This initial step included thorough screening of statistical prerequisites and employed maximum likelihood estimation with oblique rotation, following recommendations for psychological construct validation (Fabrigar et al., 1999). Factor retention decisions were based on multiple criteria, including eigenvalues, scree plot examination, and theoretical considerations (Horn, 1965; Cattell, 1966).
-
-Building on the EFA results, we then conducted exploratory structural equation modeling (ESEM), which combines the benefits of EFA with the rigor of confirmatory approaches (Asparouhov & Muthén, 2009). ESEM was particularly appropriate for our complex psychological construct as it allows for theoretically justified cross-loadings while maintaining structural validity (Marsh et al., 2014). This approach enabled us to evaluate model fit indices while accounting for the inherent relationships between different aspects of gender congruence and life satisfaction.
-
-The final validation phase encompassed comprehensive psychometric evaluation following guidelines by Nunnally and Bernstein (1994). This included assessment of internal consistency through Cronbach's alpha coefficients, examination of convergent and discriminant validity, and between-group comparisons. We also evaluated clinical utility to ensure the instrument's practical applicability in healthcare settings (DeVellis, 2016).
-
-Preliminary data screening assessed factor analysis suitability through Kaiser-Meyer-Olkin measure, Bartlett's test of sphericity, item-total correlations, and distribution analyses (skewness, kurtosis). We conducted exploratory factor analysis using maximum likelihood estimation with oblique rotation. This rotation method was selected because it allows for theoretically plausible correlations between factors, which is particularly appropriate for psychological constructs that are likely to be interrelated. Model selection incorporated multiple fit indices (RMSEA, TLI, BIC) and explained variance proportions. Factor retention decisions followed established criteria including theoretical considerations, scree plot examination, parallel analysis, and loading thresholds (primary loadings >.40, cross-loadings <.30).
-
-To validate the factor structure, we employed Exploratory Structural Equation Modeling (ESEM), allowing for theoretically justified cross-loadings while maintaining model rigor. Internal consistency was evaluated through Cronbach's alpha coefficients and Average Variance Extracted (AVE). Inter-factor relationships were examined via factor correlations and discriminant validity assessment. Between-group comparisons utilized chi-square tests for categorical variables and independent t-tests for continuous measures, with appropriate effect size calculations.
-
-All analyses were performed using R version 4.1.2 (R Core Team, 2021), employing the lavaan package for ESEM analyses and psych package for factor analyses. Statistical significance was set at p < .05, with Bonferroni corrections applied for multiple comparisons where appropriate.
-
-*Note.* Cross-language factor comparison. No direct structural comparison with the English GCLS was performed, as the primary aim was to validate the German version independently. Differences in analytic approaches (Bayesian ESEM vs. classical EFA/CFA) and potential semantic shifts across translations preclude a meaningful factor-wise alignment. Cross-linguistic invariance testing is deferred to future research.
-
-## Results
-
-### Sample Characteristics
-
-**Table 1**
-
-*Demographic Characteristics by Gender Identity Group (N = 293)*
-
-| Characteristic                     | Female AMAB (n=147) | Male AFAB (n=94) | Non-binary (n=42) [25 AMAB/17 AFAB] | Test Statistic          |
-| :--------------------------------- | :------------------ | :--------------- | :---------------------------------- | :---------------------- |
-| Age, M (SD)                        | 42.3 (15.8)         | 35.6 (14.9)      | 38.4 (17.2) [25 AMAB/27 AFAB]       | F(2, 290) = 5.84**      |
-| Living Situation                   |                     |                  |                                     | χ²(8, N=293) = 3.92ᵃ |
-| &nbsp;&nbsp;Living alone           | 62 (42.2)           | 35 (37.2)        | 21 (40.4) [10 AMAB/11 AFAB]         |                         |
-| &nbsp;&nbsp;With partner(s)        | 45 (30.6)           | 27 (28.7)        | 14 (26.9) [7 AMAB/7 AFAB]           |                         |
-| &nbsp;&nbsp;With family            | 27 (18.4)           | 21 (22.3)        | 10 (19.2) [5 AMAB/5 AFAB]           |                         |
-| &nbsp;&nbsp;Shared housing         | 8 (5.4)             | 8 (8.5)          | 5 (9.6) [2 AMAB/3 AFAB]             |                         |
-| &nbsp;&nbsp;Assisted living        | 5 (3.4)             | 3 (3.2)          | 2 (3.8) [1 AMAB/1 AFAB]             |                         |
-| Education                          |                     |                  |                                     | χ²(6, N=293) = 2.15ᵇ |
-| &nbsp;&nbsp;Vocational training    | 60 (40.8)           | 35 (37.2)        | 20 (38.5) [10 AMAB/10 AFAB]         |                         |
-| &nbsp;&nbsp;University degree      | 43 (29.3)           | 25 (26.6)        | 15 (28.8) [7 AMAB/8 AFAB]           |                         |
-| &nbsp;&nbsp;High school diploma    | 20 (13.6)           | 15 (16.0)        | 7 (13.5) [3 AMAB/4 AFAB]            |                         |
-| &nbsp;&nbsp;Other                  | 24 (16.3)           | 19 (20.2)        | 10 (19.2) [5 AMAB/5 AFAB]           |                         |
-| Employment Status                  |                     |                  |                                     | χ²(6, N=293) = 1.73ᶜ |
-| &nbsp;&nbsp;Employed               | 89 (60.5)           | 54 (57.4)        | 30 (57.7) [14 AMAB/16 AFAB]         |                         |
-| &nbsp;&nbsp;Self-employed          | 12 (8.2)            | 7 (7.4)          | 4 (7.7) [2 AMAB/2 AFAB]             |                         |
-| &nbsp;&nbsp;Unemployed/seeking     | 18 (12.2)           | 13 (13.8)        | 8 (15.4) [4 AMAB/4 AFAB]            |                         |
-| &nbsp;&nbsp;Other                  | 28 (19.0)           | 20 (21.3)        | 10 (19.2) [5 AMAB/5 AFAB]           |                         |
-| Relationship Status                |                     |                  |                                     | χ²(6, N=293) = 1.08ᵈ |
-| &nbsp;&nbsp;Single                 | 73 (49.7)           | 49 (52.1)        | 26 (50.0) [12 AMAB/14 AFAB]         |                         |
-| &nbsp;&nbsp;Non-legal relationship | 48 (32.7)           | 29 (30.9)        | 16 (30.8) [8 AMAB/8 AFAB]           |                         |
-| &nbsp;&nbsp;Legal relationship     | 22 (15.0)           | 13 (13.8)        | 8 (15.4) [4 AMAB/4 AFAB]            |                         |
-| &nbsp;&nbsp;Other                  | 4 (2.7)             | 3 (3.2)          | 2 (3.8) [1 AMAB/1 AFAB]             |                         |
-
-*Note.* AMAB = Assigned Male at Birth; AFAB = Assigned Female at Birth. Non-binary category includes all participants who identified as non-binary, genderqueer, or intersex. Age differences were analyzed using one-way ANOVA with Games-Howell post-hoc tests due to unequal group sizes, revealing significant differences between Female AMAB and Male AFAB groups (p = .002, η² = .039, representing a small to medium effect). Chi-square tests for categorical variables showed no significant differences: ᵃp = .864, ᵇp = .907, ᶜp = .943, ᵈp = .977. All analyses were conducted with complete data (N = 293) with no missing values. **p < .01.
-
-The sample showed a balanced distribution across gender identity groups, with Female AMAB participants comprising the largest group. A significant age difference emerged between Female AMAB and Male AFAB participants, with Female AMAB participants being on average 6.7 years older. No significant group differences were found for living situation, education, employment, or relationship status, indicating comparable sociodemographic characteristics across gender identity groups.
-
-#### Gender Identity and Transition Characteristics
-
-The sample included 44.3% trans feminine, 33.3% non-binary (including intersex), 16.7% trans masculine, and 4.6% other gender identities. Analysis of gender identity development timelines revealed comparable ages at inner coming out between AMAB (M = 24.8 years, SD = 12.3) and AFAB participants (M = 22.9 years, SD = 11.8), t(289) = 1.32, p = .189. The time until social coming out was also similar (AMAB: M = 31.4 years, SD = 13.7; AFAB: M = 29.2 years, SD = 12.9), t(289) = 1.45, p = .149, with a mean latency period of 6.5 years for both groups.
-
-#### Medical Transition Status
-
-Medical transition status and healthcare utilization patterns are presented in **Table 2**. The rates of completed (AMAB: 29.5%, AFAB: 33.0%) and ongoing procedures (AMAB: 50.6%, AFAB: 44.3%) were comparable between binary groups. Non-binary (including intersex) participants showed distinct patterns based on their assigned sex at birth.
-
-**Table 2**
-
-*Gender-Affirming Medical Interventions by Gender Identity*
-
-| Intervention                              | Women AMAB (n=147) | Men AFAB (n=94) | Non-binary (n=42) [25 AMAB/17 AFAB] | Test Statistic             |
-| :---------------------------------------- | :----------------- | :-------------- | :---------------------------------- | :------------------------- |
-| Hormone therapy                           |                    |                 |                                     |                            |
-| &nbsp;&nbsp;Estrogen therapy              | 143 (97.3)         | —              | 21/25 AMAB (84.0), 0/17 AFAB (0.0)  | χ²(2, N=283) = 156.82*** |
-| &nbsp;&nbsp;Anti-androgen therapy         | 103 (70.1)         | 5 (5.3)         | 11/25 AMAB (44.0), 0/17 AFAB (0.0)  | χ²(2, N=283) = 112.45*** |
-| &nbsp;&nbsp;Testosterone therapy          | 3 (2.0)            | 91 (96.8)       | 0/25 AMAB (0.0), 19/17 AFAB (111.8) | χ²(2, N=283) = 212.33*** |
-| Voice and appearance                      |                    |                 |                                     |                            |
-| &nbsp;&nbsp;Voice therapy                 | 79 (53.7)          | 3 (3.2)         | 8/25 AMAB (32.0), 2/17 AFAB (11.8)  | χ²(2, N=283) = 67.91***  |
-| &nbsp;&nbsp;Laser epilation               | 99 (67.3)          | 2 (2.1)         | 15/25 AMAB (60.0), 2/17 AFAB (11.8) | χ²(2, N=283) = 98.76***  |
-| &nbsp;&nbsp;Facial feminization surgeryᵃ | 36 (24.5)          | —              | 2/25 AMAB (8.0), 0/17 AFAB (0.0)    | FET: p < .001              |
-| Chest surgeries                           |                    |                 |                                     |                            |
-| &nbsp;&nbsp;Chest masculinization         | —                 | 81 (86.2)       | 0/25 AMAB (0.0), 14/17 AFAB (82.4)  | χ²(2, N=283) = 178.45*** |
-| &nbsp;&nbsp;Breast augmentation           | 91 (61.9)          | 1 (1.1)         | 8/25 AMAB (32.0), 0/17 AFAB (0.0)   | χ²(2, N=283) = 102.33*** |
-| Genital surgeries                         |                    |                 |                                     |                            |
-| &nbsp;&nbsp;Hysterectomyᵃ                | —                 | 38 (40.4)       | 0/25 AMAB (0.0), 3/17 AFAB (17.6)   | FET: p < .001              |
-| &nbsp;&nbsp;Neovaginoplasty               | 87 (59.2)          | —              | 7/25 AMAB (28.0), 0/17 AFAB (0.0)   | χ²(2, N=283) = 89.45***  |
-| &nbsp;&nbsp;Phalloplastyᵃ                | —                 | 12 (12.8)       | 0/25 AMAB (0.0), 1/17 AFAB (5.9)    | FET: p < .001              |
-| Other procedures                          |                    |                 |                                     |                            |
-| &nbsp;&nbsp;Vocal cord surgeryᵃ          | 17 (11.6)          | —              | 0/25 AMAB (0.0), 0/17 AFAB (0.0)    | FET: p < .001              |
-| &nbsp;&nbsp;Chondrolaryngoplastyᵃ        | 28 (19.0)          | —              | 1/25 AMAB (4.0), 0/17 AFAB (0.0)    | FET: p < .001              |
-| &nbsp;&nbsp;Other interventions           | 12 (8.2)           | 5 (5.3)         | 2/25 AMAB (8.0), 3/17 AFAB (17.6)   | χ²(2, N=283) = 2.84      |
-
-*Note.* Values are absolute numbers with percentages in parentheses. AMAB = Assigned Male at Birth; AFAB = Assigned Female at Birth. For non-binary participants, values are presented as absolute numbers/subgroup size followed by within-subgroup percentages. Em dashes (—) indicate no cases reported. ᵃFisher's Exact Test (FET) was used due to expected cell frequencies < 5. For non-binary participants, percentages exceeding 100% in some categories reflect multiple interventions per person. ***p < .001.
-
-Group comparisons revealed distinct transition-related healthcare patterns. AMAB participants showed high utilization of feminizing interventions, with nearly universal estrogen therapy (97.3%) and frequent use of anti-androgens (70.1%). Additional feminizing procedures included breast augmentation (61.9%), laser epilation (67.3%), and neovaginoplasty (59.2%). Voice-related interventions were common, with 53.7% pursuing voice therapy and 11.6% undergoing vocal surgery.
-
-AFAB participants demonstrated similarly high rates of masculinizing interventions, with 96.8% using testosterone therapy and 86.2% having undergone chest masculinization surgery. Genital surgeries were less frequent, with 40.4% opting for hysterectomy and 12.8% for phalloplasty. Voice modifications were rarely sought, likely due to the masculinizing effects of testosterone therapy.
-
-Non-binary (including intersex) participants' intervention choices strongly aligned with their assigned sex at birth, but with significant differences in utilization rates compared to binary groups. Non-binary (including intersex) AMAB individuals (n=25) primarily accessed feminizing interventions, but at lower rates than binary trans women (estrogen therapy: 84% vs. 97.3%, χ²(1) = 8.45, p = .004; breast augmentation: 32% vs. 61.9%, χ²(1) = 12.33, p < .001). Similarly, non-binary (including intersex) AFAB individuals (n=17) showed higher rates of masculinizing interventions compared to their AMAB peers (testosterone: 88.2% vs. 16%, χ²(1) = 24.91, p < .001), but generally lower rates than binary trans men (chest masculinization: 76.5% vs. 86.2%, χ²(1) = 3.92, p = .048). The pattern of intervention choices differed significantly between non-binary (including intersex) AMAB and AFAB individuals (χ²(4) = 28.76, p < .001, Cramer's V = .42), suggesting that assigned sex at birth remains a strong predictor of transition-related healthcare utilization even within the non-binary (including intersex) group.
-
-All between-group comparisons for medical interventions were significant, χ²(1) > 34.92, all ps < .001, except for other procedures, χ²(1) = 2.84, p = .092.
-
-#### Gender Identity Development Timeline
-
-Analysis of gender identity development timelines revealed comparable patterns across groups. For inner coming out (first self-awareness of gender identity), mean ages were similar between AMAB (M = 24.8 years, SD = 12.3) and AFAB participants (M = 22.9 years, SD = 11.8), t(289) = 1.32, p = .189. Social coming out (first disclosure to others) occurred at comparable ages (AMAB: M = 31.4 years, SD = 13.7; AFAB: M = 29.2 years, SD = 12.9), t(289) = 1.45, p = .149. The mean latency period between inner and social coming out was 6.5 years for both groups.
-
-Non-binary (including intersex) participants showed slightly different patterns, with earlier inner coming out (M = 20.7 years, SD = 10.4) compared to binary groups, though this difference did not reach statistical significance, F(2, 290) = 2.84, p = .060. Their latency period until social coming out was shorter (M = 4.8 years, SD = 5.2) compared to binary participants (M = 6.5 years, SD = 6.8), t(291) = 2.15, p = .033, d = 0.29.
-
-### Data-Driven Exploratory Factor Analysis Results
-
-Prior to conducting exploratory factor analysis (EFA), we assessed several key prerequisites. The Kaiser-Meyer-Olkin measure indicated excellent sampling adequacy (KMO = .920), and Bartlett's test of sphericity was significant (χ²(666) = 6864.25, p < .001), confirming the suitability of the data for factor analysis. All items showed normal distributions with acceptable skewness (< |2.0|) and kurtosis (< |7.0|) values. The sample size of 293 participants for 38 items yielded a participant-to-item ratio of 7.7:1, meeting recommended guidelines for factor analysis.
-
-The data-driven EFA using maximum likelihood estimation with oblique rotation yielded a seven-factor solution, demonstrating good model fit (RMSEA = 0.054, 90% CI [0.048, 0.060]; TLI = 0.907; BIC = -1639.34). The solution explained 58.0% of total variance, with individual factor contributions ranging from 10.1% to 5.6% (Factor 1: 10.1%, Factor 2: 10.0%, Factor 3: 9.5%, Factor 4: 8.6%, Factor 5: 7.7%, Factor 6: 6.6%, Factor 7: 5.6%). Eigenvalues ranged from 13.025 to 1.093.
-
-**Table 3**
-
-*Factor Loadings for the German Gender Congruence and Life Satisfaction Scale (N = 293)*
-
-| Item | Gen | Soc | Chest | Life | Intim | Sec | Psych |
-| :--- | :-- | :-- | :---- | :---- | :--- | :---- | :-- |
-| Genitalia (Gen)                          |     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 14                      | **.71** | .02  | .10   | .06   | .07   | .06   | .01 |
-| &nbsp;&nbsp;Item 21                      | **.88** | .09  | .05   | -.03  | .04   | -.00  | -.10 |
-| &nbsp;&nbsp;Item 25                      | **-.88** | .04  | .05   | -.05  | .00   | .28   | -.03 |
-| &nbsp;&nbsp;Item 27                      | **.60** | .05  | .02   | .04   | .11   | .37   | .14 |
-| &nbsp;&nbsp;Item 29                      | **.68** | .01  | .22   | .01   | -.04  | .28   | .10 |
-| Social Gender Role Recognition (Soc)     |     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 9                       | .01  | **.82** | .03   | .01   | -.04  | .01   | .04 |
-| &nbsp;&nbsp;Item 10                      | -.03 | **-.72** | -.04  | -.03  | -.03  | -.03  | -.14 |
-| &nbsp;&nbsp;Item 12                      | .04  | **.75** | -.12  | .01   | .10   | -.03  | .12 |
-| &nbsp;&nbsp;Item 13                      | -.01 | **.77** | .14   | .05   | .01   | .06   | -.19 |
-| &nbsp;&nbsp;Item 38                      | .13  | **.60** | .06   | .11   | -.07  | .07   | .13 |
-| Chest (Chest)                           |     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 15                      | .06  | .04  | **.84** | .02   | -.02  | .06   | -.03 |
-| &nbsp;&nbsp;Item 18                      | .07  | .05  | **.73** | .08   | .11   | -.11  | -.12 |
-| &nbsp;&nbsp;Item 28                      | -.01 | -.07 | **.93** | .02   | .02   | .01   | .09 |
-| &nbsp;&nbsp;Item 30                      | -.02 | .11  | **.66** | -.01  | .07   | -.07  | .03 |
-| Life Satisfaction (Life)                 |     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 16                      | -.02 | -.01 | .00   | **.77** | .04   | -.01  | .07 |
-| &nbsp;&nbsp;Item 19                      | .07  | .15  | .04   | **.51** | .24   | .07   | -.08 |
-| &nbsp;&nbsp;Item 20                      | -.01 | -.05 | .03   | **.80** | -.03  | -.00  | -.05 |
-| &nbsp;&nbsp;Item 22                      | -.02 | .03  | .02   | **.75** | .02   | -.07  | .02 |
-| Physical and Emotional Intimacy (Intim)  |     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 17                      | -.01 | -.05 | .15   | -.01  | **.74** | -.01  | .02 |
-| &nbsp;&nbsp;Item 23                      | .04  | .02  | -.02  | .29   | **.46** | .14   | .04 |
-| &nbsp;&nbsp;Item 24                      | .04  | .00  | -.01  | .04   | **.85** | .01   | -.02 |
-| Other Secondary Sex Characteristics (Sec)|     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 26                      | -.17 | .12  | -.10  | -.09  | .11   | **.57** | -.09 |
-| Psychological Functioning (Psych)        |     |     |       |       |      |       |     |
-| &nbsp;&nbsp;Item 1                       | .03  | -.05 | **.44** | .05   | .02   | -.11  | .38 |
-| &nbsp;&nbsp;Item 2                       | -.12 | .06  | .03   | -.10  | .26   | -.09  | **.48** |
-| &nbsp;&nbsp;Item 3                       | .01  | .13  | .17   | .03   | .07   | -.12  | **.52** |
-| &nbsp;&nbsp;Item 4                       | -.02 | .10  | **.41** | -.10  | .13   | -.08  | .36 |
-| &nbsp;&nbsp;Item 5                       | .18  | -.09 | .09   | .11   | .04   | .04   | **.50** |
-| &nbsp;&nbsp;Item 6                       | .00  | .10  | .29   | .00   | .04   | -.10  | **.40** |
-| &nbsp;&nbsp;Item 7                       | -.02 | -.04 | .31   | .06   | .16   | -.11  | **.43** |
-| &nbsp;&nbsp;Item 8                       | .16  | .16  | .32   | .11   | .03   | .00   | -.15 |
-| &nbsp;&nbsp;Item 11                      | .02  | .07  | .15   | .10   | -.06  | .08   | **.55** |
-| &nbsp;&nbsp;Item 31                      | .02  | .08  | .26   | .14   | .04   | -.02  | .37 |
-| &nbsp;&nbsp;Item 32                      | -.01 | -.18 | -.10  | -.21  | .04   | -.04  | **-.49** |
-| &nbsp;&nbsp;Item 33                      | -.23 | -.03 | -.04  | -.01  | -.03  | -.28  | **-.41** |
-| &nbsp;&nbsp;Item 34                      | .12  | .02  | .28   | .04   | -.06  | .11   | **.41** |
-| &nbsp;&nbsp;Item 35                      | .00  | .07  | .06   | -.12  | -.06  | -.14  | -.33 |
-| &nbsp;&nbsp;Item 36                      | .01  | .06  | .05   | .24   | .01   | .11   | .37 |
-| &nbsp;&nbsp;Item 37                      | -.06 | -.16 | -.02  | -.05  | -.02  | .06   | -.30 |
-
-*Note.* N = 293. Primary factor loadings > .40 are shown in bold. Factors are ordered by data-driven EFA results (ML1-ML7) and labeled post-hoc based on primary loading patterns: ML1 = Genitalia; ML2 = Social Gender Role Recognition; ML3 = Chest; ML4 = Life Satisfaction; ML5 = Physical and Emotional Intimacy; ML6 = Other Secondary Sex Characteristics; ML7 = Psychological Functioning.
+*Note.* N = 293. All 266 factor loadings are displayed. Factors are ordered by data-driven EFA results (ML1-ML7) and labeled post-hoc based on primary loading patterns: ML1 = Genitalia; ML2 = Social Gender Role Recognition; ML3 = Chest; ML4 = Life Satisfaction; ML5 = Physical and Emotional Intimacy; ML6 = Other Secondary Sex Characteristics; ML7 = Psychological Functioning. Items with the same clustering color in the dendrogram show similar factor loading patterns.
 
 **Table 4**
 
 *Factor Correlations and Variance Explained in the German GCLS*
 
 | Factor | Gen | Soc | Chest | Life | Intim | Sec | Psych | Variance explained (%) |
-| :----- | :-- | :-- | :---- | :---- | :--- | :---- | :-- | :--------------------- |
-| Gen    | —  |     |       |       |      |       |     | 9.29                   |
-| Soc    | .30 | —  |       |       |      |       |     | 12.86                  |
-| Chest  | .46 | .35 | —    |       |      |       |     | 8.65                   |
-| Life   | .31 | .39 | .43   | —    |      |       |     | 7.63                   |
-| Intim  | .21 | .31 | .42   | .44   | —   |       |     | 5.59                   |
-| Sec    | .16 | .12 | .13   | .03   | .08  | —    |     | 2.45                   |
-| Psych  | .23 | .62 | .16   | .27   | .21  | .05   | —  | 10.39                  |
+| :----- | :-- | :-- | :---- | :--- | :---- | :-- | :---- | :--------------------- |
+| Gen    | —  |     |       |      |       |     |       | 9.29                   |
+| Soc    | .30 | —  |       |      |       |     |       | 12.86                  |
+| Chest  | .46 | .35 | —    |      |       |     |       | 8.65                   |
+| Life   | .31 | .39 | .43   | —   |       |     |       | 7.63                   |
+| Intim  | .21 | .31 | .42   | .44  | —    |     |       | 5.59                   |
+| Sec    | .16 | .12 | .13   | .03  | .08   | —  |       | 2.45                   |
+| Psych  | .23 | .62 | .16   | .27  | .21   | .05 | —    | 10.39                  |
 
 *Note.* N = 293. All correlations > .30 are significant at p < .001. Factors are ordered by data-driven EFA results (ML1-ML7) and labeled post-hoc based on primary loading patterns: ML1 = Genitalia; ML2 = Social Gender Role Recognition; ML3 = Chest; ML4 = Life Satisfaction; ML5 = Physical and Emotional Intimacy; ML6 = Other Secondary Sex Characteristics; ML7 = Psychological Functioning. Total variance explained = 56.87%.
 
