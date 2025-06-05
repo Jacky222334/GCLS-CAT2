@@ -1,0 +1,135 @@
+{
+    "styleGuide": {
+      "purpose": "Dieses JSON-Dokument liefert standardisierte Hinweise und konkrete Korrekturvorschläge, um Manuskriptteile genderkonform, leicht affirmierend und wissenschaftlich konsistent zu gestalten. Ideal für E-Paper und akademische Veröffentlichungen.",
+      "usage": "Für jede Textpassage: „section“ identifiziert den Kapitel- oder Absatzkontext, „original“ enthält den ursprünglichen Wortlaut, „issue“ beschreibt die Gender-Problematik, „suggestion“ gibt die korrigierte, affirmativ-gendergerechte Formulierung wieder.",
+      "principles": [
+        "Verwende inklusive Formulierungen statt binärer Sprachmuster (z. B. „Teilnehmende“ statt „Teilnehmer“).",
+        "Vermeide Annahmen über Geschlechtsidentitäten; nutze neutrale oder mehrfach genannte Pronomen, wenn die Information nicht bekannt ist.",
+        "Setze Affirmationssprache ein (z. B. „Personen, die sich als … identifizieren“ statt „Transsexuelle“ ohne Kontext).",
+        "Formuliere Personenbezeichnungen in einer Weise, die nicht impliziert, dass nur zwei Geschlechter existieren.",
+        "Nutze neutrale Berufs- und Rollenbezeichnungen (z. B. „Studierende“ statt „Studenten“)."
+      ]
+    },
+    "corrections": [
+      {
+        "section": "Title & Abstract",
+        "original": "the Gender Congruence and Life Satisfaction Scale (GCLS) is a validated measure assessing outcomes in transgender and gender diverse individuals",
+        "issue": "„transgender and gender diverse individuals“ ist korrekt, aber es fehlt eine affirmation und geschlechtsneutrale Anrede.",
+        "suggestion": "the Gender Congruence and Life Satisfaction Scale (GCLS) is a validated measure assessing outcomes in Trans and Gender-Diverse People"
+      },
+      {
+        "section": "Title & Abstract",
+        "original": "A German version is needed to facilitate assessment and research in German-speaking healthcare settings.",
+        "issue": "neutral, aber kann affirmativer gestaltet werden",
+        "suggestion": "A German version is needed to facilitate inclusive assessment and research in German-speaking healthcare settings."
+      },
+      {
+        "section": "Introduction",
+        "original": "Despite increasing social visibility and media attention for transgender individuals, there remains a notable scarcity of validated instruments for assessing gender congruence specifically developed for transgender people in German-speaking regions.",
+        "issue": "zweimalige Nennung von „transgender“ wirkt redundant; „transgender individuals“ und „transgender people“ kann zusammengefasst werden",
+        "suggestion": "Despite increasing social visibility and media attention for Trans and Gender-Diverse People, there remains a notable scarcity of validated instruments for assessing gender congruence specifically developed for that community in German-speaking regions."
+      },
+      {
+        "section": "Introduction",
+        "original": "Current measurement tools, such as the Utrecht Gender Dysphoria Scale (Cohen-Kettenis & van Goozen, 1997) and the Hamburg Body Drawing Scale (Becker et al., 2016), are based on a binary understanding of gender, failing to reflect the growing diversity among transgender identities.",
+        "issue": "betont binäres Verständnis, könnte affirmativer kontrastieren",
+        "suggestion": "Existing measurement tools, such as the Utrecht Gender Dysphoria Scale (Cohen-Kettenis & van Goozen, 1997) and the Hamburg Body Drawing Scale (Becker et al., 2016), reflect a binary understanding of gender and do not encompass the richness of Trans and Gender-Diverse experiences."
+      },
+      {
+        "section": "Methods – Participants",
+        "original": "We recruited 293 transgender individuals (average age = 39.8 years, SD = 16.4). The sample consisted of 44.3% trans feminine, 33.3% non-binary (including intersex), 16.7% trans masculine, and 4.6% other gender identities.",
+        "issue": "„transgender individuals“ kann durch „Trans and Gender-Diverse People“ ersetzt werden, um affirmativer zu wirken. Außerdem sollte Einheitlichkeit bei Kategorien erreicht werden („trans feminine“ → „Trans Feminine Persons“)",
+        "suggestion": "We recruited 293 Trans and Gender-Diverse People (average age = 39.8 years, SD = 16.4), including 44.3 % Trans Feminine, 33.3 % Non-Binary (including Intersex), 16.7 % Trans Masculine, and 4.6 % other gender identities."
+      },
+      {
+        "section": "Methods – Measures",
+        "original": "The GCLS, originally developed and validated in English by Jones et al. (2019), is a comprehensive 38-item self-report measure designed specifically for transgender and gender diverse populations.",
+        "issue": "zweimal „transgender and gender diverse“; kann verkürzt und affirmativer formuliert werden",
+        "suggestion": "The GCLS, originally developed and validated in English by Jones et al. (2019), is a comprehensive 38-item self-report measure designed specifically for Trans and Gender-Diverse Populations."
+      },
+      {
+        "section": "Methods – Translation and Cultural Adaptation",
+        "original": "Independent back-translation and review by the original authors helped ensure conceptual equivalence while identifying areas requiring cultural adaptation (Ozolins et al., 2020).",
+        "issue": "neutral, nur leichte Affirmation hinzufügen",
+        "suggestion": "Independent back-translation and review by the original authors ensured conceptual continuity and cultural sensitivity (Ozolins et al., 2020)."
+      },
+      {
+        "section": "Results – Sample Characteristics",
+        "original": "The sample showed a balanced distribution across gender identity groups, with Female AMAB participants comprising the largest group.",
+        "issue": "„Female AMAB participants“ kann ergänzt werden zu „Trans Feminine (AMAB)“ für mehr Klarheit und Konsistenz",
+        "suggestion": "The sample showed a balanced distribution across gender identity groups, with Trans Feminine (AMAB) participants comprising the largest group."
+      },
+      {
+        "section": "Results – Gender Identity and Transition Characteristics",
+        "original": "Analysis of gender identity development timelines revealed comparable patterns across groups. For inner coming out (first self-awareness of gender identity), mean ages were similar between AMAB (M = 24.8 years, SD = 12.3) and AFAB participants (M = 22.9 years, SD = 11.8), t(289) = 1.32, p = .189.",
+        "issue": "Verkürzung und Bezeichner klarer: AMAB → Trans Feminine (AMAB), AFAB → Trans Masculine (AFAB)",
+        "suggestion": "Analysis of gender identity development timelines revealed comparable patterns across groups. For inner coming out (first self-awareness of gender identity), mean ages were similar between Trans Feminine (AMAB; M = 24.8 years, SD = 12.3) and Trans Masculine (AFAB; M = 22.9 years, SD = 11.8) participants (t(289) = 1.32, p = .189)."
+      },
+      {
+        "section": "Results – Medical Transition Status",
+        "original": "AMAB participants showed high utilization of feminizing interventions, with nearly universal estrogen therapy (97.3%) and frequent use of anti-androgens (70.1%).",
+        "issue": "Bezeichnung „feminizing interventions“ → „feminizing gender-affirming interventions“ (genauer, affirmierend)",
+        "suggestion": "AMAB participants showed high utilization of feminizing gender-affirming interventions, with nearly universal estrogen therapy (97.3 %) and frequent use of anti-androgens (70.1 %)."
+      },
+      {
+        "section": "Results – Medical Transition Status",
+        "original": "AFAB participants demonstrated similarly high rates of masculinizing interventions, with 96.8% using testosterone therapy and 86.2% having undergone chest masculinization surgery.",
+        "issue": "Bezeichnung „masculinizing interventions“ → „masculinizing gender-affirming interventions“",
+        "suggestion": "AFAB participants demonstrated similarly high rates of masculinizing gender-affirming interventions, with 96.8 % using testosterone therapy and 86.2 % having undergone chest masculinization surgery."
+      },
+      {
+        "section": "Results – Data-Driven EFA",
+        "original": "The data-driven EFA using maximum likelihood estimation with oblique rotation yielded a seven-factor solution, demonstrating good model fit (RMSEA = 0.054, 90% CI [0.048, 0.060]; TLI = 0.907; BIC = -1639.34).",
+        "issue": "„data-driven EFA“ → „exploratory factor analysis (EFA)“ (Standardbegriff), CI in English belassen",
+        "suggestion": "The exploratory factor analysis (EFA) using maximum-likelihood estimation with oblique rotation yielded a seven-factor solution, demonstrating good model fit (RMSEA = 0.054, 90 % CI [0.048, 0.060]; TLI = 0.907; BIC = –1639.34)."
+      },
+      {
+        "section": "Results – Data-Driven EFA",
+        "original": "Factor loadings ≥ .40 were considered substantial for factor interpretation, with cross-loadings < .30 supporting simple structure.",
+        "issue": "substantially → „significant primary loadings“ präzisieren",
+        "suggestion": "Factor loadings ≥ 0.40 were considered significant primary loadings for interpretation, and cross-loadings < 0.30 supported a simple structure."
+      },
+      {
+        "section": "Results – ESEM",
+        "original": "The ESEM analysis of the total sample (N = 293) revealed a robust seven-factor structure with excellent model fit (RMSEA = 0.054, 90% CI [0.048, 0.060]; TLI = 0.907; CFI = 0.923).",
+        "issue": "„revealed a robust seven-factor structure“ → prägnanter: „confirmed the seven-factor structure“",
+        "suggestion": "The ESEM analysis of the total sample (N = 293) confirmed the seven-factor structure with excellent model fit (RMSEA = 0.054, 90 % CI [0.048, 0.060]; TLI = 0.907; CFI = 0.923)."
+      },
+      {
+        "section": "Results – Convergent & Discriminant Validity",
+        "original": "Convergent validity was robustly demonstrated through substantial negative correlations between GCLS-G subscales and conceptually related measures.",
+        "issue": "„robustly demonstrated“ → prägnant „strongly supported“",
+        "suggestion": "Convergent validity was strongly supported by substantial negative correlations between GCLS-G subscales and conceptually related measures."
+      },
+      {
+        "section": "Results – Three-Fold Cross-Validation",
+        "original": "The model fit indices demonstrated remarkable stability across the three subsamples.",
+        "issue": "„remarkable stability“ kann wissenschaftlicher klingen: „high stability“",
+        "suggestion": "The model fit indices demonstrated high stability across the three subsamples."
+      },
+      {
+        "section": "Results – Known-Groups Validity",
+        "original": "To evaluate known-groups validity, we compared GCLS subscale scores between AMAB and AFAB participants using Mann-Whitney U tests, as these groups are expected to show different patterns of gender congruence difficulties based on biological and social factors.",
+        "issue": "Präzisere Terminologie: AMAB → Trans Feminine (AMAB), AFAB → Trans Masculine (AFAB).",
+        "suggestion": "To evaluate known-groups validity, we compared GCLS subscale scores between Trans Feminine (AMAB) and Trans Masculine (AFAB) participants using Mann-Whitney U tests, as these groups may exhibit different patterns of gender-congruence difficulties based on biological and social factors."
+      },
+      {
+        "section": "Discussion",
+        "original": "The German version of the GCLS demonstrates strong psychometric properties and can be recommended for use in clinical practice and research with German-speaking transgender and gender diverse populations.",
+        "issue": "„German-speaking transgender and gender diverse populations“ → affirmativer: „Trans and Gender-Diverse Communities in German-speaking regions“",
+        "suggestion": "The German version of the GCLS demonstrates strong psychometric properties and can be recommended for use in clinical practice and research with Trans and Gender-Diverse Communities in German-speaking regions."
+      },
+      {
+        "section": "General",
+        "original": "Participant", 
+        "issue": "Geschlechtsneutrale Form verwenden",
+        "suggestion": "Participant → Participant/a oder Person (je nach Kontext)"
+      },
+      {
+        "section": "General",
+        "original": "he/she", 
+        "issue": "Nicht inklusiv, ersetzt durch neutrale Pronomen",
+        "suggestion": "he/she → they"
+      }
+    ]
+  }

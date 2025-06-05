@@ -1,0 +1,111 @@
+\documentclass{article}
+\usepackage[margin=1cm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, shadows, patterns, fit}
+
+\begin{document}
+
+\section*{GCLS German Validation: Analysis Pipeline}
+
+\centering
+\vspace{0.5em}
+
+\begin{tikzpicture}[
+    % Modern node styles
+    base/.style = {
+      draw,
+      rounded corners=3pt,
+      align=center,
+      font=\footnotesize\bfseries,
+      minimum width=2.2cm,
+      minimum height=0.8cm,
+      drop shadow={opacity=0.3, shadow xshift=1pt, shadow yshift=-1pt}
+    },
+    prep/.style = {base, fill=blue!20, draw=blue!60},
+    analysis/.style = {base, fill=green!20, draw=green!60},
+    output/.style = {base, fill=orange!20, draw=orange!60},
+    validation/.style = {base, fill=purple!20, draw=purple!60},
+    % Modern arrow style
+    arrow/.style = {
+      -{Stealth[length=2mm, width=1.2mm]},
+      thick,
+      color=gray!70
+    },
+    % Separation
+    node distance=1.8cm and 1.5cm
+  ]
+
+  % Row 1: Data Preparation (Blue theme)
+  \node (import) [prep] {Data Import\\\& Clean};
+  \node (qc) [prep, right=of import] {Quality\\Checks};
+  \node (preproc) [prep, right=of qc] {Missing Data\\Imputation};
+
+  % Row 2: Factor Analysis (Green theme)
+  \node (horn) [analysis, below=of import] {Horn's\\Parallel};
+  \node (efa) [analysis, below=of qc] {EFA\\ML+Oblimin};
+  \node (esem) [analysis, below=of preproc] {ESEM\\WLSMV};
+
+  % Row 3: Validation (Purple theme)
+  \node (cv) [validation, below=of horn] {3-Fold\\Cross-Val};
+  \node (psycho) [validation, below=of efa] {Psychometric\\Tests};
+  \node (reliability) [validation, below=of esem] {Reliability\\α/ω};
+
+  % Row 4: Output (Orange theme)
+  \node (figures) [output, below=of cv, xshift=1.5cm] {Figures \&\\Tables};
+  \node (manuscript) [output, right=of figures] {LaTeX\\Manuscript};
+
+  % Horizontal arrows Row 1
+  \draw[arrow] (import) -- (qc);
+  \draw[arrow] (qc) -- (preproc);
+
+  % Vertical arrows to Row 2
+  \draw[arrow] (import) -- (horn);
+  \draw[arrow] (qc) -- (efa);
+  \draw[arrow] (preproc) -- (esem);
+
+  % Horizontal arrows Row 2
+  \draw[arrow] (horn) -- (efa);
+  \draw[arrow] (efa) -- (esem);
+
+  % Vertical arrows to Row 3
+  \draw[arrow] (horn) -- (cv);
+  \draw[arrow] (efa) -- (psycho);
+  \draw[arrow] (esem) -- (reliability);
+
+  % Horizontal arrows Row 3
+  \draw[arrow] (cv) -- (psycho);
+  \draw[arrow] (psycho) -- (reliability);
+
+  % Converging arrows to outputs
+  \draw[arrow] (cv.south) -- ++(0,-0.3) -| (figures.north);
+  \draw[arrow] (psycho) -- (figures);
+  \draw[arrow] (reliability.south) -- ++(0,-0.3) -| (figures.north);
+  
+  % Final arrow
+  \draw[arrow] (figures) -- (manuscript);
+
+  % Add decorative boxes around sections
+  \node[draw=blue!40, rounded corners=5pt, fit={(import) (qc) (preproc)}, 
+        fill=blue!5, inner sep=3pt, behind path] {};
+  \node[draw=green!40, rounded corners=5pt, fit={(horn) (efa) (esem)}, 
+        fill=green!5, inner sep=3pt, behind path] {};
+  \node[draw=purple!40, rounded corners=5pt, fit={(cv) (psycho) (reliability)}, 
+        fill=purple!5, inner sep=3pt, behind path] {};
+  \node[draw=orange!40, rounded corners=5pt, fit={(figures) (manuscript)}, 
+        fill=orange!5, inner sep=3pt, behind path] {};
+
+  % Add section labels
+  \node[font=\tiny, color=blue!70] at ([yshift=8pt]qc.north) {DATA PREPARATION};
+  \node[font=\tiny, color=green!70] at ([yshift=8pt]efa.north) {FACTOR ANALYSIS};
+  \node[font=\tiny, color=purple!70] at ([yshift=8pt]psycho.north) {VALIDATION};
+  \node[font=\tiny, color=orange!70] at ([yshift=8pt]figures.north) {OUTPUT};
+
+\end{tikzpicture}
+
+\vspace{1em}
+\footnotesize
+\textbf{Figure:} Comprehensive analysis pipeline for German GCLS validation study. 
+Color-coded workflow shows data preparation (blue), factor analysis (green), 
+validation procedures (purple), and final outputs (orange).
+
+\end{document} 
