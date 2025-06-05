@@ -1,0 +1,7 @@
+{
+  "se_threshold": 0.3,
+  "max_items": 15,
+  "min_items": 8,
+  "rationale": "Balance zwischen Pr\u00e4zision und Effizienz",
+  "expected_reduction": "60-70%"
+}

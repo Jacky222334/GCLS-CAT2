@@ -120,7 +120,7 @@ Data was collected using LimeSurvey (Version 5.6.9), an online platform suitable
 
 **Multi-Modal Recruitment Timeline and Response Analysis**
 
-![Recruitment Timeline](../fragebogen/GCLS_Compact.pdf)
+![Recruitment Timeline](manuscript/figures/figure3_combined_fit_indices.pdf)
 
 *Figure 1* presents the comprehensive recruitment strategy and response patterns for the German GCLS validation study. **Panel A** displays the temporal recruitment timeline showing three distinct contact waves over 37 days (January-February 2023): Wave 1 postal letters (n=52 responses, peak January 10), Wave 2 email reminders (n=59 responses, peak January 30), and Wave 3 SMS follow-ups (n=42 responses, peak February 9). The characteristic wave pattern demonstrates sustained engagement across modalities. **Panel B** shows cumulative participant accrual from initial database identification (N=1,161 clinical contacts, University Hospital Zurich 2001-2021) to final analytic sample (N=293, 25.2% response rate). **Panel C** presents the CONSORT-style participant flow accounting for undeliverable contacts at each wave (postal: 332 undeliverable, email: 208 undeliverable, SMS: 189 undeliverable). **Panel D** illustrates the demographic composition of the final sample by gender identity (44.3% trans feminine, 33.3% non-binary including intersex, 16.7% trans masculine, 4.6% other) and assigned sex at birth distribution. The systematic multi-modal approach substantially exceeded the 20% benchmark recommended for transgender clinical survey research, demonstrating optimal recruitment efficiency through sequential contact strategies.
 
@@ -134,7 +134,7 @@ The translation and cultural adaptation process followed a modified TRAPD (Trans
 
 **Study Design and Methodological Framework**
 
-![Study Design Framework](image/image.png)
+![Study Design Framework](manuscript/figures/efa_heatmap_dendro_combined_large.pdf)
 
 *Figure 2* displays the comprehensive methodological framework employed in this German GCLS validation study. **Panel A** shows the systematic translation and cultural adaptation process following the modified TRAPD approach (Translation, Review, Adjudication, Pretesting, and Documentation), with parallel translations by expert translators, expert panel review, and cognitive pretesting with target population members (n=7). **Panel B** illustrates the factor analytic strategy combining Exploratory Factor Analysis (EFA), Exploratory Structural Equation Modeling (ESEM), and three-fold cross-validation to ensure robust model identification. **Panel C** presents the convergent and discriminant validity assessment framework using established measures (SF-12, WHOQOL-BREF, ZUF-8) to evaluate construct relationships. **Panel D** summarizes the known-groups validity approach comparing AMAB and AFAB participants on theoretically relevant dimensions. The systematic multi-step validation approach ensures comprehensive psychometric evaluation while maintaining methodological rigor throughout all phases of instrument development and validation.
 
@@ -248,23 +248,23 @@ Prior to conducting exploratory factor analysis (EFA), we assessed several key p
 
 The data-driven EFA using maximum likelihood estimation with oblique rotation yielded a seven-factor solution, demonstrating good model fit (RMSEA = 0.054, 90% CI [0.048, 0.060]; TLI = 0.907; BIC = -1639.34). The solution explained 58.0% of total variance, with individual factor contributions ranging from 10.1% to 5.6% (Factor 1: 10.1%, Factor 2: 10.0%, Factor 3: 9.5%, Factor 4: 8.6%, Factor 5: 7.7%, Factor 6: 6.6%, Factor 7: 5.6%). Eigenvalues ranged from 13.025 to 1.093.
 
-**Figure 2**
+**Figure 3**
 
 **GCLS-G EFA Factor Loading Heatmap**
 
-![GCLS-G EFA Factor Loading Heatmap](figures/efa_heatmap_gcls_38items.pdf)
+![GCLS-G EFA Factor Loading Heatmap](manuscript/figures/efa_heatmap_all_loadings_compact.pdf)
 
-*Figure 2* displays the complete factor loading matrix for all 38 GCLS-G items across the seven identified factors, with items and factors ordered by hierarchical clustering using Ward's method and Euclidean distance. The heatmap uses rainbow color coding from blue (negative loadings) through white (near-zero) to red (positive loadings), with hierarchical text formatting indicating loading magnitude: bold black text for primary loadings ≥ 0.40, bold gray for moderate loadings 0.30-0.39, regular gray for small loadings 0.20-0.29, and light gray for very small loadings < 0.20. Both row and column dendrograms are color-coded by factor groups, and variance explained percentages are displayed as vertical bars above each factor. Primary factor loadings > .40 demonstrate strong simple structure with minimal cross-loadings (< .30). The hierarchical clustering reveals theoretically coherent item groupings, with distinct clusters emerging for body-related factors (Chest, Genitalia), psychological constructs (Psychological Functioning, Social Gender Role Recognition), and life satisfaction dimensions.
+*Figure 3* displays the complete factor loading matrix for all 38 GCLS-G items across the seven identified factors, with items and factors ordered by hierarchical clustering using Ward's method and Euclidean distance. The heatmap uses rainbow color coding from blue (negative loadings) through white (near-zero) to red (positive loadings), with hierarchical text formatting indicating loading magnitude: bold black text for primary loadings ≥ 0.40, bold gray for moderate loadings 0.30-0.39, regular gray for small loadings 0.20-0.29, and light gray for very small loadings < 0.20. Both row and column dendrograms are color-coded by factor groups, and variance explained percentages are displayed as vertical bars above each factor. Primary factor loadings > .40 demonstrate strong simple structure with minimal cross-loadings (< .30). The hierarchical clustering reveals theoretically coherent item groupings, with distinct clusters emerging for body-related factors (Chest, Genitalia), psychological constructs (Psychological Functioning, Social Gender Role Recognition), and life satisfaction dimensions.
 
 *Note.* N = 293. All 266 factor loadings are displayed. Factors are labeled based on post-hoc interpretation: Soc = Social Gender Role Recognition; Gen = Genitalia; Psych = Psychological Functioning; Chest = Chest; Life = Life Satisfaction; Intim = Physical and Emotional Intimacy; Sec = Other Secondary Sex Characteristics. Color-coded dendrograms and item labels reflect primary factor loadings to enhance interpretability.
 
-**Figure 3**
+**Figure 4**
 
 **Hierarchical Clustering Dendrograms of GCLS Factor Structure**
 
-![Hierarchical clustering dendrograms](figures/figure1_dendrograms.pdf)
+![Hierarchical clustering dendrograms](manuscript/figures/figure1_dendrograms.pdf)
 
-*Figure 3* displays hierarchical clustering dendrograms illustrating the relationships between GCLS factors across different analytical approaches. The dendrograms demonstrate clear separation between the seven identified factors, supporting the theoretical framework underlying the German GCLS adaptation. The hierarchical structure reveals meaningful groupings of factors that align with conceptual domains of gender congruence, with distinct clusters emerging for body-related factors (Chest, Genitalia), psychological constructs (Psychological Functioning, Social Gender Role Recognition), and life satisfaction dimensions.
+*Figure 4* displays hierarchical clustering dendrograms illustrating the relationships between GCLS factors across different analytical approaches. The dendrograms demonstrate clear separation between the seven identified factors, supporting the theoretical framework underlying the German GCLS adaptation. The hierarchical structure reveals meaningful groupings of factors that align with conceptual domains of gender congruence, with distinct clusters emerging for body-related factors (Chest, Genitalia), psychological constructs (Psychological Functioning, Social Gender Role Recognition), and life satisfaction dimensions.
 
 *Note.* Dendrograms were generated using Ward's linkage method with Euclidean distance measures. Height indicates dissimilarity between clusters, with lower branching points suggesting stronger factor relationships. The tree structure validates the seven-factor solution by showing clear separation between distinct constructs while revealing theoretically meaningful factor groupings.
 
@@ -340,7 +340,7 @@ The model fit indices demonstrated remarkable stability across the three subsamp
 
 **Cross-Validation Stability of ESEM Model Fit Indices**
 
-![Cross-validation stability analysis](figures/figure3_combined_fit_indices.pdf)
+![Cross-validation stability analysis](manuscript/figures/figure3_combined_fit_indices.pdf)
 
 Figure 4 illustrates the stability of the model fit across all three folds. The consistently low coefficients of variation (all CV < 6%) and narrow confidence intervals provide strong evidence for the robustness of the identified model structure. This remarkable stability across subsamples strongly supports the generalizability of the seven-factor structure in the German validation of the GCLS, offering compelling internal replication evidence.
 

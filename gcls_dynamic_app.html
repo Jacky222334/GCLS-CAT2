@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCLS-G - Dynamischer Online-Fragebogen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .progress-container {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a745, #20c997);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .question-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #007bff;
+            transition: transform 0.2s ease;
+        }
+
+        .question-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .question-text {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #343a40;
+            line-height: 1.6;
+        }
+
+        .scale-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .scale-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .scale-option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .scale-label {
+            font-size: 0.9em;
+            text-align: center;
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+        .scale-option:hover .scale-label {
+            color: #007bff;
+            font-weight: 600;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #545b62;
+        }
+
+        .results-container {
+            display: none;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .results-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .subscale-results {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+                 .subscale-card {
+             background: rgba(255,255,255,0.1);
+             border-radius: 10px;
+             padding: 20px;
+             -webkit-backdrop-filter: blur(10px);
+             backdrop-filter: blur(10px);
+         }
+
+        .subscale-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .subscale-score {
+            font-size: 2em;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .interpretation {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .scale-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .controls {
+                flex-direction: column;
+            }
+            
+            .subscale-results {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>GCLS-G</h1>
+            <p>Fragebogen zur Geschlechtskongruenz und Lebenszufriedenheit</p>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">Frage 1 von 38</div>
+        </div>
+
+        <div class="content" id="questionContent">
+            <!-- Questions will be dynamically inserted here -->
+        </div>
+
+        <div class="results-container" id="resultsContainer">
+            <h2 class="results-title">🎉 Fragebogen Abgeschlossen!</h2>
+            <div class="subscale-results" id="subscaleResults"></div>
+            <div class="interpretation" id="interpretation"></div>
+            <button class="btn btn-primary" onclick="restartSurvey()" style="margin-top: 20px;">
+                Neuen Fragebogen starten
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // GCLS-G Items (alle 38 Items)
+        const gclsItems = [
+            {id: 1, text: "Ich habe soziale Situationen und Kontakte gemieden.", subscale: "psychological", reverse: false},
+            {id: 2, text: "Ich bin nicht zur Schule, zum Studium oder zur Arbeit gegangen.", subscale: "psychological", reverse: false},
+            {id: 3, text: "Ich konnte keine emotionalen Beziehungen zu anderen Menschen aufbauen.", subscale: "intimacy", reverse: false},
+            {id: 4, text: "Ich habe unter Angststörungen gelitten.", subscale: "psychological", reverse: false},
+            {id: 5, text: "Ich konnte mit anderen Menschen keine körperliche Intimität eingehen.", subscale: "intimacy", reverse: false},
+            {id: 6, text: "Ich konnte das Haus nicht verlassen.", subscale: "psychological", reverse: false},
+            {id: 7, text: "Es fiel mir schwer, neue Freundschaften zu schließen.", subscale: "social", reverse: false},
+            {id: 8, text: "Ich habe darüber nachgedacht, meine Brust, Genitalien oder angrenzende Bereiche zu verletzen (z. B. zu schneiden).", subscale: "psychological", reverse: false},
+            {id: 9, text: "Ich konnte keine Hobbys ausüben.", subscale: "psychological", reverse: false},
+            {id: 10, text: "Ich konnte mein Leben nicht genießen.", subscale: "life", reverse: false},
+            {id: 11, text: "Ich habe keine Freizeitaktivitäten ausgeübt.", subscale: "psychological", reverse: false},
+            {id: 12, text: "Ich habe anhaltende Niedergeschlagenheit erlebt.", subscale: "life", reverse: false},
+            {id: 13, text: "Ich habe Gedanken gehabt, mich selbst zu verletzen oder das Leben zu nehmen.", subscale: "life", reverse: false},
+            {id: 14, text: "Ich war belastet, wenn ich meine Genitalien berührt habe, weil sie nicht meiner Geschlechtsidentität entsprachen.", subscale: "genitalia", reverse: false},
+            {id: 15, text: "Die Belastung durch meine Brust war so stark, dass ich ein erfülltes Leben führen konnte.", subscale: "chest", reverse: true},
+            {id: 16, text: "Ich war zufrieden mit den Pronomen, die andere zum Ansprechen meiner Person verwendet haben.", subscale: "social", reverse: true},
+            {id: 17, text: "Ich konnte mich in Kleidung wohlfühlen.", subscale: "chest", reverse: true},
+            {id: 18, text: "Es fiel mir schwer, neue Freundschaften zu schließen.", subscale: "social", reverse: false},
+            {id: 19, text: "Ich war zufrieden mit meiner Stimme.", subscale: "secondary", reverse: true},
+            {id: 20, text: "Ich war zufrieden mit meinen Genitalien.", subscale: "genitalia", reverse: true},
+            {id: 21, text: "Ich war zufrieden damit, wie andere mein Geschlecht wahrgenommen haben.", subscale: "social", reverse: true},
+            {id: 22, text: "Ich war zufrieden mit meinen sekundären Geschlechtsmerkmalen (z.B. Körperbehaarung, Gesichtsbehaarung).", subscale: "secondary", reverse: true},
+            {id: 23, text: "Es war mir sehr unangenehm, wenn ich meine Genitalien berührt habe, weil sie nicht meiner Geschlechtsidentität entsprachen.", subscale: "genitalia", reverse: false},
+            {id: 24, text: "Ich war unzufrieden mit der Art, wie sich meine Genitalien anfühlten.", subscale: "genitalia", reverse: false},
+            {id: 25, text: "Ich war zufrieden mit meiner Brust.", subscale: "chest", reverse: true},
+            {id: 26, text: "Ich erwarte, dass die Operation an den Genitalien meine Lebenszufriedenheit verbessern wird.", subscale: "genitalia", reverse: false},
+            {id: 27, text: "Ich konnte intime körperliche Beziehungen eingehen.", subscale: "intimacy", reverse: true},
+            {id: 28, text: "Ich war unzufrieden mit meiner Stimme.", subscale: "secondary", reverse: false},
+            {id: 29, text: "Ich konnte intime emotionale Beziehungen eingehen.", subscale: "intimacy", reverse: true},
+            {id: 30, text: "Ich war glücklich.", subscale: "life", reverse: true},
+            {id: 31, text: "Ich war zufrieden mit meinem Leben.", subscale: "life", reverse: true},
+            {id: 32, text: "Ich war mit meiner Lebensqualität zufrieden.", subscale: "life", reverse: true},
+            {id: 33, text: "Ich war mit mir selbst zufrieden.", subscale: "life", reverse: true},
+            {id: 34, text: "Ich war zufrieden mit meiner körperlichen Erscheinung.", subscale: "secondary", reverse: true},
+            {id: 35, text: "Ich war unzufrieden mit meiner Brust.", subscale: "chest", reverse: false},
+            {id: 36, text: "Ich war zufrieden mit meiner Körperbehaarung.", subscale: "secondary", reverse: true},
+            {id: 37, text: "Ich war unzufrieden mit anderen sekundären Geschlechtsmerkmalen.", subscale: "secondary", reverse: false},
+            {id: 38, text: "Ich war zufrieden mit der Art, wie sich meine Brust anfühlte.", subscale: "chest", reverse: true}
+        ];
+
+        const scaleLabels = [
+            {value: 1, label: "NIE (N)"},
+            {value: 2, label: "SELTEN (S)"},
+            {value: 3, label: "MANCHMAL (M)"},
+            {value: 4, label: "HÄUFIG (H)"},
+            {value: 5, label: "IMMER (I)"}
+        ];
+
+        const subscaleNames = {
+            psychological: "Psychisches Funktionieren",
+            genitalia: "Genitalien",
+            social: "Soziale Geschlechtsrollenerkennung",
+            intimacy: "Körperliche und emotionale Intimität",
+            chest: "Brust",
+            secondary: "Andere sekundäre Geschlechtsmerkmale",
+            life: "Lebenszufriedenheit"
+        };
+
+        let currentQuestion = 0;
+        let responses = {};
+        let isCompleted = false;
+
+        function initializeSurvey() {
+            displayQuestion();
+            updateProgress();
+        }
+
+        function displayQuestion() {
+            if (currentQuestion >= gclsItems.length) {
+                completeSurvey();
+                return;
+            }
+
+            const item = gclsItems[currentQuestion];
+            const questionContent = document.getElementById('questionContent');
+            
+            questionContent.innerHTML = `
+                <div class="question-card fade-in">
+                    <div class="question-text">
+                        <strong>Frage ${currentQuestion + 1}:</strong><br>
+                        ${item.text}
+                    </div>
+                    <div class="scale-container">
+                        ${scaleLabels.map(scale => `
+                            <div class="scale-option">
+                                <input type="radio" 
+                                       name="question_${item.id}" 
+                                       value="${scale.value}" 
+                                       id="q${item.id}_${scale.value}"
+                                       ${responses[item.id] == scale.value ? 'checked' : ''}
+                                       onchange="saveResponse(${item.id}, ${scale.value})">
+                                <label for="q${item.id}_${scale.value}" class="scale-label">
+                                    ${scale.label}
+                                </label>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                <div class="controls">
+                    ${currentQuestion > 0 ? `
+                        <button class="btn btn-secondary" onclick="previousQuestion()">
+                            ← Zurück
+                        </button>
+                    ` : '<div></div>'}
+                    <button class="btn btn-primary" 
+                            onclick="nextQuestion()" 
+                            ${!responses[item.id] ? 'disabled' : ''}>
+                        ${currentQuestion === gclsItems.length - 1 ? 'Abschließen' : 'Weiter →'}
+                    </button>
+                </div>
+            `;
+        }
+
+        function saveResponse(itemId, value) {
+            responses[itemId] = value;
+            
+            // Enable next button
+            const nextBtn = document.querySelector('.btn-primary');
+            if (nextBtn) {
+                nextBtn.disabled = false;
+            }
+        }
+
+        function nextQuestion() {
+            if (responses[gclsItems[currentQuestion].id]) {
+                currentQuestion++;
+                displayQuestion();
+                updateProgress();
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                displayQuestion();
+                updateProgress();
+            }
+        }
+
+        function updateProgress() {
+            const progress = ((currentQuestion + 1) / gclsItems.length) * 100;
+            document.getElementById('progressFill').style.width = `${progress}%`;
+            document.getElementById('progressText').textContent = 
+                `Frage ${currentQuestion + 1} von ${gclsItems.length}`;
+        }
+
+        function completeSurvey() {
+            calculateResults();
+            document.getElementById('questionContent').style.display = 'none';
+            document.getElementById('resultsContainer').style.display = 'block';
+            document.querySelector('.progress-container').style.display = 'none';
+        }
+
+        function calculateResults() {
+            const subscaleScores = {};
+            const subscaleCounts = {};
+            
+            // Initialize subscales
+            Object.keys(subscaleNames).forEach(subscale => {
+                subscaleScores[subscale] = 0;
+                subscaleCounts[subscale] = 0;
+            });
+
+            // Calculate subscale scores
+            gclsItems.forEach(item => {
+                if (responses[item.id]) {
+                    let score = responses[item.id];
+                    
+                    // Apply reverse scoring if needed
+                    if (item.reverse) {
+                        score = 6 - score;
+                    }
+                    
+                    subscaleScores[item.subscale] += score;
+                    subscaleCounts[item.subscale]++;
+                }
+            });
+
+            // Calculate averages
+            Object.keys(subscaleScores).forEach(subscale => {
+                if (subscaleCounts[subscale] > 0) {
+                    subscaleScores[subscale] = subscaleScores[subscale] / subscaleCounts[subscale];
+                }
+            });
+
+            displayResults(subscaleScores);
+        }
+
+        function displayResults(scores) {
+            const resultsContainer = document.getElementById('subscaleResults');
+            
+            resultsContainer.innerHTML = Object.keys(scores).map(subscale => `
+                <div class="subscale-card">
+                    <div class="subscale-title">${subscaleNames[subscale]}</div>
+                    <div class="subscale-score">${scores[subscale].toFixed(2)}</div>
+                    <div style="font-size: 0.9em; opacity: 0.8;">
+                        ${getInterpretation(scores[subscale])}
+                    </div>
+                </div>
+            `).join('');
+
+            // Calculate total score
+            const totalScore = Object.values(scores).reduce((a, b) => a + b, 0) / Object.keys(scores).length;
+            
+            document.getElementById('interpretation').innerHTML = `
+                <h3>Gesamtbewertung</h3>
+                <div style="font-size: 1.5em; margin: 10px 0; font-weight: bold;">
+                    Gesamtwert: ${totalScore.toFixed(2)} / 5.0
+                </div>
+                <p>${getOverallInterpretation(totalScore)}</p>
+                <hr style="margin: 15px 0; border: 1px solid rgba(255,255,255,0.3);">
+                <p style="font-size: 0.9em; opacity: 0.8;">
+                    <strong>Hinweis:</strong> Niedrigere Werte zeigen eine höhere Geschlechtskongruenz und Lebenszufriedenheit an.
+                    Dieser Fragebogen dient nur zu Forschungszwecken und ersetzt keine professionelle Beratung.
+                </p>
+            `;
+        }
+
+        function getInterpretation(score) {
+            if (score <= 2.0) return "Sehr gut";
+            if (score <= 2.5) return "Gut";
+            if (score <= 3.0) return "Durchschnittlich";
+            if (score <= 3.5) return "Herausfordernd";
+            return "Schwierig";
+        }
+
+        function getOverallInterpretation(score) {
+            if (score <= 2.0) {
+                return "Ihre Ergebnisse zeigen eine hohe Geschlechtskongruenz und Lebenszufriedenheit. Sie scheinen sich in Ihrer Geschlechtsidentität wohl zu fühlen.";
+            } else if (score <= 2.5) {
+                return "Ihre Ergebnisse zeigen eine gute Geschlechtskongruenz. Einige Bereiche könnten von weiterer Unterstützung profitieren.";
+            } else if (score <= 3.0) {
+                return "Ihre Ergebnisse zeigen durchschnittliche Werte. Es könnte hilfreich sein, spezifische Bereiche zu adressieren.";
+            } else if (score <= 3.5) {
+                return "Ihre Ergebnisse zeigen einige Herausforderungen. Professionelle Unterstützung könnte sehr hilfreich sein.";
+            } else {
+                return "Ihre Ergebnisse zeigen bedeutende Herausforderungen. Wir empfehlen Ihnen, professionelle Hilfe zu suchen.";
+            }
+        }
+
+        function restartSurvey() {
+            currentQuestion = 0;
+            responses = {};
+            isCompleted = false;
+            
+            document.getElementById('questionContent').style.display = 'block';
+            document.getElementById('resultsContainer').style.display = 'none';
+            document.querySelector('.progress-container').style.display = 'block';
+            
+            initializeSurvey();
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', initializeSurvey);
+    </script>
+</body>
+</html> 

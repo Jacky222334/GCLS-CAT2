@@ -7,7 +7,7 @@ library(reshape2)
 library(dplyr)
 
 # Read the factor loadings data
-loadings_df <- read.csv("analysis/factor_analysis/factor_loadings_38items.csv", stringsAsFactors = FALSE)
+loadings_df <- read.csv("../../analysis/factor_analysis/factor_loadings_38items.csv", stringsAsFactors = FALSE)
 
 # Clean up the data
 items <- loadings_df$Item
@@ -107,14 +107,14 @@ heatmap_all_loadings <- ggplot(loadings_long, aes(x = Factor_Combined, y = Item,
   )
 
 # Save the comprehensive heatmap
-ggsave("manuscript/figures/efa_heatmap_all_loadings.pdf", heatmap_all_loadings, 
+ggsave("../figures/efa_heatmap_all_loadings.pdf", heatmap_all_loadings, 
        width = 12, height = 16, units = "in", dpi = 300)
-ggsave("manuscript/figures/efa_heatmap_all_loadings.png", heatmap_all_loadings, 
+ggsave("../figures/efa_heatmap_all_loadings.png", heatmap_all_loadings, 
        width = 12, height = 16, units = "in", dpi = 300)
 
 # Create an alternative version with even smaller text for better readability
 heatmap_compact <- ggplot(loadings_long, aes(x = Factor_Combined, y = Item, fill = Loading)) +
-  geom_tile(color = "white", linewidth = 0.05) +
+  geom_tile(color = "white", linewidth = 0.02) +
   scale_fill_gradient2(
     low = "#d73027", 
     mid = "white", 
@@ -123,40 +123,42 @@ heatmap_compact <- ggplot(loadings_long, aes(x = Factor_Combined, y = Item, fill
     limit = c(-1, 1),
     name = "Loading"
   ) +
-  # ALL loadings with consistent small text
+  # ALL loadings with optimized text size for compactness
   geom_text(
     aes(label = sprintf("%.2f", Loading),
         color = ifelse(abs(Loading) >= 0.40, "black",
                       ifelse(abs(Loading) >= 0.30, "gray20",
                             ifelse(abs(Loading) >= 0.20, "gray40", "gray60"))),
         fontface = ifelse(abs(Loading) >= 0.30, "bold", "plain")),
-    size = 1.8
+    size = 1.4  # Reduced from 1.8 for compactness
   ) +
-  scale_color_identity() +  # Use the colors as specified
+  scale_color_identity() +
   theme_minimal() +
   theme(
-    axis.text.x = element_text(angle = 0, hjust = 0.5, size = 8, lineheight = 0.8),
-    axis.text.y = element_text(size = 6),
-    axis.title = element_text(size = 10),
-    legend.title = element_text(size = 9),
-    legend.text = element_text(size = 8),
+    axis.text.x = element_text(angle = 0, hjust = 0.5, size = 7, lineheight = 0.7),  # Reduced size
+    axis.text.y = element_text(size = 5),  # Reduced from 6
+    axis.title = element_text(size = 9),   # Reduced from 10
+    legend.title = element_text(size = 8), # Reduced from 9
+    legend.text = element_text(size = 7),  # Reduced from 8
+    legend.key.size = unit(0.4, "cm"),     # Smaller legend
     panel.grid = element_blank(),
-    plot.title = element_text(size = 12, hjust = 0.5, face = "bold"),
-    plot.subtitle = element_text(size = 9, hjust = 0.5),
-    plot.margin = margin(10, 10, 10, 10)
+    plot.title = element_text(size = 11, hjust = 0.5, face = "bold"),  # Reduced from 12
+    plot.subtitle = element_text(size = 8, hjust = 0.5),  # Reduced from 9
+    plot.margin = margin(8, 8, 8, 8),     # Reduced margins
+    panel.spacing = unit(0.1, "cm")       # Tighter spacing
   ) +
   labs(
     title = "Complete EFA Factor Loading Matrix (N = 293)",
-    subtitle = "All 266 loadings shown • Items clustered by similarity • Bold: ≥0.30 • Item 26 in ML6",
+    subtitle = "All 266 loadings • Items clustered • Bold: ≥0.30 • Compact layout for readability",
     x = "Factors (ML1-ML7) with Post-Hoc Interpretations",
     y = "GCLS Items (Ward's Clustering Order)"
   )
 
-# Save the compact version
-ggsave("manuscript/figures/efa_heatmap_all_loadings_compact.pdf", heatmap_compact, 
-       width = 14, height = 18, units = "in", dpi = 300)
-ggsave("manuscript/figures/efa_heatmap_all_loadings_compact.png", heatmap_compact, 
-       width = 14, height = 18, units = "in", dpi = 300)
+# Save the compact version with optimized dimensions
+ggsave("../figures/efa_heatmap_all_loadings_compact.pdf", heatmap_compact, 
+       width = 12, height = 15, units = "in", dpi = 300)  # Reduced dimensions for compactness
+ggsave("../figures/efa_heatmap_all_loadings_compact.png", heatmap_compact, 
+       width = 12, height = 15, units = "in", dpi = 300)
 
 # Print summary statistics
 cat("Complete EFA Heatmap with ALL loadings created!\n\n")
