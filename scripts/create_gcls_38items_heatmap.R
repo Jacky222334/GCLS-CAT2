@@ -91,19 +91,19 @@ ht <- Heatmap(
         if (abs(value) >= 0.40) {
             # Strong loadings: large, bold, black text
             grid.text(sprintf("%.2f", value), x, y, 
-                     gp = gpar(fontsize = 10, fontface = "bold", col = "black"))
+                     gp = gpar(fontsize = 18, fontface = "bold", col = "black"))
         } else if (abs(value) >= 0.30) {
             # Moderate loadings: medium, bold, dark gray
             grid.text(sprintf("%.2f", value), x, y, 
-                     gp = gpar(fontsize = 8, fontface = "bold", col = "gray20"))
+                     gp = gpar(fontsize = 16, fontface = "bold", col = "gray20"))
         } else if (abs(value) >= 0.20) {
             # Small loadings: smaller, normal, gray
             grid.text(sprintf("%.2f", value), x, y, 
-                     gp = gpar(fontsize = 7, fontface = "plain", col = "gray40"))
+                     gp = gpar(fontsize = 14, fontface = "plain", col = "gray40"))
         } else {
             # Very small loadings: smallest, light gray
             grid.text(sprintf("%.2f", value), x, y, 
-                     gp = gpar(fontsize = 6, fontface = "plain", col = "gray60"))
+                     gp = gpar(fontsize = 12, fontface = "plain", col = "gray60"))
         }
     },
     
