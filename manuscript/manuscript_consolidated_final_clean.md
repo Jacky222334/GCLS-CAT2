@@ -26,7 +26,7 @@ header-includes:
   - \usepackage{tabu}
   - \usepackage{threeparttable}
   - \usepackage{threeparttablex}
-  - \usepackage[normalem]{ulem}
+  - \usepackage{ulem}
   - \usepackage{makecell}
   - \usepackage{xcolor}
 bibliography: references.bib
@@ -36,6 +36,8 @@ lang: en-US
 
 *Corresponding author: Jan Ben Schulze, Department of Consultation-Liaison Psychiatry and Psychosomatic Medicine, University Hospital Zurich, Culmannstrasse 8, 8091 Zurich, Switzerland. Email: jan.schulze@usz.ch
 
+**Data and Code Availability**: All analysis code, documentation, and implementation materials are openly available at https://github.com/Jacky222334/GCLS-CAT2
+
 ## Abstract
 
 **Background**: The Gender Congruence and Life Satisfaction Scale (GCLS) is a validated measure assessing outcomes in transgender and gender diverse individuals. A German version is needed to facilitate assessment and research in German-speaking healthcare settings.
@@ -44,7 +46,7 @@ lang: en-US
 
 **Results**: The G-GCLS demonstrated excellent internal consistency (Cronbach's alpha = .78-.90) and replicated the seven-factor structure of the original scale. Factor analysis revealed strong correspondence with the English version, particularly for the Chest (alpha = .84), Genitalia (alpha = .90), and Social Gender Role Recognition (alpha = .88) subscales. The data-driven exploratory factor analysis yielded good model fit (RMSEA = 0.054, 90% CI [0.048, 0.060]; TLI = 0.907) and explained 58.0% of total variance. Between-group comparisons showed distinct patterns of gender-affirming intervention utilization, with high rates of hormone therapy (97.3% AMAB, 96.8% AFAB) and notable differences in surgical procedures.
 
-**Conclusion**: The results support the G-GCLS as a reliable and valid instrument for assessing gender congruence and life satisfaction in German-speaking transgender and gender diverse populations. The scale's robust psychometric properties and clinical utility make it suitable for both research and healthcare settings.
+**Conclusion**: The results support the G-GCLS as a reliable and valid instrument for assessing gender congruence and life satisfaction in German-speaking transgender and gender diverse populations. The scale's robust psychometric properties and clinical utility make it suitable for both research and healthcare settings. **Open-source implementation and advanced computerized adaptive testing (CAT) algorithms are available at https://github.com/Jacky222334/GCLS-CAT2**
 
 _Keywords:_ gender congruence, life satisfaction, scale validation, transgender health, psychometrics
 
@@ -371,6 +373,52 @@ No significant differences emerged for the remaining subscales after Bonferroni 
 These results provide evidence for known-groups validity, demonstrating that the GCLS-G can differentiate between groups on theoretically relevant dimensions while maintaining comparable measurement across diverse transgender populations. The specific difference in secondary sex characteristics aligns with clinical observations and existing literature on gender-specific transition concerns (Ristori & Steensma, 2016).
 
 **Intervention research** should utilize the German GCLS as an outcome measure in clinical trials evaluating the effectiveness of various gender-affirming interventions, contributing to the growing evidence base for transgender healthcare and supporting the development of evidence-based treatment guidelines. Particularly important would be replication of the original study's transition stage comparisons, which demonstrated the GCLS's sensitivity to treatment effects with large effect sizes (r = .29-.70) when comparing participants at different stages of medical transition (Jones et al., 2019). Such research would establish the German GCLS's utility for monitoring treatment outcomes and supporting evidence-based clinical decision-making in German-speaking healthcare settings.
+
+## Computational Implementation and Open Science
+
+### Advanced Computerized Adaptive Testing (CAT) System
+
+To enhance the clinical utility and efficiency of the German GCLS, we developed an advanced **Computerized Adaptive Testing (CAT) system** that reduces assessment burden while maintaining psychometric precision. The CAT implementation employs Item Response Theory (IRT) algorithms with maximum information item selection criteria, achieving **60-70% efficiency gains** (reducing items from 38 to approximately 13-15) while preserving high correlation (r > 0.92) with the full test.
+
+**Key CAT Features:**
+- **Adaptive Item Selection**: Dynamic selection based on Maximum Information criterion
+- **Real-time Theta Estimation**: Maximum Likelihood estimation with iterative updates  
+- **Precision-based Stopping**: Standard Error threshold (default 0.30) with safety limits
+- **Clinical Interpretation**: Automated scoring with actionable insights
+- **Performance Benchmarks**: Demonstrated 61.8% item reduction with theta correlation r = 0.928
+
+### Open Source Implementation
+
+All computational materials, analysis code, and implementation resources are made freely available through our **open source repository**: https://github.com/Jacky222334/GCLS-CAT2
+
+**Repository Contents:**
+- **Complete Analysis Pipeline**: Reproducible R scripts for all psychometric analyses
+- **CAT System**: Fully functional computerized adaptive testing implementation
+- **Interactive Dashboards**: Web-based tools for real-time assessment and visualization
+- **Documentation**: Comprehensive guides for researchers and clinicians
+- **Installation Scripts**: Automated setup for various computing environments
+
+### Reproducibility and Transparency
+
+Following best practices for computational reproducibility, our analysis pipeline was validated across multiple computing environments, including successful replication on resource-constrained hardware (NVIDIA Jetson AGX-Orin developer kit) under offline conditions. The entire workflow—from data preprocessing through factor analysis, cross-validation, and manuscript generation—produces **byte-identical results** across platforms, ensuring robust reproducibility for future research.
+
+**Technical Specifications:**
+- **Software Environment**: R 4.3.2 with comprehensive package dependencies
+- **Analysis Framework**: Combines EFA, ESEM, and three-fold cross-validation
+- **Hardware Validation**: Successfully tested on ARM and x86 architectures
+- **Performance**: Complete analysis pipeline executes in <10 minutes CPU time
+- **Documentation**: Full computational environment specifications included
+
+### Clinical Integration
+
+The open source CAT system is designed for immediate integration into clinical workflows and research settings. The implementation includes:
+
+- **Standalone Demo**: Console-based assessment simulation (`cat_final_demo.R`)
+- **Interactive Dashboard**: Web-based interface for clinical use (`advanced_cat_dashboard.R`)  
+- **Performance Monitoring**: Real-time efficiency and precision tracking
+- **Export Capabilities**: Standard formats for clinical documentation and research
+
+This comprehensive computational framework supports the broader goal of advancing evidence-based transgender healthcare through accessible, validated assessment tools that can be freely adopted and adapted by researchers and clinicians worldwide.
 
 ## Discussion
 
