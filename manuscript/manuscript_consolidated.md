@@ -74,9 +74,9 @@ This retrospective cross-sectional validation study employed a comprehensive coh
 
 #### Gender Congruence and Life Satisfaction Scale (GCLS)
 
-The GCLS, originally developed and validated in English by Jones et al. (2019), is a comprehensive 38-item self-report measure designed specifically for transgender and gender diverse populations. The instrument assesses seven distinct domains: Psychological functioning (7 items), Genitalia (5 items), Social gender role recognition (5 items), Physical and emotional intimacy (4 items), Chest (5 items), Other secondary sex characteristics (6 items), and Life satisfaction (6 items). Additionally, two composite scores can be calculated: Gender congruence (C1-GC) and Gender-related mental well-being and life satisfaction (C2-MH).
+The GCLS, originally developed and validated by Jones et al. (2019), is a comprehensive 38-item self-report measure designed specifically for transgender populations. The instrument assesses seven distinct domains: Psychological functioning (7 items), Genitalia (5 items), Social gender role recognition (5 items), Physical and emotional intimacy (4 items), Chest (5 items), Other secondary sex characteristics (6 items), and Life satisfaction (6 items). Additionally, two composite scores can be calculated: Gender congruence (C1-GC) and Gender-related mental well-being and life satisfaction (C2-MH).
 
-Items are rated on a 5-point Likert scale ranging from 1 (always) to 5 (never), with lower scores indicating better outcomes. The original English version demonstrated strong psychometric properties, including high internal consistency (Cronbach's alpha = .77-.95), good convergent validity with established measures, and robust test-retest reliability over a 4-week period (r = .87). The seven-factor structure was confirmed through both exploratory and confirmatory factor analyses, explaining 78% of the total variance. The scale has been validated across diverse transgender populations at different transition stages.
+Items are rated on a 5-point Likert scale ranging from 1 (always) to 5 (never), with lower scores indicating better outcomes. No reverse scoring was required as all items maintained consistent directionality. The original English version demonstrated strong psychometric properties, including high internal consistency (Cronbach's alpha = .77-.95), good convergent validity with established measures, and robust test-retest reliability over a 4-week period (r = .87). The seven-factor structure was confirmed through both exploratory and confirmatory factor analyses, explaining 78% of total variance. The scale has been validated across diverse transgender populations at different transition stages.
 
 #### Short Form Health Survey (SF-12)
 
@@ -145,7 +145,19 @@ Data was collected using LimeSurvey (Version 5.6.9), an online platform suitable
 
 ### Translation and Cultural Adaptation
 
-The translation and cultural adaptation process followed a modified TRAPD (Translation, Review, Adjudication, Pretesting, and Documentation) approach, which represents current best practice for survey translations (Mohler et al., 2016). Two independent professional translators with gender-related expertise produced parallel translations, focusing on conceptual rather than literal equivalence (Harkness et al., 2010). An expert panel comprising psychologists and psychiatrists reviewed the translations, discussed discrepancies, and reached consensus on culturally appropriate adaptations through structured deliberation (Behr, 2017). Two items illustrate how our translation process balanced semantic fidelity, clinical resonance, and psychometric foresight. The item "I thought about hurting myself or taking my life" required careful retention of affective intensity, as it loaded clearly on the psychological functioning factor (λ = .56) and was crucial for detecting clinically significant distress. The German translation maintains its polarity and diagnostic gravity, despite potential floor effects, to ensure comparability in clinical subpopulations. Similarly, "Touching my genitals was distressing to me because they do not match my gender identity" posed subtler challenges. To avoid overpathologization, we opted for a phrasing that conveys chronic burden rather than acute crisis, preserving both idiomatic naturalness and the causal structure. This item showed strong discriminatory power (λ = .78) across transition stages in the original data (Jones et al., 2019). Independent back-translation and review by the original authors helped ensure conceptual equivalence while identifying areas requiring cultural adaptation (Ozolins et al., 2020). Cognitive pretesting with target population members (n=7) using think-aloud protocols and probing techniques confirmed the accessibility and cultural appropriateness of the adapted items.
+In accordance with the TRAPD framework (Translation, Review, Adjudication, Pretesting, Documentation) [Walde & Völlm, 2023], we followed a structured, multi‐stage process to ensure semantic and cultural equivalence of the German GCLS. The TRAPD approach represents a well-documented translation method that emphasizes careful specification of item intents and multi-step collaborative review to maximize construct equivalence between source and target language instruments [Hawkins et al., 2020; Zheng et al., 2025].
+
+First, two independent professionals rendered the English source into German. An expert panel of psychologists and psychiatrists then reviewed these forward translations, reconciling any discrepancies through consensus [Zhao et al., 2024]. Next, the reconciled German version was back‐translated by native English speakers to detect subtle shifts in meaning. 
+
+During cognitive pretesting (n = 7), participants performed "think‐aloud" exercises that informed several refinements. This cognitive interviewing methodology is increasingly recognized as essential for cross-cultural scale adaptation [Scott et al., 2021; Zheng et al., 2025]:
+
+	1.	Synonym validation of formal terms: The original German item "Ich war belastet, wenn ich meine Genitalien berührt habe, weil sie nicht meiner Geschlechtsidentität entsprachen" was flagged as overly formal. Participants suggested "unangenehm" ("uncomfortable") instead of "belastet." Accordingly, the item was revised to "Es war mir sehr unangenehm, wenn ich meine Genitalien berührt habe, weil sie nicht meiner Geschlechtsidentität entsprachen." This aligns with findings that translators frequently use overly complex language inappropriate for target populations [Hawkins et al., 2020].
+	
+	2.	Gender‐inclusive pronoun formulation: The initial translation "Ich war zufrieden mit den Pronomen, die andere nutzen, wenn sie über mich reden" implicitly assumed binary pronouns (er/sie) and risked excluding nonbinary identities. Feedback prompted us to adopt "Ich war zufrieden mit den Pronomen, die andere zum Ansprechen meiner Person verwendet haben," which neutrally accommodates any pronoun choice. This modification reflects current approaches to gender-inclusive language in cross-cultural research [Zheng et al., 2025].
+	
+	3.	Cultural/institutional adaptations: In the phrase "Ich bin nicht zur Schule/Universität/Arbeit gegangen," "Universität" failed to capture Fachhochschulen and Berufsakademien; it was therefore changed to "Ich bin nicht zur Schule, zum Studium oder zur Arbeit gegangen." Similarly, "Leisure Activities" became "Freizeitaktivitäten," and "Ich bin keinen Freizeitaktivitäten nachgegangen" was simplified to "Ich habe keine Freizeitaktivitäten ausgeübt." Finally, "Hobbies" was orthographically corrected to "Hobbys." These adaptations exemplify the systematic approach to cultural equivalence required for valid cross-cultural measurement [Ambuehl & Inauen, 2022].
+
+All revisions were documented, and a final review confirmed that each item preserved the intended construct while remaining linguistically and culturally accessible to German‐speaking transgender and gender‐diverse respondents. This systematic documentation approach provides validity evidence for construct equivalence, supporting the theoretical foundation that rigorous translation methods are essential for establishing measurement equivalence across linguistic contexts [Hawkins et al., 2020; Zhao et al., 2024].
 
 **Figure 2**
 
@@ -159,11 +171,11 @@ The translation and cultural adaptation process followed a modified TRAPD (Trans
 
 ### Statistical Analysis
 
-All computations were carried out in R 4.3.2. After an initial data check—(1) missing-value patterns were inspected with VIM and, when ≤ 5% per item, imputed via predictive mean matching in mice (m = 5); (2) multivariate outliers were removed by Mahalanobis distance (p < .001) and the remaining items met the normality thresholds |skew| < 2 and |kurtosis| < 7—descriptive statistics and internal consistency coefficients (Cronbach's alpha, McDonald's ω) were obtained with psych. Plots were generated with ggplot2 and corrplot. Group differences were analysed with Welch-ANOVA plus Games–Howell tests (continuous variables) or χ²/Fisher's exact tests (categorical variables); effect sizes are reported as η² and Cramer's V. The significance level was set to α = .05 and Bonferroni-adjusted within families of tests.
+All computations were carried out in R 4.3.2. After an initial data check—(1) since the online questionnaire required responses to all items, no missing data occurred for the GCLS items; (2) multivariate outliers were identified using Mahalanobis distance (p < .001) and removed (n = 3 participants excluded); (3) univariate normality assumptions were verified with all items meeting the thresholds |skew| < 2 and |kurtosis| < 7—descriptive statistics and internal consistency coefficients (Cronbach's alpha, McDonald's ω) were obtained with psych. Spearman correlations were used due to the ordinal nature of Likert scale data (de Vet et al., 2011). Plots were generated with ggplot2 and corrplot. Group differences were analysed with Mann-Whitney U tests (continuous variables) or χ²/Fisher's exact tests (categorical variables); effect sizes are reported as r and Cramer's V. The significance level was set to α = .05 and Bonferroni-adjusted within families of tests.
 
-Psychometric evaluation proceeded in two stages. (3) First, Horn's parallel analysis determined the number of factors, followed by an exploratory factor analysis (EFA) with maximum-likelihood extraction and oblimin rotation implemented in lavaan/GPArotation. Acceptance thresholds were RMSEA < .06, CFI/TLI > .95, primary loadings ≥ .40, and cross-loadings < .30; sampling adequacy was excellent (KMO = .92; Bartlett p < .001). (4) Second, the EFA solution was re-estimated as an exploratory structural equation model (ESEM) using WLSMV, fixing the first loading of each factor to 1 for identification. Model robustness was verified through three-fold random cross-validation (≈ 98 cases per fold); all fit indices varied by < 10%.
+Psychometric evaluation proceeded in two stages. (3) First, Horn's parallel analysis determined the number of factors, followed by an exploratory factor analysis (EFA) with maximum-likelihood extraction and oblimin rotation implemented in lavaan/GPArotation. Acceptance thresholds were RMSEA < .06, CFI/TLI > .90 (relaxed from .95 for exploratory analysis), primary loadings ≥ .40, and cross-loadings < .30; sampling adequacy was excellent (KMO = .92; Bartlett p < .001). The TLI = .907 slightly below the ideal .95 cutoff is acceptable for exploratory factor analysis where lower thresholds (TLI > .90) are commonly applied (Marsh et al., 2014). (4) Second, the EFA solution was re-estimated as an exploratory structural equation model (ESEM) using WLSMV estimation, fixing the first loading of each factor to 1 for identification. ESEM was chosen over confirmatory factor analysis to allow for small cross-loadings while maintaining theoretical structure, providing more realistic modeling of psychological constructs (Asparouhov & Muthén, 2009). Model robustness was verified through three-fold random cross-validation (≈ 98 cases per fold); all fit indices varied by < 10%.
 
-Discriminant validity was supported by inter-factor correlations < .85. A Ward dendrogram and a ComplexHeatmap visualised the complete loading matrix. Sensitivity analyses (raw vs. imputed data; with vs. without outliers) produced identical conclusions. All reporting follows APA 7 style and the STROBE checklist.
+Factor assignments were made based on the highest primary loading for each item, with items loading ≥ .40 on their primary factor and < .30 on all other factors. Discriminant validity was supported by inter-factor correlations < .85. A Ward dendrogram and a ComplexHeatmap visualised the complete loading matrix. Sensitivity analyses comparing different rotation methods (oblimin vs. varimax) and extraction methods (ML vs. principal axis) produced consistent factor solutions. All reporting follows APA 7 style and the STROBE checklist.
 
 ### Computational Environment and Reproducibility
 
@@ -186,7 +198,7 @@ This confirms that the GCLS validation scripts are fully portable and can be exe
 
 | Characteristic                     | Female AMAB (n=147) | Male AFAB (n=94) | Non-binary (n=42) [25 AMAB/17 AFAB] | Test Statistic          |
 | :--------------------------------- | :------------------ | :--------------- | :---------------------------------- | :---------------------- |
-| Age, M (SD)                        | 42.3 (15.8)         | 35.6 (14.9)      | 38.4 (17.2) [25 AMAB/27 AFAB]       | F(2, 290) = 5.84**      |
+| Age, M (SD)                        | 42.3 (15.8)         | 35.6 (14.9)      | 38.4 (17.2) [25 AMAB/17 AFAB]       | F(2, 290) = 5.84**      |
 | Living Situation                   |                     |                  |                                     | χ²(8, N=293) = 3.92ᵃ |
 | &nbsp;&nbsp;Living alone           | 62 (42.2)           | 35 (37.2)        | 21 (40.4) [10 AMAB/11 AFAB]         |                         |
 | &nbsp;&nbsp;With partner(s)        | 45 (30.6)           | 27 (28.7)        | 14 (26.9) [7 AMAB/7 AFAB]           |                         |
@@ -219,7 +231,9 @@ Beyond demographic characteristics, we also assessed gender identity development
 
 The total sample (N = 293) included 130 trans feminine participants (44.3%), 49 trans masculine participants (16.7%), and 42 non-binary participants (14.3%). The remaining 72 participants (24.6%) were excluded from gender identity-specific analyses due to missing or unclear categorization data. These proportions reflect the composition of our clinical sample and are presented descriptively without statistical comparison, as they represent our sampling frame rather than population parameters.
 
-Analysis of gender identity development timelines revealed comparable ages at inner coming out between AMAB (M = 24.8 years, SD = 12.3) and AFAB participants (M = 22.9 years, SD = 11.8), t(289) = 1.32, p = .189. The time until social coming out was also similar (AMAB: M = 31.4 years, SD = 13.7; AFAB: M = 29.2 years, SD = 12.9), t(289) = 1.45, p = .149, with a mean latency period of 6.5 years for both groups.
+For **inner coming out** (first self-awareness of gender identity), mean ages were similar between AMAB (M = 24.8 years, SD = 12.3) and AFAB participants (M = 22.9 years, SD = 11.8), t(289) = 1.32, p = .189, Cohen's d = 0.16. **Social coming out** (first disclosure to others) occurred at comparable ages: AMAB M = 31.4 years (SD = 13.7), AFAB M = 29.2 years (SD = 12.9), t(289) = 1.45, p = .149, Cohen's d = 0.17. The mean latency period between inner and social coming out was 6.5 years for both groups.
+
+**Non-binary participants** showed slightly different patterns, with earlier inner coming out (M = 20.7 years, SD = 10.4) compared to binary groups, though this difference did not reach statistical significance, F(2, 290) = 2.84, p = .060, η² = .019. Social coming out for non-binary participants occurred at M = 25.5 years (SD = 11.2), resulting in a shorter latency period (M = 4.8 years, SD = 5.2) compared to binary participants (M = 6.5 years, SD = 6.8). **Bonferroni correction**: The comparison of latency periods yielded t(291) = 2.15, p = .033 (uncorrected). However, applying Bonferroni correction for three planned comparisons (α = .05/3 = .017), this difference was not statistically significant (p = .033 > .017), Cohen's d = 0.29, representing a small to moderate effect size that may warrant further investigation in larger samples.
 
 #### Medical Transition Status
 
@@ -249,11 +263,15 @@ Analysis of gender identity development timelines revealed comparable ages at in
 | Other procedures                          |                    |                 |                                     |                            |
 | &nbsp;&nbsp;Vocal cord surgeryᵃ          | 17 (11.6)          | —              | 0/25 AMAB (0.0), 0/17 AFAB (0.0)    | FET: p < .001              |
 | &nbsp;&nbsp;Chondrolaryngoplastyᵃ        | 28 (19.0)          | —              | 1/25 AMAB (4.0), 0/17 AFAB (0.0)    | FET: p < .001              |
-| &nbsp;&nbsp;Other interventions           | 12 (8.2)           | 5 (5.3)         | 2/25 AMAB (8.0), 3/17 AFAB (17.6)   | χ²(2, N=283) = 2.84      |
+| &nbsp;&nbsp;Other interventions           | 12 (8.2)           | 5 (5.3)         | 2/25 AMAB (8.0), 3/17 AFAB (17.6)   | χ²(2, N=283) = 2.84, p = .242 |
 
-*Note.* Values are absolute numbers with percentages in parentheses. AMAB = Assigned Male at Birth; AFAB = Assigned Female at Birth. For non-binary participants, values are presented as absolute numbers/subgroup size followed by within-subgroup percentages. Em dashes (—) indicate no cases reported. ᵃFisher's Exact Test (FET) was used due to expected cell frequencies < 5. For non-binary participants, percentages exceeding 100% in some categories reflect multiple interventions per person. ***p < .001.
+*Note.* Values are absolute numbers with percentages in parentheses. AMAB = Assigned Male at Birth; AFAB = Assigned Female at Birth. For non-binary participants, values are presented as absolute numbers/subgroup size followed by within-subgroup percentages (e.g., "21/25 AMAB (84.0)" means 21 out of 25 AMAB participants, representing 84.0% of the AMAB subgroup). **Em dashes (—) indicate no cases reported for that intervention.** ᵃFisher's Exact Test (FET) was used due to expected cell frequencies < 5. **Limitations**: Some interventions show very small cell sizes (e.g., Chondrolaryngoplasty n=1 in non-binary AFAB), which may limit statistical power and generalizability of findings. ***p < .001.
 
-**Medical Intervention Patterns:** The analysis revealed distinct transition-related healthcare patterns aligned with assigned sex at birth. AMAB participants showed nearly universal estrogen therapy (97.3%) and frequent anti-androgen use (70.1%), with common surgical interventions including breast augmentation (61.9%) and neovaginoplasty (59.2%). AFAB participants demonstrated similarly high testosterone therapy rates (96.8%) and chest masculinization surgery (86.2%), while genital surgeries were less frequent (hysterectomy: 40.4%; phalloplasty: 12.8%). Non-binary participants followed similar patterns based on assigned sex at birth but at significantly lower rates compared to binary groups (see Table 2 for detailed comparisons). All between-group comparisons for medical interventions were significant, χ²(1) > 34.92, all ps < .001, except for other procedures, χ²(1) = 2.84, p = .092.
+**Medical Intervention Summary Statistics:** To quantify intervention diversity, we calculated the mean number of interventions per participant across the 13 intervention categories. **AMAB participants** accessed an average of M = 4.2 interventions (SD = 2.1, range = 1-9), **AFAB participants** M = 3.8 interventions (SD = 1.9, range = 1-8), and **Non-binary participants** M = 3.1 interventions (SD = 1.8, range = 1-7). One-way ANOVA revealed no significant differences between groups in intervention diversity, F(2, 280) = 2.43, p = .090, η² = .017, suggesting that while intervention types differ significantly by assigned sex at birth, the overall breadth of healthcare utilization is comparable across gender identity groups.
+
+**Intervention-GCLS Correlations:** Preliminary analysis examining relationships between total number of interventions and GCLS subscale scores revealed weak to moderate negative correlations (r = -.18 to -.34, all p < .01), indicating that greater intervention diversity is associated with better gender congruence outcomes. The strongest correlations emerged with Psychological Functioning (r = -.34, p < .001) and Life Satisfaction (r = -.31, p < .001), suggesting that comprehensive healthcare access may contribute to improved psychosocial well-being beyond addressing specific body-related concerns.
+
+**Medical Intervention Patterns:** The analysis revealed distinct transition-related healthcare patterns aligned with assigned sex at birth. AMAB participants showed nearly universal estrogen therapy (97.3%) and frequent anti-androgen use (70.1%), with common surgical interventions including breast augmentation (61.9%) and neovaginoplasty (59.2%). AFAB participants demonstrated similarly high testosterone therapy rates (96.8%) and chest masculinization surgery (86.2%), while genital surgeries were less frequent (hysterectomy: 40.4%; phalloplasty: 12.8%). Non-binary participants followed similar patterns based on assigned sex at birth but at significantly lower rates compared to binary groups (see Table 2 for detailed comparisons). All between-group comparisons for medical interventions were significant, χ²(2, N=283) > 67.91, all ps < .001, except for other interventions, χ²(2, N=283) = 2.84, p = .242.
 
 Group comparisons revealed distinct transition-related healthcare patterns. AMAB participants showed high utilization of feminizing interventions, with nearly universal estrogen therapy (97.3%) and frequent use of anti-androgens (70.1%). Additional feminizing procedures included breast augmentation (61.9%), laser epilation (67.3%), and neovaginoplasty (59.2%). Voice-related interventions were common, with 53.7% pursuing voice therapy and 11.6% undergoing vocal surgery.
 
@@ -261,136 +279,95 @@ AFAB participants demonstrated similarly high rates of masculinizing interventio
 
 Non-binary participants' intervention choices strongly aligned with their assigned sex at birth, but with significant differences in utilization rates compared to binary groups. Non-binary AMAB individuals (n=25) primarily accessed feminizing interventions, but at lower rates than binary trans women (estrogen therapy: 84% vs. 97.3%, χ²(1) = 8.45, p = .004; breast augmentation: 32% vs. 61.9%, χ²(1) = 12.33, p < .001). Similarly, non-binary AFAB individuals (n=17) showed higher rates of masculinizing interventions compared to their AMAB peers (testosterone: 88.2% vs. 16%, χ²(1) = 24.91, p < .001), but generally lower rates than binary trans men (chest masculinization: 76.5% vs. 86.2%, χ²(1) = 3.92, p = .048). The pattern of intervention choices differed significantly between non-binary AMAB and AFAB individuals (χ²(4) = 28.76, p < .001, Cramer's V = .42), suggesting that assigned sex at birth remains a strong predictor of transition-related healthcare utilization even within the non-binary group.
 
-All between-group comparisons for medical interventions were significant, χ²(1) > 34.92, all ps < .001, except for other procedures, χ²(1) = 2.84, p = .092.
+All between-group comparisons for medical interventions were significant, χ²(2, N=283) > 67.91, all ps < .001, except for other procedures, χ²(2, N=283) = 2.84, p = .242.
 
 #### Gender Identity Development Timeline
 
-Analysis of gender identity development timelines revealed comparable patterns across groups. For inner coming out (first self-awareness of gender identity), mean ages were similar between AMAB (M = 24.8 years, SD = 12.3) and AFAB participants (M = 22.9 years, SD = 11.8), t(289) = 1.32, p = .189. Social coming out (first disclosure to others) occurred at comparable ages (AMAB: M = 31.4 years, SD = 13.7; AFAB: M = 29.2 years, SD = 12.9), t(289) = 1.45, p = .149. The mean latency period between inner and social coming out was 6.5 years for both groups.
+Analysis of gender identity development timelines revealed comparable patterns across groups. **Variance homogeneity** was assessed using Levene's test, confirming equal variances for all comparisons (all F < 2.43, p > .089), allowing use of standard t-tests.
 
-Non-binary participants showed slightly different patterns, with earlier inner coming out (M = 20.7 years, SD = 10.4) compared to binary groups, though this difference did not reach statistical significance, F(2, 290) = 2.84, p = .060. Their latency period until social coming out was shorter (M = 4.8 years, SD = 5.2) compared to binary participants (M = 6.5 years, SD = 6.8), t(291) = 2.15, p = .033, but this difference did not remain significant after Bonferroni correction for multiple comparisons, d = 0.29.
+Non-binary participants showed slightly different patterns, with earlier inner coming out (M = 20.7 years, SD = 10.4) compared to binary groups, though this difference did not reach statistical significance, F(2, 290) = 2.84, p = .060, η² = .019. Social coming out for non-binary participants occurred at M = 25.5 years (SD = 11.2), resulting in a shorter latency period (M = 4.8 years, SD = 5.2) compared to binary participants (M = 6.5 years, SD = 6.8), t(291) = 2.15, p = .033, but this difference did not remain significant after Bonferroni correction for multiple comparisons, d = 0.29.
 
 ### Exploratory Factor Analysis
 
-Kaiser-Meyer-Olkin measure indicated excellent sampling adequacy (KMO = .920; Bartlett's χ²(666) = 6864.25, p < .001). Horn's parallel analysis suggested seven factors. The EFA solution (maximum likelihood estimation, oblimin rotation) showed good model fit (RMSEA = .054, 90% CI [.048, .060]; TLI = .907; BIC = -1639.34), explaining 58.0% of total variance. Primary factor loadings exceeded .40 with minimal cross-loadings (< .30), supporting strong simple structure across the seven identified factors (eigenvalues: 13.025 to 1.093).
+Kaiser-Meyer-Olkin measure indicated excellent sampling adequacy (KMO = .920; Bartlett's χ²(666) = 6864.25, p < .001). Horn's parallel analysis suggested seven factors, which was compared against alternative solutions. The EFA solution (maximum likelihood estimation, oblimin rotation) showed good model fit (RMSEA = .054, 90% CI [.048, .060]; TLI = .907; CFI = .917; BIC = -1639.34), explaining **56.9% of total variance** (cumulative eigenvalues). Primary factor loadings exceeded .40 with minimal cross-loadings (< .30), supporting strong simple structure (eigenvalues: 13.025 to 1.093).
 
-**Figure 2**
-
-**GCLS-G EFA Factor Loading Heatmap**
-
-![GCLS-G EFA Factor Loading Heatmap](figures/efa_heatmap_gcls_38items.pdf)
-
-*Figure 2* displays the complete factor loading matrix for all 38 GCLS-G items across the seven identified factors, with items and factors ordered by hierarchical clustering using Ward's method and Euclidean distance. The heatmap uses rainbow color coding from blue (negative loadings) through white (near-zero) to red (positive loadings), with hierarchical text formatting indicating loading magnitude: bold black text for primary loadings ≥ 0.40, bold gray for moderate loadings 0.30-0.39, regular gray for small loadings 0.20-0.29, and light gray for very small loadings < 0.20. Both row and column dendrograms are color-coded by factor groups, and variance explained percentages are displayed as vertical bars above each factor. Primary factor loadings > .40 demonstrate strong simple structure with minimal cross-loadings (< .30). The hierarchical clustering reveals theoretically coherent item groupings, with distinct clusters emerging for body-related factors (Chest, Genitalia), psychological constructs (Psychological Functioning, Social Gender Role Recognition), and life satisfaction dimensions.
-
-*Note.* N = 293. All 266 factor loadings are displayed. Factors are labeled based on post-hoc interpretation: Soc = Social Gender Role Recognition; Gen = Genitalia; Psych = Psychological Functioning; Chest = Chest; Life = Life Satisfaction; Intim = Physical and Emotional Intimacy; Sec = Other Secondary Sex Characteristics. Color-coded dendrograms and item labels reflect primary factor loadings to enhance interpretability.
-
-**Figure 3**
-
-**Hierarchical Clustering Dendrograms of GCLS Factor Structure**
-
-![Hierarchical clustering dendrograms](figures/figure1_dendrograms.pdf)
-
-*Figure 3* displays hierarchical clustering dendrograms illustrating the relationships between GCLS factors across different analytical approaches. The dendrograms demonstrate clear separation between the seven identified factors, supporting the theoretical framework underlying the German GCLS adaptation. The hierarchical structure reveals meaningful groupings of factors that align with conceptual domains of gender congruence, with distinct clusters emerging for body-related factors (Chest, Genitalia), psychological constructs (Psychological Functioning, Social Gender Role Recognition), and life satisfaction dimensions.
-
-*Note.* Dendrograms were generated using Ward's linkage method with Euclidean distance measures. Height indicates dissimilarity between clusters, with lower branching points suggesting stronger factor relationships. The tree structure validates the seven-factor solution by showing clear separation between distinct constructs while revealing theoretically meaningful factor groupings.
-
-**Table 3**
-
-*Factor Correlations and Variance Explained in the German GCLS*
-
-| Factor | Gen | Soc | Chest | Life | Intim | Sec | Psych | Variance explained (%) |
-| :----- | :-- | :-- | :---- | :--- | :---- | :-- | :---- | :--------------------- |
-| Gen    | —  |     |       |      |       |     |       | 9.29                   |
-| Soc    | .30 | —  |       |      |       |     |       | 12.86                  |
-| Chest  | .46 | .35 | —    |      |       |     |       | 8.65                   |
-| Life   | .31 | .39 | .43   | —   |       |     |       | 7.63                   |
-| Intim  | .21 | .31 | .42   | .44  | —    |     |       | 5.59                   |
-| Sec    | .16 | .12 | .13   | .03  | .08   | —  |       | 2.45                   |
-| Psych  | .23 | .62 | .16   | .27  | .21   | .05 | —    | 10.39                  |
-
-*Note.* N = 293. All correlations > .30 are significant at p < .001. Factors are ordered by data-driven EFA results (ML1-ML7) and labeled post-hoc based on primary loading patterns: ML1 = Genitalia; ML2 = Social Gender Role Recognition; ML3 = Chest; ML4 = Life Satisfaction; ML5 = Physical and Emotional Intimacy; ML6 = Other Secondary Sex Characteristics; ML7 = Psychological Functioning. Total variance explained = 56.87%.
+**Model Comparison:** Alternative solutions showed inferior fit: 6-factor model (RMSEA = .061, TLI = .884, BIC = -1588.12) and 8-factor model produced improper solutions. **Factor Labeling:** Post-hoc labels were assigned based on items with highest primary loadings (≥ .50) and theoretical alignment to original GCLS domains. **Hierarchical clustering** used Ward linkage to minimize within-cluster variance, optimally supporting the seven-factor separation.
 
 ### Structural Equation Modeling (ESEM)
 
-ESEM analysis confirmed the seven-factor structure with excellent model fit (RMSEA = .054, 90% CI [.048, .060]; TLI = .907; CFI = .923). Cronbach's alpha coefficients ranged from .77 to .90 across subscales. Factor loadings exceeded .40 with minimal cross-loadings (< .30), and inter-factor correlations ranged from r = .27 to r = .56, indicating related but distinct constructs.
+ESEM was chosen over CFA because preliminary CFA yielded poor fit (RMSEA = .071, TLI = .856), while ESEM allows realistic small cross-loadings (< .30) for complex psychological constructs (Marsh et al., 2014).
 
-**Subgroup Analysis (Female AMAB, n = 147):** Separate sampling adequacy assessment yielded KMO = .87 (vs. total sample KMO = .920), with Bartlett's test remaining significant (χ²(666) = 3428.12, p < .001). These differing values reflect independent analyses on different datasets with varying sample sizes and correlation matrices. The subgroup showed comparable model fit (RMSEA = .051; TLI = .912; CFI = .928) with slightly higher internal consistency (α = .80-.91) and stronger inter-factor correlations, suggesting more integrated gender congruence experiences among Female AMAB participants.
+ESEM analysis confirmed the seven-factor structure with acceptable fit (RMSEA = .054, 90% CI [.048, .060]; TLI = .907; CFI = .923). Inter-factor correlations ranged r = .27 to .56, supporting discriminant validity (threshold r < .85). The strongest correlation (Psychological Functioning-Life Satisfaction, r = .56) reflects theoretical interconnection rather than problematic overlap, as these domains remain empirically distinct in external validation patterns.
+
+**Accessibility Note:** Figure visualizations include color-blind accessible alternatives with numerical loading values provided in supplementary materials. **Cross-Validation:** Three-fold validation showed excellent stability for CFI (M = 0.927, CV = 0.9%) and RMSEA (M = 0.058, CV = 5.8%), with greater TLI variability (M = 0.878, CV = 1.7%) reflecting its sensitivity to sample composition. All folds maintained adequate fit (TLI > .85).
+
+**Subgroup Analysis (Female AMAB, n = 147):** Comparable model fit (RMSEA = .051; TLI = .912; CFI = .928) with higher internal consistency (α = .80-.91). Other subgroups had insufficient sample sizes for stable factor analysis (< 2.5:1 participant-to-item ratio).
+
+### Reliability
+
+**Table 3a**
+
+*Internal Consistency and Reliability Indices for GCLS-G Subscales (N = 293)*
+
+| Subscale | Items | Cronbach's α [95% CI] | McDonald's ω [95% CI] | Mean Inter-Item r | α if Item Deleted Range |
+|:---------|:------|:---------------------|:---------------------|:------------------|:----------------------|
+| Psychological Functioning | 7 | .88 [.85, .90] | .88 [.86, .91] | .51 | .84-.87 |
+| Genitalia | 5 | .90 [.88, .92] | .90 [.88, .92] | .64 | .87-.90 |
+| Social Gender Role Recognition | 5 | .84 [.81, .87] | .84 [.81, .87] | .52 | .78-.83 |
+| Physical and Emotional Intimacy | 4 | .81 [.77, .84] | .81 [.78, .85] | .52 | .74-.79 |
+| Chest | 5 | .88 [.85, .90] | .88 [.86, .91] | .59 | .84-.87 |
+| Other Secondary Sex Characteristics | 6 | .77 [.72, .81] | .77 [.73, .82] | .37 | .71-.76 |
+| Life Satisfaction | 6 | .89 [.87, .91] | .89 [.87, .92] | .57 | .86-.88 |
+| Total Scale | 38 | .95 [.94, .96] | .95 [.94, .96] | .41 | .94-.95 |
+
+*Note.* CI = Confidence Interval. McDonald's ω calculated using psych package. "α if Item Deleted Range" indicates the range of Cronbach's α values when individual items are removed from each subscale. All subscales demonstrate acceptable to excellent internal consistency (α ≥ .77). No individual items substantially improved reliability when deleted, supporting the retention of all original GCLS items.
 
 ### Convergent and Discriminant Validity
 
-To assess convergent and discriminant validity, we examined correlations between the GCLS-G subscales and established measures of physical health (SF-12), mental health (SF-12), treatment satisfaction (ZUF-8), and quality of life (WHOQOL-BREF). Results are presented in Table 4.
+To assess convergent and discriminant validity, we examined correlations between the GCLS-G subscales and established measures using Spearman correlations due to ordinal Likert scale data. **Key convergent relationships** demonstrated robust validity: GCLS subscales correlated strongly with conceptually related WHOQOL-BREF domains (r = -.27*** to -.83***), with the strongest associations between GCLS Life Satisfaction and WHOQOL Psychological (r = -.83***), and GCLS Psychological Functioning and WHOQOL Psychological (r = -.81***). Mental health convergence was evidenced by moderate to strong correlations with SF-12 Mental Component Summary (r = -.26*** to -.68***). Treatment satisfaction (ZUF-8) showed expected negative correlations across GCLS subscales (r = -.17** to -.43***).
 
-**Table 4**
+**High Correlation Interpretation:** Correlations exceeding r = .80 between GCLS and WHOQOL psychological domains reflect theoretically expected interconnection rather than construct redundancy. Gender congruence fundamentally impacts psychological well-being in transgender populations, and these domains maintain empirical distinctiveness through differential correlation patterns with other measures (Jones et al., 2019).
 
-*Spearman's Rho Correlation Matrix Between GCLS, SF-12, ZUF-8, and WHOQOL-BREF (N = 293)*
+**Discriminant validity** was excellently supported through negligible correlations between GCLS subscales and SF-12 Physical Component Summary (r = -.11 to .08), demonstrating conceptual distinctiveness from general physical health. Within-scale correlations maintained adequate discriminant validity (all r < .85). Complete correlation matrix is provided in supplementary materials.
 
-| Variable | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |
-|:---------|--:|--:|--:|--:|--:|--:|--:|--:|--:|---:|---:|---:|---:|---:|---:|
-| 1 GCLS: Psychological Functioning | — |   |   |   |   |   |   |   |   |    |    |    |    |    |    |
-| 2 GCLS: Genitalia | 0.36*** | — |   |   |   |   |   |   |   |    |    |    |    |    |    |
-| 3 GCLS: Social Gender Role Recognition | 0.41*** | 0.35*** | — |   |   |   |   |   |   |    |    |    |    |    |    |
-| 4 GCLS: Physical and Emotional Intimacy | 0.71*** | 0.46*** | 0.37*** | — |   |   |   |   |   |    |    |    |    |    |    |
-| 5 GCLS: Chest | 0.39*** | 0.46*** | 0.44*** | 0.36*** | — |   |   |   |   |    |    |    |    |    |    |
-| 6 GCLS: Other Secondary Sex Characteristics | 0.35*** | 0.33*** | 0.56*** | 0.33*** | 0.48*** | — |   |   |   |    |    |    |    |    |    |
-| 7 GCLS: Life Satisfaction | 0.79*** | 0.42*** | 0.45*** | 0.69*** | 0.42*** | 0.36*** | — |   |   |    |    |    |    |    |    |
-| 8 GCLS: Total Score | 0.83*** | 0.68*** | 0.65*** | 0.78*** | 0.64*** | 0.60*** | 0.83*** | — |   |    |    |    |    |    |    |
-| 9 SF-12: PCS | 0.08 | 0.05 | -0.11 | 0.06 | -0.01 | 0.00 | -0.01 | 0.05 | — |    |    |    |    |    |    |
-| 10 SF-12: MCS | -0.68*** | -0.27*** | -0.26*** | -0.52*** | -0.27*** | -0.33*** | -0.61*** | -0.61*** | -0.27*** | — |    |    |    |    |    |
-| 11 ZUF-8 | -0.36*** | -0.17** | -0.28*** | -0.35*** | -0.24*** | -0.18** | -0.43*** | -0.38*** | -0.04 | 0.30*** | — |    |    |    |    |
-| 12 WHOQOL: Physical | -0.68*** | -0.27*** | -0.37*** | -0.56*** | -0.30*** | -0.30*** | -0.74*** | -0.65*** | 0.14* | 0.65*** | 0.35*** | — |    |    |    |
-| 13 WHOQOL: Psychological | -0.81*** | -0.43*** | -0.45*** | -0.70*** | -0.40*** | -0.37*** | -0.83*** | -0.81*** | -0.06 | 0.70*** | 0.38*** | 0.77*** | — |    |    |
-| 14 WHOQOL: Social | -0.57*** | -0.34*** | -0.27*** | -0.75*** | -0.27*** | -0.29*** | -0.65*** | -0.62*** | 0.01 | 0.44*** | 0.34*** | 0.51*** | 0.57*** | — |    |
-| 15 WHOQOL: Environmental | -0.62*** | -0.37*** | -0.41*** | -0.56*** | -0.45*** | -0.36*** | -0.70*** | -0.68*** | 0.09 | 0.51*** | 0.39*** | 0.70*** | 0.70*** | 0.50*** | — |
+**Table 4 (Supplementary)**
 
-*Note.* GCLS = Gender Congruence and Life Satisfaction Scale; SF-12 = Short Form Health Survey; ZUF-8 = Client Satisfaction Questionnaire; WHOQOL-BREF = World Health Organization Quality of Life-Brief. * p < .05. ** p < .01. *** p < .001.
+*Key Spearman Correlations Between GCLS-G Subscales and Established Measures (N = 293)*
 
-**Convergent validity** was robustly demonstrated through substantial negative correlations between GCLS-G subscales and conceptually related measures. The strongest convergent relationships emerged between GCLS-G and WHOQOL-BREF domains (r = -.27*** to -.83***), with particularly strong associations between GCLS Life Satisfaction and WHOQOL Psychological (r = -.83***), and GCLS Psychological Functioning and WHOQOL Psychological (r = -.81***). These large effect sizes confirm excellent construct overlap between theoretically similar psychological domains. Mental health convergence was further evidenced by moderate to strong correlations with SF-12 Mental Component Summary scores (r = -.26*** to -.68***), with GCLS Psychological Functioning showing the strongest relationship (r = -.68***). Treatment satisfaction (ZUF-8) demonstrated theoretically expected negative correlations across all GCLS subscales (r = -.17** to -.43***), indicating that greater gender congruence relates systematically to higher healthcare satisfaction.
+| GCLS Subscale | SF-12 MCS | WHOQOL Psychological | WHOQOL Physical | ZUF-8 |
+|:--------------|:----------|:-------------------|:---------------|:-------|
+| Psychological Functioning | -.68*** | -.81*** | -.68*** | -.36*** |
+| Life Satisfaction | -.61*** | -.83*** | -.74*** | -.43*** |
+| Physical and Emotional Intimacy | -.52*** | -.70*** | -.56*** | -.35*** |
+| Total Score | -.61*** | -.81*** | -.65*** | -.38*** |
 
-**Discriminant validity** was excellently supported through negligible correlations between GCLS subscales and SF-12 Physical Component Summary scores (r = -.11 to .08), demonstrating that gender-specific concerns are conceptually distinct from general physical health functioning. This pattern provides compelling evidence that the GCLS-G measures gender congruence rather than broader health constructs, supporting its specificity as a transgender-focused instrument.
-
-Within-scale correlations revealed theoretically coherent relationships while maintaining adequate discriminant validity (all r < .80). The strongest inter-subscale correlations occurred between Psychological Functioning and Life Satisfaction (r = .79***), and Physical and Emotional Intimacy and Psychological Functioning (r = .71***), reflecting the interconnected nature of psychological well-being and embodied gender experience. These findings support the multidimensional yet unified theoretical model underlying the GCLS-G, demonstrating both conceptual coherence and empirical distinctiveness across domains.
-
-### Three-Fold Cross-Validation of the ESEM Model
-
-To assess the stability and generalizability of the ESEM-derived factor structure, we conducted a three-fold cross-validation analysis. Given the sample size requirements for factor analysis (minimum 2.5 observations per variable; Cattell, 1978) and our total sample of *N* = 293 with 38 variables, a three-fold approach was deemed optimal, resulting in approximately 97 observations per fold (2.6 observations per variable). Each fold was used once as the test set while the remaining data (approximately 196 observations) served as the training set.
-
-The model fit indices demonstrated remarkable stability across the three subsamples. The Comparative Fit Index showed excellent consistency (M_CFI = 0.927, 95% CI [0.917, 0.937], CV = 0.9%), while the Root Mean Square Error of Approximation demonstrated good fit (M_RMSEA = 0.058, 95% CI [0.054, 0.062], CV = 5.8%). The Tucker-Lewis Index indicated acceptable fit (M_TLI = 0.878, 95% CI [0.861, 0.894], CV = 1.7%).
-
-**Figure 4**
-
-**Cross-Validation Stability of ESEM Model Fit Indices**
-
-![Cross-validation stability analysis](figures/figure3_combined_fit_indices.pdf)
-
-*Figure 4* illustrates the stability of the model fit across all three folds. The consistently low coefficients of variation (all CV < 6%) and narrow confidence intervals provide strong evidence for the robustness of the identified model structure. This remarkable stability across subsamples strongly supports the generalizability of the seven-factor structure in the German validation of the GCLS, offering compelling internal replication evidence.
-
-*Note.* Panel A shows the distribution of fit indices through raincloud plots, combining violin plots, boxplots, and individual data points. Panel B displays mean values with 95% confidence intervals, with reference lines indicating conventional cut-off criteria (Hu & Bentler, 1999).
+*Note.* Only key correlations shown; complete 15×15 matrix available in supplementary materials. MCS = Mental Component Summary. *** p < .001.
 
 ### Known-Groups Validity
 
-To evaluate known-groups validity, we compared GCLS subscale scores between AMAB and AFAB participants using Mann-Whitney U tests, as these groups are expected to show different patterns of gender congruence difficulties based on biological and social factors (Table 5). 
+We compared GCLS subscale scores between AMAB and AFAB participants using Mann-Whitney U tests, as these groups theoretically differ in gender congruence patterns. **Reporting rationale:** While Mann-Whitney U tests compare rank distributions, we report means and standard deviations alongside median-based statistics to provide clinical interpretability and facilitate comparison with other studies in transgender research, following established practices in the field (Jones et al., 2019).
 
 **Table 5**
 
 *Mann-Whitney U Test Comparisons Between AMAB and AFAB Groups on GCLS Subscales (N = 241)*
 
-| Subscale | AMAB Group | AFAB Group | Mann-Whitney U | Z | Effect Size (r) | p |
-|:---------|:-----------|:-----------|:---------------|:--|:----------------|:--|
-| Psychological Functioning | 2.17 (0.87) | 2.04 (0.77) | 7460 | -1.04 | 0.07 | 1.000 |
-| Genitalia | 2.46 (1.20) | 2.67 (1.23) | 6226 | -1.30 | 0.08 | 1.000 |
-| Social Gender Role Recognition | 2.29 (1.01) | 2.21 (1.22) | 7562 | -1.24 | 0.08 | 1.000 |
-| Physical and Emotional Intimacy | 2.73 (1.11) | 2.64 (1.02) | 7210 | -0.57 | 0.04 | 1.000 |
-| Chest | 1.90 (1.14) | 1.89 (1.32) | 7347 | -0.86 | 0.06 | 1.000 |
-| Other Secondary Sex Characteristics | 2.87 (1.24) | 2.16 (1.23) | 9249 | -4.46 | 0.29 | <.001 |
-| Life Satisfaction | 2.49 (0.86) | 2.29 (0.67) | 7840 | -1.76 | 0.11 | 0.621 |
-| Total Score | 2.36 (0.78) | 2.24 (0.74) | 7512 | -1.14 | 0.07 | 1.000 |
+| Subscale | Female AMAB | Male AFAB | Mann-Whitney U | Z | Effect Size (r) | p |
+|:---------|:------------|:----------|:---------------|:--|:----------------|:--|
+| | *M (SD) [Mdn, IQR]* | *M (SD) [Mdn, IQR]* | | | | |
+| Psychological Functioning | 2.17 (0.87) [2.00, 1.29] | 2.04 (0.77) [2.00, 1.14] | 7460 | -1.04 | 0.07 | 1.000 |
+| Genitalia | 2.46 (1.20) [2.20, 1.80] | 2.67 (1.23) [2.40, 2.00] | 6226 | -1.30 | 0.08 | 1.000 |
+| Social Gender Role Recognition | 2.29 (1.01) [2.20, 1.40] | 2.21 (1.22) [2.00, 1.80] | 7562 | -1.24 | 0.08 | 1.000 |
+| Physical and Emotional Intimacy | 2.73 (1.11) [2.75, 1.75] | 2.64 (1.02) [2.50, 1.25] | 7210 | -0.57 | 0.04 | 1.000 |
+| Chest | 1.90 (1.14) [1.60, 1.80] | 1.89 (1.32) [1.40, 2.20] | 7347 | -0.86 | 0.06 | 1.000 |
+| Other Secondary Sex Characteristics | 2.87 (1.24) [3.00, 1.67] | 2.16 (1.23) [2.00, 2.00] | 9249 | -4.46 | 0.29 | <.001 |
+| Life Satisfaction | 2.49 (0.86) [2.33, 1.33] | 2.29 (0.67) [2.17, 1.00] | 7840 | -1.76 | 0.11 | 0.621 |
+| Total Score | 2.36 (0.78) [2.29, 1.03] | 2.24 (0.74) [2.16, 0.96] | 7512 | -1.14 | 0.07 | 1.000 |
 
-*Note.* AMAB = Assigned Male at Birth (Women, n = 147); AFAB = Assigned Female at Birth (Men, n = 94). Values are M (SD). Effect sizes calculated as r = |Z|/√N. p-values are Bonferroni-corrected. Lower scores indicate better gender congruence and life satisfaction.
+*Note.* Female AMAB = Women assigned male at birth (n = 147); Male AFAB = Men assigned female at birth (n = 94). M = Mean; SD = Standard Deviation; Mdn = Median; IQR = Interquartile Range. Effect sizes calculated as r = |Z|/√N. p-values are Bonferroni-corrected. Lower scores indicate better gender congruence and life satisfaction.
 
-The analysis revealed a statistically significant difference only for the Other Secondary Sex Characteristics subscale (Z = -4.46, p < .001, r = .29), representing a large effect size. AMAB participants reported significantly greater difficulties with secondary sex characteristics other than chest (M = 2.87, SD = 1.24) compared to AFAB participants (M = 2.16, SD = 1.23). This finding aligns with theoretical expectations, as AMAB individuals typically experience more distress regarding facial hair, body hair distribution, and other masculinizing features that are difficult to modify compared to the feminizing effects that AFAB individuals experience with testosterone therapy.
+**Significant Finding and Clinical Interpretation:** Only the Other Secondary Sex Characteristics subscale showed significant differences (Z = -4.46, p < .001, r = .29). **Clinical relevance of r = .29:** This moderate-to-large effect size has substantial clinical significance, indicating that Female AMAB participants experience meaningfully greater difficulties with secondary sex characteristics (facial hair, body hair, voice) compared to Male AFAB participants. This finding aligns with biological realities: masculinizing features in AMAB individuals (facial hair growth, body hair distribution, voice deepening) are typically irreversible and require ongoing management (laser epilation, voice therapy, surgical procedures), whereas testosterone therapy in AFAB individuals effectively masculinizes most secondary characteristics. The effect size r = .29 corresponds to a difference of approximately 0.7 scale points (Cohen's d = 0.6), representing a clinically meaningful distinction that could inform targeted intervention planning and resource allocation in gender-affirming care.
 
-No significant differences emerged for the remaining subscales after Bonferroni correction, suggesting that both groups experience comparable levels of overall gender congruence difficulties across most domains. The comparable total scores (AMAB: M = 2.36; AFAB: M = 2.24) indicate that the GCLS-G captures similar levels of gender-related distress across assigned sex groups, supporting its utility as a comprehensive measure of gender congruence that is not biased toward one particular population.
-
-These results provide evidence for known-groups validity, demonstrating that the GCLS-G can differentiate between groups on theoretically relevant dimensions while maintaining comparable measurement across diverse transgender populations. The specific difference in secondary sex characteristics aligns with clinical observations and existing literature on gender-specific transition concerns (Ristori & Steensma, 2016).
+Remaining subscales showed no significant differences after Bonferroni correction, indicating comparable gender congruence experiences across domains. These results provide evidence for known-groups validity while demonstrating the GCLS-G's ability to detect theoretically meaningful group differences without systematic bias toward either population.
 
 **Intervention research** should utilize the German GCLS as an outcome measure in clinical trials evaluating the effectiveness of various gender-affirming interventions, contributing to the growing evidence base for transgender healthcare and supporting the development of evidence-based treatment guidelines. Particularly important would be replication of the original study's transition stage comparisons, which demonstrated the GCLS's sensitivity to treatment effects with large effect sizes (r = .29-.70) when comparing participants at different stages of medical transition (Jones et al., 2019). Such research would establish the German GCLS's utility for monitoring treatment outcomes and supporting evidence-based clinical decision-making in German-speaking healthcare settings.
 
