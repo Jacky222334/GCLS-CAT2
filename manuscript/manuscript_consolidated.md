@@ -92,29 +92,26 @@ This 27-item questionnaire from the World Health Organization assesses perceived
 
 ### Participants and Recruitment Strategy
 
-**Sampling Frame and Recruitment Protocol:** This retrospective study identified all individuals who had received gender-affirming care at the University Hospital Zurich at least once between 2001 and 2021 via a comprehensive clinical records search using the ICD-10 code F64 (Gender Identity Disorders). This 20-year historical cohort approach identified 1,161 individuals across seven affiliated clinics specializing in transgender healthcare (Richards et al., 2016). While this retrospective recruitment strategy ensured access to a well-characterized clinical population with documented transgender identities spanning two decades of clinical practice, it may introduce systematic bias by excluding individuals who: (1) received gender-affirming care at other institutions, (2) never accessed clinical services, or (3) were coded differently in clinical records. The retrospective nature also means that some contact information may have become outdated over the 20-year period. This limitation is addressed further in the Discussion section.
+**Sampling Frame:** This retrospective study identified all individuals who received gender-affirming care at University Hospital Zurich (2001-2021) via ICD-10 code F64 search, yielding 1,161 individuals across seven specialized clinics (Richards et al., 2016). While ensuring access to a well-characterized clinical population, this approach may introduce systematic bias by excluding individuals who received care elsewhere, never accessed clinical services, or were coded differently.
 
-**Multi-Modal Contact Strategy:** Data collection occurred during a concentrated four-week period (January 23 - February 20, 2023) using a sequential three-wave approach designed to maximize response rates while minimizing participant burden:
+**Multi-Modal Contact Strategy:** Data collection occurred over four weeks (January 23 - February 20, 2023) using sequential three-wave approach:
+- **Wave 1 (Postal):** 52 responses from 829 deliverable addresses (6.3%)
+- **Wave 2 (Email):** 59 responses from 953 valid addresses (6.2%) 
+- **Wave 3 (SMS):** 42 responses from 972 valid numbers (4.3%)
 
-- **Wave 1 (Postal Letters):** Of 1,161 identified individuals, 829 postal addresses were current and deliverable. Letters were sent January 23, 2023, yielding 52 responses (6.3% of deliverable contacts) with peak response on January 30.
+**Response Flow:** The multi-modal approach achieved 79.1% contact rate (920/1,161 successfully delivered) and 31.8% completion rate among contacted individuals (293/920), substantially exceeding the 20% benchmark for transgender clinical research.
 
-- **Wave 2 (Email Reminders):** Of the remaining non-respondents, 953 had valid email addresses after excluding 208 undeliverable/invalid addresses. Email reminders sent February 1, 2023, generated 59 additional responses (6.2% of deliverable contacts) with peak response on February 8.
+**Inclusion Criteria:** (1) age ≥18 years, (2) self-identification as transgender/gender diverse, and (3) sufficient German proficiency. IP addresses were monitored to prevent duplicates.
 
-- **Wave 3 (SMS Follow-up):** Final SMS reminders were sent February 13, 2023, to 972 individuals with valid mobile numbers (189 numbers were invalid/undeliverable). This yielded 42 additional responses (4.3% of deliverable contacts) with peak response on February 16.
+**Sample Composition:** Of 293 completed questionnaires, final analysis included:
+- **147 trans feminine (50.2%):** Women AMAB
+- **94 trans masculine (32.1%):** Men AFAB  
+- **42 non-binary (14.3%):** 25 AMAB, 17 AFAB
+- **10 uncategorizable (3.4%):** Due to contradictory responses (n=4), non-mappable terminology (n=3), incomplete information (n=2), or misunderstanding (n=1)
 
-**Response Flow and Data Quality:** The systematic multi-modal approach achieved a **total contact rate of 79.1%** (920 successfully delivered contacts from 1,161 identified individuals). Of the 920 successfully contacted individuals, 462 accessed the online questionnaire (**50.2% access rate**) and 293 completed it fully (**31.8% completion rate among contacted individuals, 25.2% of total identified sample**). The concentrated collection period was chosen to: (1) ensure temporal consistency in responses, (2) minimize external events that might influence gender congruence experiences, and (3) maintain participant engagement through timely follow-up contacts.
+**Data Quality:** One participant with anatomically implausible interventions was excluded (N=292 for intervention analyses). Sensitivity analysis showed no systematic differences between categorizable and uncategorizable participants (GCLS scores: M=2.31 vs M=2.28, p=.906), supporting analysis validity.
 
-**Inclusion and Exclusion Criteria:** Inclusion criteria were: (1) age ≥18 years, (2) self-identification as transgender or gender diverse, and (3) sufficient German language proficiency for questionnaire completion. To prevent multiple submissions, IP addresses and email combinations were monitored, with no duplicate entries detected.
-
-**Sample Composition and Exclusions:** Of the 293 participants who completed the questionnaire, careful data quality assessment was conducted prior to analysis:
-
-1. **Medical Intervention Data Cleaning:** One participant reported anatomically implausible intervention combinations and was excluded from medical intervention analyses (final N = 292 for intervention analyses).
-
-2. **Gender Identity Categorization:** Participants provided open-text responses to gender identity questions, which were independently coded by two researchers using established taxonomy guidelines (Richards et al., 2016). The final analytic sample included:
-   - **147 trans feminine participants (50.2%):** Women assigned male at birth (AMAB)
-   - **94 trans masculine participants (32.1%):** Men assigned female at birth (AFAB)  
-   - **42 non-binary participants (14.3%):** 25 AMAB and 17 AFAB individuals identifying as non-binary, genderqueer, or genderfluid
-   - **10 participants (3.4%):** Provided responses that could not be reliably categorized due to: (a) contradictory information between gender identity and assigned sex responses (n=4), (b) use of highly individualized terminology not mappable to established categories (n=3), (c) incomplete gender identity information despite complete questionnaire responses (n=2), and (d) responses suggesting potential misunderstanding of the questions (n=1).
+**Demographics:** Overall sample age M=39.8 years (SD=16.4, range=18-78), with group-specific means in Table 1.
 
 **Missing Data Strategy and Sensitivity Analysis:** The 10 uncategorizable participants (3.4%) were excluded from gender-specific analyses but retained for overall psychometric evaluation (factor analysis, reliability assessment). Comparison of GCLS total scores between categorizable (n=283) and uncategorizable participants (n=10) revealed no significant difference (M = 2.31 vs. M = 2.28, t(291) = 0.12, p = .906, Cohen's d = 0.04), suggesting no systematic bias introduced by exclusion. Demographic characteristics (age, education, relationship status) were also comparable between groups (all p > .20), supporting the validity of analyses conducted with the categorizable subsample.
 
