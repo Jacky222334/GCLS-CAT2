@@ -1,255 +1,153 @@
-# GCLS-G Computerized Adaptive Testing (CAT) System
+# 🏥 GCLS-G Advanced Computerized Adaptive Testing (CAT) System
 
-## 🚀 Advanced Psychometric Assessment for Gender Congruence
-
-[![R](https://img.shields.io/badge/R-4.0%2B-blue.svg)](https://www.r-project.org/)
+[![R](https://img.shields.io/badge/R-4.3%2B-blue.svg)](https://cran.r-project.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![CAT](https://img.shields.io/badge/CAT-IRT%20Based-orange.svg)](https://github.com/yourusername/GCLS_CAT)
+[![CAT](https://img.shields.io/badge/CAT-Advanced-orange.svg)](scripts/cat_final_demo.R)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Jacky222334/GCLS-CAT2/HEAD?urlpath=rstudio)
 
-A comprehensive implementation of Computerized Adaptive Testing for the **Gender Congruence and Life Satisfaction Scale (GCLS-G)**, featuring advanced Item Response Theory algorithms and real-time assessment capabilities.
+## 📋 Overview
 
-## ✨ Key Features
+This repository contains the **advanced Computerized Adaptive Testing (CAT) implementation** for the German Gender Congruence and Life Satisfaction Scale (GCLS-G). 
 
-🎯 **Adaptive Testing**: Dynamic item selection based on Maximum Information criterion  
-⚡ **60-70% Efficiency**: Reduces assessment time from 15-20 to 5-10 minutes  
-📊 **High Precision**: Maintains r > 0.95 correlation with full test  
-🔬 **IRT-Based**: Advanced 2PL Item Response Theory implementation  
-🏥 **Clinical Ready**: Real-time scoring and interpretation  
-📈 **Interactive Dashboard**: Web-based visualization and analysis tools  
+**Note:** The validation manuscript is being prepared for journal submission and is not included in this public repository.
 
-## 🎯 Quick Start
+## 🚀 Key Features
 
-### Run the Demo
+### ⚡ **Efficiency Gains**
+- **60-70% reduction** in items administered (38 → 13-15 items)
+- **r > 0.92 correlation** with full-scale scores
+- **Real-time adaptive selection** using Maximum Information criterion
+
+### 🎯 **Technical Implementation**
+- **2-Parameter Logistic IRT** model for 38 GCLS-G items
+- **Maximum Likelihood estimation** with real-time theta updates
+- **SE threshold stopping** rule (default 0.30)
+- **Seven subscales**: Psychological Functioning, Genitalia, Social Gender Role, Physical & Emotional Intimacy, Chest, Other Secondary Sex, Life Satisfaction
+
+### 📊 **Performance Benchmarks**
+- **Testing**: 15 items used (60.5% reduction), final SE 0.394
+- **Simulation (50 participants)**: 14.5 mean items, 61.8% reduction, theta correlation 0.928
+
+## 🌐 Try Online (No Installation Required)
+
+**Click here for immediate access:**
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Jacky222334/GCLS-CAT2/HEAD?urlpath=rstudio)
+
+Wait 2-3 minutes for setup, then run:
 ```r
-# Clone and run the complete demonstration
 source("scripts/cat_final_demo.R")
 ```
 
-### Key Results Preview
-- **Item Reduction**: ~65% fewer items required
-- **Time Savings**: 60-70% faster completion
-- **Accuracy**: r = 0.96 correlation with full test
-- **Precision**: Mean SE = 0.28 (excellent)
+## 💻 Local Installation
 
-## 📋 What's Included
-
-### Core CAT Implementation
-- **IRT Functions**: 2PL model probability and information functions
-- **Adaptive Algorithms**: Maximum Information item selection
-- **Theta Estimation**: Maximum Likelihood estimation with real-time updates
-- **Stopping Rules**: Precision-based (SE threshold) and safety (max items)
-
-### Assessment Components
-- **38-Item GCLS-G**: Complete item parameter set across 7 subscales
-- **Multidimensional Structure**: Psychological, physical, and social domains
-- **Clinical Interpretation**: Theta-based scoring with actionable insights
-
-### Visualization & Analysis
-- **Interactive Dashboard**: Real-time assessment monitoring
-- **Performance Analysis**: CAT vs. full test comparison studies
-- **Item Information Curves**: Psychometric visualization tools
-- **Convergence Plots**: Theta estimate stability tracking
-
-## 🔬 Technical Implementation
-
-### CAT Algorithm Flow
-```
-1. Initialize: θ₀ = 0, available items = {1,2,...,38}
-2. Select: item = argmax I(θ,item) for item in available
-3. Administer: present item, collect response
-4. Update: θ = MLE(responses, administered_items)
-5. Evaluate: SE = 1/√(∑Information)
-6. Check: if SE < threshold OR items ≥ max_items → STOP
-7. Repeat: go to step 2
-```
-
-### Psychometric Foundation
-- **Item Response Theory**: 2-Parameter Logistic Model
-- **Information Function**: I(θ) = a²P(θ)(1-P(θ))
-- **Selection Criterion**: Maximum Information at current θ estimate
-- **Precision Target**: Standard Error < 0.30
-
-## 📊 Performance Benchmarks
-
-| Metric | Full GCLS-G | CAT Version | Improvement |
-|--------|-------------|-------------|-------------|
-| Items | 38 | ~13.2 | 65% reduction |
-| Time | 15-20 min | 5-8 min | 60-70% faster |
-| Correlation | 1.000 | 0.96 | Excellent |
-| Precision | SE ≈ 0.15 | SE ≈ 0.28 | Acceptable |
-
-## 🏥 Clinical Applications
-
-### Assessment Contexts
-- **Routine Monitoring**: Progress tracking during gender-affirming care
-- **Research Studies**: Efficient data collection for large samples  
-- **Clinical Decision Support**: Real-time assessment results
-- **Outcome Evaluation**: Pre/post treatment comparisons
-
-### Implementation Benefits
-- **Reduced Patient Burden**: Shorter assessment time
-- **Maintained Validity**: Preserves psychometric properties
-- **Real-time Results**: Immediate scoring and interpretation
-- **Adaptive Precision**: Focuses on individual's ability level
-
-## 🖥️ Dashboard Features
-
-### Interactive Assessment
 ```r
-# Launch the interactive dashboard
-source("scripts/run_dashboard.R")
+# Install required packages
+install.packages(c("mirt", "dplyr", "ggplot2", "DT", "plotly"))
+
+# Run CAT demo
+source("scripts/cat_final_demo.R")
+
+# Launch interactive dashboard (requires shiny)
+install.packages(c("shiny", "shinydashboard"))
+source("scripts/advanced_cat_dashboard.R")
 ```
-
-**Dashboard Capabilities:**
-- Real-time CAT administration simulation
-- Performance analysis and visualization
-- Item pool exploration and analysis
-- Configurable algorithm parameters
-
-### Visualization Components
-- **Theta Convergence**: Watch estimates stabilize in real-time
-- **Item Selection Pattern**: See adaptive algorithm choices
-- **Information Functions**: Visualize item characteristics
-- **Efficiency Metrics**: Compare CAT vs. full test performance
 
 ## 📁 Repository Structure
 
 ```
-GCLS_german_190520125/
 ├── scripts/
-│   ├── cat_final_demo.R           # 🎯 Main demonstration
-│   ├── advanced_cat_dashboard.R   # 🖥️ Interactive dashboard
-│   ├── cat_demonstration.R        # 🔧 Core CAT functions
-│   ├── install_packages.R         # 📦 Setup script
-│   └── README_Dashboard.md        # 📖 Dashboard guide
-├── data/                          # 📊 Sample datasets
-├── docs/                          # 📚 Documentation
-└── README.md                      # 📋 This file
+│   ├── cat_final_demo.R           # Main CAT demonstration (344 lines)
+│   ├── advanced_cat_dashboard.R   # Interactive Shiny dashboard (498 lines)
+│   └── cat_demonstration.R        # Core CAT algorithms
+├── Dashboard_Guide.md             # Comprehensive dashboard documentation
+├── CAT_README.md                  # Technical CAT documentation
+└── RUN_ONLINE.md                  # Online execution instructions
 ```
 
-## 🛠️ Installation & Setup
+## 🎯 Usage Examples
 
-### Requirements
-- **R**: Version 4.0 or higher
-- **Packages**: `ggplot2`, `dplyr`, `plotly`, `DT`
-- **Optional**: `shiny`, `shinydashboard` (for full dashboard)
-
-### Quick Setup
+### Basic CAT Demo
 ```r
-# Install required packages
-source("scripts/install_packages.R")
-
-# Run demonstration
+# Load and run complete CAT demonstration
 source("scripts/cat_final_demo.R")
 ```
 
-### Package Installation Issues?
-If you encounter package installation problems:
+### Advanced Dashboard
 ```r
-# Manual installation
-install.packages(c("ggplot2", "dplyr", "plotly", "DT"))
-
-# Or use the step-by-step installer
-source("scripts/install_packages.R")
+# Launch interactive web interface
+source("scripts/advanced_cat_dashboard.R")
 ```
 
-## 📚 Documentation
+## 📖 Documentation
 
-### Research Background
-This implementation is based on:
-- **GCLS Development**: Jones et al. (2019) - Original scale validation
-- **CAT Theory**: Van der Linden (2016) - Comprehensive CAT framework
-- **IRT Applications**: Reeve et al. (2007) - Clinical implementation guidelines
+- **[Dashboard Guide](Dashboard_Guide.md)**: Complete usage instructions (269 lines)
+- **[CAT Technical Details](CAT_README.md)**: Implementation specifications
+- **[Online Access Guide](RUN_ONLINE.md)**: Cloud execution options
 
-### File Documentation
-- **`CAT_README.md`**: Technical implementation details
-- **`Dashboard_Guide.md`**: Interactive dashboard user guide
-- **`README_Dashboard.md`**: Setup and troubleshooting
+## 🏥 Clinical Applications
+
+### Ideal for:
+- **Routine assessment** in gender-affirming care
+- **Treatment monitoring** and outcome evaluation
+- **Research applications** requiring efficient measurement
+- **Multi-site studies** with standardized protocols
+
+### Benefits:
+- **Reduced respondent burden** (5-10 min vs. 15-20 min)
+- **Maintained precision** with fewer items
+- **Real-time scoring** and interpretation
+- **Standardized implementation** across settings
 
 ## 🔬 Research Applications
 
-### Validation Studies
-- **Measurement Invariance**: Compare CAT vs. full test psychometrics
-- **Clinical Utility**: Evaluate real-world implementation effectiveness
-- **Cross-cultural Adaptation**: Test algorithm performance across populations
+The CAT system supports:
+- **Longitudinal studies** with repeated measurements
+- **Intervention trials** requiring sensitive outcome detection
+- **Cross-cultural research** with standardized protocols
+- **Quality assurance** in clinical settings
 
-### Future Enhancements
-- **Multidimensional CAT**: Exploit GCLS-G factor structure
-- **Exposure Control**: Prevent item overuse in operational settings
-- **Bayesian Estimation**: Enhanced precision for extreme scores
-- **Mobile Integration**: Smartphone/tablet assessment platform
+## ⚙️ Technical Specifications
 
-## 🤝 Contributing
+- **IRT Framework**: 2-Parameter Logistic Model
+- **Item Selection**: Maximum Information Criterion
+- **Theta Estimation**: Maximum Likelihood (real-time updates)
+- **Stopping Rules**: SE threshold (0.30) + maximum items (20)
+- **Computational**: Hardware-agnostic (tested on ARM Cortex-A78AE)
 
-We welcome contributions from:
-- **Psychometricians**: Algorithm improvements and validation
-- **Clinicians**: Real-world testing and feedback
-- **Developers**: Interface enhancements and optimization
-- **Researchers**: Cross-validation and replication studies
+## 📊 Validation Results
 
-### Getting Started
-1. Fork the repository
-2. Create a feature branch
-3. Test your changes with `source("scripts/cat_final_demo.R")`
-4. Submit a pull request
+- **Factor Structure**: 7-factor solution (RMSEA = 0.054, TLI = 0.907)
+- **Internal Consistency**: α = 0.77-0.90 across subscales
+- **Cross-Validation**: Stable across 3-fold validation (CV < 6%)
+- **Known-Groups Validity**: Significant differences on theoretically relevant dimensions
 
-## 📄 Citation
+## 🤝 Citation
 
-If you use this CAT implementation in your research, please cite:
+When using this CAT system, please cite:
 
-```bibtex
-@software{gcls_cat_2024,
-  title = {GCLS-G Computerized Adaptive Testing System},
-  author = {[Your Name]},
-  year = {2024},
-  url = {https://github.com/yourusername/GCLS_CAT},
-  note = {R package for adaptive assessment of gender congruence}
-}
+```
+Schulze, J. B., Ammann, F., Jones, B. A., von Känel, R., & Euler, S. (in preparation). 
+Gender Congruence and Life Satisfaction Scale (GCLS-Gv1.1): German Validation Study 
+with Advanced Computerized Adaptive Testing Implementation.
 ```
 
-## 📧 Contact & Support
+## 📧 Contact
 
-- **Issues**: Use GitHub Issues for bug reports and feature requests
-- **Questions**: See documentation or open a discussion
-- **Collaboration**: Contact for research partnerships
+**Corresponding Author**: Jan Ben Schulze  
+Department of Consultation-Liaison Psychiatry and Psychosomatic Medicine  
+University Hospital Zurich, Switzerland  
+Email: jan.schulze@usz.ch
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License - see [LICENSE](LICENSE) for details.
+
+## 🔄 Updates
+
+- **Latest**: Advanced CAT implementation with 60-70% efficiency gains
+- **Binder Integration**: One-click online access without installation
+- **Cross-Platform**: Validated on ARM and x86 architectures
 
 ---
 
-## 🎯 Quick Demo Output
-
-Running `source("scripts/cat_final_demo.R")` produces:
-
-```
-=================================================================
-  GCLS-G CAT Demo - Advanced Computerized Adaptive Testing
-=================================================================
-
-🚀 INITIALIZING CAT SYSTEM...
-✅ Loaded 38 GCLS-G items across 7 subscales
-
-📋 DEMO 1: SINGLE CAT ASSESSMENT
-----------------------------------
-Starting CAT Administration...
-Max items: 15 | SE threshold: 0.3
-
-Item 1 - Item: 19 | Response: 2 | Theta: -1.37 | SE: 1
-Item 2 - Item: 12 | Response: 2 | Theta: -1.526 | SE: 0.707
-[... adaptive item selection continues ...]
-
-CAT completed!
-Items administered: 8 / 15
-Final theta estimate: -1.234
-Final SE: 0.289
-
-📊 ASSESSMENT SUMMARY:
-Items used: 8 / 38 (78.9% reduction)
-Final theta: -1.234
-Final SE: 0.289
-GCLS Score: 2.12/5
-```
-
-**Start exploring the future of adaptive assessment today!** 🚀
+**Note**: This repository provides the computational implementation. The associated validation manuscript is being prepared for peer-reviewed publication.
